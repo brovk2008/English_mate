@@ -18,10 +18,10 @@ export default async function TeacherPage() {
     redirect('/home');
   }
 
-  // 1. Fetch all student profiles
+  // 1. Fetch all student profiles with their streak and freeze counts joined
   const { data: students } = await supabase
     .from('profiles')
-    .select('*')
+    .select('*, streak_data(*)')
     .eq('role', 'student');
 
   // 2. Fetch pending student reviews (writing_done = true, teacher_reviewed = false)

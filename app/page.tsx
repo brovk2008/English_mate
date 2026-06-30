@@ -27,45 +27,45 @@ export default function LandingPage() {
   };
 
   return (
-    <main className="flex-1 flex flex-col justify-center items-center px-4 relative overflow-hidden bg-gradient-to-tr from-[#FAF6F1] via-[#FDF9F6] to-[#FAF1F3]">
-      {/* Decorative background floral circles / sakura shape */}
-      <div className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] bg-[#E8A6B8]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[350px] h-[350px] bg-[#5B7F6B]/5 rounded-full blur-3xl pointer-events-none" />
+    <main className="flex-1 flex flex-col justify-center items-center px-4 relative overflow-hidden bg-bg text-ink">
+      <div className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] bg-sakura/10 rounded-full blur-3xl pointer-events-none dark:bg-sakura/5" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[350px] h-[350px] bg-matcha/5 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Main card */}
+      {/* Landing Card */}
       <div className="w-full max-w-md z-10">
-        <Card className="border border-[#E8E2D9] bg-white/70 backdrop-blur-md shadow-[0_8px_30px_rgb(232,166,184,0.06)] rounded-2xl overflow-hidden p-6 sm:p-8">
+        <Card className="border border-border bg-card/85 backdrop-blur-md shadow-sm rounded-2xl overflow-hidden p-6 sm:p-8">
           <CardContent className="flex flex-col items-center text-center p-0">
-            {/* Sakura petal SVG brand mark */}
-            <div className="w-16 h-16 bg-[#E8A6B8]/10 rounded-full flex items-center justify-center mb-6 animate-pulse">
+            {/* SVG Sakura Logo */}
+            <div className="w-14 h-14 bg-sakura/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 viewBox="0 0 24 24"
-                className="w-8 h-8 text-[#E8A6B8] fill-current"
+                className="w-8 h-8 text-sakura fill-current animate-pulse"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12,2A10,10,0,0,0,2,12c0,5.52,6.5,10,10,10s10-4.48,10-10A10,10,0,0,0,12,2Zm0,18c-2.48,0-7.3-3.08-8-7.25a6,6,0,0,1,11.31-3,6,6,0,0,1,4.69,3C19.3,16.92,14.48,20,12,20Z" />
+                <path d="M12.0003 2.0005C12.0003 2.0005 13.9998 7.0002 18.0003 7.0002C22.0008 7.0002 22.0008 12.0001 18.0003 12.0001C13.9998 12.0001 12.0003 17.0008 12.0003 17.0008C12.0003 17.0008 10.0008 12.0001 6.00028 12.0001C1.99978 12.0001 1.99978 7.0002 6.00028 7.0002C10.0008 7.0002 12.0003 2.0005 12.0003 2.0005Z" />
               </svg>
             </div>
 
             {/* Wordmark and Tagline */}
-            <h1 className="font-heading text-4xl sm:text-5xl font-semibold tracking-wide text-[#33312E] mb-3">
+            <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-wide text-ink mb-1">
               Sakura English
             </h1>
-            <p className="font-serif italic text-lg sm:text-xl text-[#73706B] mb-8 max-w-[280px]">
-              90 days. One mission a day. Real progress.
+            <div className="w-24 h-[1px] bg-gold mb-4" />
+            <p className="font-body text-base text-ink-muted mb-8 max-w-[280px]">
+              90 days. One mission a day.<br />
+              <span className="font-medium text-ink">Real progress.</span>
             </p>
 
             {/* Login button */}
             <Button
               onClick={handleGoogleLogin}
               disabled={loading}
-              className="w-full h-12 bg-[#E8A6B8] hover:bg-[#E293A7] active:bg-[#D57F95] text-white font-sans font-medium text-base rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-3 cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed"
+              className="w-full h-12 bg-sakura hover:bg-sakura-deep/90 text-white dark:text-bg font-body font-medium text-base rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-3 cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />
               ) : (
                 <>
-                  {/* Inline Google Icon */}
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                     <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -76,12 +76,31 @@ export default function LandingPage() {
                 </>
               )}
             </Button>
+            
+            <p className="text-[10px] text-ink-muted mt-3">
+              Day 1 starts the moment you sign in.
+            </p>
+
+            {/* SVG Petal Divider */}
+            <div className="flex items-center gap-2 my-8 text-sakura/30">
+              <span className="w-12 h-[1px] bg-border" />
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12,2A10,10,0,0,0,2,12c0,5.52,6.5,10,10,10s10-4.48,10-10A10,10,0,0,0,12,2Z" />
+              </svg>
+              <span className="w-12 h-[1px] bg-border" />
+            </div>
+
+            {/* Japanese Quote Card */}
+            <blockquote className="border-l-2 border-sakura pl-4 py-1 text-left">
+              <p className="font-display italic text-base text-ink font-semibold">
+                「 Learning is a blossom that opens over time. 」
+              </p>
+            </blockquote>
           </CardContent>
         </Card>
       </div>
 
-      {/* Subtle footer */}
-      <footer className="absolute bottom-6 font-sans text-xs text-[#73706B]/50 tracking-wider">
+      <footer className="absolute bottom-6 font-body text-[10px] text-ink-muted tracking-wider">
         © 2026 SAKURA ENGLISH JOURNEY
       </footer>
     </main>

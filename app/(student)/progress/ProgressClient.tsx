@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { 
-  BarChart2, Flame, Award, BookOpen, Music, Video, 
+  BarChart2, Award, BookOpen, Music, Video, 
   FileText, Calendar
 } from 'lucide-react';
 import { 
@@ -29,7 +29,6 @@ export default function ProgressClient({
   videosCount,
   chartData,
 }: ProgressClientProps) {
-  // Avoid hydration mismatch for Recharts responsive container
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
@@ -42,11 +41,11 @@ export default function ProgressClient({
     <div className="space-y-6">
       {/* Title */}
       <div>
-        <h1 className="font-heading text-3xl font-bold tracking-tight text-[#33312E] flex items-center gap-2">
-          <BarChart2 className="w-7 h-7 text-[#E8A6B8]" />
+        <h1 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-ink flex items-center gap-2">
+          <BarChart2 className="w-8 h-8 text-sakura" />
           My Learning Journey Stats
         </h1>
-        <p className="text-sm text-[#73706B]">
+        <p className="text-sm text-ink-muted mt-0.5 font-medium">
           Visualizing your growth, word-count improvements, and accomplishments.
         </p>
       </div>
@@ -54,72 +53,72 @@ export default function ProgressClient({
       {/* Numerical Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Days Complete */}
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.01)]">
+        <Card className="border border-border bg-card rounded-2xl shadow-sm">
           <CardContent className="p-5 space-y-2">
-            <div className="flex items-center justify-between text-[#73706B]/75">
-              <span className="text-xs font-semibold uppercase tracking-wider">Days Complete</span>
-              <Calendar className="w-4 h-4 text-[#E8A6B8]" />
+            <div className="flex items-center justify-between text-ink-muted">
+              <span className="text-[10px] font-bold uppercase tracking-wider">Days Complete</span>
+              <Calendar className="w-4 h-4 text-sakura" />
             </div>
             <div className="space-y-1">
-              <div className="text-2xl font-extrabold text-[#33312E]">{completedCount} / 90</div>
-              <Progress value={totalDaysPercent} className="h-1.5 bg-[#FAF6F1]" />
+              <div className="text-2xl font-black text-ink">{completedCount} / 90</div>
+              <Progress value={totalDaysPercent} className="h-1.5 bg-border" />
             </div>
           </CardContent>
         </Card>
 
         {/* Words Learned */}
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.01)]">
+        <Card className="border border-border bg-card rounded-2xl shadow-sm">
           <CardContent className="p-5 space-y-2">
-            <div className="flex items-center justify-between text-[#73706B]/75">
-              <span className="text-xs font-semibold uppercase tracking-wider">Words Mastered</span>
-              <BookOpen className="w-4 h-4 text-[#5B7F6B]" />
+            <div className="flex items-center justify-between text-ink-muted">
+              <span className="text-[10px] font-bold uppercase tracking-wider">Words Mastered</span>
+              <BookOpen className="w-4 h-4 text-matcha" />
             </div>
             <div className="space-y-1">
-              <div className="text-2xl font-extrabold text-[#33312E]">{wordsLearnedCount} / 300</div>
-              <Progress value={wordsPercent} className="h-1.5 bg-[#FAF6F1]" />
+              <div className="text-2xl font-black text-ink">{wordsLearnedCount} / 300</div>
+              <Progress value={wordsPercent} className="h-1.5 bg-border" />
             </div>
           </CardContent>
         </Card>
 
         {/* Songs Completed */}
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.01)]">
+        <Card className="border border-border bg-card rounded-2xl shadow-sm">
           <CardContent className="p-5 space-y-1">
-            <div className="flex items-center justify-between text-[#73706B]/75 mb-1">
-              <span className="text-xs font-semibold uppercase tracking-wider">Songs Heard</span>
-              <Music className="w-4 h-4 text-amber-700/70" />
+            <div className="flex items-center justify-between text-ink-muted mb-1">
+              <span className="text-[10px] font-bold uppercase tracking-wider">Songs Heard</span>
+              <Music className="w-4 h-4 text-gold" />
             </div>
-            <div className="text-2xl font-extrabold text-[#33312E]">{songsCount}</div>
-            <span className="text-[10px] font-medium text-[#73706B]/60">Listening sets done</span>
+            <div className="text-2xl font-black text-ink">{songsCount}</div>
+            <span className="text-[10px] font-semibold text-ink-muted">Listening sets done</span>
           </CardContent>
         </Card>
 
         {/* Videos Watched */}
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.01)]">
+        <Card className="border border-border bg-card rounded-2xl shadow-sm">
           <CardContent className="p-5 space-y-1">
-            <div className="flex items-center justify-between text-[#73706B]/75 mb-1">
-              <span className="text-xs font-semibold uppercase tracking-wider">Videos Watched</span>
-              <Video className="w-4 h-4 text-red-600/70" />
+            <div className="flex items-center justify-between text-ink-muted mb-1">
+              <span className="text-[10px] font-bold uppercase tracking-wider">Videos Watched</span>
+              <Video className="w-4 h-4 text-sakura" />
             </div>
-            <div className="text-2xl font-extrabold text-[#33312E]">{videosCount}</div>
-            <span className="text-[10px] font-medium text-[#73706B]/60">Streaming sessions done</span>
+            <div className="text-2xl font-black text-ink">{videosCount}</div>
+            <span className="text-[10px] font-semibold text-ink-muted">Streaming sessions done</span>
           </CardContent>
         </Card>
       </div>
 
       {/* Diary Word Count Over Time Chart */}
-      <Card className="border border-[#E8E2D9] bg-white rounded-2xl">
+      <Card className="border border-border bg-card rounded-2xl">
         <CardHeader>
-          <CardTitle className="font-heading text-lg font-bold text-[#33312E] flex items-center gap-2">
-            <FileText className="w-5 h-5 text-[#E8A6B8]" />
+          <CardTitle className="font-display text-lg font-bold text-ink flex items-center gap-2">
+            <FileText className="w-5 h-5 text-sakura" />
             Writing Vocabulary Growth
           </CardTitle>
-          <CardDescription className="text-xs text-[#73706B]">
+          <CardDescription className="text-xs text-ink-muted">
             Tracks your diary entry word count over the 90 days. Keep writing to see the curve rise!
           </CardDescription>
         </CardHeader>
         <CardContent className="p-4 sm:p-6">
           {chartData.length === 0 ? (
-            <div className="text-center py-16 text-[#73706B]/50 italic bg-[#FAF6F1]/20 rounded-xl border border-dashed border-[#E8E2D9]">
+            <div className="text-center py-16 text-ink-muted/50 italic bg-bg/25 rounded-2xl border border-dashed border-border select-none">
               No writing submissions recorded yet. Complete today's writing mission to seed the chart!
             </div>
           ) : mounted ? (
@@ -131,38 +130,38 @@ export default function ProgressClient({
                 >
                   <defs>
                     <linearGradient id="colorWords" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#E8A6B8" stopOpacity={0.4} />
-                      <stop offset="95%" stopColor="#E8A6B8" stopOpacity={0.0} />
+                      <stop offset="5%" stopColor="var(--color-sakura)" stopOpacity={0.4} />
+                      <stop offset="95%" stopColor="var(--color-sakura)" stopOpacity={0.0} />
                     </linearGradient>
                   </defs>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#E8E2D9/50" vertical={false} />
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
                   <XAxis 
                     dataKey="day" 
-                    stroke="#73706B" 
+                    stroke="var(--color-ink-muted)" 
                     fontSize={10} 
                     tickLine={false} 
                     axisLine={false} 
                   />
                   <YAxis 
-                    stroke="#73706B" 
+                    stroke="var(--color-ink-muted)" 
                     fontSize={10} 
                     tickLine={false} 
                     axisLine={false} 
                   />
                   <Tooltip
                     contentStyle={{
-                      backgroundColor: '#FAF6F1',
-                      border: '1px solid #E8E2D9',
-                      borderRadius: '8px',
+                      backgroundColor: 'var(--color-card)',
+                      border: '1px solid var(--color-border)',
+                      borderRadius: '12px',
                       fontFamily: 'inherit',
                       fontSize: '12px',
-                      color: '#33312E'
+                      color: 'var(--color-ink)'
                     }}
                   />
                   <Area
                     type="monotone"
                     dataKey="words"
-                    stroke="#E8A6B8"
+                    stroke="var(--color-sakura)"
                     strokeWidth={2}
                     fillOpacity={1}
                     fill="url(#colorWords)"
@@ -171,7 +170,7 @@ export default function ProgressClient({
               </ResponsiveContainer>
             </div>
           ) : (
-            <div className="w-full h-[280px] bg-[#FAF6F1]/10 animate-pulse rounded-xl" />
+            <div className="w-full h-[280px] bg-bg/15 animate-pulse rounded-2xl" />
           )}
         </CardContent>
       </Card>

@@ -2,18 +2,21 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
 import { 
   BookOpen, Layers, Music, Video, FileText, Mic, 
-  ArrowLeft, CheckCircle2, AlertCircle, Sparkles, ExternalLink
+  ArrowLeft, CheckCircle2, AlertCircle, Sparkles, ChevronDown, ChevronUp, Check, RefreshCw
 } from 'lucide-react';
-import Link from 'next/link';
+import YouTubeEmbed from '@/components/YouTubeEmbed';
+import Flashcards from '@/components/Flashcards';
+import ConfettiBurst from '@/components/ConfettiBurst';
 
 interface VocabWord {
   word_index: number;
@@ -26,6 +29,10 @@ interface VocabWord {
 interface VocabProgress {
   word_index: number;
   learned: boolean;
+  review_count?: number;
+  ease_factor?: number;
+  due_date?: string;
+  interval?: number;
 }
 
 interface DayClientProps {
@@ -35,6 +42,91 @@ interface DayClientProps {
   vocabWords: VocabWord[];
   initialProgress: any;
   initialVocabProgress: VocabProgress[];
+  dailyQuote: { day: number; quote: string; author: string };
+}
+
+// Programmatic dynamic quiz questions based on Day's Grammar Topic
+function getGrammarQuiz(dayNum: number, topic: string) {
+  const t = topic.toLowerCase();
+  
+  if (t.includes('present perfect')) {
+    return [
+      {
+        question: "I ________ (live) in Tokyo since 2018.",
+        options: ["live", "lived", "have lived", "am living"],
+        answer: "have lived"
+      },
+      {
+        question: "She has already ________ (eat) dinner.",
+        options: ["eat", "ate", "eaten", "eating"],
+        answer: "eaten"
+      },
+      {
+        question: "________ you ever met CaseOh?",
+        options: ["Did", "Have", "Has", "Do"],
+        answer: "Have"
+      }
+    ];
+  }
+  
+  if (t.includes('passive')) {
+    return [
+      {
+        question: "The diary entry was ________ (write) by her yesterday.",
+        options: ["write", "wrote", "written", "writing"],
+        answer: "written"
+      },
+      {
+        question: "English is ________ (speak) all over the world.",
+        options: ["speak", "spoke", "spoken", "speaking"],
+        answer: "spoken"
+      },
+      {
+        question: "The custom playlist ________ created last night.",
+        options: ["was", "is", "were", "did"],
+        answer: "was"
+      }
+    ];
+  }
+  
+  if (t.includes('future') || t.includes('will') || t.includes('going to')) {
+    return [
+      {
+        question: "I think it ________ (rain) tomorrow.",
+        options: ["will rain", "rains", "is going to rain", "rained"],
+        answer: "will rain"
+      },
+      {
+        question: "We are ________ (watch) CaseOh's stream tonight.",
+        options: ["go watch", "going to watch", "will watch", "watched"],
+        answer: "going to watch"
+      },
+      {
+        question: "What time ________ you meet them tomorrow?",
+        options: ["will", "are", "do", "did"],
+        answer: "will"
+      }
+    ];
+  }
+
+  // Fallback general grammar drill questions
+  return [
+    {
+      question: "He ________ (go) to the library every Wednesday.",
+      options: ["go", "goes", "went", "going"],
+      answer: "goes"
+    },
+    {
+      question: "She is very interested ________ learning connectives.",
+      options: ["in", "on", "at", "for"],
+      answer: "in"
+    },
+    {
+      question: "They ________ playing vocabulary drills right now.",
+      options: ["is", "am", "are", "was"],
+      answer: "are"
+    }
+  ];
 }
 
 export default function DayClient({
@@ -44,37 +136,68 @@ export default function DayClient({
   vocabWords,
   initialProgress,
   initialVocabProgress,
+  dailyQuote,
 }: DayClientProps) {
   const router = useRouter();
-  
+
   // Progress states
   const [progress, setProgress] = useState(initialProgress);
   const [vocabProgress, setVocabProgress] = useState<VocabProgress[]>(initialVocabProgress);
   
-  // Input states
+  // Section collapse states
+  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({
+    vocab: false,
+    grammar: false,
+    song: false,
+    listening: false,
+    writing: false,
+    speaking: false,
+  });
+
+  // Text inputs & autosave indicators
   const [songsNewWords, setSongsNewWords] = useState(progress.songs_new_words || '');
   const [caseohExpressions, setCaseohExpressions] = useState(progress.caseoh_expressions || '');
   const [diaryText, setDiaryText] = useState(progress.diary_text || '');
-  const [vocabSentences, setVocabSentences] = useState<Record<number, string>>(() => {
-    try {
-      return JSON.parse(progress.vocab_sentences || '{}');
-    } catch {
-      return {};
-    }
+  const [saveStatus, setSaveStatus] = useState<Record<string, 'idle' | 'saving' | 'saved'>>({
+    song: 'idle',
+    listening: 'idle',
+    diary: 'idle',
   });
 
-  // Display subset of vocab words if it's a review day (shuffle once on mount)
-  const [displayVocabWords, setDisplayVocabWords] = useState<VocabWord[]>([]);
-  
+  // Confetti Burst Trigger
+  const [triggerConfetti, setTriggerConfetti] = useState(false);
+
+  // Grammar Quiz States
+  const quizQuestions = getGrammarQuiz(dayNum, dayContent.grammar_topic);
+  const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({});
+  const [quizSubmitted, setQuizSubmitted] = useState(false);
+  const [quizScore, setQuizScore] = useState(0);
+
+  // Day complete checks
+  const allTasksDone = 
+    progress.vocab_done && 
+    progress.grammar_done && 
+    progress.song_done && 
+    progress.listening_done && 
+    progress.writing_done && 
+    progress.speaking_done;
+
   useEffect(() => {
-    if (dayContent.is_review_day) {
-      // Pick 10 random words from the range for review
-      const shuffled = [...vocabWords].sort(() => 0.5 - Math.random());
-      setDisplayVocabWords(shuffled.slice(0, 10));
+    if (allTasksDone) {
+      setTriggerConfetti(true);
+      // Auto-collapse sections on complete to clean up viewport
+      setCollapsed({
+        vocab: true,
+        grammar: true,
+        song: true,
+        listening: true,
+        writing: true,
+        speaking: true,
+      });
     } else {
-      setDisplayVocabWords(vocabWords);
+      setTriggerConfetti(false);
     }
-  }, [vocabWords, dayContent.is_review_day]);
+  }, [allTasksDone]);
 
   // Extract Spotify Track ID
   const getSpotifyEmbedUrl = (spotifyUrl: string) => {
@@ -92,55 +215,9 @@ export default function DayClient({
 
   const spotifyEmbedUrl = getSpotifyEmbedUrl(dayContent.song_spotify_url);
 
-  // Check overall day complete
-  const allTasksDone = 
-    progress.vocab_done && 
-    progress.grammar_done && 
-    progress.song_done && 
-    progress.listening_done && 
-    progress.writing_done && 
-    progress.speaking_done;
-
-  // Auto-save function for text fields on blur
-  const handleSaveTextField = async (fieldName: string, value: any) => {
-    const supabase = createClient();
-    
-    // Update local state first
-    setProgress((prev: any) => ({ ...prev, [fieldName]: value }));
-
-    const updatePayload: any = {
-      user_id: profile.id,
-      day_number: dayNum,
-      [fieldName]: value,
-      updated_at: new Date().toISOString()
-    };
-
-    // If writing is saved, update word count
-    if (fieldName === 'diary_text') {
-      const words = value.trim().split(/\s+/).filter(Boolean).length;
-      updatePayload.diary_word_count = words;
-    }
-
-    const { error } = await supabase
-      .from('user_day_progress')
-      .upsert(updatePayload, { onConflict: 'user_id,day_number' });
-
-    if (error) {
-      console.error(`Error saving ${fieldName}:`, error.message);
-    }
-  };
-
-  // Handle vocab sentence blur
-  const handleSaveVocabSentence = (wordIndex: number, sentence: string) => {
-    const updatedSentences = { ...vocabSentences, [wordIndex]: sentence };
-    setVocabSentences(updatedSentences);
-    handleSaveTextField('vocab_sentences', JSON.stringify(updatedSentences));
-  };
-
   // Toggle checklist states
   const handleToggleCheck = async (columnName: string, isChecked: boolean) => {
     const supabase = createClient();
-    
     setProgress((prev: any) => ({ ...prev, [columnName]: isChecked }));
 
     const updatePayload: any = {
@@ -150,7 +227,6 @@ export default function DayClient({
       updated_at: new Date().toISOString()
     };
 
-    // If all tasks are completed, set completed_at
     const mockNextProgress = { ...progress, [columnName]: isChecked };
     const nextComplete = 
       mockNextProgress.vocab_done && 
@@ -162,6 +238,46 @@ export default function DayClient({
 
     if (nextComplete) {
       updatePayload.completed_at = new Date().toISOString();
+
+      // Update streak in streak_data
+      const todayStr = new Date().toISOString().split('T')[0];
+      try {
+        const { data: currentStreakRow } = await supabase
+          .from('streak_data')
+          .select('*')
+          .eq('user_id', profile.id)
+          .maybeSingle();
+
+        if (currentStreakRow) {
+          if (currentStreakRow.last_completed_date !== todayStr) {
+            const nextStreak = currentStreakRow.current_streak + 1;
+            const nextLongest = Math.max(currentStreakRow.longest_streak, nextStreak);
+            
+            await supabase
+              .from('streak_data')
+              .update({
+                current_streak: nextStreak,
+                longest_streak: nextLongest,
+                last_completed_date: todayStr
+              })
+              .eq('user_id', profile.id);
+          }
+        } else {
+          await supabase
+            .from('streak_data')
+            .insert({
+              user_id: profile.id,
+              current_streak: 1,
+              longest_streak: 1,
+              freezes_available: 1,
+              last_completed_date: todayStr
+            });
+        }
+      } catch (err) {
+        console.error("Failed to update streak:", err);
+      }
+    } else {
+      updatePayload.completed_at = null;
     }
 
     const { error } = await supabase
@@ -169,451 +285,632 @@ export default function DayClient({
       .upsert(updatePayload, { onConflict: 'user_id,day_number' });
 
     if (error) {
-      console.error(`Error toggling ${columnName}:`, error.message);
-      // revert UI
+      console.error(`Error saving check:`, error.message);
       setProgress((prev: any) => ({ ...prev, [columnName]: !isChecked }));
     }
   };
 
-  // Toggle word learned state
-  const handleToggleWordLearned = async (wordIndex: number, learned: boolean) => {
+  // Auto-save text area on blur
+  const handleSaveTextField = async (fieldName: string, value: string, statusKey: string) => {
+    setSaveStatus(prev => ({ ...prev, [statusKey]: 'saving' }));
     const supabase = createClient();
 
-    if (learned) {
-      // Insert
-      const { error } = await supabase
-        .from('user_vocab_progress')
-        .upsert({
-          user_id: profile.id,
-          word_index: wordIndex,
-          learned: true
-        }, { onConflict: 'user_id,word_index' });
+    const updatePayload: any = {
+      user_id: profile.id,
+      day_number: dayNum,
+      [fieldName]: value,
+      updated_at: new Date().toISOString()
+    };
 
-      if (!error) {
-        setVocabProgress(prev => [...prev, { word_index: wordIndex, learned: true }]);
-      }
+    if (fieldName === 'diary_text') {
+      const words = value.trim().split(/\s+/).filter(Boolean).length;
+      updatePayload.diary_word_count = words;
+    }
+
+    const { error } = await supabase
+      .from('user_day_progress')
+      .upsert(updatePayload, { onConflict: 'user_id,day_number' });
+
+    if (error) {
+      console.error(`Error saving ${fieldName}:`, error.message);
+      setSaveStatus(prev => ({ ...prev, [statusKey]: 'idle' }));
     } else {
-      // Delete
-      const { error } = await supabase
-        .from('user_vocab_progress')
-        .delete()
-        .eq('user_id', profile.id)
-        .eq('word_index', wordIndex);
-
-      if (!error) {
-        setVocabProgress(prev => prev.filter(item => item.word_index !== wordIndex));
-      }
+      setSaveStatus(prev => ({ ...prev, [statusKey]: 'saved' }));
+      setTimeout(() => {
+        setSaveStatus(prev => ({ ...prev, [statusKey]: 'idle' }));
+      }, 1500);
     }
   };
 
-  const isWordLearned = (wordIndex: number) => {
-    return vocabProgress.some(p => p.word_index === wordIndex);
+  // Toggle word mastered (for Tinder swipe deck callback)
+  const handleWordMastered = async (wordIndex: number, mastered: boolean) => {
+    const supabase = createClient();
+    
+    // Find if we have existing progress
+    const existing = vocabProgress.find(vp => vp.word_index === wordIndex);
+    const score = mastered ? 5 : 1;
+    const currentReps = existing?.review_count || 0;
+    const currentInterval = existing?.interval || 1;
+    const currentEase = existing?.ease_factor || 2.5;
+
+    const { calculateSM2 } = require('@/lib/sm2');
+    const sm2Result = calculateSM2(score, currentReps, currentInterval, currentEase);
+
+    const updatedRow = {
+      user_id: profile.id,
+      word_index: wordIndex,
+      learned: mastered,
+      due_date: sm2Result.dueDate,
+      review_count: sm2Result.repetitions,
+      ease_factor: sm2Result.easeFactor,
+      interval: sm2Result.interval
+    };
+
+    const { error } = await supabase
+      .from('user_vocab_progress')
+      .upsert(updatedRow, { onConflict: 'user_id,word_index' });
+
+    if (!error) {
+      setVocabProgress(prev => {
+        const filtered = prev.filter(item => item.word_index !== wordIndex);
+        return [...filtered, {
+          word_index: wordIndex,
+          learned: mastered,
+          due_date: sm2Result.dueDate,
+          review_count: sm2Result.repetitions,
+          ease_factor: sm2Result.easeFactor,
+          interval: sm2Result.interval
+        }];
+      });
+    }
   };
 
-  // Word count for diary entry
+  const learnedIndices = vocabProgress.map(vp => vp.word_index);
+
+  // Word count calculations
   const wordCount = diaryText.trim().split(/\s+/).filter(Boolean).length;
+  const targetWords = 150;
+  const wordPercentage = Math.min(100, (wordCount / targetWords) * 100);
+  const circleCircumference = 2 * Math.PI * 18; // radius = 18
+
+  // Quiz submission
+  const handleSubmitQuiz = () => {
+    let score = 0;
+    quizQuestions.forEach((q, i) => {
+      if (quizAnswers[i] === q.answer) score++;
+    });
+    setQuizScore(score);
+    setQuizSubmitted(true);
+  };
+
+  const getSectionBorderClass = (columnName: string, isExpanded: boolean) => {
+    if (progress[columnName]) {
+      return 'border-l-4 border-l-matcha border-border';
+    }
+    if (isExpanded) {
+      return 'border-l-4 border-l-sakura border-border';
+    }
+    return 'border-border';
+  };
+
+  const toggleSection = (section: string) => {
+    setCollapsed(prev => ({ ...prev, [section]: !prev[section] }));
+  };
 
   return (
-    <div className="space-y-8">
-      {/* Header Back Link */}
+    <div className="space-y-6">
+      {triggerConfetti && <ConfettiBurst />}
+
+      {/* Header Navigation */}
       <div className="flex items-center justify-between">
-        <Link href="/home" className="flex items-center gap-1.5 text-sm text-[#73706B] hover:text-[#E8A6B8] transition-colors">
+        <Link href="/home" className="flex items-center gap-1.5 text-xs font-semibold text-ink-muted hover:text-sakura transition-colors select-none">
           <ArrowLeft className="w-4 h-4" /> Back to Dashboard
         </Link>
-        <Badge variant="outline" className="border-[#E8E2D9] text-[#73706B]">
+        <Badge variant="outline" className="border-border text-ink-muted select-none">
           Month {dayContent.month} · Week {dayContent.week}
         </Badge>
       </div>
 
-      {/* Main Day Header */}
+      {/* Daily Banner Title */}
       <div className="space-y-3">
         <div className="space-y-1">
-          <span className="font-serif italic text-sm text-[#E8A6B8] font-semibold tracking-wider">
+          <span className="font-display italic text-sm text-sakura-deep font-semibold tracking-wider block">
             Day {dayNum} · {dayContent.phase_title}
           </span>
-          <h1 className="font-heading text-3xl sm:text-4xl font-extrabold text-[#33312E] tracking-tight">
+          <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-ink leading-tight">
             {dayContent.grammar_topic}
           </h1>
         </div>
 
-        {/* Daily Tip box */}
-        <div className="bg-white border border-[#E8E2D9] rounded-xl p-4 shadow-[0_2px_10px_rgba(232,166,184,0.02)]">
-          <span className="text-[10px] font-bold text-[#E8A6B8] tracking-widest uppercase block mb-1">
-            🌸 Daily Tip
-          </span>
-          <p className="font-serif italic text-sm text-[#73706B] leading-relaxed">
-            "{dayContent.daily_tip}"
-          </p>
+        {/* Dynamic quote box & daily tip */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-card border border-border/80 rounded-xl p-4 shadow-sm border-l-4 border-l-sakura">
+            <span className="text-[10px] font-bold text-sakura-deep tracking-wider uppercase block mb-1">
+              🌸 Daily tip
+            </span>
+            <p className="font-serif italic text-xs sm:text-sm text-ink-muted leading-relaxed">
+              "{dayContent.daily_tip}"
+            </p>
+          </div>
+
+          <div className="bg-card border border-border/80 rounded-xl p-4 shadow-sm border-l-4 border-l-gold">
+            <span className="text-[10px] font-bold text-gold tracking-wider uppercase block mb-1">
+              ✨ Daily quote
+            </span>
+            <p className="font-display italic text-xs sm:text-sm text-ink leading-relaxed">
+              "{dailyQuote.quote}"
+            </p>
+            <span className="text-[10px] text-ink-muted block mt-1">— {dailyQuote.author}</span>
+          </div>
         </div>
       </div>
 
-      {/* 1. Vocabulary Section */}
-      <section id="vocab" className="space-y-4 scroll-mt-20">
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-xl font-bold text-[#33312E] flex items-center gap-2">
-            <BookOpen className="w-5 h-5 text-[#E8A6B8]" />
-            1. Vocabulary {dayContent.is_review_day ? '(Review Mode)' : `(Words ${dayContent.vocab_range_start}-${dayContent.vocab_range_end})`}
-          </h2>
-          <Checkbox
-            checked={progress.vocab_done}
-            onCheckedChange={(checked) => handleToggleCheck('vocab_done', !!checked)}
-            className="w-5 h-5 border-[#E8E2D9] data-[state=checked]:bg-[#5B7F6B] data-[state=checked]:border-[#5B7F6B] rounded cursor-pointer"
-          />
-        </div>
-
-        <div className="grid grid-cols-1 gap-4">
-          {displayVocabWords.map((word) => {
-            const learned = isWordLearned(word.word_index);
-            return (
-              <Card key={word.word_index} className={`border border-[#E8E2D9] bg-white rounded-xl transition-all ${learned ? 'bg-[#FAF6F1]/40 border-[#FAF6F1]' : ''}`}>
-                <CardContent className="p-5 space-y-3">
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-lg font-bold text-[#33312E] font-sans">{word.word}</span>
-                        <span className="text-xs text-[#73706B] font-mono">[{word.pronunciation}]</span>
-                      </div>
-                      <p className="text-sm text-[#73706B] font-medium mt-1">
-                        {word.meaning}
-                      </p>
-                    </div>
-
-                    <Checkbox
-                      checked={learned}
-                      onCheckedChange={(checked) => handleToggleWordLearned(word.word_index, !!checked)}
-                      className="w-4 h-4 border-[#E8E2D9] data-[state=checked]:bg-[#E8A6B8] data-[state=checked]:border-[#E8A6B8] rounded cursor-pointer mt-1"
-                    />
-                  </div>
-
-                  <div className="bg-[#FAF6F1]/50 p-2.5 rounded-lg text-xs italic text-[#73706B] leading-relaxed">
-                    <span className="font-semibold not-italic text-[#33312E] mr-1">Example:</span>
-                    "{word.example_sentence}"
-                  </div>
-
-                  {/* Custom user sentence field */}
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-semibold text-[#73706B] tracking-wider uppercase block">
-                      Write your own sentence:
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Type a sentence using this word..."
-                      defaultValue={vocabSentences[word.word_index] || ''}
-                      onBlur={(e) => handleSaveVocabSentence(word.word_index, e.target.value)}
-                      className="w-full text-xs bg-white border border-[#E8E2D9] rounded-lg px-3 py-2 text-[#33312E] placeholder-[#73706B]/40 focus:outline-none focus:ring-1 focus:ring-[#E8A6B8] focus:border-[#E8A6B8]"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* 2. Grammar Section */}
-      <section id="grammar" className="space-y-4 scroll-mt-20">
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-xl font-bold text-[#33312E] flex items-center gap-2">
-            <PaperIcon icon={Layers} />
-            2. Grammar Lesson
-          </h2>
-          <Checkbox
-            checked={progress.grammar_done}
-            onCheckedChange={(checked) => handleToggleCheck('grammar_done', !!checked)}
-            className="w-5 h-5 border-[#E8E2D9] data-[state=checked]:bg-[#5B7F6B] data-[state=checked]:border-[#5B7F6B] rounded cursor-pointer"
-          />
-        </div>
-
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl overflow-hidden">
-          <CardHeader className="bg-[#FAF6F1]/30 pb-4">
-            <CardTitle className="font-heading text-lg font-bold text-[#33312E]">
-              {dayContent.grammar_topic}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="p-6 space-y-6">
-            <p className="text-sm text-[#73706B] leading-relaxed whitespace-pre-wrap">
-              {dayContent.grammar_explainer}
-            </p>
-
-            {/* Embedded YouTube video frame */}
-            {dayContent.grammar_youtube_id ? (
-              <div className="aspect-video w-full rounded-xl overflow-hidden border border-[#E8E2D9]">
-                <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${dayContent.grammar_youtube_id}`}
-                  title="YouTube grammar explainer video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-            ) : (
-              <div className="p-6 bg-[#FAF6F1]/30 rounded-xl text-center space-y-2 border border-[#E8E2D9]/40">
-                <p className="text-xs text-[#73706B]/70">No embedded video ID for this topic yet.</p>
-                <a
-                  href={`https://www.youtube.com/results?search_query=${encodeURIComponent(dayContent.grammar_topic + ' English lesson')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-[#E8A6B8] hover:underline"
-                >
-                  Search on YouTube <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
-            )}
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* 3. Song Section */}
-      <section id="song" className="space-y-4 scroll-mt-20">
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-xl font-bold text-[#33312E] flex items-center gap-2">
-            <PaperIcon icon={Music} />
-            3. Song of the Day
-          </h2>
-          <Checkbox
-            checked={progress.song_done}
-            onCheckedChange={(checked) => handleToggleCheck('song_done', !!checked)}
-            className="w-5 h-5 border-[#E8E2D9] data-[state=checked]:bg-[#5B7F6B] data-[state=checked]:border-[#5B7F6B] rounded cursor-pointer"
-          />
-        </div>
-
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl">
-          <CardContent className="p-6 space-y-6">
-            <div>
-              <h3 className="font-sans font-bold text-base text-[#33312E]">{dayContent.song_title}</h3>
-              <p className="text-xs text-[#73706B] font-medium">{dayContent.song_artist}</p>
+      {/* 1. VOCABULARY SECTION */}
+      <Card className={`rounded-2xl transition-all shadow-sm ${getSectionBorderClass('vocab_done', !collapsed.vocab)}`}>
+        <div className="flex items-center justify-between p-4 cursor-pointer select-none border-b border-border/40" onClick={() => toggleSection('vocab')}>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-xl ${progress.vocab_done ? 'bg-matcha/10 text-matcha' : 'bg-sakura/10 text-sakura'}`}>
+              <BookOpen className="w-4 h-4" />
             </div>
-
-            {/* Embedded Spotify player */}
-            {spotifyEmbedUrl ? (
-              <div className="w-full rounded-xl overflow-hidden bg-transparent border border-[#E8E2D9]">
-                <iframe
-                  style={{ borderRadius: '12px' }}
-                  src={spotifyEmbedUrl}
-                  width="100%"
-                  height="152"
-                  frameBorder="0"
-                  allowFullScreen
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                />
-              </div>
-            ) : (
-              <p className="text-xs text-red-500">Invalid Spotify URL.</p>
-            )}
-
-            {/* Song prompt input */}
-            <div className="space-y-2">
-              <label className="text-xs font-semibold text-[#73706B] tracking-wider uppercase block">
-                Write 2 new words or expressions you learned from this song:
-              </label>
-              <input
-                type="text"
-                placeholder="e.g. Delusional, Autumn leaves..."
-                value={songsNewWords}
-                onChange={(e) => setSongsNewWords(e.target.value)}
-                onBlur={() => handleSaveTextField('songs_new_words', songsNewWords)}
-                className="w-full text-sm bg-white border border-[#E8E2D9] rounded-xl px-4 py-2.5 text-[#33312E] placeholder-[#73706B]/40 focus:outline-none focus:ring-1 focus:ring-[#E8A6B8] focus:border-[#E8A6B8]"
-              />
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* 4. Listening Section */}
-      <section id="listening" className="space-y-4 scroll-mt-20">
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-xl font-bold text-[#33312E] flex items-center gap-2">
-            <PaperIcon icon={Video} />
-            4. Listening Practice
-          </h2>
-          <Checkbox
-            checked={progress.listening_done}
-            onCheckedChange={(checked) => handleToggleCheck('listening_done', !!checked)}
-            className="w-5 h-5 border-[#E8E2D9] data-[state=checked]:bg-[#5B7F6B] data-[state=checked]:border-[#5B7F6B] rounded cursor-pointer"
-          />
-        </div>
-
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl">
-          <CardContent className="p-6 space-y-6">
-            <div className="flex items-center justify-between gap-2 flex-wrap">
-              <div>
-                <h3 className="font-sans font-bold text-base text-[#33312E]">{dayContent.listening_label}</h3>
-                <span className="text-[10px] text-[#73706B] uppercase font-bold tracking-wider">
-                  Mode: {dayContent.listening_mode?.replace('_', ' ')}
-                </span>
-              </div>
-              <Badge className="bg-[#FAF1F3] hover:bg-[#FAF1F3] text-[#E8A6B8] border-none font-semibold">
-                Type: {dayContent.listening_type.toUpperCase()}
-              </Badge>
-            </div>
-
-            {/* Embedded Listening Video */}
-            {dayContent.listening_youtube_id ? (
-              <div className="aspect-video w-full rounded-xl overflow-hidden border border-[#E8E2D9]">
-                <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${dayContent.listening_youtube_id}`}
-                  title="Listening video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-            ) : (
-              <div className="p-6 bg-[#FAF6F1]/30 rounded-xl text-center space-y-3 border border-[#E8E2D9]/40">
-                <p className="text-xs text-[#73706B]/70">No embedded video ID. Please check the official channel.</p>
-                {dayContent.listening_type === 'anime' ? (
-                  <a
-                    href="https://www.youtube.com/@MuseAsia"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-[#E8A6B8] hover:underline font-semibold"
-                  >
-                    Go to Muse Asia Channel <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                ) : (
-                  <a
-                    href="https://www.youtube.com/@CaseOh_Games"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-[#E8A6B8] hover:underline font-semibold"
-                  >
-                    Go to CaseOh Games Channel <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                )}
-              </div>
-            )}
-
-            {/* Listening prompt input based on type */}
-            <div className="space-y-2">
-              <label className="text-xs font-semibold text-[#73706B] tracking-wider uppercase block">
-                {dayContent.listening_type === 'caseoh' 
-                  ? 'Write 5 words or expressions you heard CaseOh say:' 
-                  : 'Write a short summary of what happened in this scene:'}
-              </label>
-              <textarea
-                rows={3}
-                placeholder={dayContent.listening_type === 'caseoh' 
-                  ? 'e.g. bro is massive, built like a, what do you mean...' 
-                  : 'Summarize the scene...'}
-                value={caseohExpressions}
-                onChange={(e) => setCaseohExpressions(e.target.value)}
-                onBlur={() => handleSaveTextField('caseoh_expressions', caseohExpressions)}
-                className="w-full text-sm bg-white border border-[#E8E2D9] rounded-xl px-4 py-2.5 text-[#33312E] placeholder-[#73706B]/40 focus:outline-none focus:ring-1 focus:ring-[#E8A6B8] focus:border-[#E8A6B8]"
-              />
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* 5. Writing Section */}
-      <section id="writing" className="space-y-4 scroll-mt-20">
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-xl font-bold text-[#33312E] flex items-center gap-2">
-            <PaperIcon icon={FileText} />
-            5. Writing Prompt (Diary Entry)
-          </h2>
-          <Checkbox
-            checked={progress.writing_done}
-            onCheckedChange={(checked) => handleToggleCheck('writing_done', !!checked)}
-            className="w-5 h-5 border-[#E8E2D9] data-[state=checked]:bg-[#5B7F6B] data-[state=checked]:border-[#5B7F6B] rounded cursor-pointer"
-          />
-        </div>
-
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl">
-          <CardHeader className="bg-[#FAF6F1]/30 pb-4">
-            <CardDescription className="text-xs font-semibold text-[#73706B] uppercase tracking-wider">
-              Today's Writing Prompt
-            </CardDescription>
-            <CardTitle className="font-heading text-base font-bold text-[#33312E] mt-1 leading-relaxed">
-              {dayContent.writing_prompt}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="p-6 space-y-4">
-            <Textarea
-              rows={8}
-              placeholder="Write your diary entry here. It will automatically save when you tap away (autosave on blur)..."
-              value={diaryText}
-              onChange={(e) => setDiaryText(e.target.value)}
-              onBlur={() => handleSaveTextField('diary_text', diaryText)}
-              className="w-full text-sm bg-white border border-[#E8E2D9] rounded-xl px-4 py-3 text-[#33312E] placeholder-[#73706B]/40 focus:outline-none focus:ring-1 focus:ring-[#E8A6B8] focus:border-[#E8A6B8]"
+            <span className="font-display font-bold text-base text-ink">
+              1. Vocabulary Swipe Cards
+            </span>
+          </div>
+          <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
+            <Checkbox
+              checked={progress.vocab_done}
+              onCheckedChange={(checked) => handleToggleCheck('vocab_done', !!checked)}
+              className="w-5 h-5 border-border data-[state=checked]:bg-matcha data-[state=checked]:border-matcha rounded-lg cursor-pointer"
             />
-            
-            <div className="flex justify-between items-center text-xs text-[#73706B]">
-              <span>Word Count: <strong className="text-[#33312E]">{wordCount}</strong> words</span>
-              <span className="italic text-[#73706B]/50">Autosaves on blur</span>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* 6. Speaking Section */}
-      <section id="speaking" className="space-y-4 scroll-mt-20">
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-xl font-bold text-[#33312E] flex items-center gap-2">
-            <PaperIcon icon={Mic} />
-            6. Speaking Practice
-          </h2>
-          <Checkbox
-            checked={progress.speaking_done}
-            onCheckedChange={(checked) => handleToggleCheck('speaking_done', !!checked)}
-            className="w-5 h-5 border-[#E8E2D9] data-[state=checked]:bg-[#5B7F6B] data-[state=checked]:border-[#5B7F6B] rounded cursor-pointer"
-          />
+            <button className="text-ink-muted/60 p-1 hover:text-ink cursor-pointer" onClick={() => toggleSection('vocab')}>
+              {collapsed.vocab ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </button>
+          </div>
         </div>
 
-        <Card className="border border-[#E8E2D9] bg-white rounded-xl">
-          <CardContent className="p-6 space-y-5">
-            <div className="space-y-2">
-              <span className="text-[10px] font-bold text-[#E8A6B8] uppercase tracking-wider block">
-                Speaking Prompt
-              </span>
-              <p className="font-heading text-base font-bold text-[#33312E] leading-relaxed">
-                {dayContent.speaking_prompt}
-              </p>
-            </div>
+        <AnimatePresence>
+          {!collapsed.vocab && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <CardContent className="p-5">
+                <Flashcards
+                  words={vocabWords}
+                  learnedIndices={learnedIndices}
+                  onWordMastered={handleWordMastered}
+                  onAllCompleted={() => handleToggleCheck('vocab_done', true)}
+                />
+              </CardContent>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Card>
 
-            <div className="bg-[#FAF6F1]/60 p-4 rounded-xl space-y-2 border border-[#E8E2D9]/40 text-sm text-[#73706B] leading-relaxed">
-              <p className="font-semibold text-[#33312E]">Submission Instructions:</p>
-              <p>1. Record yourself speaking for 2-5 minutes on your phone's voice recorder.</p>
-              <p>2. Send the audio file or link directly to Vaibhav on your preferred messenger.</p>
-              <p>3. Check the box above once you have submitted your voice recording.</p>
+      {/* 2. GRAMMAR LESSON SECTION */}
+      <Card className={`rounded-2xl transition-all shadow-sm ${getSectionBorderClass('grammar_done', !collapsed.grammar)}`}>
+        <div className="flex items-center justify-between p-4 cursor-pointer select-none border-b border-border/40" onClick={() => toggleSection('grammar')}>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-xl ${progress.grammar_done ? 'bg-matcha/10 text-matcha' : 'bg-sakura/10 text-sakura'}`}>
+              <Layers className="w-4 h-4" />
             </div>
-          </CardContent>
-        </Card>
-      </section>
+            <span className="font-display font-bold text-base text-ink">
+              2. Grammar Video Explainer
+            </span>
+          </div>
+          <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
+            <Checkbox
+              checked={progress.grammar_done}
+              onCheckedChange={(checked) => handleToggleCheck('grammar_done', !!checked)}
+              className="w-5 h-5 border-border data-[state=checked]:bg-matcha data-[state=checked]:border-matcha rounded-lg cursor-pointer"
+            />
+            <button className="text-ink-muted/60 p-1 hover:text-ink cursor-pointer" onClick={() => toggleSection('grammar')}>
+              {collapsed.grammar ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </button>
+          </div>
+        </div>
 
-      {/* Celebratory bottom state */}
+        <AnimatePresence>
+          {!collapsed.grammar && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <CardContent className="p-5 space-y-4">
+                {dayContent.grammar_youtube_id ? (
+                  <YouTubeEmbed youtubeId={dayContent.grammar_youtube_id} title={dayContent.grammar_topic} />
+                ) : (
+                  <div className="bg-bg/50 border border-dashed border-border rounded-xl aspect-video flex items-center justify-center text-xs text-ink-muted select-none">
+                    No grammar tutorial video attached. Read the sheet explainer below.
+                  </div>
+                )}
+
+                <div className="bg-bg/40 border border-border rounded-xl p-4">
+                  <span className="text-[10px] font-bold text-ink-muted uppercase block tracking-wider mb-2">Lesson Sheet</span>
+                  <p className="text-sm text-ink leading-relaxed whitespace-pre-wrap">
+                    {dayContent.grammar_explainer}
+                  </p>
+                </div>
+
+                {/* Collapsible Grammar Quick Quiz */}
+                <div className="border border-border/80 rounded-xl overflow-hidden bg-bg/25">
+                  <div className="p-3 bg-bg/50 border-b border-border/60 flex items-center justify-between text-xs font-bold text-ink uppercase tracking-wider">
+                    <span>Quick Grammar Quiz</span>
+                    {quizSubmitted && <span className="text-sakura-deep">Score: {quizScore}/3</span>}
+                  </div>
+
+                  <div className="p-4 space-y-4">
+                    {quizQuestions.map((q, i) => (
+                      <div key={i} className="space-y-2">
+                        <p className="text-xs font-semibold text-ink-muted">Q{i+1}: {q.question}</p>
+                        <div className="grid grid-cols-2 gap-2">
+                          {q.options.map((opt) => (
+                            <button
+                              key={opt}
+                              onClick={() => !quizSubmitted && setQuizAnswers(prev => ({ ...prev, [i]: opt }))}
+                              disabled={quizSubmitted}
+                              className={`py-1.5 px-3 rounded-lg text-xs font-semibold border text-left transition-all cursor-pointer
+                                ${quizAnswers[i] === opt 
+                                  ? quizSubmitted 
+                                    ? opt === q.answer ? 'bg-matcha/10 border-matcha text-matcha' : 'bg-red-500/10 border-red-500 text-red-500'
+                                    : 'bg-sakura/10 border-sakura text-sakura-deep'
+                                  : 'bg-card border-border hover:bg-bg'
+                                }`}
+                            >
+                              {opt} {quizSubmitted && opt === q.answer && <Check className="w-3.5 h-3.5 inline ml-1.5" />}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+
+                    {!quizSubmitted ? (
+                      <Button
+                        size="sm"
+                        onClick={handleSubmitQuiz}
+                        disabled={Object.keys(quizAnswers).length < 3}
+                        className="bg-sakura hover:bg-sakura-deep/90 text-white dark:text-bg rounded-xl font-bold text-xs"
+                      >
+                        Submit Answers
+                      </Button>
+                    ) : (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => {
+                          setQuizAnswers({});
+                          setQuizSubmitted(false);
+                        }}
+                        className="border-border text-ink-muted hover:bg-bg rounded-xl font-bold text-xs"
+                      >
+                        <RefreshCw className="w-3 h-3 mr-1" /> Retry
+                      </Button>
+                    )}
+                  </div>
+                </div>
+              </CardContent>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Card>
+
+      {/* 3. SONG OF THE DAY SECTION */}
+      <Card className={`rounded-2xl transition-all shadow-sm ${getSectionBorderClass('song_done', !collapsed.song)}`}>
+        <div className="flex items-center justify-between p-4 cursor-pointer select-none border-b border-border/40" onClick={() => toggleSection('song')}>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-xl ${progress.song_done ? 'bg-matcha/10 text-matcha' : 'bg-sakura/10 text-sakura'}`}>
+              <Music className="w-4 h-4" />
+            </div>
+            <span className="font-display font-bold text-base text-ink">
+              3. Song: {dayContent.song_title}
+            </span>
+          </div>
+          <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
+            <Checkbox
+              checked={progress.song_done}
+              onCheckedChange={(checked) => handleToggleCheck('song_done', !!checked)}
+              className="w-5 h-5 border-border data-[state=checked]:bg-matcha data-[state=checked]:border-matcha rounded-lg cursor-pointer"
+            />
+            <button className="text-ink-muted/60 p-1 hover:text-ink cursor-pointer" onClick={() => toggleSection('song')}>
+              {collapsed.song ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </button>
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {!collapsed.song && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <CardContent className="p-5 space-y-4">
+                {spotifyEmbedUrl ? (
+                  <iframe
+                    src={spotifyEmbedUrl}
+                    width="100%"
+                    height="80"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    className="border-none rounded-xl bg-bg/50 shadow-sm"
+                  />
+                ) : (
+                  <div className="text-xs text-ink-muted italic">Spotify player failed to configure.</div>
+                )}
+
+                {/* Words I Found Input */}
+                <div className="space-y-1.5 pt-2">
+                  <div className="flex justify-between items-center">
+                    <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
+                      New Words I Heard (Slang & Idioms):
+                    </label>
+                    <span className="text-[10px] text-ink-muted">
+                      {saveStatus.song === 'saving' && 'Saving...'}
+                      {saveStatus.song === 'saved' && 'Saved ✓'}
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    value={songsNewWords}
+                    onChange={(e) => setSongsNewWords(e.target.value)}
+                    onBlur={() => handleSaveTextField('songs_new_words', songsNewWords, 'song')}
+                    placeholder="e.g. gonna, break a leg, throw shade..."
+                    className="w-full h-10 px-3 border border-border bg-bg/20 hover:border-sakura focus:border-sakura focus:ring-2 focus:ring-sakura/20 rounded-xl text-sm font-medium transition-all"
+                  />
+                </div>
+              </CardContent>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Card>
+
+      {/* 4. LISTENING SECTION */}
+      <Card className={`rounded-2xl transition-all shadow-sm ${getSectionBorderClass('listening_done', !collapsed.listening)}`}>
+        <div className="flex items-center justify-between p-4 cursor-pointer select-none border-b border-border/40" onClick={() => toggleSection('listening')}>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-xl ${progress.listening_done ? 'bg-matcha/10 text-matcha' : 'bg-sakura/10 text-sakura'}`}>
+              <Video className="w-4 h-4" />
+            </div>
+            <span className="font-display font-bold text-base text-ink">
+              4. Listening: {dayContent.listening_label}
+            </span>
+          </div>
+          <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
+            <Checkbox
+              checked={progress.listening_done}
+              onCheckedChange={(checked) => handleToggleCheck('listening_done', !!checked)}
+              className="w-5 h-5 border-border data-[state=checked]:bg-matcha data-[state=checked]:border-matcha rounded-lg cursor-pointer"
+            />
+            <button className="text-ink-muted/60 p-1 hover:text-ink cursor-pointer" onClick={() => toggleSection('listening')}>
+              {collapsed.listening ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </button>
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {!collapsed.listening && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <CardContent className="p-5 space-y-4">
+                {/* Mode Indicator Badge */}
+                <div className="flex justify-between items-center text-xs">
+                  <span className="font-bold text-ink-muted">Listening Target Mode:</span>
+                  {dayContent.listening_mode === 'subs_on' && (
+                    <span className="px-2.5 py-0.5 rounded-full bg-matcha/15 text-matcha font-bold text-[10px]">🟢 Subtitles On</span>
+                  )}
+                  {dayContent.listening_mode === 'subs_optional' && (
+                    <span className="px-2.5 py-0.5 rounded-full bg-gold/15 text-gold font-bold text-[10px]">🟡 Subtitles Optional</span>
+                  )}
+                  {(dayContent.listening_mode === 'no_subs' || dayContent.listening_mode === 'dub_only') && (
+                    <span className="px-2.5 py-0.5 rounded-full bg-sakura/15 text-sakura-deep font-bold text-[10px]">🔴 No Subtitles</span>
+                  )}
+                </div>
+
+                {dayContent.listening_youtube_id ? (
+                  <YouTubeEmbed youtubeId={dayContent.listening_youtube_id} title={dayContent.listening_label} />
+                ) : (
+                  <div className="bg-bg/50 border border-dashed border-border rounded-xl aspect-video flex flex-col items-center justify-center text-center p-6 text-xs text-ink-muted select-none">
+                    <p className="font-semibold">Anime Listening Day</p>
+                    <p className="mt-1">Go to Crunchyroll or Netflix and watch an episode in English dub!</p>
+                  </div>
+                )}
+
+                {/* Expressions Area */}
+                <div className="space-y-1.5 pt-2">
+                  <div className="flex justify-between items-center">
+                    <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
+                      What happened in this video? Write 3-5 sentences:
+                    </label>
+                    <span className="text-[10px] text-ink-muted">
+                      {saveStatus.listening === 'saving' && 'Saving...'}
+                      {saveStatus.listening === 'saved' && 'Saved ✓'}
+                    </span>
+                  </div>
+                  <Textarea
+                    value={caseohExpressions}
+                    onChange={(e) => setCaseohExpressions(e.target.value)}
+                    onBlur={() => handleSaveTextField('caseoh_expressions', caseohExpressions, 'listening')}
+                    placeholder="Describe the story briefly. Focus on expressions they used..."
+                    className="w-full border-border bg-bg/20 hover:border-sakura focus:border-sakura focus:ring-2 focus:ring-sakura/20 rounded-xl text-sm font-medium transition-all min-h-[90px]"
+                  />
+                </div>
+              </CardContent>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Card>
+
+      {/* 5. WRITING DIARY SECTION */}
+      <Card className={`rounded-2xl transition-all shadow-sm ${getSectionBorderClass('writing_done', !collapsed.writing)}`}>
+        <div className="flex items-center justify-between p-4 cursor-pointer select-none border-b border-border/40" onClick={() => toggleSection('writing')}>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-xl ${progress.writing_done ? 'bg-matcha/10 text-matcha' : 'bg-sakura/10 text-sakura'}`}>
+              <FileText className="w-4 h-4" />
+            </div>
+            <span className="font-display font-bold text-base text-ink">
+              5. Daily English Diary
+            </span>
+          </div>
+          <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
+            <Checkbox
+              checked={progress.writing_done}
+              onCheckedChange={(checked) => handleToggleCheck('writing_done', !!checked)}
+              className="w-5 h-5 border-border data-[state=checked]:bg-matcha data-[state=checked]:border-matcha rounded-lg cursor-pointer"
+            />
+            <button className="text-ink-muted/60 p-1 hover:text-ink cursor-pointer" onClick={() => toggleSection('writing')}>
+              {collapsed.writing ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </button>
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {!collapsed.writing && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <CardContent className="p-5 space-y-4">
+                <div className="bg-bg/40 border border-border rounded-xl p-4 border-l-2 border-l-gold">
+                  <span className="text-[10px] font-bold text-gold tracking-wider uppercase block mb-1">Diary Prompt</span>
+                  <p className="text-sm font-semibold text-ink leading-relaxed">
+                    {dayContent.writing_prompt}
+                  </p>
+                </div>
+
+                <div className="space-y-1.5 pt-2">
+                  <div className="flex justify-between items-center">
+                    <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
+                      Write your diary entry (Target: 150+ words):
+                    </label>
+                    <span className="text-[10px] text-ink-muted">
+                      {saveStatus.diary === 'saving' && 'Saving...'}
+                      {saveStatus.diary === 'saved' && 'Saved ✓'}
+                    </span>
+                  </div>
+
+                  <Textarea
+                    value={diaryText}
+                    onChange={(e) => setDiaryText(e.target.value)}
+                    onBlur={() => handleSaveTextField('diary_text', diaryText, 'diary')}
+                    placeholder="Write freely in English about your day, reflecting on the prompt..."
+                    className="w-full border-border bg-bg/20 hover:border-sakura focus:border-sakura focus:ring-2 focus:ring-sakura/20 rounded-xl text-sm font-medium transition-all min-h-[160px]"
+                  />
+
+                  {/* Circular word count progress ring */}
+                  <div className="flex items-center gap-3 pt-3">
+                    <svg className="w-10 h-10 transform -rotate-90 select-none">
+                      <circle cx="20" cy="20" r="16" className="stroke-border fill-none" strokeWidth="3.5" />
+                      <circle
+                        cx="20"
+                        cy="20"
+                        r="16"
+                        className="stroke-sakura fill-none transition-all duration-300"
+                        strokeWidth="3.5"
+                        strokeDasharray={circleCircumference}
+                        strokeDashoffset={circleCircumference - (circleCircumference * wordPercentage) / 100}
+                      />
+                    </svg>
+                    <div className="text-xs font-semibold">
+                      <span className="text-ink font-bold">{wordCount}</span>
+                      <span className="text-ink-muted"> / {targetWords}+ words written</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Card>
+
+      {/* 6. SPEAKING SECTION */}
+      <Card className={`rounded-2xl transition-all shadow-sm ${getSectionBorderClass('speaking_done', !collapsed.speaking)}`}>
+        <div className="flex items-center justify-between p-4 cursor-pointer select-none border-b border-border/40" onClick={() => toggleSection('speaking')}>
+          <div className="flex items-center gap-3">
+            <div className={`p-2 rounded-xl ${progress.speaking_done ? 'bg-matcha/10 text-matcha' : 'bg-sakura/10 text-sakura'}`}>
+              <Mic className="w-4 h-4" />
+            </div>
+            <span className="font-display font-bold text-base text-ink">
+              6. Speaking Practice
+            </span>
+          </div>
+          <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
+            <Checkbox
+              checked={progress.speaking_done}
+              onCheckedChange={(checked) => handleToggleCheck('speaking_done', !!checked)}
+              className="w-5 h-5 border-border data-[state=checked]:bg-matcha data-[state=checked]:border-matcha rounded-lg cursor-pointer"
+            />
+            <button className="text-ink-muted/60 p-1 hover:text-ink cursor-pointer" onClick={() => toggleSection('speaking')}>
+              {collapsed.speaking ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </button>
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {!collapsed.speaking && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <CardContent className="p-5 space-y-4">
+                <div className="bg-bg/40 border border-border rounded-xl p-4 border-l-2 border-l-gold">
+                  <span className="text-[10px] font-bold text-gold tracking-wider uppercase block mb-1">Speaking prompt</span>
+                  <p className="text-sm font-semibold text-ink leading-relaxed">
+                    {dayContent.speaking_prompt}
+                  </p>
+                </div>
+                <p className="text-xs text-ink-muted leading-relaxed">
+                  Record yourself reading your diary aloud or speaking about the prompt on your phone's voice memos. Once practiced, check off the task above!
+                </p>
+              </CardContent>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Card>
+
+      {/* MISSION COMPLETED CELEBRATORY CARD */}
       {allTasksDone && (
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          className="flex flex-col items-center justify-center p-8 bg-[#5B7F6B]/5 border border-[#5B7F6B]/20 rounded-2xl text-center space-y-4"
-        >
-          <div className="w-14 h-14 bg-[#5B7F6B]/10 rounded-full flex items-center justify-center text-[#5B7F6B]">
-            <CheckCircle2 className="w-8 h-8" />
+        <Card className="border border-matcha/40 bg-matcha/5 rounded-2xl p-6 text-center space-y-4 shadow-md">
+          <div className="w-14 h-14 bg-matcha/10 text-matcha rounded-full flex items-center justify-center mx-auto shadow-inner animate-bounce">
+            <Sparkles className="w-7 h-7" />
           </div>
-          <div>
-            <h3 className="font-heading text-xl font-bold text-[#5B7F6B]">Day {dayNum} Mission Complete!</h3>
-            <p className="text-sm text-[#73706B] mt-1">Excellent work. Your entries have been sent for review. Tomorrow awaits!</p>
+          <div className="space-y-1">
+            <h2 className="font-display font-extrabold text-2xl text-ink">
+              🌸 Mission Complete! 🌸
+            </h2>
+            <p className="text-sm text-ink-muted max-w-sm mx-auto">
+              Day {dayNum} / 90 — Beautiful work today. You kept your streak alive!
+            </p>
           </div>
-          <Link href="/home">
-            <Button className="bg-[#5B7F6B] hover:bg-[#4E6D5B] text-white rounded-xl flex items-center gap-1.5 cursor-pointer">
-              <Sparkles className="w-4 h-4" /> Return Home
-            </Button>
-          </Link>
-        </motion.div>
-      )}
-    </div>
-  );
-}
 
-// Small helper component for styled section icons
-function PaperIcon({ icon: Icon }: { icon: any }) {
-  return (
-    <div className="p-1.5 bg-[#E8A6B8]/10 text-[#E8A6B8] rounded-lg">
-      <Icon className="w-4 h-4" />
+          <div className="pt-2 flex justify-center gap-3">
+            <Link href="/home">
+              <Button variant="outline" className="border-border text-ink-muted hover:bg-bg rounded-xl font-bold cursor-pointer">
+                Back to Dashboard
+              </Button>
+            </Link>
+            {dayNum < 90 && (
+              <Link href={`/day/${dayNum + 1}`}>
+                <Button className="bg-sakura hover:bg-sakura-deep/90 text-white dark:text-bg rounded-xl font-bold cursor-pointer">
+                  See Day {dayNum + 1} Preview →
+                </Button>
+              </Link>
+            )}
+          </div>
+        </Card>
+      )}
     </div>
   );
 }

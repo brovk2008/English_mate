@@ -1,9 +1,10 @@
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
-import { Home, Calendar, BookOpen, Layers, BarChart2, AlertCircle, LogOut } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+import ThemeToggle from '@/components/ThemeToggle';
+import BottomNav from '@/components/BottomNav';
 
 export const dynamic = 'force-dynamic';
 
@@ -44,7 +45,6 @@ export default async function StudentLayout({
   const currentDay = Math.max(1, Math.min(90, diffDays + 1));
 
   // Determine streak (read from count of user_day_progress where vocab/grammar/etc are completed)
-  // For a simple premium feel, we query completed days
   const { count: completedDaysCount } = await supabase
     .from('user_day_progress')
     .select('id', { count: 'exact', head: true })
@@ -58,33 +58,96 @@ export default async function StudentLayout({
 
   const completedCount = completedDaysCount || 0;
 
-  // Let's calculate a simple streak by checking consecutive active days
-  // For now, we will display a solid active streak based on consecutive completed days or a minimum of 1
-  const streak = completedCount > 0 ? completedCount : 0;
+  // Determine streak and freezes from streak_data safely
+  let streak = completedCount;
+  let freezes = 1;
+  try {
+    const { data: streakData } = await supabase
+      .from('streak_data')
+      .select('*')
+      .eq('user_id', user.id)
+      .maybeSingle();
+
+    if (streakData) {
+      streak = streakData.current_streak;
+      freezes = streakData.freezes_available;
+    } else {
+      // Create a default streak row for this user
+      const { data: newStreak } = await supabase
+        .from('streak_data')
+        .insert({
+          user_id: user.id,
+          current_streak: completedCount,
+          longest_streak: completedCount,
+          freezes_available: 1,
+        })
+        .select()
+        .single();
+      if (newStreak) {
+        streak = newStreak.current_streak;
+        freezes = newStreak.freezes_available;
+      }
+    }
+  } catch (err) {
+    // Graceful fallback if migrations haven't run yet
+    streak = completedCount;
+    freezes = 1;
+  }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAF6F1]">
+    <div className="flex flex-col min-h-screen bg-bg text-ink">
       {/* Top Header */}
-      <header className="sticky top-0 z-40 bg-[#FAF6F1]/95 backdrop-blur-md border-b border-[#E8E2D9] py-3 px-4 sm:px-6">
+      <header className="sticky top-0 z-40 bg-bg/95 backdrop-blur-md border-b border-border py-3 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="font-heading text-xl sm:text-2xl font-bold tracking-wide text-[#33312E]">
+          <div className="flex items-center gap-6">
+            <span className="font-display text-xl sm:text-2xl font-bold tracking-wide text-ink select-none">
               桜 Journey
             </span>
+
+            {/* Desktop Navigation Links */}
+            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-ink-muted">
+              <Link href="/home" className="hover:text-sakura transition-colors">
+                Home
+              </Link>
+              <Link href={`/day/${currentDay}`} className="hover:text-sakura transition-colors">
+                Today
+              </Link>
+              <Link href="/vocabulary" className="hover:text-sakura transition-colors">
+                Vocab
+              </Link>
+              <Link href="/grammar" className="hover:text-sakura transition-colors">
+                Grammar
+              </Link>
+              <Link href="/progress" className="hover:text-sakura transition-colors">
+                Stats
+              </Link>
+              <Link href="/mistakes" className="hover:text-sakura transition-colors text-amber-700/80 dark:text-amber-500/80">
+                Mistakes
+              </Link>
+            </nav>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             {/* Streak flame indicator */}
-            <div className="flex items-center gap-1.5 bg-[#E8A6B8]/10 text-[#E8A6B8] px-3 py-1 rounded-full text-sm font-semibold">
-              <span className="text-base">🔥</span>
+            <div className="flex items-center gap-1.5 bg-sakura/10 text-sakura-deep px-3 py-1 rounded-full text-xs font-semibold select-none">
+              <span className="text-sm">🔥</span>
               <span>{streak} Days</span>
             </div>
 
+            {/* Streak freeze indicator */}
+            <div className="flex items-center gap-1.5 bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold select-none" title="Streak Freezes protect your streak if you miss a day">
+              <span className="text-sm">🛡️</span>
+              <span>{freezes} Freezes</span>
+            </div>
+
+            {/* Theme Toggle */}
+            <ThemeToggle />
+
             {/* Profile Avatar / Teacher check */}
             <div className="flex items-center gap-2">
-              <Avatar className="w-8 h-8 ring-2 ring-[#E8A6B8]/30">
+              <Avatar className="w-8 h-8 ring-2 ring-sakura/30">
                 <AvatarImage src={profile.avatar_url || ''} />
-                <AvatarFallback className="bg-[#FAF1F3] text-[#E8A6B8] font-bold text-xs">
+                <AvatarFallback className="bg-sakura/10 text-sakura font-bold text-xs">
                   {profile.display_name?.substring(0, 2).toUpperCase() || 'ST'}
                 </AvatarFallback>
               </Avatar>
@@ -106,43 +169,8 @@ export default async function StudentLayout({
         {children}
       </main>
 
-      {/* Sticky Bottom Navigation Bar */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-[#FAF6F1]/98 border-t border-[#E8E2D9] py-2 px-3 sm:py-3 shadow-lg">
-        <div className="max-w-md mx-auto flex justify-between items-center text-[#73706B]">
-          <Link href="/home" className="flex flex-col items-center gap-0.5 flex-1 py-1 hover:text-[#E8A6B8] transition-colors">
-            <Home className="w-5 h-5" />
-            <span className="text-[10px] font-medium tracking-wide">Home</span>
-          </Link>
-
-          <Link href={`/day/${currentDay}`} className="flex flex-col items-center gap-0.5 flex-1 py-1 hover:text-[#E8A6B8] transition-colors relative">
-            <Calendar className="w-5 h-5 text-[#E8A6B8]" />
-            <span className="text-[10px] font-medium tracking-wide text-[#E8A6B8] font-semibold">Today</span>
-            <span className="absolute -top-1 right-[25%] bg-[#E8A6B8] text-white text-[8px] px-1 rounded-full scale-90">
-              D{currentDay}
-            </span>
-          </Link>
-
-          <Link href="/vocabulary" className="flex flex-col items-center gap-0.5 flex-1 py-1 hover:text-[#E8A6B8] transition-colors">
-            <BookOpen className="w-5 h-5" />
-            <span className="text-[10px] font-medium tracking-wide">Vocab</span>
-          </Link>
-
-          <Link href="/grammar" className="flex flex-col items-center gap-0.5 flex-1 py-1 hover:text-[#E8A6B8] transition-colors">
-            <Layers className="w-5 h-5" />
-            <span className="text-[10px] font-medium tracking-wide">Grammar</span>
-          </Link>
-
-          <Link href="/progress" className="flex flex-col items-center gap-0.5 flex-1 py-1 hover:text-[#E8A6B8] transition-colors">
-            <BarChart2 className="w-5 h-5" />
-            <span className="text-[10px] font-medium tracking-wide">Stats</span>
-          </Link>
-
-          <Link href="/mistakes" className="flex flex-col items-center gap-0.5 flex-1 py-1 hover:text-[#E8A6B8] transition-colors text-amber-700/80">
-            <AlertCircle className="w-5 h-5" />
-            <span className="text-[10px] font-medium tracking-wide">Mistakes</span>
-          </Link>
-        </div>
-      </nav>
+      {/* Mobile Sticky Bottom Navigation */}
+      <BottomNav currentDay={currentDay} />
     </div>
   );
 }

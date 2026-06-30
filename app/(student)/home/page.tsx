@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import DashboardClient from './DashboardClient';
+import quotes from '@/data/quotes.json';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,7 +24,58 @@ export default async function DashboardPage() {
     redirect('/auth/callback');
   }
 
-  // 2. Compute current day
+  // 2. Streak Auto-decay / Freeze check
+  const todayStr = new Date().toISOString().split('T')[0];
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+  try {
+    const { data: streakData } = await supabase
+      .from('streak_data')
+      .select('*')
+      .eq('user_id', user.id)
+      .maybeSingle();
+
+    if (streakData) {
+      const lastCompleted = streakData.last_completed_date;
+      if (lastCompleted && lastCompleted !== todayStr && lastCompleted !== yesterdayStr) {
+        const lastCompletedDate = new Date(lastCompleted);
+        lastCompletedDate.setHours(0, 0, 0, 0);
+        const todayDate = new Date();
+        todayDate.setHours(0, 0, 0, 0);
+        const diffTime = todayDate.getTime() - lastCompletedDate.getTime();
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays > 1) {
+          let freezesAvailable = streakData.freezes_available;
+          let currentStreak = streakData.current_streak;
+          const daysMissed = diffDays - 1;
+          const freezesToConsume = Math.min(freezesAvailable, daysMissed);
+          
+          freezesAvailable -= freezesToConsume;
+          const remainingMissed = daysMissed - freezesToConsume;
+          
+          if (remainingMissed > 0) {
+            currentStreak = 0;
+          }
+
+          await supabase
+            .from('streak_data')
+            .update({
+              current_streak: currentStreak,
+              freezes_available: freezesAvailable,
+              last_completed_date: yesterdayStr
+            })
+            .eq('user_id', user.id);
+        }
+      }
+    }
+  } catch (err) {
+    console.error("Streak decay check failed:", err);
+  }
+
+  // 3. Compute current day
   const startDate = new Date(profile.start_date);
   const today = new Date();
   startDate.setHours(0, 0, 0, 0);
@@ -42,9 +94,9 @@ export default async function DashboardPage() {
   if (!dayContent) {
     // If database isn't seeded yet
     return (
-      <div className="flex flex-col items-center justify-center p-8 bg-white border border-[#E8E2D9] rounded-xl text-center">
-        <h2 className="text-xl font-heading font-semibold mb-2">Curriculum database is empty</h2>
-        <p className="text-sm text-gray-500 mb-4">Please seed the database before using the app.</p>
+      <div className="flex flex-col items-center justify-center p-8 bg-bg border border-border rounded-xl text-center">
+        <h2 className="text-xl font-display font-semibold mb-2">Curriculum database is empty</h2>
+        <p className="text-sm text-ink-muted mb-4">Please seed the database before using the app.</p>
       </div>
     );
   }
@@ -118,7 +170,47 @@ export default async function DashboardPage() {
     .eq('writing_done', true)
     .eq('speaking_done', true);
 
-  const percentComplete = Math.round(((completedDaysCount || 0) / 90) * 100);
+  const completedCount = completedDaysCount || 0;
+  const percentComplete = Math.round((completedCount / 90) * 100);
+
+  // Fetch streak & freezes safely with fallback check
+  let streak = completedCount;
+  let freezes = 1;
+  try {
+    const { data: streakData } = await supabase
+      .from('streak_data')
+      .select('*')
+      .eq('user_id', user.id)
+      .maybeSingle();
+
+    if (streakData) {
+      streak = streakData.current_streak;
+      freezes = streakData.freezes_available;
+    } else {
+      // Create lazy streak row
+      const { data: newStreak } = await supabase
+        .from('streak_data')
+        .insert({
+          user_id: user.id,
+          current_streak: completedCount,
+          longest_streak: completedCount,
+          freezes_available: 1,
+        })
+        .select()
+        .single();
+      if (newStreak) {
+        streak = newStreak.current_streak;
+        freezes = newStreak.freezes_available;
+      }
+    }
+  } catch (err) {
+    // Migration fallback
+    streak = completedCount;
+    freezes = 1;
+  }
+
+  // Get daily quote
+  const dailyQuote = quotes.find((q) => q.day === currentDayNum) || quotes[0];
 
   return (
     <DashboardClient
@@ -138,6 +230,9 @@ export default async function DashboardPage() {
       announcements={announcements || []}
       latestMistake={latestMistake}
       percentComplete={percentComplete}
+      streak={streak}
+      freezes={freezes}
+      dailyQuote={dailyQuote}
     />
   );
 }

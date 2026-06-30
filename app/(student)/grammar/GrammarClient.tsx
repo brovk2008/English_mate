@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Search, ChevronDown, ChevronUp, Layers, ExternalLink, HelpCircle } from 'lucide-react';
+import YouTubeEmbed from '@/components/YouTubeEmbed';
 
 interface DayGrammar {
   day_number: number;
@@ -22,45 +23,69 @@ interface GrammarClientProps {
 export default function GrammarClient({ daysList }: GrammarClientProps) {
   const [search, setSearch] = useState('');
   const [expandedDay, setExpandedDay] = useState<number | null>(null);
+  const [monthFilter, setMonthFilter] = useState<'all' | 1 | 2 | 3>('all');
 
   const toggleExpand = (dayNumber: number) => {
     setExpandedDay(expandedDay === dayNumber ? null : dayNumber);
   };
 
-  const filteredDays = daysList.filter(day => 
-    day.grammar_topic.toLowerCase().includes(search.toLowerCase()) ||
-    day.grammar_explainer.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredDays = daysList.filter(day => {
+    const matchesSearch = 
+      day.grammar_topic.toLowerCase().includes(search.toLowerCase()) ||
+      day.grammar_explainer.toLowerCase().includes(search.toLowerCase());
+
+    if (!matchesSearch) return false;
+
+    if (monthFilter !== 'all' && day.month !== monthFilter) return false;
+
+    return true;
+  });
 
   return (
     <div className="space-y-6">
       {/* Title section */}
-      <div>
-        <h1 className="font-heading text-3xl font-bold tracking-tight text-[#33312E] flex items-center gap-2">
-          <Layers className="w-7 h-7 text-[#E8A6B8]" />
-          Grammar Index
-        </h1>
-        <p className="text-sm text-[#73706B]">
-          Revisit all the grammar sheets and videos you have unlocked so far.
-        </p>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <h1 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-ink flex items-center gap-2 select-none">
+            <Layers className="w-8 h-8 text-sakura" />
+            Grammar Timelines
+          </h1>
+          <p className="text-sm text-ink-muted mt-0.5 font-medium">
+            Review and search the grammar sheets you have unlocked during your 90 days.
+          </p>
+        </div>
+
+        {/* Month selector tabs */}
+        <div className="flex bg-card border border-border p-1 rounded-xl shadow-sm self-start sm:self-center select-none">
+          {(['all', 1, 2, 3] as const).map((m) => (
+            <button
+              key={m}
+              onClick={() => setMonthFilter(m)}
+              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer
+                ${monthFilter === m ? 'bg-sakura text-white' : 'text-ink-muted hover:text-sakura'}`}
+            >
+              {m === 'all' ? 'All Months' : `Month ${m}`}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Search Input */}
       <div className="relative">
-        <Search className="absolute left-3 top-3.5 w-4 h-4 text-[#73706B]/50" />
+        <Search className="absolute left-3 top-3 w-4 h-4 text-ink-muted/50" />
         <input
           type="text"
           placeholder="Search grammar topics or explanation text..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full pl-9 pr-4 py-3 bg-white border border-[#E8E2D9] rounded-xl text-sm text-[#33312E] placeholder-[#73706B]/40 focus:outline-none focus:ring-1 focus:ring-[#E8A6B8] focus:border-[#E8A6B8] shadow-sm"
+          className="w-full pl-9 pr-4 py-2.5 bg-card border border-border rounded-xl text-sm text-ink placeholder-ink-muted/40 focus:outline-none focus:ring-2 focus:ring-sakura/20 focus:border-sakura shadow-sm transition-all"
         />
       </div>
 
       {/* Grammar sheets list */}
       <div className="space-y-3">
         {filteredDays.length === 0 ? (
-          <div className="text-center py-12 text-[#73706B]/50 italic bg-white border border-[#E8E2D9] rounded-xl">
+          <div className="text-center py-12 text-ink-muted/50 italic bg-card border border-border rounded-2xl select-none">
             No grammar topics found matching your query.
           </div>
         ) : (
@@ -70,60 +95,57 @@ export default function GrammarClient({ daysList }: GrammarClientProps) {
             return (
               <Card 
                 key={day.day_number} 
-                className={`border border-[#E8E2D9] bg-white rounded-xl transition-all shadow-[0_2px_8px_rgba(232,166,184,0.01)] overflow-hidden`}
+                className={`border bg-card rounded-2xl transition-all shadow-sm overflow-hidden
+                  ${isExpanded ? 'border-sakura/30 border-l-4 border-l-sakura' : 'border-border border-l-4 border-l-border/50'}`}
               >
                 <div 
                   onClick={() => toggleExpand(day.day_number)}
-                  className="p-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-[#FAF6F1]/30 transition-colors"
+                  className="p-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-bg/25 transition-colors select-none"
                 >
                   <div className="flex items-center gap-3 min-w-0">
-                    <Badge variant="outline" className="border-[#E8E2D9] bg-[#FAF6F1]/50 text-[#73706B] font-mono shrink-0">
+                    <Badge variant="outline" className="border-border bg-bg/50 text-ink-muted font-mono shrink-0 font-bold text-[10px]">
                       Day {day.day_number}
                     </Badge>
-                    <span className="font-bold text-[#33312E] truncate font-sans">
+                    <span className="font-bold text-ink truncate font-display text-base">
                       {day.grammar_topic}
                     </span>
                   </div>
 
                   <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-[10px] uppercase font-bold text-[#73706B]/40 tracking-wider">
-                      W{day.week}
+                    <span className="text-[10px] uppercase font-black text-ink-muted/55 tracking-wider">
+                      Week {day.week}
                     </span>
                     {isExpanded ? (
-                      <ChevronUp className="w-4 h-4 text-[#73706B]" />
+                      <ChevronUp className="w-4 h-4 text-ink-muted" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 text-[#73706B]" />
+                      <ChevronDown className="w-4 h-4 text-ink-muted" />
                     )}
                   </div>
                 </div>
 
                 {isExpanded && (
-                  <div className="border-t border-[#FAF6F1] bg-[#FAF6F1]/10 p-5 space-y-4">
-                    <p className="text-sm text-[#73706B] leading-relaxed whitespace-pre-wrap">
-                      {day.grammar_explainer}
-                    </p>
+                  <div className="border-t border-border bg-bg/20 p-5 space-y-4">
+                    <div className="bg-card border border-border rounded-xl p-4">
+                      <span className="text-[9px] font-bold text-ink-muted uppercase block tracking-wider mb-2">Grammar Explainer</span>
+                      <p className="text-sm text-ink leading-relaxed whitespace-pre-wrap font-medium">
+                        {day.grammar_explainer}
+                      </p>
+                    </div>
 
                     {day.grammar_youtube_id ? (
-                      <div className="aspect-video w-full max-w-2xl mx-auto rounded-xl overflow-hidden border border-[#E8E2D9] mt-3">
-                        <iframe
-                          className="w-full h-full"
-                          src={`https://www.youtube.com/embed/${day.grammar_youtube_id}`}
-                          title={`YouTube video for ${day.grammar_topic}`}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          loading="lazy"
-                        />
+                      <div className="max-w-2xl mx-auto pt-2">
+                        <YouTubeEmbed youtubeId={day.grammar_youtube_id} title={day.grammar_topic} />
                       </div>
                     ) : (
-                      <div className="text-center py-4 bg-[#FAF6F1]/40 border border-[#E8E2D9]/40 rounded-xl space-y-1">
-                        <p className="text-xs text-[#73706B]/60 flex items-center justify-center gap-1">
-                          <HelpCircle className="w-3.5 h-3.5" /> No lesson video ID currently set.
+                      <div className="text-center py-5 bg-card border border-border rounded-xl space-y-1 max-w-2xl mx-auto">
+                        <p className="text-xs text-ink-muted font-medium flex items-center justify-center gap-1">
+                          <HelpCircle className="w-3.5 h-3.5 text-sakura" /> No lesson video ID currently set.
                         </p>
                         <a
                           href={`https://www.youtube.com/results?search_query=${encodeURIComponent(day.grammar_topic + ' English lesson')}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-xs text-[#E8A6B8] hover:underline"
+                          className="inline-flex items-center gap-1 text-xs text-sakura hover:underline font-bold"
                         >
                           Search on YouTube <ExternalLink className="w-3 h-3" />
                         </a>

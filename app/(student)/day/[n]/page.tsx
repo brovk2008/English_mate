@@ -142,6 +142,10 @@ export default async function DayPage({ params }: PageProps) {
     .eq('user_id', user.id)
     .in('word_index', wordIndexes);
 
+  // Get daily quote
+  const quotes = require('@/data/quotes.json');
+  const dailyQuote = quotes.find((q: any) => q.day === dayNum) || quotes[0];
+
   return (
     <DayClient
       profile={profile}
@@ -161,6 +165,7 @@ export default async function DayPage({ params }: PageProps) {
         vocab_sentences: '{}'
       }}
       initialVocabProgress={vocabProgressList || []}
+      dailyQuote={dailyQuote}
     />
   );
 }

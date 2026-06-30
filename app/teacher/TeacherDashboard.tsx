@@ -20,6 +20,15 @@ interface Student {
   display_name: string;
   avatar_url: string | null;
   start_date: string;
+  streak_data?: {
+    current_streak: number;
+    longest_streak: number;
+    freezes_available: number;
+  } | {
+    current_streak: number;
+    longest_streak: number;
+    freezes_available: number;
+  }[];
 }
 
 interface PendingReview {
@@ -67,6 +76,7 @@ export default function TeacherDashboard({
   const [newAnnouncement, setNewAnnouncement] = useState('');
   const [announcementLoading, setAnnouncementLoading] = useState(false);
   const [currSearch, setCurrSearch] = useState('');
+  const [localStudents, setLocalStudents] = useState<Student[]>(students);
 
   // 1. Post announcement
   const handlePostAnnouncement = async () => {
@@ -111,6 +121,49 @@ export default function TeacherDashboard({
     }
   };
 
+  // 3. Award Streak Freeze
+  const handleAwardFreeze = async (studentId: string) => {
+    const supabase = createClient();
+    
+    // Fetch existing streak row
+    const { data: existing } = await supabase
+      .from('streak_data')
+      .select('*')
+      .eq('user_id', studentId)
+      .maybeSingle();
+      
+    let nextFreezes = 1;
+    if (existing) {
+      nextFreezes = existing.freezes_available + 1;
+    }
+    
+    const { data, error } = await supabase
+      .from('streak_data')
+      .upsert({
+        user_id: studentId,
+        freezes_available: nextFreezes,
+        current_streak: existing?.current_streak || 0,
+        longest_streak: existing?.longest_streak || 0,
+      }, { onConflict: 'user_id' })
+      .select()
+      .single();
+      
+    if (!error && data) {
+      // Update local state to instantly reflect new count
+      setLocalStudents(prev => prev.map(s => {
+        if (s.id === studentId) {
+          return {
+            ...s,
+            streak_data: data
+          };
+        }
+        return s;
+      }));
+    } else {
+      console.error("Failed to award freeze:", error?.message);
+    }
+  };
+
   // Helper to calculate current day number for a student
   const getStudentDay = (startDateStr: string) => {
     const startDate = new Date(startDateStr);
@@ -130,80 +183,80 @@ export default function TeacherDashboard({
   );
 
   return (
-    <div className="min-h-screen bg-[#FAF6F1] py-8 px-4 sm:px-6">
+    <div className="min-h-screen bg-bg text-ink py-8 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto space-y-6">
         
         {/* Header */}
         <div className="flex items-center justify-between">
-          <Link href="/home" className="flex items-center gap-1.5 text-sm text-[#73706B] hover:text-[#E8A6B8] transition-colors">
+          <Link href="/home" className="flex items-center gap-1.5 text-xs font-semibold text-ink-muted hover:text-sakura transition-colors">
             <ArrowLeft className="w-4 h-4" /> Student Portal
           </Link>
-          <Badge className="bg-[#5B7F6B] hover:bg-[#5B7F6B] text-white py-1 px-3">
+          <Badge className="bg-matcha hover:bg-matcha text-white py-1 px-3 border-none">
             Teacher Panel
           </Badge>
         </div>
 
         <div>
-          <h1 className="font-heading text-4xl font-bold tracking-tight text-[#33312E]">
+          <h1 className="font-display text-4xl font-bold tracking-tight text-ink">
             Teacher Dashboard
           </h1>
-          <p className="text-sm text-[#73706B]">
-            Manage announcements, customize curriculum, and review student progress.
+          <p className="text-sm text-ink-muted mt-0.5 font-medium">
+            Manage announcements, award streak protection freezes, and review writing diaries.
           </p>
         </div>
 
         {/* Tab Layout */}
         <Tabs defaultValue="submissions" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 bg-white border border-[#E8E2D9] rounded-xl p-1 h-11">
-            <TabsTrigger value="submissions" className="rounded-lg text-xs font-semibold cursor-pointer">
+          <TabsList className="grid w-full grid-cols-4 bg-card border border-border rounded-xl p-1 h-11">
+            <TabsTrigger value="submissions" className="rounded-lg text-xs font-bold cursor-pointer">
               Reviews ({pendingReviews.length})
             </TabsTrigger>
-            <TabsTrigger value="students" className="rounded-lg text-xs font-semibold cursor-pointer">
-              Students ({students.length})
+            <TabsTrigger value="students" className="rounded-lg text-xs font-bold cursor-pointer">
+              Students ({localStudents.length})
             </TabsTrigger>
-            <TabsTrigger value="announcements" className="rounded-lg text-xs font-semibold cursor-pointer">
+            <TabsTrigger value="announcements" className="rounded-lg text-xs font-bold cursor-pointer">
               Announce
             </TabsTrigger>
-            <TabsTrigger value="curriculum" className="rounded-lg text-xs font-semibold cursor-pointer">
+            <TabsTrigger value="curriculum" className="rounded-lg text-xs font-bold cursor-pointer">
               Curriculum
             </TabsTrigger>
           </TabsList>
 
           {/* 1. Submissions pending review */}
           <TabsContent value="submissions" className="mt-4">
-            <Card className="border border-[#E8E2D9] bg-white rounded-2xl overflow-hidden">
-              <CardHeader className="pb-3 border-b border-[#FAF6F1]">
-                <CardTitle className="font-heading text-lg font-bold text-[#33312E]">
+            <Card className="border border-border bg-card rounded-2xl overflow-hidden">
+              <CardHeader className="pb-3 border-b border-border/40">
+                <CardTitle className="font-display text-lg font-bold text-ink">
                   Pending Diary Submissions
                 </CardTitle>
-                <CardDescription className="text-xs text-[#73706B]">
+                <CardDescription className="text-xs text-ink-muted">
                   Diary submissions waiting for your feedback.
                 </CardDescription>
               </CardHeader>
               
-              <div className="divide-y divide-[#FAF6F1]/80">
+              <div className="divide-y divide-border/40">
                 {pendingReviews.length === 0 ? (
-                  <div className="text-center py-12 text-[#73706B]/50 italic">
+                  <div className="text-center py-12 text-ink-muted/50 italic">
                     No submissions pending review!
                   </div>
                 ) : (
                   pendingReviews.map((item) => (
-                    <div key={item.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-[#FAF6F1]/20 transition-colors">
+                    <div key={item.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-bg/20 transition-colors">
                       <div className="flex items-center gap-3">
-                        <Avatar className="w-9 h-9 ring-1 ring-[#E8A6B8]/30">
+                        <Avatar className="w-9 h-9 ring-1 ring-sakura/30">
                           <AvatarImage src={item.profiles?.avatar_url || ''} />
-                          <AvatarFallback className="bg-[#FAF1F3] text-[#E8A6B8] font-bold text-xs">
+                          <AvatarFallback className="bg-sakura/10 text-sakura font-bold text-xs">
                             {item.profiles?.display_name?.substring(0, 2).toUpperCase()}
                           </AvatarFallback>
                         </Avatar>
                         <div>
                           <div className="flex items-baseline gap-2 flex-wrap">
-                            <span className="font-bold text-sm text-[#33312E]">{item.profiles?.display_name}</span>
-                            <Badge variant="outline" className="border-[#E8E2D9] bg-[#FAF6F1]/50 text-[#73706B] font-mono text-[10px]">
+                            <span className="font-bold text-sm text-ink">{item.profiles?.display_name}</span>
+                            <Badge variant="outline" className="border-border bg-bg/50 text-ink-muted font-mono text-[10px]">
                               Day {item.day_number}
                             </Badge>
                           </div>
-                          <p className="text-xs text-[#73706B] mt-0.5">
+                          <p className="text-xs text-ink-muted mt-0.5">
                             Submitted on {new Date(item.updated_at).toLocaleString()} · {item.diary_word_count} words
                           </p>
                         </div>
@@ -212,8 +265,8 @@ export default function TeacherDashboard({
                       <div>
                         {/* Go to student review page */}
                         <Link href={`/teacher/student/${item.user_id}?day=${item.day_number}`}>
-                          <Button size="sm" className="bg-[#E8A6B8] hover:bg-[#E293A7] text-white rounded-lg flex items-center gap-1 cursor-pointer">
-                            Review Submission <ExternalLink className="w-3 h-3" />
+                          <Button size="sm" className="bg-sakura hover:bg-sakura-deep/90 text-white dark:text-bg rounded-xl font-bold flex items-center gap-1 cursor-pointer">
+                            Review Submission <ExternalLink className="w-3.5 h-3.5" />
                           </Button>
                         </Link>
                       </div>
@@ -226,50 +279,76 @@ export default function TeacherDashboard({
 
           {/* 2. Students overview */}
           <TabsContent value="students" className="mt-4">
-            <Card className="border border-[#E8E2D9] bg-white rounded-2xl overflow-hidden">
-              <CardHeader className="pb-3 border-b border-[#FAF6F1]">
-                <CardTitle className="font-heading text-lg font-bold text-[#33312E]">
+            <Card className="border border-border bg-card rounded-2xl overflow-hidden">
+              <CardHeader className="pb-3 border-b border-border/40">
+                <CardTitle className="font-display text-lg font-bold text-ink">
                   Registered Students
                 </CardTitle>
-                <CardDescription className="text-xs text-[#73706B]">
+                <CardDescription className="text-xs text-ink-muted">
                   List of student profiles connected to this platform.
                 </CardDescription>
               </CardHeader>
               
-              <div className="divide-y divide-[#FAF6F1]/80">
-                {students.length === 0 ? (
-                  <div className="text-center py-12 text-[#73706B]/50 italic">
+              <div className="divide-y divide-border/40">
+                {localStudents.length === 0 ? (
+                  <div className="text-center py-12 text-ink-muted/50 italic">
                     No students registered yet.
                   </div>
                 ) : (
-                  students.map((student) => {
+                  localStudents.map((student) => {
                     const currentDay = getStudentDay(student.start_date);
+                    
+                    const streakObj = Array.isArray(student.streak_data) 
+                      ? student.streak_data[0] 
+                      : student.streak_data;
+                      
+                    const streak = streakObj?.current_streak || 0;
+                    const freezes = streakObj?.freezes_available || 0;
+
                     return (
-                      <div key={student.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-[#FAF6F1]/20 transition-colors">
+                      <div key={student.id} className="p-4 sm:p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4 hover:bg-bg/20 transition-colors">
                         <div className="flex items-center gap-3">
-                          <Avatar className="w-10 h-10 ring-2 ring-[#E8A6B8]/30">
+                          <Avatar className="w-10 h-10 ring-2 ring-sakura/30">
                             <AvatarImage src={student.avatar_url || ''} />
-                            <AvatarFallback className="bg-[#FAF1F3] text-[#E8A6B8] font-bold text-xs">
+                            <AvatarFallback className="bg-sakura/10 text-sakura font-bold text-xs">
                               {student.display_name?.substring(0, 2).toUpperCase()}
                             </AvatarFallback>
                           </Avatar>
                           <div>
-                            <span className="font-bold text-sm text-[#33312E] block">{student.display_name}</span>
-                            <span className="text-xs text-[#73706B]">{student.email}</span>
+                            <span className="font-bold text-sm text-ink block">{student.display_name}</span>
+                            <span className="text-xs text-ink-muted">{student.email}</span>
                           </div>
                         </div>
 
-                        <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
-                          <div className="text-right">
-                            <span className="text-xs text-[#73706B] block">Current Day</span>
-                            <span className="font-heading font-bold text-base text-[#33312E]">Day {currentDay} / 90</span>
+                        <div className="flex flex-wrap items-center gap-4">
+                          {/* Streak indicators */}
+                          <div className="flex items-center gap-2 bg-bg/50 border border-border px-3 py-1.5 rounded-xl text-xs font-semibold select-none">
+                            <span className="text-sakura-deep">🔥 {streak} Days</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gold">🛡️ {freezes} Freezes</span>
                           </div>
 
-                          <Link href={`/teacher/student/${student.id}`}>
-                            <Button size="sm" variant="outline" className="border-[#E8E2D9] text-[#73706B] hover:bg-[#FAF6F1] cursor-pointer">
-                              View Submissions
+                          <div className="text-left md:text-right">
+                            <span className="text-[10px] font-bold text-ink-muted block uppercase tracking-wider">Current Progress</span>
+                            <span className="font-display font-bold text-sm text-ink">Day {currentDay} / 90</span>
+                          </div>
+
+                          <div className="flex items-center gap-2 w-full sm:w-auto mt-2 sm:mt-0">
+                            <Button 
+                              size="sm" 
+                              variant="outline" 
+                              onClick={() => handleAwardFreeze(student.id)}
+                              className="border-gold/30 hover:bg-gold/10 text-gold rounded-xl text-xs font-bold cursor-pointer flex-1 sm:flex-initial"
+                            >
+                              Award Freeze +1
                             </Button>
-                          </Link>
+                            
+                            <Link href={`/teacher/student/${student.id}`} className="flex-1 sm:flex-initial">
+                              <Button size="sm" variant="outline" className="w-full border-border text-ink-muted hover:bg-bg rounded-xl text-xs font-bold cursor-pointer">
+                                View Entries
+                              </Button>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     );
