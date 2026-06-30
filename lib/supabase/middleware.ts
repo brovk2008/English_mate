@@ -38,6 +38,11 @@ export async function updateSession(request: NextRequest) {
 
   // Handle route protection and email checks for the teacher role
   const url = request.nextUrl.clone();
+
+  // Bypass redirect checks for auth callbacks and API routes
+  if (url.pathname.startsWith('/auth') || url.pathname.startsWith('/api')) {
+    return supabaseResponse;
+  }
   
   if (url.pathname === '/') {
     // If logged in, redirect '/' (landing page) to '/home'
