@@ -1,0 +1,2102 @@
+[
+  {
+    "word_index": 1,
+    "word": "able",
+    "pronunciation": "AY-bul",
+    "meaning": "having the power or skill to do something",
+    "example_sentence": "I am able to speak a little English now."
+  },
+  {
+    "word_index": 2,
+    "word": "about",
+    "pronunciation": "uh-BOUT",
+    "meaning": "on the subject of; connected with",
+    "example_sentence": "We are talking about our favorite movies."
+  },
+  {
+    "word_index": 3,
+    "word": "above",
+    "pronunciation": "uh-BUHV",
+    "meaning": "at or to a higher place than something",
+    "example_sentence": "The birds are flying above the trees."
+  },
+  {
+    "word_index": 4,
+    "word": "accept",
+    "pronunciation": "uhk-SEPT",
+    "meaning": "to agree to take something",
+    "example_sentence": "Please accept this small gift from me."
+  },
+  {
+    "word_index": 5,
+    "word": "account",
+    "pronunciation": "uh-KOUNT",
+    "meaning": "an arrangement with a bank or company",
+    "example_sentence": "I opened a new bank account today."
+  },
+  {
+    "word_index": 6,
+    "word": "achieve",
+    "pronunciation": "uh-CHEEV",
+    "meaning": "to succeed in doing something by effort",
+    "example_sentence": "You can achieve your goal if you study hard."
+  },
+  {
+    "word_index": 7,
+    "word": "across",
+    "pronunciation": "uh-KRAWS",
+    "meaning": "from one side to the other",
+    "example_sentence": "We walked across the street to the cafe."
+  },
+  {
+    "word_index": 8,
+    "word": "act",
+    "pronunciation": "akt",
+    "meaning": "to do something for a particular reason",
+    "example_sentence": "You must act quickly in an emergency."
+  },
+  {
+    "word_index": 9,
+    "word": "active",
+    "pronunciation": "AK-tiv",
+    "meaning": "busy and doing a lot of things",
+    "example_sentence": "She is very active and loves playing sports."
+  },
+  {
+    "word_index": 10,
+    "word": "actor",
+    "pronunciation": "AK-ter",
+    "meaning": "a person who performs in a play or movie",
+    "example_sentence": "He is a famous actor in action movies."
+  },
+  {
+    "word_index": 11,
+    "word": "actual",
+    "pronunciation": "AK-choo-uhl",
+    "meaning": "real and not general or guessed",
+    "example_sentence": "The actual cost was higher than we expected."
+  },
+  {
+    "word_index": 12,
+    "word": "add",
+    "pronunciation": "ad",
+    "meaning": "to put something together with something else",
+    "example_sentence": "Please add some sugar to my coffee."
+  },
+  {
+    "word_index": 13,
+    "word": "address",
+    "pronunciation": "uh-DRES",
+    "meaning": "the details of where a building is",
+    "example_sentence": "What is the address of your new house?"
+  },
+  {
+    "word_index": 14,
+    "word": "admit",
+    "pronunciation": "uhd-MIT",
+    "meaning": "to agree that something is true",
+    "example_sentence": "He had to admit that he made a mistake."
+  },
+  {
+    "word_index": 15,
+    "word": "adult",
+    "pronunciation": "uh-DUHLT",
+    "meaning": "a fully grown person",
+    "example_sentence": "Tickets are cheaper for children than for adults."
+  },
+  {
+    "word_index": 16,
+    "word": "advice",
+    "pronunciation": "uhd-VAYS",
+    "meaning": "an opinion about what someone should do",
+    "example_sentence": "She gave me some excellent advice about my career."
+  },
+  {
+    "word_index": 17,
+    "word": "afford",
+    "pronunciation": "uh-FAWRD",
+    "meaning": "to have enough money to buy something",
+    "example_sentence": "I cannot afford to buy a new car right now."
+  },
+  {
+    "word_index": 18,
+    "word": "afraid",
+    "pronunciation": "uh-FRAYD",
+    "meaning": "feeling fear or worry",
+    "example_sentence": "Do not be afraid of making mistakes when speaking."
+  },
+  {
+    "word_index": 19,
+    "word": "after",
+    "pronunciation": "AF-ter",
+    "meaning": "later than something; behind",
+    "example_sentence": "We had dinner after watching the movie."
+  },
+  {
+    "word_index": 20,
+    "word": "afternoon",
+    "pronunciation": "af-ter-NOON",
+    "meaning": "the period between midday and evening",
+    "example_sentence": "I usually study English in the afternoon."
+  },
+  {
+    "word_index": 21,
+    "word": "again",
+    "pronunciation": "uh-GEN",
+    "meaning": "one more time; once more",
+    "example_sentence": "Can you say that again, please?"
+  },
+  {
+    "word_index": 22,
+    "word": "against",
+    "pronunciation": "uh-GENST",
+    "meaning": "opposing or disagreeing with someone/something",
+    "example_sentence": "We are playing against the best team tomorrow."
+  },
+  {
+    "word_index": 23,
+    "word": "age",
+    "pronunciation": "ayj",
+    "meaning": "the number of years someone has lived",
+    "example_sentence": "She looks young for her age."
+  },
+  {
+    "word_index": 24,
+    "word": "agency",
+    "pronunciation": "AY-juhn-see",
+    "meaning": "a business that provides a service",
+    "example_sentence": "He works at a travel agency in the city."
+  },
+  {
+    "word_index": 25,
+    "word": "agent",
+    "pronunciation": "AY-juhnt",
+    "meaning": "a person who acts for another person or group",
+    "example_sentence": "Our real estate agent helped us find a nice apartment."
+  },
+  {
+    "word_index": 26,
+    "word": "ago",
+    "pronunciation": "uh-GOH",
+    "meaning": "back in time; in the past",
+    "example_sentence": "I finished my homework an hour ago."
+  },
+  {
+    "word_index": 27,
+    "word": "agree",
+    "pronunciation": "uh-GREE",
+    "meaning": "to have the same opinion as someone else",
+    "example_sentence": "I agree with your idea completely."
+  },
+  {
+    "word_index": 28,
+    "word": "ahead",
+    "pronunciation": "uh-HED",
+    "meaning": "in front of someone or something",
+    "example_sentence": "Walk straight ahead until you see the station."
+  },
+  {
+    "word_index": 29,
+    "word": "air",
+    "pronunciation": "air",
+    "meaning": "the mixture of gases that surrounds the earth",
+    "example_sentence": "The mountain air is very clean and fresh."
+  },
+  {
+    "word_index": 30,
+    "word": "all",
+    "pronunciation": "awl",
+    "meaning": "the whole number or amount of something",
+    "example_sentence": "All the students passed the test."
+  },
+  {
+    "word_index": 31,
+    "word": "allow",
+    "pronunciation": "uh-LOU",
+    "meaning": "to let someone do something",
+    "example_sentence": "They do not allow smoking inside the library."
+  },
+  {
+    "word_index": 32,
+    "word": "almost",
+    "pronunciation": "AWL-mohst",
+    "meaning": "nearly; not quite",
+    "example_sentence": "Dinner is almost ready, please sit down."
+  },
+  {
+    "word_index": 33,
+    "word": "alone",
+    "pronunciation": "uh-LOHN",
+    "meaning": "without any other people",
+    "example_sentence": "She likes walking alone in the park."
+  },
+  {
+    "word_index": 34,
+    "word": "along",
+    "pronunciation": "uh-LAWNG",
+    "meaning": "from one end to the other of something",
+    "example_sentence": "We walked along the river bank."
+  },
+  {
+    "word_index": 35,
+    "word": "already",
+    "pronunciation": "awl-RED-ee",
+    "meaning": "before now or before a particular time",
+    "example_sentence": "I have already finished my homework."
+  },
+  {
+    "word_index": 36,
+    "word": "also",
+    "pronunciation": "AWL-soh",
+    "meaning": "in addition; too",
+    "example_sentence": "He speaks Spanish and also a little French."
+  },
+  {
+    "word_index": 37,
+    "word": "although",
+    "pronunciation": "awl-THOH",
+    "meaning": "even though; despite the fact that",
+    "example_sentence": "Although it was raining, we went for a walk."
+  },
+  {
+    "word_index": 38,
+    "word": "always",
+    "pronunciation": "AWL-wayz",
+    "meaning": "at all times; every time",
+    "example_sentence": "She always drinks tea in the morning."
+  },
+  {
+    "word_index": 39,
+    "word": "amount",
+    "pronunciation": "uh-MOUNT",
+    "meaning": "a quantity of something",
+    "example_sentence": "We need a large amount of water for the garden."
+  },
+  {
+    "word_index": 40,
+    "word": "ancient",
+    "pronunciation": "AYN-shuhnt",
+    "meaning": "belonging to a period of history long ago",
+    "example_sentence": "They visited the ancient temples in Kyoto."
+  },
+  {
+    "word_index": 41,
+    "word": "anger",
+    "pronunciation": "ANG-ger",
+    "meaning": "a strong feeling of being displeased",
+    "example_sentence": "He tried to control his anger when he heard the news."
+  },
+  {
+    "word_index": 42,
+    "word": "angle",
+    "pronunciation": "ANG-guhl",
+    "meaning": "the space between two lines that meet",
+    "example_sentence": "The camera was set at a low angle."
+  },
+  {
+    "word_index": 43,
+    "word": "animal",
+    "pronunciation": "AN-i-muhl",
+    "meaning": "a living thing that is not a plant",
+    "example_sentence": "A dog is a very loyal animal."
+  },
+  {
+    "word_index": 44,
+    "word": "announce",
+    "pronunciation": "uh-NOUNS",
+    "meaning": "to make something known publicly",
+    "example_sentence": "They will announce the winner tomorrow."
+  },
+  {
+    "word_index": 45,
+    "word": "another",
+    "pronunciation": "uh-NUHTH-er",
+    "meaning": "one more; different person or thing",
+    "example_sentence": "Can I have another cup of coffee?"
+  },
+  {
+    "word_index": 46,
+    "word": "answer",
+    "pronunciation": "AN-ser",
+    "meaning": "something said or written to reply to a question",
+    "example_sentence": "He gave a clear answer to my question."
+  },
+  {
+    "word_index": 47,
+    "word": "anxiety",
+    "pronunciation": "ang-ZAY-i-tee",
+    "meaning": "a feeling of worry or nervousness",
+    "example_sentence": "He felt a lot of anxiety before the exam."
+  },
+  {
+    "word_index": 48,
+    "word": "any",
+    "pronunciation": "EN-ee",
+    "meaning": "one or some of a thing, no matter which",
+    "example_sentence": "Do you have any questions for me?"
+  },
+  {
+    "word_index": 49,
+    "word": "anyone",
+    "pronunciation": "EN-ee-wuhn",
+    "meaning": "any person",
+    "example_sentence": "Anyone can join the English club."
+  },
+  {
+    "word_index": 50,
+    "word": "anything",
+    "pronunciation": "EN-ee-thing",
+    "meaning": "any thing, no matter which",
+    "example_sentence": "Is there anything else you need?"
+  },
+  {
+    "word_index": 51,
+    "word": "apart",
+    "pronunciation": "uh-PAHRT",
+    "meaning": "separated by a distance or time",
+    "example_sentence": "The two houses are about one mile apart."
+  },
+  {
+    "word_index": 52,
+    "word": "apartment",
+    "pronunciation": "uh-PAHRT-muhnt",
+    "meaning": "a set of rooms for living in, usually on one floor",
+    "example_sentence": "They live in a modern apartment in Tokyo."
+  },
+  {
+    "word_index": 53,
+    "word": "apologize",
+    "pronunciation": "uh-PAHL-uh-jayz",
+    "meaning": "to say that you are sorry for something",
+    "example_sentence": "You should apologize for being late."
+  },
+  {
+    "word_index": 54,
+    "word": "apparent",
+    "pronunciation": "uh-PAR-uhnt",
+    "meaning": "easy to see or understand; clear",
+    "example_sentence": "It was apparent that she was not happy."
+  },
+  {
+    "word_index": 55,
+    "word": "appeal",
+    "pronunciation": "uh-PEEL",
+    "meaning": "a deeply felt request for help or money",
+    "example_sentence": "The police made an appeal for information."
+  },
+  {
+    "word_index": 56,
+    "word": "appear",
+    "pronunciation": "uh-PEER",
+    "meaning": "to start to be seen or to exist",
+    "example_sentence": "A dark cloud started to appear in the sky."
+  },
+  {
+    "word_index": 57,
+    "word": "apple",
+    "pronunciation": "AP-uhl",
+    "meaning": "a round fruit with red or green skin",
+    "example_sentence": "An apple a day keeps the doctor away."
+  },
+  {
+    "word_index": 58,
+    "word": "apply",
+    "pronunciation": "uh-PLAY",
+    "meaning": "to make a formal request for something",
+    "example_sentence": "I want to apply for a visa to travel."
+  },
+  {
+    "word_index": 59,
+    "word": "appoint",
+    "pronunciation": "uh-POYNT",
+    "meaning": "to choose someone for a job or position",
+    "example_sentence": "They will appoint a new manager soon."
+  },
+  {
+    "word_index": 60,
+    "word": "area",
+    "pronunciation": "AIR-ee-uh",
+    "meaning": "a part of a place, town, or country",
+    "example_sentence": "There is a nice play area for kids here."
+  },
+  {
+    "word_index": 61,
+    "word": "argue",
+    "pronunciation": "AHR-gyoo",
+    "meaning": "to speak angrily to someone because you disagree",
+    "example_sentence": "They always argue about what to watch."
+  },
+  {
+    "word_index": 62,
+    "word": "arm",
+    "pronunciation": "ahrm",
+    "meaning": "either of the two long parts of the body",
+    "example_sentence": "He broke his arm while skiing."
+  },
+  {
+    "word_index": 63,
+    "word": "army",
+    "pronunciation": "AHR-mee",
+    "meaning": "a large group of soldiers trained to fight",
+    "example_sentence": "He joined the army after high school."
+  },
+  {
+    "word_index": 64,
+    "word": "around",
+    "pronunciation": "uh-ROUND",
+    "meaning": "in a circle or in all directions",
+    "example_sentence": "We walked around the town center."
+  },
+  {
+    "word_index": 65,
+    "word": "arrange",
+    "pronunciation": "uh-RAYNJ",
+    "meaning": "to plan or organize something",
+    "example_sentence": "I will arrange a meeting for next week."
+  },
+  {
+    "word_index": 66,
+    "word": "arrest",
+    "pronunciation": "uh-REST",
+    "meaning": "when the police take someone to keep them",
+    "example_sentence": "The police had to arrest the thief."
+  },
+  {
+    "word_index": 67,
+    "word": "arrive",
+    "pronunciation": "uh-RAYV",
+    "meaning": "to reach a place at the end of a journey",
+    "example_sentence": "What time does the train arrive?"
+  },
+  {
+    "word_index": 68,
+    "word": "art",
+    "pronunciation": "ahrt",
+    "meaning": "paintings, drawings, and sculptures",
+    "example_sentence": "She is studying modern art at university."
+  },
+  {
+    "word_index": 69,
+    "word": "article",
+    "pronunciation": "AHR-ti-kuhl",
+    "meaning": "a piece of writing in a newspaper or magazine",
+    "example_sentence": "I read an interesting article about AI."
+  },
+  {
+    "word_index": 70,
+    "word": "artist",
+    "pronunciation": "AHR-tist",
+    "meaning": "a person who creates art, especially paintings",
+    "example_sentence": "He is a talented artist who paints landscapes."
+  },
+  {
+    "word_index": 71,
+    "word": "as",
+    "pronunciation": "az",
+    "meaning": "used to describe a role or state of someone/something",
+    "example_sentence": "She works as a teacher in a school."
+  },
+  {
+    "word_index": 72,
+    "word": "ask",
+    "pronunciation": "ask",
+    "meaning": "to say something to get information",
+    "example_sentence": "Can I ask you a personal question?"
+  },
+  {
+    "word_index": 73,
+    "word": "asleep",
+    "pronunciation": "uh-SLEEP",
+    "meaning": "in a state of sleep; sleeping",
+    "example_sentence": "The baby is fast asleep in the crib."
+  },
+  {
+    "word_index": 74,
+    "word": "assist",
+    "pronunciation": "uh-SIST",
+    "meaning": "to help someone to do something",
+    "example_sentence": "The guide will assist you during the tour."
+  },
+  {
+    "word_index": 75,
+    "word": "assistant",
+    "pronunciation": "uh-SIS-tuhnt",
+    "meaning": "a person who helps someone in a job",
+    "example_sentence": "He works as a research assistant."
+  },
+  {
+    "word_index": 76,
+    "word": "associate",
+    "pronunciation": "uh-SOH-shee-ayt",
+    "meaning": "to connect someone or something in your mind",
+    "example_sentence": "Most people associate summer with hot weather."
+  },
+  {
+    "word_index": 77,
+    "word": "assume",
+    "pronunciation": "uh-SOOM",
+    "meaning": "to think that something is true without proof",
+    "example_sentence": "Do not assume that everything online is true."
+  },
+  {
+    "word_index": 78,
+    "word": "at",
+    "pronunciation": "at",
+    "meaning": "used to show a place, direction, or time",
+    "example_sentence": "Let us meet at the station at 5 PM."
+  },
+  {
+    "word_index": 79,
+    "word": "attack",
+    "pronunciation": "uh-TAK",
+    "meaning": "an act of using violence to hurt someone",
+    "example_sentence": "The army launched an attack at dawn."
+  },
+  {
+    "word_index": 80,
+    "word": "attempt",
+    "pronunciation": "uh-TEMPT",
+    "meaning": "an act of trying to do something difficult",
+    "example_sentence": "This is his first attempt to run a marathon."
+  },
+  {
+    "word_index": 81,
+    "word": "attend",
+    "pronunciation": "uh-TEND",
+    "meaning": "to go to or be present at a meeting, class, etc.",
+    "example_sentence": "He wants to attend the conference next month."
+  },
+  {
+    "word_index": 82,
+    "word": "attention",
+    "pronunciation": "uh-TEN-shuhn",
+    "meaning": "the act of listening to or looking at someone/something",
+    "example_sentence": "Please pay attention to the instructions."
+  },
+  {
+    "word_index": 83,
+    "word": "attitude",
+    "pronunciation": "AT-i-tood",
+    "meaning": "the way you think or feel about someone/something",
+    "example_sentence": "She has a very positive attitude toward life."
+  },
+  {
+    "word_index": 84,
+    "word": "attract",
+    "pronunciation": "uh-TRAKT",
+    "meaning": "to pull or draw someone/something toward you",
+    "example_sentence": "Flowers attract bees and butterflies."
+  },
+  {
+    "word_index": 85,
+    "word": "audience",
+    "pronunciation": "AW-dee-uhns",
+    "meaning": "the group of people watching a show or play",
+    "example_sentence": "The audience cheered at the end of the show."
+  },
+  {
+    "word_index": 86,
+    "word": "author",
+    "pronunciation": "AW-ther",
+    "meaning": "a person who writes a book or article",
+    "example_sentence": "Who is the author of this novel?"
+  },
+  {
+    "word_index": 87,
+    "word": "authority",
+    "pronunciation": "uh-THAWR-i-tee",
+    "meaning": "the power or right to give orders",
+    "example_sentence": "She has the authority to make decisions."
+  },
+  {
+    "word_index": 88,
+    "word": "available",
+    "pronunciation": "uh-VAY-luh-buhl",
+    "meaning": "ready or free to be used or bought",
+    "example_sentence": "Is this seat available, or is someone sitting here?"
+  },
+  {
+    "word_index": 89,
+    "word": "average",
+    "pronunciation": "AV-er-ij",
+    "meaning": "typical or normal; middle level",
+    "example_sentence": "The average temperature in June is 25 degrees."
+  },
+  {
+    "word_index": 90,
+    "word": "avoid",
+    "pronunciation": "uh-VOYD",
+    "meaning": "to stay away from someone or something",
+    "example_sentence": "You should avoid eating too much junk food."
+  },
+  {
+    "word_index": 91,
+    "word": "award",
+    "pronunciation": "uh-WAWRD",
+    "meaning": "a prize given to someone for an achievement",
+    "example_sentence": "He won the Best Actor award this year."
+  },
+  {
+    "word_index": 92,
+    "word": "aware",
+    "pronunciation": "uh-WAIR",
+    "meaning": "knowing or realizing something",
+    "example_sentence": "Are you aware of the new rules?"
+  },
+  {
+    "word_index": 93,
+    "word": "away",
+    "pronunciation": "uh-WAY",
+    "meaning": "to or at a distance from a place or person",
+    "example_sentence": "Please put your books away."
+  },
+  {
+    "word_index": 94,
+    "word": "baby",
+    "pronunciation": "BAY-bee",
+    "meaning": "a very young child or animal",
+    "example_sentence": "The baby fell asleep in her arms."
+  },
+  {
+    "word_index": 95,
+    "word": "back",
+    "pronunciation": "bak",
+    "meaning": "the part of the body opposite to the chest",
+    "example_sentence": "He has a sore back from sitting too long."
+  },
+  {
+    "word_index": 96,
+    "word": "bad",
+    "pronunciation": "bad",
+    "meaning": "not good; of poor quality",
+    "example_sentence": "I have a bad cold and cannot go to work."
+  },
+  {
+    "word_index": 97,
+    "word": "bag",
+    "pronunciation": "bag",
+    "meaning": "a container made of thin cloth, paper, or plastic",
+    "example_sentence": "She put her wallet inside her bag."
+  },
+  {
+    "word_index": 98,
+    "word": "balance",
+    "pronunciation": "BAL-uhns",
+    "meaning": "a state where things are equal or steady",
+    "example_sentence": "It is important to keep a good work-life balance."
+  },
+  {
+    "word_index": 99,
+    "word": "ball",
+    "pronunciation": "bawl",
+    "meaning": "a round object used in games and sports",
+    "example_sentence": "He kicked the ball into the goal."
+  },
+  {
+    "word_index": 100,
+    "word": "band",
+    "pronunciation": "band",
+    "meaning": "a group of musicians who play music together",
+    "example_sentence": "My favorite rock band is playing tonight."
+  },
+  {
+    "word_index": 101,
+    "word": "bank",
+    "pronunciation": "bangk",
+    "meaning": "an organization where people keep money",
+    "example_sentence": "I need to go to the bank to withdraw some cash."
+  },
+  {
+    "word_index": 102,
+    "word": "bar",
+    "pronunciation": "bahr",
+    "meaning": "a place where drinks are sold and drunk",
+    "example_sentence": "We met at a quiet bar near the hotel."
+  },
+  {
+    "word_index": 103,
+    "word": "base",
+    "pronunciation": "bays",
+    "meaning": "the lowest part or bottom of something",
+    "example_sentence": "The base of the statue is made of stone."
+  },
+  {
+    "word_index": 104,
+    "word": "basic",
+    "pronunciation": "BAY-sik",
+    "meaning": "forming the most important part of something",
+    "example_sentence": "He has a basic knowledge of computer programming."
+  },
+  {
+    "word_index": 105,
+    "word": "basis",
+    "pronunciation": "BAY-sis",
+    "meaning": "the reason or foundation for something",
+    "example_sentence": "This story is the basis for the movie."
+  },
+  {
+    "word_index": 106,
+    "word": "battle",
+    "pronunciation": "BAT-uhl",
+    "meaning": "a fight between armies in a war",
+    "example_sentence": "The battle lasted for three days."
+  },
+  {
+    "word_index": 107,
+    "word": "be",
+    "pronunciation": "bee",
+    "meaning": "to exist or have a state/identity",
+    "example_sentence": "I want to be a doctor when I grow up."
+  },
+  {
+    "word_index": 108,
+    "word": "beach",
+    "pronunciation": "beech",
+    "meaning": "an area of sand next to the sea",
+    "example_sentence": "We spent the weekend lying on the beach."
+  },
+  {
+    "word_index": 109,
+    "word": "bear",
+    "pronunciation": "bair",
+    "meaning": "a large heavy animal with thick fur",
+    "example_sentence": "We saw a brown bear in the forest."
+  },
+  {
+    "word_index": 110,
+    "word": "beat",
+    "pronunciation": "beet",
+    "meaning": "to defeat someone in a game or fight",
+    "example_sentence": "Our team managed to beat the champions."
+  },
+  {
+    "word_index": 111,
+    "word": "beautiful",
+    "pronunciation": "BYOO-ti-fuhl",
+    "meaning": "very attractive to look at; lovely",
+    "example_sentence": "The sunset over the ocean was beautiful."
+  },
+  {
+    "word_index": 112,
+    "word": "beauty",
+    "pronunciation": "BYOO-tee",
+    "meaning": "the quality of being pleasing to look at",
+    "example_sentence": "She appreciated the beauty of the old garden."
+  },
+  {
+    "word_index": 113,
+    "word": "because",
+    "pronunciation": "bi-KAWZ",
+    "meaning": "for the reason that; since",
+    "example_sentence": "I stayed at home because it was raining."
+  },
+  {
+    "word_index": 114,
+    "word": "become",
+    "pronunciation": "bi-KUHM",
+    "meaning": "to start to be something",
+    "example_sentence": "He wants to become a professional writer."
+  },
+  {
+    "word_index": 115,
+    "word": "bed",
+    "pronunciation": "bed",
+    "meaning": "a piece of furniture that you sleep on",
+    "example_sentence": "I was so tired that I went straight to bed."
+  },
+  {
+    "word_index": 116,
+    "word": "bedroom",
+    "pronunciation": "BED-room",
+    "meaning": "a room for sleeping in",
+    "example_sentence": "Her bedroom has a large window facing the garden."
+  },
+  {
+    "word_index": 117,
+    "word": "beer",
+    "pronunciation": "beer",
+    "meaning": "an alcoholic drink made from grain",
+    "example_sentence": "He ordered a cold beer at the restaurant."
+  },
+  {
+    "word_index": 118,
+    "word": "before",
+    "pronunciation": "bi-FAWR",
+    "meaning": "earlier than a particular time",
+    "example_sentence": "Please wash your hands before eating."
+  },
+  {
+    "word_index": 119,
+    "word": "begin",
+    "pronunciation": "bi-GIN",
+    "meaning": "to start to do or happen",
+    "example_sentence": "The class will begin at nine o'clock."
+  },
+  {
+    "word_index": 120,
+    "word": "beginning",
+    "pronunciation": "bi-GIN-ing",
+    "meaning": "the start of something",
+    "example_sentence": "I liked the beginning of the movie best."
+  },
+  {
+    "word_index": 121,
+    "word": "behavior",
+    "pronunciation": "bi-HAY-vyer",
+    "meaning": "the way that someone acts or behaves",
+    "example_sentence": "His polite behavior impressed everyone."
+  },
+  {
+    "word_index": 122,
+    "word": "behind",
+    "pronunciation": "bi-HAYND",
+    "meaning": "at the back of someone or something",
+    "example_sentence": "The keys fell behind the sofa."
+  },
+  {
+    "word_index": 123,
+    "word": "believe",
+    "pronunciation": "bi-LEEV",
+    "meaning": "to think that something is true",
+    "example_sentence": "I believe that he is telling the truth."
+  },
+  {
+    "word_index": 124,
+    "word": "bell",
+    "pronunciation": "bel",
+    "meaning": "a hollow metal object that makes a ringing sound",
+    "example_sentence": "The church bell rings every hour."
+  },
+  {
+    "word_index": 125,
+    "word": "below",
+    "pronunciation": "bi-LOH",
+    "meaning": "in a lower position than something",
+    "example_sentence": "Please read the instructions below."
+  },
+  {
+    "word_index": 126,
+    "word": "belt",
+    "pronunciation": "belt",
+    "meaning": "a strip of leather worn around the waist",
+    "example_sentence": "He fastened his seat belt before driving."
+  },
+  {
+    "word_index": 127,
+    "word": "bend",
+    "pronunciation": "bend",
+    "meaning": "to curve or make something curve",
+    "example_sentence": "You have to bend your knees to jump."
+  },
+  {
+    "word_index": 128,
+    "word": "beneath",
+    "pronunciation": "bi-NEETH",
+    "meaning": "under or in a lower position than",
+    "example_sentence": "The valley lay beneath the clouds."
+  },
+  {
+    "word_index": 129,
+    "word": "benefit",
+    "pronunciation": "BEN-uh-fit",
+    "meaning": "an advantage or useful effect",
+    "example_sentence": "Exercise offers a benefit to your health."
+  },
+  {
+    "word_index": 130,
+    "word": "beside",
+    "pronunciation": "bi-SAYD",
+    "meaning": "next to or at the side of",
+    "example_sentence": "He came and sat beside me."
+  },
+  {
+    "word_index": 131,
+    "word": "best",
+    "pronunciation": "best",
+    "meaning": "of the most excellent quality",
+    "example_sentence": "This is the best pizza I have ever eaten."
+  },
+  {
+    "word_index": 132,
+    "word": "bet",
+    "pronunciation": "bet",
+    "meaning": "to risk money on a future event",
+    "example_sentence": "I bet he will win the race today."
+  },
+  {
+    "word_index": 133,
+    "word": "better",
+    "pronunciation": "BET-er",
+    "meaning": "of a higher standard or quality",
+    "example_sentence": "I feel much better after a good sleep."
+  },
+  {
+    "word_index": 134,
+    "word": "between",
+    "pronunciation": "bi-TWEEN",
+    "meaning": "in the space separating two things",
+    "example_sentence": "The shop is located between the bank and the bakery."
+  },
+  {
+    "word_index": 135,
+    "word": "beyond",
+    "pronunciation": "bee-AHND",
+    "meaning": "on the further side of; past",
+    "example_sentence": "The road continues beyond the hills."
+  },
+  {
+    "word_index": 136,
+    "word": "bicycle",
+    "pronunciation": "BAY-si-kuhl",
+    "meaning": "a vehicle with two wheels that you pedal",
+    "example_sentence": "He rides his bicycle to work every day."
+  },
+  {
+    "word_index": 137,
+    "word": "big",
+    "pronunciation": "big",
+    "meaning": "large in size, degree, or amount",
+    "example_sentence": "They live in a big house in the suburbs."
+  },
+  {
+    "word_index": 138,
+    "word": "bill",
+    "pronunciation": "bil",
+    "meaning": "a document showing how much money you owe",
+    "example_sentence": "The waiter brought us the bill for dinner."
+  },
+  {
+    "word_index": 139,
+    "word": "billion",
+    "pronunciation": "BIL-yuhn",
+    "meaning": "the number 1,000,000,000",
+    "example_sentence": "The world population is over eight billion."
+  },
+  {
+    "word_index": 140,
+    "word": "bird",
+    "pronunciation": "burd",
+    "meaning": "a creature with feathers and wings",
+    "example_sentence": "A blue bird is sitting on the fence."
+  },
+  {
+    "word_index": 141,
+    "word": "birth",
+    "pronunciation": "burth",
+    "meaning": "the time when a baby is born",
+    "example_sentence": "She gave birth to a healthy baby girl."
+  },
+  {
+    "word_index": 142,
+    "word": "bit",
+    "pronunciation": "bit",
+    "meaning": "a small piece or amount of something",
+    "example_sentence": "Can I have a little bit of cake?"
+  },
+  {
+    "word_index": 143,
+    "word": "bite",
+    "pronunciation": "bayt",
+    "meaning": "to use your teeth to cut something",
+    "example_sentence": "Be careful, the dog might bite you."
+  },
+  {
+    "word_index": 144,
+    "word": "black",
+    "pronunciation": "blak",
+    "meaning": "having the darkest color like coal",
+    "example_sentence": "She wore a elegant black dress to the party."
+  },
+  {
+    "word_index": 145,
+    "word": "blade",
+    "pronunciation": "blayd",
+    "meaning": "the flat sharp part of a knife or tool",
+    "example_sentence": "The blade of this knife is very sharp."
+  },
+  {
+    "word_index": 146,
+    "word": "blame",
+    "pronunciation": "blaym",
+    "meaning": "to think or say that someone is responsible for a bad thing",
+    "example_sentence": "Do not blame others for your mistakes."
+  },
+  {
+    "word_index": 147,
+    "word": "blank",
+    "pronunciation": "blangk",
+    "meaning": "empty, with no writing or decoration",
+    "example_sentence": "Please write your name on a blank sheet of paper."
+  },
+  {
+    "word_index": 148,
+    "word": "blind",
+    "pronunciation": "blaynd",
+    "meaning": "unable to see",
+    "example_sentence": "He has a guide dog because he is blind."
+  },
+  {
+    "word_index": 149,
+    "word": "block",
+    "pronunciation": "blahk",
+    "meaning": "a solid piece of hard material",
+    "example_sentence": "The children are playing with wooden blocks."
+  },
+  {
+    "word_index": 150,
+    "word": "blood",
+    "pronunciation": "bluhd",
+    "meaning": "the red liquid that flows through the body",
+    "example_sentence": "He donated blood at the hospital today."
+  },
+  {
+    "word_index": 151,
+    "word": "blow",
+    "pronunciation": "bloh",
+    "meaning": "when air moves; to force air out",
+    "example_sentence": "The wind began to blow very hard."
+  },
+  {
+    "word_index": 152,
+    "word": "blue",
+    "pronunciation": "bloo",
+    "meaning": "having the color of the clear sky",
+    "example_sentence": "She has beautiful blue eyes."
+  },
+  {
+    "word_index": 153,
+    "word": "board",
+    "pronunciation": "bawrd",
+    "meaning": "a flat piece of wood or other hard material",
+    "example_sentence": "The teacher wrote the words on the board."
+  },
+  {
+    "word_index": 154,
+    "word": "boat",
+    "pronunciation": "boht",
+    "meaning": "a vehicle used for traveling on water",
+    "example_sentence": "We took a small boat across the lake."
+  },
+  {
+    "word_index": 155,
+    "word": "body",
+    "pronunciation": "BAHD-ee",
+    "meaning": "the whole physical structure of a person",
+    "example_sentence": "Regular exercise is good for your body."
+  },
+  {
+    "word_index": 156,
+    "word": "bomb",
+    "pronunciation": "bahm",
+    "meaning": "a weapon designed to explode and cause damage",
+    "example_sentence": "The bomb exploded near the bridge."
+  },
+  {
+    "word_index": 157,
+    "word": "bond",
+    "pronunciation": "bahnd",
+    "meaning": "something that joins or connects people",
+    "example_sentence": "There is a strong bond between the two sisters."
+  },
+  {
+    "word_index": 158,
+    "word": "bone",
+    "pronunciation": "bohn",
+    "meaning": "any of the hard parts inside the body",
+    "example_sentence": "He broke a bone in his foot."
+  },
+  {
+    "word_index": 159,
+    "word": "book",
+    "pronunciation": "buk",
+    "meaning": "a written work that is printed or online",
+    "example_sentence": "I am reading a very interesting book now."
+  },
+  {
+    "word_index": 160,
+    "word": "boot",
+    "pronunciation": "boot",
+    "meaning": "a sturdy shoe that covers the foot and ankle",
+    "example_sentence": "She bought a pair of warm leather boots."
+  },
+  {
+    "word_index": 161,
+    "word": "border",
+    "pronunciation": "BAWR-der",
+    "meaning": "the line dividing two countries",
+    "example_sentence": "We had to show our passports at the border."
+  },
+  {
+    "word_index": 162,
+    "word": "bore",
+    "pronunciation": "bawr",
+    "meaning": "to make someone feel tired or uninterested",
+    "example_sentence": "His long speeches always bore the audience."
+  },
+  {
+    "word_index": 163,
+    "word": "born",
+    "pronunciation": "bawrn",
+    "meaning": "brought into life by birth",
+    "example_sentence": "She was born in Tokyo in 2003."
+  },
+  {
+    "word_index": 164,
+    "word": "borrow",
+    "pronunciation": "BAHR-oh",
+    "meaning": "to take something with permission to return it",
+    "example_sentence": "Can I borrow your pen for a second?"
+  },
+  {
+    "word_index": 165,
+    "word": "boss",
+    "pronunciation": "bahs",
+    "meaning": "the person who is in charge of you at work",
+    "example_sentence": "My boss gave me some useful advice today."
+  },
+  {
+    "word_index": 166,
+    "word": "both",
+    "pronunciation": "bohth",
+    "meaning": "two people or things together",
+    "example_sentence": "Both of my brothers live in Osaka."
+  },
+  {
+    "word_index": 167,
+    "word": "bottle",
+    "pronunciation": "BAHT-uhl",
+    "meaning": "a container for liquids, usually glass or plastic",
+    "example_sentence": "He drank a bottle of water after running."
+  },
+  {
+    "word_index": 168,
+    "word": "bottom",
+    "pronunciation": "BAHT-uhm",
+    "meaning": "the lowest part of something",
+    "example_sentence": "The answers are at the bottom of the page."
+  },
+  {
+    "word_index": 169,
+    "word": "bound",
+    "pronunciation": "bound",
+    "meaning": "certain or extremely likely to happen",
+    "example_sentence": "You are bound to pass the test if you study."
+  },
+  {
+    "word_index": 170,
+    "word": "bowl",
+    "pronunciation": "bohl",
+    "meaning": "a round deep dish used for food",
+    "example_sentence": "She ate a bowl of hot soup for lunch."
+  },
+  {
+    "word_index": 171,
+    "word": "box",
+    "pronunciation": "bahks",
+    "meaning": "a container with flat sides and a lid",
+    "example_sentence": "Put all the toys back in the box."
+  },
+  {
+    "word_index": 172,
+    "word": "boy",
+    "pronunciation": "boy",
+    "meaning": "a male child or young man",
+    "example_sentence": "The young boy was flying a kite in the park."
+  },
+  {
+    "word_index": 173,
+    "word": "brain",
+    "pronunciation": "brayn",
+    "meaning": "the organ inside the head that controls thought",
+    "example_sentence": "The brain needs sleep to function well."
+  },
+  {
+    "word_index": 174,
+    "word": "branch",
+    "pronunciation": "branch",
+    "meaning": "a part of a tree that grows out from the trunk",
+    "example_sentence": "A bird is sitting on a branch of the tree."
+  },
+  {
+    "word_index": 175,
+    "word": "brand",
+    "pronunciation": "brand",
+    "meaning": "a product made by a particular company",
+    "example_sentence": "What brand of shoes do you prefer?"
+  },
+  {
+    "word_index": 176,
+    "word": "bread",
+    "pronunciation": "bred",
+    "meaning": "a common food made from flour and water",
+    "example_sentence": "I usually eat bread and butter for breakfast."
+  },
+  {
+    "word_index": 177,
+    "word": "break",
+    "pronunciation": "brayk",
+    "meaning": "to separate into pieces by force; a short rest",
+    "example_sentence": "Be careful not to break the glass. Let us take a short break."
+  },
+  {
+    "word_index": 178,
+    "word": "breakfast",
+    "pronunciation": "BREK-fuhst",
+    "meaning": "the first meal of the day",
+    "example_sentence": "I always eat breakfast at seven o'clock."
+  },
+  {
+    "word_index": 179,
+    "word": "breast",
+    "pronunciation": "brest",
+    "meaning": "either of the two soft organs on a woman's chest",
+    "example_sentence": "The mother held the baby to her breast."
+  },
+  {
+    "word_index": 180,
+    "word": "breath",
+    "pronunciation": "breth",
+    "meaning": "the air that you take in and blow out",
+    "example_sentence": "He took a deep breath before speaking."
+  },
+  {
+    "word_index": 181,
+    "word": "breathe",
+    "pronunciation": "breeth",
+    "meaning": "to take air into your lungs and send it out",
+    "example_sentence": "It is hard to breathe in this hot room."
+  },
+  {
+    "word_index": 182,
+    "word": "bridge",
+    "pronunciation": "brij",
+    "meaning": "a structure built over a river or road",
+    "example_sentence": "We walked across the old stone bridge."
+  },
+  {
+    "word_index": 183,
+    "word": "brief",
+    "pronunciation": "breef",
+    "meaning": "lasting only a short time; short",
+    "example_sentence": "The manager gave a brief summary of the project."
+  },
+  {
+    "word_index": 184,
+    "word": "bright",
+    "pronunciation": "brayt",
+    "meaning": "shining with a lot of light",
+    "example_sentence": "The stars are very bright tonight."
+  },
+  {
+    "word_index": 185,
+    "word": "bring",
+    "pronunciation": "bring",
+    "meaning": "to come to a place with someone/something",
+    "example_sentence": "Please bring your dictionary to class tomorrow."
+  },
+  {
+    "word_index": 186,
+    "word": "broad",
+    "pronunciation": "brawd",
+    "meaning": "wide; including a large variety of things",
+    "example_sentence": "He has a broad knowledge of world history."
+  },
+  {
+    "word_index": 187,
+    "word": "brother",
+    "pronunciation": "BRUH-ther",
+    "meaning": "a boy or man who has the same parents as you",
+    "example_sentence": "My older brother is a university student."
+  },
+  {
+    "word_index": 188,
+    "word": "brown",
+    "pronunciation": "broun",
+    "meaning": "having the color of earth or wood",
+    "example_sentence": "He has brown hair and brown eyes."
+  },
+  {
+    "word_index": 189,
+    "word": "brush",
+    "pronunciation": "bruhn",
+    "meaning": "an object with bristles used for cleaning or painting",
+    "example_sentence": "You should brush your teeth twice a day."
+  },
+  {
+    "word_index": 190,
+    "word": "budget",
+    "pronunciation": "BUHJ-it",
+    "meaning": "the amount of money available for a purpose",
+    "example_sentence": "We are working on a very tight budget."
+  },
+  {
+    "word_index": 191,
+    "word": "build",
+    "pronunciation": "bild",
+    "meaning": "to make something by putting parts together",
+    "example_sentence": "They plan to build a new library here."
+  },
+  {
+    "word_index": 192,
+    "word": "building",
+    "pronunciation": "BIL-ding",
+    "meaning": "a structure with walls and a roof",
+    "example_sentence": "That tall building is a famous hotel."
+  },
+  {
+    "word_index": 193,
+    "word": "bullet",
+    "pronunciation": "BUHL-it",
+    "meaning": "a small metal object fired from a gun",
+    "example_sentence": "The bullet hit the target precisely."
+  },
+  {
+    "word_index": 194,
+    "word": "bunch",
+    "pronunciation": "buhnch",
+    "meaning": "a group of things growing or tied together",
+    "example_sentence": "He bought a bunch of flowers for his mother."
+  },
+  {
+    "word_index": 195,
+    "word": "burn",
+    "pronunciation": "burn",
+    "meaning": "to damage or destroy something by fire",
+    "example_sentence": "The campfire began to burn brightly."
+  },
+  {
+    "word_index": 196,
+    "word": "burst",
+    "pronunciation": "burst",
+    "meaning": "to break open suddenly",
+    "example_sentence": "The balloon will burst if you blow it up more."
+  },
+  {
+    "word_index": 197,
+    "word": "bury",
+    "pronunciation": "BER-ee",
+    "meaning": "to put a dead body or object in the ground",
+    "example_sentence": "They decided to bury the treasure under the tree."
+  },
+  {
+    "word_index": 198,
+    "word": "bus",
+    "pronunciation": "buhs",
+    "meaning": "a large vehicle that carries passengers along a route",
+    "example_sentence": "I catch the bus to school every morning."
+  },
+  {
+    "word_index": 199,
+    "word": "business",
+    "pronunciation": "BIZ-nis",
+    "meaning": "the activity of making, buying, or selling things",
+    "example_sentence": "He started a new import-export business."
+  },
+  {
+    "word_index": 200,
+    "word": "busy",
+    "pronunciation": "BIZ-ee",
+    "meaning": "having a lot of things to do; not free",
+    "example_sentence": "She is busy preparing for her exams."
+  },
+  {
+    "word_index": 201,
+    "word": "but",
+    "pronunciation": "buht",
+    "meaning": "used to introduce a contrasting statement",
+    "example_sentence": "I want to go, but I have no money."
+  },
+  {
+    "word_index": 202,
+    "word": "butter",
+    "pronunciation": "BUHT-er",
+    "meaning": "a yellow fat made from milk",
+    "example_sentence": "Please spread some butter on the toast."
+  },
+  {
+    "word_index": 203,
+    "word": "button",
+    "pronunciation": "BUHT-uhn",
+    "meaning": "a small round object used to fasten clothes",
+    "example_sentence": "He lost a button from his shirt."
+  },
+  {
+    "word_index": 204,
+    "word": "buy",
+    "pronunciation": "bay",
+    "meaning": "to get something by paying money",
+    "example_sentence": "I want to buy some fresh fruit."
+  },
+  {
+    "word_index": 205,
+    "word": "by",
+    "pronunciation": "bay",
+    "meaning": "near; not later than; through the action of",
+    "example_sentence": "The school is by the river. Please finish it by Monday."
+  },
+  {
+    "word_index": 206,
+    "word": "cabin",
+    "pronunciation": "KAB-in",
+    "meaning": "a small simple house, usually made of wood",
+    "example_sentence": "We stayed in a cozy cabin in the woods."
+  },
+  {
+    "word_index": 207,
+    "word": "cabinet",
+    "pronunciation": "KAB-i-nit",
+    "meaning": "a piece of furniture with shelves or drawers",
+    "example_sentence": "Keep the cups in the kitchen cabinet."
+  },
+  {
+    "word_index": 208,
+    "word": "cable",
+    "pronunciation": "KAY-buhl",
+    "meaning": "a strong thick wire or rope",
+    "example_sentence": "The television is connected to the cable."
+  },
+  {
+    "word_index": 209,
+    "word": "cake",
+    "pronunciation": "kayk",
+    "meaning": "a sweet baked food made from flour and sugar",
+    "example_sentence": "She baked a chocolate cake for my birthday."
+  },
+  {
+    "word_index": 210,
+    "word": "calculate",
+    "pronunciation": "KAL-kyuh-layt",
+    "meaning": "to find a number using math",
+    "example_sentence": "We need to calculate the cost of our trip."
+  },
+  {
+    "word_index": 211,
+    "word": "call",
+    "pronunciation": "kawl",
+    "meaning": "to give a name; to telephone someone",
+    "example_sentence": "Please call me when you arrive."
+  },
+  {
+    "word_index": 212,
+    "word": "calm",
+    "pronunciation": "kahm",
+    "meaning": "peaceful, quiet, and not worried",
+    "example_sentence": "The sea was very calm this morning."
+  },
+  {
+    "word_index": 213,
+    "word": "camera",
+    "pronunciation": "KAM-er-uh",
+    "meaning": "a device used for taking photos or videos",
+    "example_sentence": "He bought a new digital camera."
+  },
+  {
+    "word_index": 214,
+    "word": "camp",
+    "pronunciation": "kamp",
+    "meaning": "a place where people stay in tents",
+    "example_sentence": "We set up our camp near the river."
+  },
+  {
+    "word_index": 215,
+    "word": "campaign",
+    "pronunciation": "kam-PAYN",
+    "meaning": "a planned series of activities to achieve a goal",
+    "example_sentence": "The politician started his election campaign."
+  },
+  {
+    "word_index": 216,
+    "word": "can",
+    "pronunciation": "kan",
+    "meaning": "to be able to do something",
+    "example_sentence": "She can speak English very fluently."
+  },
+  {
+    "word_index": 217,
+    "word": "cancel",
+    "pronunciation": "KAN-suhl",
+    "meaning": "to decide that a planned event will not happen",
+    "example_sentence": "They had to cancel the meeting due to rain."
+  },
+  {
+    "word_index": 218,
+    "word": "cancer",
+    "pronunciation": "KAN-ser",
+    "meaning": "a serious disease caused by abnormal cells",
+    "example_sentence": "He is recovering from cancer treatment."
+  },
+  {
+    "word_index": 219,
+    "word": "candidate",
+    "pronunciation": "KAN-di-dayt",
+    "meaning": "a person who is trying to be elected",
+    "example_sentence": "She is a candidate for the mayor position."
+  },
+  {
+    "word_index": 220,
+    "word": "candle",
+    "pronunciation": "KAN-duhl",
+    "meaning": "a stick of wax that burns to give light",
+    "example_sentence": "We lit a candle when the power went out."
+  },
+  {
+    "word_index": 221,
+    "word": "candy",
+    "pronunciation": "KAN-dee",
+    "meaning": "sweet food made with sugar",
+    "example_sentence": "Kids love eating colorful candy."
+  },
+  {
+    "word_index": 222,
+    "word": "cap",
+    "pronunciation": "kap",
+    "meaning": "a type of soft hat with a curved front part",
+    "example_sentence": "He wore a baseball cap to block the sun."
+  },
+  {
+    "word_index": 223,
+    "word": "capable",
+    "pronunciation": "KAY-puh-buhl",
+    "meaning": "having the ability to do something well",
+    "example_sentence": "She is a very capable manager."
+  },
+  {
+    "word_index": 224,
+    "word": "capacity",
+    "pronunciation": "kuh-PAS-i-tee",
+    "meaning": "the maximum amount that something can contain",
+    "example_sentence": "The stadium has a capacity of fifty thousand."
+  },
+  {
+    "word_index": 225,
+    "word": "capital",
+    "pronunciation": "KAP-i-tuhl",
+    "meaning": "the city where the government is located",
+    "example_sentence": "Paris is the capital of France."
+  },
+  {
+    "word_index": 226,
+    "word": "captain",
+    "pronunciation": "KAP-tin",
+    "meaning": "the person in command of a ship or team",
+    "example_sentence": "He is the captain of our football team."
+  },
+  {
+    "word_index": 227,
+    "word": "capture",
+    "pronunciation": "KAP-cher",
+    "meaning": "to catch a person or animal by force",
+    "example_sentence": "The soldiers managed to capture the castle."
+  },
+  {
+    "word_index": 228,
+    "word": "car",
+    "pronunciation": "kahr",
+    "meaning": "a road vehicle with four wheels and an engine",
+    "example_sentence": "She drives a small red car to work."
+  },
+  {
+    "word_index": 229,
+    "word": "card",
+    "pronunciation": "kahrd",
+    "meaning": "a small piece of stiff paper or plastic",
+    "example_sentence": "He paid for the groceries with a credit card."
+  },
+  {
+    "word_index": 230,
+    "word": "care",
+    "pronunciation": "kair",
+    "meaning": "to feel interest or worry about someone/something",
+    "example_sentence": "I really care about my family's health."
+  },
+  {
+    "word_index": 231,
+    "word": "career",
+    "pronunciation": "kuh-REER",
+    "meaning": "a job or profession that you do for a long time",
+    "example_sentence": "She wants a career in medical research."
+  },
+  {
+    "word_index": 232,
+    "word": "careful",
+    "pronunciation": "KAIR-fuhl",
+    "meaning": "giving attention to avoid danger or mistakes",
+    "example_sentence": "Please be careful when you cross the street."
+  },
+  {
+    "word_index": 233,
+    "word": "careless",
+    "pronunciation": "KAIR-lis",
+    "meaning": "not giving enough attention to avoid mistakes",
+    "example_sentence": "It was careless of him to lose his keys."
+  },
+  {
+    "word_index": 234,
+    "word": "cargo",
+    "pronunciation": "KAHR-goh",
+    "meaning": "goods carried on a ship, plane, or truck",
+    "example_sentence": "The cargo ship arrived at the port today."
+  },
+  {
+    "word_index": 235,
+    "word": "carpet",
+    "pronunciation": "KAHR-pit",
+    "meaning": "a thick heavy cover for a floor",
+    "example_sentence": "We bought a soft blue carpet for the living room."
+  },
+  {
+    "word_index": 236,
+    "word": "carriage",
+    "pronunciation": "KAR-ij",
+    "meaning": "a vehicle with wheels pulled by horses",
+    "example_sentence": "They rode in a horse-drawn carriage."
+  },
+  {
+    "word_index": 237,
+    "word": "carry",
+    "pronunciation": "KAR-ee",
+    "meaning": "to hold and move something to another place",
+    "example_sentence": "Could you help me carry these heavy bags?"
+  },
+  {
+    "word_index": 238,
+    "word": "case",
+    "pronunciation": "kays",
+    "meaning": "a particular situation or example of something",
+    "example_sentence": "In this case, the rules do not apply."
+  },
+  {
+    "word_index": 239,
+    "word": "cash",
+    "pronunciation": "kash",
+    "meaning": "money in the form of coins or notes",
+    "example_sentence": "Do you want to pay in cash or by card?"
+  },
+  {
+    "word_index": 240,
+    "word": "cast",
+    "pronunciation": "kast",
+    "meaning": "to throw something; all the actors in a play",
+    "example_sentence": "He cast his fishing line into the water."
+  },
+  {
+    "word_index": 241,
+    "word": "castle",
+    "pronunciation": "KAS-uhl",
+    "meaning": "a large strong building built in the past",
+    "example_sentence": "We visited a beautiful historic castle in Europe."
+  },
+  {
+    "word_index": 242,
+    "word": "cat",
+    "pronunciation": "kat",
+    "meaning": "a small furry animal kept as a pet",
+    "example_sentence": "A cat is sleeping on the windowsill."
+  },
+  {
+    "word_index": 243,
+    "word": "catch",
+    "pronunciation": "kach",
+    "meaning": "to stop and hold a moving object",
+    "example_sentence": "Try to catch the ball before it drops."
+  },
+  {
+    "word_index": 244,
+    "word": "category",
+    "pronunciation": "KAT-uh-gawr-ee",
+    "meaning": "a group of people or things with shared qualities",
+    "example_sentence": "Which category does this book belong to?"
+  },
+  {
+    "word_index": 245,
+    "word": "cause",
+    "pronunciation": "kawz",
+    "meaning": "to make something happen; the reason for something",
+    "example_sentence": "A small spark can cause a large forest fire."
+  },
+  {
+    "word_index": 246,
+    "word": "cave",
+    "pronunciation": "kayv",
+    "meaning": "a large natural hole in the side of a hill",
+    "example_sentence": "We explored a dark cave on our vacation."
+  },
+  {
+    "word_index": 247,
+    "word": "ceiling",
+    "pronunciation": "SEE-ling",
+    "meaning": "the inner surface of the top of a room",
+    "example_sentence": "They painted the bedroom ceiling white."
+  },
+  {
+    "word_index": 248,
+    "word": "celebrate",
+    "pronunciation": "SEL-uh-brayt",
+    "meaning": "to do something special for an event",
+    "example_sentence": "We went out to celebrate her graduation."
+  },
+  {
+    "word_index": 249,
+    "word": "celebrity",
+    "pronunciation": "suh-LEB-ri-tee",
+    "meaning": "a famous person",
+    "example_sentence": "She became a global celebrity after the movie."
+  },
+  {
+    "word_index": 250,
+    "word": "cell",
+    "pronunciation": "sel",
+    "meaning": "the smallest basic unit of a living thing",
+    "example_sentence": "Red blood cells carry oxygen around the body."
+  },
+  {
+    "word_index": 251,
+    "word": "cemetery",
+    "pronunciation": "SEM-uh-ter-ee",
+    "meaning": "an area of ground where dead people are buried",
+    "example_sentence": "We placed flowers on the grave in the cemetery."
+  },
+  {
+    "word_index": 252,
+    "word": "center",
+    "pronunciation": "SEN-ter",
+    "meaning": "the middle point or part of something",
+    "example_sentence": "The fountain is in the center of the square."
+  },
+  {
+    "word_index": 253,
+    "word": "central",
+    "pronunciation": "SEN-truhl",
+    "meaning": "located in the middle of something",
+    "example_sentence": "The central station is very busy at rush hour."
+  },
+  {
+    "word_index": 254,
+    "word": "century",
+    "pronunciation": "SEN-chuh-ee",
+    "meaning": "a period of one hundred years",
+    "example_sentence": "We live in the twenty-first century."
+  },
+  {
+    "word_index": 255,
+    "word": "ceremony",
+    "pronunciation": "SER-uh-moh-nee",
+    "meaning": "a formal public or religious event",
+    "example_sentence": "The wedding ceremony was beautiful."
+  },
+  {
+    "word_index": 256,
+    "word": "certain",
+    "pronunciation": "SUR-tuhn",
+    "meaning": "sure and having no doubt about something",
+    "example_sentence": "I am certain that I locked the door."
+  },
+  {
+    "word_index": 257,
+    "word": "certainly",
+    "pronunciation": "SUR-tuhn-lee",
+    "meaning": "without any doubt; definitely",
+    "example_sentence": "I will certainly help you with your project."
+  },
+  {
+    "word_index": 258,
+    "word": "chain",
+    "pronunciation": "chayn",
+    "meaning": "a row of metal rings connected together",
+    "example_sentence": "He locked his bicycle with a strong chain."
+  },
+  {
+    "word_index": 259,
+    "word": "chair",
+    "pronunciation": "chair",
+    "meaning": "a piece of furniture for one person to sit on",
+    "example_sentence": "Please take a chair and sit down."
+  },
+  {
+    "word_index": 260,
+    "word": "chairman",
+    "pronunciation": "CHAIR-muhn",
+    "meaning": "the person in charge of a meeting or company",
+    "example_sentence": "The chairman opened the meeting with a speech."
+  },
+  {
+    "word_index": 261,
+    "word": "challenge",
+    "pronunciation": "CHAL-inj",
+    "meaning": "something new and difficult that needs effort",
+    "example_sentence": "Learning a new language is a great challenge."
+  },
+  {
+    "word_index": 262,
+    "word": "chamber",
+    "pronunciation": "CHAYM-ber",
+    "meaning": "a hall or large room for formal meetings",
+    "example_sentence": "The council met in the town chamber."
+  },
+  {
+    "word_index": 263,
+    "word": "champion",
+    "pronunciation": "CHAMP-ee-uhn",
+    "meaning": "a person or team that wins a competition",
+    "example_sentence": "She is the world chess champion."
+  },
+  {
+    "word_index": 264,
+    "word": "chance",
+    "pronunciation": "chans",
+    "meaning": "the possibility of something happening",
+    "example_sentence": "Is there any chance of rain today?"
+  },
+  {
+    "word_index": 265,
+    "word": "change",
+    "pronunciation": "chaynjs",
+    "meaning": "to make or become different; to swap",
+    "example_sentence": "I need to change my wet clothes."
+  },
+  {
+    "word_index": 266,
+    "word": "channel",
+    "pronunciation": "CHAN-uhl",
+    "meaning": "a television station; a route for water",
+    "example_sentence": "Switch to the sports channel, please."
+  },
+  {
+    "word_index": 267,
+    "word": "chaos",
+    "pronunciation": "KAY-ahs",
+    "meaning": "a state of total confusion and lack of order",
+    "example_sentence": "The heavy snow caused chaos on the roads."
+  },
+  {
+    "word_index": 268,
+    "word": "chapter",
+    "pronunciation": "CHAP-ter",
+    "meaning": "a section of a book with a number or title",
+    "example_sentence": "I am reading the third chapter of the book."
+  },
+  {
+    "word_index": 269,
+    "word": "character",
+    "pronunciation": "KAR-ik-ter",
+    "meaning": "the qualities of a person; a person in a book",
+    "example_sentence": "She has a very strong and kind character."
+  },
+  {
+    "word_index": 270,
+    "word": "charge",
+    "pronunciation": "chahrj",
+    "meaning": "the price asked for goods or services",
+    "example_sentence": "There is no extra charge for delivery."
+  },
+  {
+    "word_index": 271,
+    "word": "charity",
+    "pronunciation": "CHAR-i-tee",
+    "meaning": "an organization that helps people in need",
+    "example_sentence": "All the money raised will go to a local charity."
+  },
+  {
+    "word_index": 272,
+    "word": "chart",
+    "pronunciation": "chahrt",
+    "meaning": "a drawing that shows information simply",
+    "example_sentence": "The pie chart shows our monthly expenses."
+  },
+  {
+    "word_index": 273,
+    "word": "chase",
+    "pronunciation": "chays",
+    "meaning": "to run after someone/something to catch them",
+    "example_sentence": "The dog loves to chase birds in the park."
+  },
+  {
+    "word_index": 274,
+    "word": "chat",
+    "pronunciation": "chat",
+    "meaning": "to talk in a friendly, informal way",
+    "example_sentence": "We sat in the cafe and had a nice chat."
+  },
+  {
+    "word_index": 275,
+    "word": "cheap",
+    "pronunciation": "cheep",
+    "meaning": "costing little money; not expensive",
+    "example_sentence": "Tickets are cheaper if you buy them online."
+  },
+  {
+    "word_index": 276,
+    "word": "cheat",
+    "pronunciation": "cheet",
+    "meaning": "to act dishonestly to gain an advantage",
+    "example_sentence": "You should never cheat on an exam."
+  },
+  {
+    "word_index": 277,
+    "word": "check",
+    "pronunciation": "chek",
+    "meaning": "to examine something to make sure it is correct",
+    "example_sentence": "Please check your answers before submitting."
+  },
+  {
+    "word_index": 278,
+    "word": "cheek",
+    "pronunciation": "cheek",
+    "meaning": "either side of the face below the eyes",
+    "example_sentence": "She kissed him on the cheek."
+  },
+  {
+    "word_index": 279,
+    "word": "cheer",
+    "pronunciation": "cheer",
+    "meaning": "to shout loudly to show approval or support",
+    "example_sentence": "The crowd began to cheer for the team."
+  },
+  {
+    "word_index": 280,
+    "word": "cheerful",
+    "pronunciation": "CHEER-fuhl",
+    "meaning": "happy and showing it by behavior",
+    "example_sentence": "She always has a cheerful smile on her face."
+  },
+  {
+    "word_index": 281,
+    "word": "cheese",
+    "pronunciation": "cheez",
+    "meaning": "a yellow or white food made from milk",
+    "example_sentence": "I love eating bread with melted cheese."
+  },
+  {
+    "word_index": 282,
+    "word": "chef",
+    "pronunciation": "shef",
+    "meaning": "a professional cook in a restaurant",
+    "example_sentence": "The head chef prepared a special dinner for us."
+  },
+  {
+    "word_index": 283,
+    "word": "chemical",
+    "pronunciation": "KEM-i-kuhl",
+    "meaning": "a substance produced by chemistry",
+    "example_sentence": "They do not use harmful chemicals on these crops."
+  },
+  {
+    "word_index": 284,
+    "word": "chemistry",
+    "pronunciation": "KEM-i-stree",
+    "meaning": "the scientific study of substances",
+    "example_sentence": "We did an interesting experiment in chemistry class."
+  },
+  {
+    "word_index": 285,
+    "word": "chest",
+    "pronunciation": "chest",
+    "meaning": "the upper front part of the body",
+    "example_sentence": "He felt a sudden pain in his chest."
+  },
+  {
+    "word_index": 286,
+    "word": "chicken",
+    "pronunciation": "CHIK-in",
+    "meaning": "a common bird kept for its eggs and meat",
+    "example_sentence": "We had grilled chicken and salad for dinner."
+  },
+  {
+    "word_index": 287,
+    "word": "chief",
+    "pronunciation": "cheef",
+    "meaning": "most important; leader of a group",
+    "example_sentence": "The chief reason for our success was teamwork."
+  },
+  {
+    "word_index": 288,
+    "word": "child",
+    "pronunciation": "chayld",
+    "meaning": "a young human who is not yet an adult",
+    "example_sentence": "The child was playing happily with her toys."
+  },
+  {
+    "word_index": 289,
+    "word": "childhood",
+    "pronunciation": "CHAYLD-hud",
+    "meaning": "the period of time when you are a child",
+    "example_sentence": "She had a very happy childhood in the countryside."
+  },
+  {
+    "word_index": 290,
+    "word": "chin",
+    "pronunciation": "chin",
+    "meaning": "the part of the face below the mouth",
+    "example_sentence": "He rested his chin on his hand."
+  },
+  {
+    "word_index": 291,
+    "word": "chocolate",
+    "pronunciation": "CHAHK-lit",
+    "meaning": "a sweet brown food made from cocoa",
+    "example_sentence": "I bought a bar of dark chocolate."
+  },
+  {
+    "word_index": 292,
+    "word": "choice",
+    "pronunciation": "choys",
+    "meaning": "the act of choosing between things",
+    "example_sentence": "You have a choice between tea and coffee."
+  },
+  {
+    "word_index": 293,
+    "word": "choose",
+    "pronunciation": "chooz",
+    "meaning": "to pick someone or something from a group",
+    "example_sentence": "It is difficult to choose what to wear today."
+  },
+  {
+    "word_index": 294,
+    "word": "church",
+    "pronunciation": "church",
+    "meaning": "a building where Christians go to worship",
+    "example_sentence": "The church was built in the twelfth century."
+  },
+  {
+    "word_index": 295,
+    "word": "cigarette",
+    "pronunciation": "SIG-uh-ret",
+    "meaning": "a thin tube of paper filled with tobacco",
+    "example_sentence": "He lit a cigarette while waiting for the bus."
+  },
+  {
+    "word_index": 296,
+    "word": "cinema",
+    "pronunciation": "SIN-uh-muh",
+    "meaning": "a theater where movies are shown",
+    "example_sentence": "We are going to the cinema this evening."
+  },
+  {
+    "word_index": 297,
+    "word": "circle",
+    "pronunciation": "SUR-kuhl",
+    "meaning": "a completely round flat shape",
+    "example_sentence": "The children sat in a circle on the floor."
+  },
+  {
+    "word_index": 298,
+    "word": "circumstance",
+    "pronunciation": "SUR-kuhm-stans",
+    "meaning": "the facts or conditions of a situation",
+    "example_sentence": "The police are investigating the circumstance of the accident."
+  },
+  {
+    "word_index": 299,
+    "word": "citizen",
+    "pronunciation": "SIT-i-zuhn",
+    "meaning": "a person who is a legal member of a country",
+    "example_sentence": "He is a citizen of both Japan and Canada."
+  },
+  {
+    "word_index": 300,
+    "word": "city",
+    "pronunciation": "SIT-ee",
+    "meaning": "a large and important town",
+    "example_sentence": "Tokyo is a very clean and safe city."
+  }
+]
