@@ -101,20 +101,32 @@ alter table user_day_progress enable row level security;
 alter table user_vocab_progress enable row level security;
 alter table mistake_log enable row level security;
 
--- Students can only read/write their own rows. Teacher (matched by email) can read/write all.
-create policy "own profile" on profiles for select using (auth.uid() = id);
-create policy "own progress read" on user_day_progress for select using (auth.uid() = user_id);
-create policy "own progress write" on user_day_progress for insert with check (auth.uid() = user_id);
-create policy "own progress update" on user_day_progress for update using (auth.uid() = user_id);
-create policy "own vocab" on user_vocab_progress for all using (auth.uid() = user_id);
-create policy "own mistakes read" on mistake_log for select using (auth.uid() = user_id);
+-- Profiles policies
+create policy "own profile select" on profiles for select using (auth.uid() = id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+create policy "own profile insert" on profiles for insert with check (auth.uid() = id);
+create policy "own profile update" on profiles for update using (auth.uid() = id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
 
--- Teacher access is handled server-side via the Supabase service role key in API routes
--- gated by checking the logged-in user's email against NEXT_PUBLIC_TEACHER_EMAIL.
--- days, vocab_words, announcements are public-read, teacher-write-only (via service role).
+-- user_day_progress policies
+create policy "own progress read" on user_day_progress for select using (auth.uid() = user_id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+create policy "own progress write" on user_day_progress for insert with check (auth.uid() = user_id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+create policy "own progress update" on user_day_progress for update using (auth.uid() = user_id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+
+-- user_vocab_progress policies
+create policy "own vocab" on user_vocab_progress for all using (auth.uid() = user_id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+
+-- mistake_log policies
+create policy "own mistakes read" on mistake_log for select using (auth.uid() = user_id or auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+create policy "teacher mistakes insert" on mistake_log for insert with check (auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+create policy "teacher mistakes delete" on mistake_log for delete using (auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+
+-- Days & Vocab public read
 alter table days enable row level security;
 alter table vocab_words enable row level security;
-alter table announcements enable row level security;
 create policy "public read days" on days for select using (true);
 create policy "public read vocab" on vocab_words for select using (true);
+
+-- Announcements policies
+alter table announcements enable row level security;
 create policy "public read announcements" on announcements for select using (true);
+create policy "teacher announcements insert" on announcements for insert with check (auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
+create policy "teacher announcements delete" on announcements for delete using (auth.jwt() ->> 'email' = 'brovaibhavkr2008@gmail.com');
