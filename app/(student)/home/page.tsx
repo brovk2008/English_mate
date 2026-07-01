@@ -212,6 +212,29 @@ export default async function DashboardPage() {
   // Get daily quote
   const dailyQuote = quotes.find((q) => q.day === currentDayNum) || quotes[0];
 
+  // Get word of the day
+  const wordOfDays = require('@/data/word_of_day.json');
+  const wordOfDay = wordOfDays.find((w: any) => w.day === currentDayNum) || wordOfDays[0];
+
+  // Fetch mistakes for dashboard category warnings (alerts if >= 3 in a category)
+  const { data: homeMistakes } = await supabase
+    .from('mistake_log')
+    .select('category')
+    .eq('user_id', user.id);
+
+  const homeMistakeCounts: Record<string, number> = {};
+  (homeMistakes || []).forEach((m: any) => {
+    if (m.category) {
+      homeMistakeCounts[m.category] = (homeMistakeCounts[m.category] || 0) + 1;
+    }
+  });
+
+  const repeatedSlips = Object.entries(homeMistakeCounts)
+    .filter(([_, count]) => count >= 3)
+    .map(([cat]) => cat);
+
+  const alertCategory = repeatedSlips.length > 0 ? repeatedSlips[0] : null;
+
   return (
     <DashboardClient
       profile={profile}
@@ -233,6 +256,8 @@ export default async function DashboardPage() {
       streak={streak}
       freezes={freezes}
       dailyQuote={dailyQuote}
+      wordOfDay={wordOfDay}
+      alertCategory={alertCategory}
     />
   );
 }

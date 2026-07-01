@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Calendar, BarChart2, BookOpen } from 'lucide-react';
+import { Home, Calendar, BarChart2, BookOpen, Settings } from 'lucide-react';
 
 interface BottomNavProps {
   currentDay: number;
@@ -16,6 +16,7 @@ export default function BottomNav({ currentDay }: BottomNavProps) {
     { href: `/day/${currentDay}`, label: 'Today', icon: Calendar },
     { href: '/progress', label: 'Progress', icon: BarChart2 },
     { href: '/vocabulary', label: 'Vocab', icon: BookOpen },
+    { href: '/settings', label: 'Settings', icon: Settings },
   ];
 
   return (

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "s001",
+    "category": "Daily Life",
+    "prompt": "Describe what you did yesterday in 2 minutes.",
+    "prompt_ja": "昨日何をしたか、2分間で説明してください。"
+  },
+  {
+    "id": "s002",
+    "category": "Daily Life",
+    "prompt": "What is your favorite morning routine?",
+    "prompt_ja": "お気に入りのモーニングルーティンは何ですか？"
+  },
+  {
+    "id": "s003",
+    "category": "Daily Life",
+    "prompt": "Describe your dream vacation spot in detail.",
+    "prompt_ja": "夢の休暇先を詳細に説明してください。"
+  },
+  {
+    "id": "s004",
+    "category": "Daily Life",
+    "prompt": "What do you like to do on rainy days?",
+    "prompt_ja": "雨の日には何をするのが好きですか？"
+  },
+  {
+    "id": "s005",
+    "category": "Daily Life",
+    "prompt": "Describe your bedroom and favorite objects inside it.",
+    "prompt_ja": "自分の寝室とお気に入りの家具や小物について説明してください。"
+  },
+  {
+    "id": "s006",
+    "category": "Daily Life",
+    "prompt": "Talk about a dish you love to cook or eat.",
+    "prompt_ja": "料理する、あるいは食べるのが大好きな料理について話してください。"
+  },
+  {
+    "id": "s007",
+    "category": "Opinion",
+    "prompt": "What do you think about social media? Speak for 1 minute.",
+    "prompt_ja": "ソーシャルメディアについてどう思いますか？1分間話してください。"
+  },
+  {
+    "id": "s008",
+    "category": "Opinion",
+    "prompt": "Should students study English abroad or is online study enough?",
+    "prompt_ja": "留学すべきですか、それともオンライン学習で十分ですか？"
+  },
+  {
+    "id": "s009",
+    "category": "Opinion",
+    "prompt": "Is reading physical books better than reading ebooks?",
+    "prompt_ja": "紙の本を読むことは、電子書籍を読むことより優れていますか？"
+  },
+  {
+    "id": "s010",
+    "category": "Opinion",
+    "prompt": "What is the most important skill for a language learner?",
+    "prompt_ja": "語学学習者にとって最も重要なスキルは何ですか？"
+  },
+  {
+    "id": "s011",
+    "category": "Opinion",
+    "prompt": "Should classrooms be completely phone-free?",
+    "prompt_ja": "教室は完全にスマホ禁止にするべきですか？"
+  },
+  {
+    "id": "s012",
+    "category": "Opinion",
+    "prompt": "Does money buy happiness, or just comfort?",
+    "prompt_ja": "お金は幸せを買えますか、それとも快適さだけですか？"
+  },
+  {
+    "id": "s013",
+    "category": "Story",
+    "prompt": "Tell a story about something funny that happened to you.",
+    "prompt_ja": "あなたに起きた面白い出来事についての話を語ってください。"
+  },
+  {
+    "id": "s014",
+    "category": "Story",
+    "prompt": "Describe a time you got completely lost.",
+    "prompt_ja": "完全に道に迷ってしまった時のことを説明してください。"
+  },
+  {
+    "id": "s015",
+    "category": "Story",
+    "prompt": "Talk about the best gift you have ever received.",
+    "prompt_ja": "これまでに受け取った中で最高のプレゼントについて話してください。"
+  },
+  {
+    "id": "s016",
+    "category": "Story",
+    "prompt": "Describe a childhood memory that still makes you smile.",
+    "prompt_ja": "今でも笑顔にしてくれる子供の頃の思い出を説明してください。"
+  },
+  {
+    "id": "s017",
+    "category": "Story",
+    "prompt": "Talk about a minor mistake you made that taught you a lesson.",
+    "prompt_ja": "あなたに教訓を与えてくれた、ちょっとした失敗について話してください。"
+  },
+  {
+    "id": "s018",
+    "category": "Anime",
+    "prompt": "Describe your favorite anime character.",
+    "prompt_ja": "お気に入りのアニメキャラクターを説明してください。"
+  },
+  {
+    "id": "s019",
+    "category": "Anime",
+    "prompt": "What makes anime more popular than Western animation?",
+    "prompt_ja": "アニメが海外のアニメよりも人気がある理由は何ですか？"
+  },
+  {
+    "id": "s020",
+    "category": "Anime",
+    "prompt": "Recommend an anime series to someone who has never watched one.",
+    "prompt_ja": "アニメを一度も見たことがない人におすすめの作品を紹介してください。"
+  },
+  {
+    "id": "s021",
+    "category": "Anime",
+    "prompt": "Talk about a studio Ghibli movie that you love.",
+    "prompt_ja": "大好きなスタジオジブリの映画について話してください。"
+  },
+  {
+    "id": "s022",
+    "category": "Anime",
+    "prompt": "Describe the most emotional scene you have watched in anime.",
+    "prompt_ja": "アニメの中で見た最も感動的なシーンを説明してください。"
+  },
+  {
+    "id": "s023",
+    "category": "Song",
+    "prompt": "Explain the meaning of a song you love.",
+    "prompt_ja": "大好きな歌の歌詞の意味を説明してください。"
+  },
+  {
+    "id": "s024",
+    "category": "Song",
+    "prompt": "Why do you think music helps in memorizing vocabulary?",
+    "prompt_ja": "なぜ音楽が語彙の暗記に役立つと思いますか？"
+  },
+  {
+    "id": "s025",
+    "category": "Song",
+    "prompt": "Talk about a music genre you cannot stand.",
+    "prompt_ja": "我慢できない、苦手な音楽のジャンルについて話してください。"
+  },
+  {
+    "id": "s026",
+    "category": "CaseOh",
+    "prompt": "Describe the funniest CaseOh moment you've seen.",
+    "prompt_ja": "これまでに見た中で最も面白いCaseOhの瞬間を説明してください。"
+  },
+  {
+    "id": "s027",
+    "category": "CaseOh",
+    "prompt": "Why is livestreaming comedy so popular among English learners?",
+    "prompt_ja": "なぜストリーミングコメディが英語学習者の間で人気なのでしょうか？"
+  },
+  {
+    "id": "s028",
+    "category": "CaseOh",
+    "prompt": "Explain CaseOh's style of streaming to someone who doesn't know him.",
+    "prompt_ja": "CaseOhを知らない人に彼の配信スタイルを説明してください。"
+  },
+  {
+    "id": "s029",
+    "category": "Debate",
+    "prompt": "Argue that anime is better than Western cartoons.",
+    "prompt_ja": "アニメは海外のカートゥーンよりも優れている、という立場から議論してください。"
+  },
+  {
+    "id": "s030",
+    "category": "Debate",
+    "prompt": "Is AI artificial intelligence a threat to human translators?",
+    "prompt_ja": "AIは人間の翻訳家にとって脅威ですか？"
+  },
+  {
+    "id": "s031",
+    "category": "Debate",
+    "prompt": "Should homework be banned completely?",
+    "prompt_ja": "宿題は完全に禁止されるべきですか？"
+  },
+  {
+    "id": "s032",
+    "category": "Debate",
+    "prompt": "Is city life better than country life?",
+    "prompt_ja": "都市での生活は田舎での生活よりも優れていますか？"
+  },
+  {
+    "id": "s033",
+    "category": "Pronunciation",
+    "prompt": "Read this: 'She sells seashells by the seashore.' Focus on /s/ and /sh/.",
+    "prompt_ja": "「She sells seashells by the seashore.」を/s/と/sh/の発音に気をつけて読んでください。"
+  },
+  {
+    "id": "s034",
+    "category": "Pronunciation",
+    "prompt": "Read this: 'Peter Piper picked a peck of pickled peppers.' Focus on /p/ plosives.",
+    "prompt_ja": " Peter Piperの早口言葉を/p/の破裂音に気をつけて読んでください。"
+  },
+  {
+    "id": "s035",
+    "category": "Daily Life",
+    "prompt": "What did you eat for breakfast today? Describe the taste.",
+    "prompt_ja": "今日朝食に何を食べましたか？味を説明してください。"
+  },
+  {
+    "id": "s036",
+    "category": "Daily Life",
+    "prompt": "Tell me about a hobby you want to start in the future.",
+    "prompt_ja": "将来始めてみたい趣味について教えてください。"
+  },
+  {
+    "id": "s037",
+    "category": "Opinion",
+    "prompt": "Is it important to learn grammar rules, or just practice speaking?",
+    "prompt_ja": "文法規則を学ぶことは重要ですか、それともただ話す練習をするべきですか？"
+  },
+  {
+    "id": "s038",
+    "category": "Opinion",
+    "prompt": "What is the best way to make foreign friends?",
+    "prompt_ja": "外国人の友達を作る最良の方法は何ですか？"
+  },
+  {
+    "id": "s039",
+    "category": "Story",
+    "prompt": "Talk about a movie that surprised you at the end.",
+    "prompt_ja": "結末に驚かされた映画について話してください。"
+  },
+  {
+    "id": "s040",
+    "category": "Story",
+    "prompt": "Describe a trip you took with your friends or family.",
+    "prompt_ja": "友達や家族と行った旅行について説明してください。"
+  },
+  {
+    "id": "s041",
+    "category": "Anime",
+    "prompt": "Describe the main conflict of your favorite anime series.",
+    "prompt_ja": "お気に入りのアニメシリーズの主な対立・葛藤を説明してください。"
+  },
+  {
+    "id": "s042",
+    "category": "Anime",
+    "prompt": "Why do some people enjoy slice-of-life anime?",
+    "prompt_ja": "なぜ日常系のアニメを楽しむ人がいるのでしょうか？"
+  },
+  {
+    "id": "s043",
+    "category": "Song",
+    "prompt": "If you could write a song, what would it be about?",
+    "prompt_ja": "もし曲を書くことができるなら、何についての曲にしますか？"
+  },
+  {
+    "id": "s044",
+    "category": "Song",
+    "prompt": "Talk about an artist who has had a big influence on you.",
+    "prompt_ja": "あなたに大きな影響を与えたアーティストについて話してください。"
+  },
+  {
+    "id": "s045",
+    "category": "CaseOh",
+    "prompt": "Why is livestream chat so active during gaming sessions?",
+    "prompt_ja": "ゲームセッション中、なぜライブ配信のチャットはあんなに活発なのでしょうか？"
+  },
+  {
+    "id": "s046",
+    "category": "CaseOh",
+    "prompt": "Do you enjoy watch parties or streaming with others?",
+    "prompt_ja": "ウォッチパーティーや他の人と一緒にストリーミングを楽しみますか？"
+  },
+  {
+    "id": "s047",
+    "category": "Debate",
+    "prompt": "Are video games a waste of time or a creative outlet?",
+    "prompt_ja": "ビデオゲームは時間の無駄ですか、それともクリエイティブな表現方法ですか？"
+  },
+  {
+    "id": "s048",
+    "category": "Debate",
+    "prompt": "Should public transport be free for everyone?",
+    "prompt_ja": "公共交通機関はすべての人に無料化されるべきですか？"
+  },
+  {
+    "id": "s049",
+    "category": "Pronunciation",
+    "prompt": "Practice the difference between 'right' and 'light'.",
+    "prompt_ja": "「right」と「light」の発音の違いを練習してください。"
+  },
+  {
+    "id": "s050",
+    "category": "Pronunciation",
+    "prompt": "Practice the tongue twister: 'Red lory, yellow lory, red lory, yellow lory.'",
+    "prompt_ja": "早口言葉「Red lory, yellow lory, red lory, yellow lory」を練習してください。"
+  }
+]

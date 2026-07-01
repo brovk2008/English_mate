@@ -24,11 +24,19 @@ export default async function VocabularyPage() {
     .select('*')
     .eq('user_id', user.id);
 
+  // 3. Fetch user lookups logs
+  const { data: lookups } = await supabase
+    .from('word_lookups')
+    .select('*')
+    .eq('user_id', user.id)
+    .order('looked_up_at', { ascending: false });
+
   return (
     <VocabularyClient
       userId={user.id}
       vocabWords={vocabWords || []}
       initialProgress={vocabProgress || []}
+      lookups={lookups || []}
     />
   );
 }

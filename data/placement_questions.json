@@ -1,0 +1,92 @@
+[
+  {
+    "id": "p001", "level": "A1",
+    "type": "vocabulary",
+    "question": "What does 'happy' mean?",
+    "options": ["感謝している", "嬉しい", "怒っている", "疲れている"],
+    "answer": 1,
+    "question_ja": "「happy」はどういう意味ですか？"
+  },
+  {
+    "id": "p002", "level": "A1",
+    "type": "grammar",
+    "question": "Choose the correct sentence:",
+    "options": ["She go to school.", "She goes to school."],
+    "answer": 1,
+    "question_ja": "正しい文を選んでください："
+  },
+  {
+    "id": "p003", "level": "A2",
+    "type": "vocabulary",
+    "question": "Which word means the same as 'begin'?",
+    "options": ["finish", "start", "stop", "wait"],
+    "answer": 1,
+    "question_ja": "「begin」と同じ意味の単語はどれですか？"
+  },
+  {
+    "id": "p004", "level": "A2",
+    "type": "grammar",
+    "question": "Choose the correct sentence:",
+    "options": ["I have went to Japan.", "I have been to Japan.", "I has been to Japan.", "I was been to Japan."],
+    "answer": 1,
+    "question_ja": "正しい文を選んでください："
+  },
+  {
+    "id": "p005", "level": "A2",
+    "type": "reading",
+    "question": "Read this: 'Sarah loves music. She listens to songs every day.' What does Sarah do every day?",
+    "options": ["She sings songs.", "She listens to songs.", "She plays guitar.", "She writes music."],
+    "answer": 1,
+    "question_ja": "次を読んでください：「Sarahは音楽が大好きです。毎日歌を聴きます。」Sarahは毎日何をしますか？"
+  },
+  {
+    "id": "p006", "level": "B1",
+    "type": "vocabulary",
+    "question": "Which word best completes this sentence: 'The movie was so _____ that I cried.'",
+    "options": ["bored", "boring", "emotional", "emotion"],
+    "answer": 2,
+    "question_ja": "次の文に最もよく合う単語はどれですか：「その映画はとても_____だったので、泣いてしまいました。」"
+  },
+  {
+    "id": "p007", "level": "B1",
+    "type": "grammar",
+    "question": "Choose the correct sentence:",
+    "options": [
+      "If I will study hard, I will pass.",
+      "If I study hard, I will pass.",
+      "If I studied hard, I will pass.",
+      "If I study hard, I would pass."
+    ],
+    "answer": 1,
+    "question_ja": "正しい文を選んでください："
+  },
+  {
+    "id": "p008", "level": "B1",
+    "type": "reading",
+    "question": "Read: 'Although the weather was cold, the children played outside for hours.' What does 'although' show here?",
+    "options": ["A reason", "A contrast", "A result", "A condition"],
+    "answer": 1,
+    "question_ja": "次を読んでください：「寒かったにもかかわらず、子供たちは何時間も外で遊んだ。」ここで「although」は何を示していますか？"
+  },
+  {
+    "id": "p009", "level": "B1+",
+    "type": "grammar",
+    "question": "Which sentence uses the passive voice correctly?",
+    "options": [
+      "The letter wrote by her yesterday.",
+      "The letter was written by her yesterday.",
+      "The letter is wrote by her yesterday.",
+      "The letter has wrote by her yesterday."
+    ],
+    "answer": 1,
+    "question_ja": "受け身形が正しく使われている文はどれですか？"
+  },
+  {
+    "id": "p010", "level": "B2",
+    "type": "vocabulary",
+    "question": "Choose the word that best fits: 'Her speech was so _____ that even the skeptics were convinced.'",
+    "options": ["convincing", "convinced", "conviction", "convict"],
+    "answer": 0,
+    "question_ja": "最もよく合う単語を選んでください：「彼女のスピーチはとても_____で、懐疑的な人々でさえ納得しました。」"
+  }
+]

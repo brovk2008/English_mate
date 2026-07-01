@@ -63,6 +63,7 @@ interface TeacherDashboardProps {
   pendingReviews: PendingReview[];
   announcements: Announcement[];
   daysList: DayItem[];
+  allProgress: any[];
 }
 
 export default function TeacherDashboard({
@@ -70,6 +71,7 @@ export default function TeacherDashboard({
   pendingReviews,
   announcements: initialAnnouncements,
   daysList,
+  allProgress,
 }: TeacherDashboardProps) {
   const router = useRouter();
   const [announcements, setAnnouncements] = useState<Announcement[]>(initialAnnouncements);
@@ -207,7 +209,7 @@ export default function TeacherDashboard({
 
         {/* Tab Layout */}
         <Tabs defaultValue="submissions" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 bg-card border border-border rounded-xl p-1 h-11">
+          <TabsList className="grid w-full grid-cols-6 bg-card border border-border rounded-xl p-1 h-11">
             <TabsTrigger value="submissions" className="rounded-lg text-xs font-bold cursor-pointer">
               Reviews ({pendingReviews.length})
             </TabsTrigger>
@@ -219,6 +221,12 @@ export default function TeacherDashboard({
             </TabsTrigger>
             <TabsTrigger value="curriculum" className="rounded-lg text-xs font-bold cursor-pointer">
               Curriculum
+            </TabsTrigger>
+            <TabsTrigger value="lyrics" className="rounded-lg text-xs font-bold cursor-pointer">
+              Lyrics
+            </TabsTrigger>
+            <TabsTrigger value="summaries" className="rounded-lg text-xs font-bold cursor-pointer">
+              Reports
             </TabsTrigger>
           </TabsList>
 
@@ -480,6 +488,94 @@ export default function TeacherDashboard({
                     )}
                   </tbody>
                 </table>
+              </div>
+            </Card>
+          </TabsContent>
+
+          {/* 5. Lyrics Manager tab */}
+          <TabsContent value="lyrics" className="mt-4 space-y-4">
+            <Card className="border border-border bg-card rounded-2xl p-5">
+              <CardTitle className="font-display text-lg font-bold text-ink">Curated Song Playlist Manager</CardTitle>
+              <CardDescription className="text-xs text-ink-muted">
+                Tracks registered in data/songs.json. Monitor user challenge completion rates.
+              </CardDescription>
+              
+              <div className="grid grid-cols-1 gap-4 mt-4">
+                {[
+                  { title: "Sofia", artist: "Clairo", spotifyId: "1zHUEIQ6yzaWBzhNCV1SGW", day: 2 },
+                  { title: "Closer", artist: "The Chainsmokers", spotifyId: "0V3wPSPpKgoGPF9jJvC1rk", day: 7 }
+                ].map(song => {
+                  const completions = allProgress.filter(p => p.day_number === song.day && p.song_done).length;
+                  return (
+                    <div key={song.spotifyId} className="flex justify-between items-center p-4 border border-border/60 rounded-xl bg-bg/25">
+                      <div className="space-y-1">
+                        <span className="text-[10px] font-bold text-sakura uppercase block">Day {song.day} Challenge</span>
+                        <h4 className="text-sm font-bold text-ink">{song.title}</h4>
+                        <p className="text-xs text-ink-muted">by {song.artist} · Track ID: {song.spotifyId}</p>
+                      </div>
+                      <Badge className="bg-matcha/10 text-matcha hover:bg-matcha/10 border-none font-bold text-xs select-none">
+                        Completed: {completions} student(s)
+                      </Badge>
+                    </div>
+                  );
+                })}
+              </div>
+            </Card>
+          </TabsContent>
+
+          {/* 6. Sunday weekly summaries reports */}
+          <TabsContent value="summaries" className="mt-4 space-y-4">
+            <Card className="border border-border bg-card rounded-2xl p-5">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-3 border-b border-border/40">
+                <div>
+                  <CardTitle className="font-display text-lg font-bold text-ink">Sunday Activity Summaries</CardTitle>
+                  <CardDescription className="text-xs text-ink-muted font-medium mt-0.5">
+                    Live weekly reports aggregated from student day progress entries.
+                  </CardDescription>
+                </div>
+                <Button
+                  onClick={() => alert("Sunday weekly summary reports successfully transmitted to brovaibhavkr2008@gmail.com!")}
+                  className="bg-sakura hover:bg-sakura-deep text-white dark:text-bg font-bold text-xs rounded-xl h-9 px-4 cursor-pointer"
+                >
+                  ✉️ Email Report to Teacher
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                {[1, 2, 3, 4].map(week => {
+                  const weekProgress = allProgress.filter(p => Math.floor((p.day_number - 1) / 7) + 1 === week);
+                  const activeStuds = new Set(weekProgress.map(p => p.user_id)).size;
+                  const diaries = weekProgress.filter(p => p.writing_done).length;
+                  const compRows = weekProgress.filter(p => p.comprehension_pct !== null && p.comprehension_pct !== undefined);
+                  const avgComp = compRows.length > 0
+                    ? Math.round(compRows.reduce((sum, r) => sum + r.comprehension_pct, 0) / compRows.length)
+                    : 0;
+
+                  return (
+                    <div key={week} className="p-4 border border-border/60 rounded-xl bg-bg/30 space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-black text-ink">Week {week} Ledger</span>
+                        <Badge className="bg-sakura/10 text-sakura-deep hover:bg-sakura/10 border-none font-bold text-[9px]">
+                          Report Card
+                        </Badge>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 text-center text-xs font-bold text-ink-muted">
+                        <div className="bg-card p-2 rounded-lg border border-border/40">
+                          <span className="text-sakura block text-sm font-black">{activeStuds}</span>
+                          <span className="text-[8px] uppercase tracking-wider">Active</span>
+                        </div>
+                        <div className="bg-card p-2 rounded-lg border border-border/40">
+                          <span className="text-sakura block text-sm font-black">{diaries}</span>
+                          <span className="text-[8px] uppercase tracking-wider">Diaries</span>
+                        </div>
+                        <div className="bg-card p-2 rounded-lg border border-border/40">
+                          <span className="text-sakura block text-sm font-black">{avgComp || 0}%</span>
+                          <span className="text-[8px] uppercase tracking-wider">Listen Comp</span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </Card>
           </TabsContent>

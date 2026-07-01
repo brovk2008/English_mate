@@ -1,0 +1,42 @@
+{
+  "present_simple": {
+    "title": "Present Simple Tense",
+    "pattern": ["SUBJECT", "VERB(+s/es for he/she/it)", "OBJECT"],
+    "colors": ["#4F46E5", "#16A34A", "#EA580C"],
+    "example": ["She", "studies", "English"],
+    "negative": ["She", "doesn't study", "English"],
+    "question": ["Does", "she", "study", "English?"]
+  },
+  "present_continuous": {
+    "title": "Present Continuous Tense",
+    "pattern": ["SUBJECT", "AM/IS/ARE", "VERB(+ing)", "OBJECT"],
+    "colors": ["#4F46E5", "#06B6D4", "#16A34A", "#EA580C"],
+    "example": ["They", "are", "watching", "CaseOh"],
+    "negative": ["They", "aren't", "watching", "CaseOh"],
+    "question": ["Are", "they", "watching", "CaseOh?"]
+  },
+  "present_perfect": {
+    "title": "Present Perfect Tense",
+    "pattern": ["SUBJECT", "HAVE/HAS", "PAST PARTICIPLE", "OBJECT"],
+    "colors": ["#4F46E5", "#06B6D4", "#8B5CF6", "#EA580C"],
+    "example": ["I", "have", "lived", "in Tokyo"],
+    "negative": ["I", "haven't", "lived", "in Tokyo"],
+    "question": ["Have", "you", "lived", "in Tokyo?"]
+  },
+  "past_simple": {
+    "title": "Past Simple Tense",
+    "pattern": ["SUBJECT", "PAST VERB(-ed / irregular)", "OBJECT"],
+    "colors": ["#4F46E5", "#E11D48", "#EA580C"],
+    "example": ["He", "watched", "the anime episode"],
+    "negative": ["He", "didn't watch", "the anime episode"],
+    "question": ["Did", "he", "watch", "the anime episode?"]
+  },
+  "passive_voice": {
+    "title": "Passive Voice",
+    "pattern": ["OBJECT", "BE VERB", "PAST PARTICIPLE", "BY SUBJECT"],
+    "colors": ["#EA580C", "#06B6D4", "#8B5CF6", "#4F46E5"],
+    "example": ["The letter", "was", "written", "by her"],
+    "negative": ["The letter", "wasn't", "written", "by her"],
+    "question": ["Was", "the letter", "written", "by her?"]
+  }
+}

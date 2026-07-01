@@ -1,0 +1,143 @@
+[
+  {
+    "id": "kyoto-sakura",
+    "title": "Kyoto's Sakura Season",
+    "difficulty": "Easy",
+    "passage": "Spring in Kyoto is famous for its beautiful cherry blossoms. Millions of visitors travel to Japan every year to see them. The petals fall slowly like snow, covering the ancient streets. It is a time of celebration and reflection. People sit under the trees for picnics, which is a traditional activity called hanami.",
+    "words_dictionary": {
+      "famous": { "translation": "有名な", "example": "Kyoto is famous for temples." },
+      "blossoms": { "translation": "花、開花", "example": "The sakura blossoms are beautiful." },
+      "visitors": { "translation": "訪問者、観光客", "example": "Millions of visitors arrive in spring." },
+      "ancient": { "translation": "古代の、古い", "example": "They walked through ancient streets." },
+      "celebration": { "translation": "お祝い、祝賀", "example": "It is a time of joyful celebration." },
+      "reflection": { "translation": "反省、熟考、余韻", "example": "The quiet temple is good for reflection." },
+      "traditional": { "translation": "伝統的な", "example": "Hanami is a traditional picnic." }
+    },
+    "questions": [
+      {
+        "question": "What is spring in Kyoto famous for?",
+        "options": [
+          "Beautiful cherry blossoms",
+          "Snowy winter mountains",
+          "Hot summer festivals",
+          "Delicious autumn tea"
+        ],
+        "answer": "Beautiful cherry blossoms"
+      },
+      {
+        "question": "What is the traditional activity of sitting under cherry trees called?",
+        "options": [
+          "Hanami",
+          "Matsuri",
+          "Origami",
+          "Kimono"
+        ],
+        "answer": "Hanami"
+      },
+      {
+        "question": "How do the cherry blossoms fall?",
+        "options": [
+          "Slowly like snow",
+          "Very quickly with heavy rain",
+          "They do not fall in spring",
+          "Like flying birds"
+        ],
+        "answer": "Slowly like snow"
+      }
+    ]
+  },
+  {
+    "id": "green-tea-culture",
+    "title": "The Art of Green Tea",
+    "difficulty": "Medium",
+    "passage": "Green tea is an essential part of Japanese culture. Uji, a city near Kyoto, is famous for producing some of the highest quality matcha in the world. The traditional tea ceremony is a meticulous practice that requires patience and respect. Every movement is planned to create harmony and tranquility. Drinking green tea is not just about taste, but also about experiencing mindfulness.",
+    "words_dictionary": {
+      "essential": { "translation": "不可欠な、重要な", "example": "Tea is an essential part of the day." },
+      "producing": { "translation": "生産すること", "example": "Uji is famous for producing matcha." },
+      "ceremony": { "translation": "儀式、茶道", "example": "The tea ceremony is peaceful." },
+      "meticulous": { "translation": "細心の、注意深い", "example": "Her preparation was meticulous." },
+      "patience": { "translation": "忍耐力、辛抱", "example": "Learning tea ceremony requires patience." },
+      "harmony": { "translation": "調和、ハーモニー", "example": "The garden brings natural harmony." },
+      "mindfulness": { "translation": "マインドフルネス、心の落ち着き", "example": "Drinking tea promotes mindfulness." }
+    },
+    "questions": [
+      {
+        "question": "Which city is famous for high-quality matcha?",
+        "options": [
+          "Uji",
+          "Tokyo",
+          "Osaka",
+          "Nara"
+        ],
+        "answer": "Uji"
+      },
+      {
+        "question": "What qualities are required for the tea ceremony?",
+        "options": [
+          "Patience and respect",
+          "Speed and energy",
+          "Loud music and dance",
+          "Modern technology"
+        ],
+        "answer": "Patience and respect"
+      },
+      {
+        "question": "What is the goal of the planned movements in the ceremony?",
+        "options": [
+          "To create harmony and tranquility",
+          "To finish the ceremony quickly",
+          "To make the tea taste sweeter",
+          "To entertain children"
+        ],
+        "answer": "To create harmony and tranquility"
+      }
+    ]
+  },
+  {
+    "id": "origami-geometry",
+    "title": "Origami and Mathematics",
+    "difficulty": "Hard",
+    "passage": "Origami is the ancient art of paper folding, but modern designers are using it to solve complex engineering problems. By applying mathematical principles, scientists can fold solar panels for space travel or compact medical devices for heart surgery. The challenge is to transform a flat, two-dimensional sheet into a three-dimensional structure without cutting or gluing. This synergy of art and geometry is changing modern technology.",
+    "words_dictionary": {
+      "complex": { "translation": "複雑な", "example": "This is a complex problem to solve." },
+      "engineering": { "translation": "工学、エンジニアリング", "example": "He studies mechanical engineering." },
+      "applying": { "translation": "適用すること、応用すること", "example": "They are applying new theories." },
+      "compact": { "translation": "コンパクトな、小型の", "example": "The device is light and compact." },
+      "transform": { "translation": "変形させる、変換する", "example": "Heat can transform ice into water." },
+      "synergy": { "translation": "相乗効果、シナジー", "example": "The synergy of art and science is unique." },
+      "geometry": { "translation": "幾何学", "example": "Origami relies on geometry principles." }
+    },
+    "questions": [
+      {
+        "question": "How are modern designers using origami?",
+        "options": [
+          "To solve complex engineering problems",
+          "Only to decorate houses",
+          "To write secret letters",
+          "To manufacture cheaper paper"
+        ],
+        "answer": "To solve complex engineering problems"
+      },
+      {
+        "question": "What is folded using origami principles for space travel?",
+        "options": [
+          "Solar panels",
+          "Rocket wings",
+          "Astronaut suits",
+          "Space telescopes"
+        ],
+        "answer": "Solar panels"
+      },
+      {
+        "question": "What are origami practitioners forbidden to do in traditional rules?",
+        "options": [
+          "Cut or glue the paper",
+          "Fold the paper diagonally",
+          "Use colored paper",
+          "Teach children the folds"
+        ],
+        "answer": "Cut or glue the paper"
+      }
+    ]
+  }
+]

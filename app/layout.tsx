@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Noto_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { I18nProvider } from "@/lib/i18n/context";
 import SakuraCanvas from "@/components/SakuraCanvas";
 import "./globals.css";
 
@@ -36,8 +37,10 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-body bg-bg text-ink selection:bg-sakura/30">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={true}>
-          <SakuraCanvas />
-          <div className="relative z-10 flex-1 flex flex-col">{children}</div>
+          <I18nProvider>
+            <SakuraCanvas />
+            <div className="relative z-10 flex-1 flex flex-col">{children}</div>
+          </I18nProvider>
         </ThemeProvider>
       </body>
     </html>

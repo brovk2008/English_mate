@@ -46,6 +46,7 @@ export default function ReviewStudentClient({
   // Mistake logger states
   const [mistakeText, setMistakeText] = useState('');
   const [correctionText, setCorrectionText] = useState('');
+  const [mistakeCategory, setMistakeCategory] = useState('Grammar');
   const [mistakeLoading, setMistakeLoading] = useState(false);
   const [mistakeSuccess, setMistakeSuccess] = useState(false);
 
@@ -93,7 +94,8 @@ export default function ReviewStudentClient({
         user_id: student.id,
         day_number: dayNum,
         mistake: mistakeText.trim(),
-        correction: correctionText.trim()
+        correction: correctionText.trim(),
+        category: mistakeCategory
       });
 
     setMistakeLoading(false);
@@ -260,6 +262,24 @@ export default function ReviewStudentClient({
                       onChange={(e) => setCorrectionText(e.target.value)}
                       className="w-full text-xs bg-white border border-[#E8E2D9] rounded-lg px-3 py-2 text-[#33312E] focus:outline-none focus:ring-1 focus:ring-green-300 focus:border-green-400"
                     />
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-semibold text-[#73706B] tracking-wider uppercase block">
+                      Mistake Type Category
+                    </label>
+                    <select
+                      value={mistakeCategory}
+                      onChange={(e) => setMistakeCategory(e.target.value)}
+                      className="w-full text-xs bg-white border border-[#E8E2D9] rounded-lg px-3 py-2 text-[#33312E] focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-400"
+                    >
+                      <option value="Grammar">Grammar (文法)</option>
+                      <option value="Preposition">Preposition (前置詞)</option>
+                      <option value="Article">Article (冠詞)</option>
+                      <option value="Vocabulary">Vocabulary (単語選定)</option>
+                      <option value="Spelling">Spelling (綴り)</option>
+                      <option value="Other">Other (その他)</option>
+                    </select>
                   </div>
 
                   <Button

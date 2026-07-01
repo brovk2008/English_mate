@@ -151,4 +151,13 @@
   html {
     @apply font-sans;
   }
+
+  /* Disable Safari auto-zoom by enforcing 16px font-size for input elements */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
 }

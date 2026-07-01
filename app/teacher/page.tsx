@@ -44,12 +44,18 @@ export default async function TeacherPage() {
     .select('day_number, month, week, phase_title, grammar_topic')
     .order('day_number', { ascending: true });
 
+  // 5. Fetch all student day progress records for weekly summaries
+  const { data: allProgress } = await supabase
+    .from('user_day_progress')
+    .select('*, profiles(display_name, email)');
+
   return (
     <TeacherDashboard
       students={students || []}
       pendingReviews={pendingReviews || []}
       announcements={announcements || []}
       daysList={daysList || []}
+      allProgress={allProgress || []}
     />
   );
 }

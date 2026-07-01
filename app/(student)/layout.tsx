@@ -5,6 +5,11 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
 import BottomNav from '@/components/BottomNav';
+import LangToggle from '@/components/LangToggle';
+import ProfileMenu from '@/components/ProfileMenu';
+import OnboardingModal from '@/components/OnboardingModal';
+import WordLookupProvider from '@/components/WordLookupProvider';
+import FloatingNotesWidget from '@/components/FloatingNotesWidget';
 
 export const dynamic = 'force-dynamic';
 
@@ -30,6 +35,10 @@ export default async function StudentLayout({
   if (!profile) {
     // If auth is valid but profile isn't created yet, redirect to auth callback to create it
     redirect('/auth/callback');
+  }
+
+  if (!profile.placement_done) {
+    redirect('/placement');
   }
 
   // Calculate current unlocked day number
@@ -95,62 +104,60 @@ export default async function StudentLayout({
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-bg text-ink">
-      {/* Top Header */}
-      <header className="sticky top-0 z-40 bg-bg/95 backdrop-blur-md border-b border-border py-3 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <span className="font-display text-xl sm:text-2xl font-bold tracking-wide text-ink select-none">
-              桜 Journey
-            </span>
+    <WordLookupProvider>
+      <div className="flex flex-col min-h-screen bg-bg text-ink">
+        {/* Top Header */}
+        <header className="sticky top-0 z-40 bg-bg/95 backdrop-blur-md border-b border-border py-3 px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-6">
+              <span className="font-display text-xl sm:text-2xl font-bold tracking-wide text-ink select-none">
+                桜 Journey
+              </span>
 
-            {/* Desktop Navigation Links */}
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-ink-muted">
-              <Link href="/home" className="hover:text-sakura transition-colors">
-                Home
-              </Link>
-              <Link href={`/day/${currentDay}`} className="hover:text-sakura transition-colors">
-                Today
-              </Link>
-              <Link href="/vocabulary" className="hover:text-sakura transition-colors">
-                Vocab
-              </Link>
-              <Link href="/grammar" className="hover:text-sakura transition-colors">
-                Grammar
-              </Link>
-              <Link href="/progress" className="hover:text-sakura transition-colors">
-                Stats
-              </Link>
-              <Link href="/mistakes" className="hover:text-sakura transition-colors text-amber-700/80 dark:text-amber-500/80">
-                Mistakes
-              </Link>
-            </nav>
-          </div>
-
-          <div className="flex items-center gap-4">
-            {/* Streak flame indicator */}
-            <div className="flex items-center gap-1.5 bg-sakura/10 text-sakura-deep px-3 py-1 rounded-full text-xs font-semibold select-none">
-              <span className="text-sm">🔥</span>
-              <span>{streak} Days</span>
+              {/* Desktop Navigation Links */}
+              <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-ink-muted">
+                <Link href="/home" className="hover:text-sakura transition-colors">
+                  Home
+                </Link>
+                <Link href={`/day/${currentDay}`} className="hover:text-sakura transition-colors">
+                  Today
+                </Link>
+                <Link href="/vocabulary" className="hover:text-sakura transition-colors">
+                  Vocab
+                </Link>
+                <Link href="/grammar" className="hover:text-sakura transition-colors">
+                  Grammar
+                </Link>
+                <Link href="/progress" className="hover:text-sakura transition-colors">
+                  Stats
+                </Link>
+                <Link href="/mistakes" className="hover:text-sakura transition-colors text-amber-700/80 dark:text-amber-500/80">
+                  Mistakes
+                </Link>
+              </nav>
             </div>
 
-            {/* Streak freeze indicator */}
-            <div className="flex items-center gap-1.5 bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold select-none" title="Streak Freezes protect your streak if you miss a day">
-              <span className="text-sm">🛡️</span>
-              <span>{freezes} Freezes</span>
-            </div>
+            <div className="flex items-center gap-4">
+              {/* Streak flame indicator */}
+              <div className="flex items-center gap-1.5 bg-sakura/10 text-sakura-deep px-3 py-1 rounded-full text-xs font-semibold select-none">
+                <span className="text-sm">🔥</span>
+                <span>{streak} Days</span>
+              </div>
 
-            {/* Theme Toggle */}
-            <ThemeToggle />
+              {/* Streak freeze indicator */}
+              <div className="flex items-center gap-1.5 bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold select-none" title="Streak Freezes protect your streak if you miss a day">
+                <span className="text-sm">🛡️</span>
+                <span>{freezes} Freezes</span>
+              </div>
 
-            {/* Profile Avatar / Teacher check */}
-            <div className="flex items-center gap-2">
-              <Avatar className="w-8 h-8 ring-2 ring-sakura/30">
-                <AvatarImage src={profile.avatar_url || ''} />
-                <AvatarFallback className="bg-sakura/10 text-sakura font-bold text-xs">
-                  {profile.display_name?.substring(0, 2).toUpperCase() || 'ST'}
-                </AvatarFallback>
-              </Avatar>
+              {/* Language Toggle */}
+              <LangToggle />
+
+              {/* Theme Toggle */}
+              <ThemeToggle />
+
+              {/* Profile Dropdown Menu */}
+              <ProfileMenu profile={profile} />
               
               {profile.role === 'teacher' && (
                 <Link href="/teacher">
@@ -161,16 +168,22 @@ export default async function StudentLayout({
               )}
             </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Main Content Area */}
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 py-6 pb-24 sm:px-6">
-        {children}
-      </main>
+        {/* Main Content Area */}
+        <main className="flex-1 max-w-4xl w-full mx-auto px-4 py-6 pb-24 sm:px-6">
+          {children}
+        </main>
 
-      {/* Mobile Sticky Bottom Navigation */}
-      <BottomNav currentDay={currentDay} />
-    </div>
+        {/* Onboarding Dialog for new students */}
+        <OnboardingModal initialOnboarded={profile.onboarded} displayName={profile.display_name || ''} />
+
+        {/* Mobile Sticky Bottom Navigation */}
+        <BottomNav currentDay={currentDay} />
+
+        {/* Floating notes widget */}
+        <FloatingNotesWidget />
+      </div>
+    </WordLookupProvider>
   );
 }

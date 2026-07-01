@@ -7,9 +7,10 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { BookOpen, Search, Check, Filter, Sparkles, Brain } from 'lucide-react';
+import { BookOpen, Search, Check, Filter, Sparkles, Brain, History } from 'lucide-react';
 import Flashcards from '@/components/Flashcards';
 import ConfettiBurst from '@/components/ConfettiBurst';
+import dictionary from '@/data/dictionary.json';
 
 interface VocabWord {
   word_index: number;
@@ -32,14 +33,16 @@ interface VocabularyClientProps {
   userId: string;
   vocabWords: VocabWord[];
   initialProgress: VocabProgress[];
+  lookups: any[];
 }
 
 export default function VocabularyClient({
   userId,
   vocabWords,
   initialProgress,
+  lookups,
 }: VocabularyClientProps) {
-  const [activeTab, setActiveTab] = useState<'review' | 'explorer'>('review');
+  const [activeTab, setActiveTab] = useState<'review' | 'explorer' | 'lookups'>('review');
   const [progress, setProgress] = useState<VocabProgress[]>(initialProgress);
   const [search, setSearch] = useState('');
   const [learnedFilter, setLearnedFilter] = useState<'all' | 'learned' | 'not_learned'>('all');
@@ -143,6 +146,107 @@ export default function VocabularyClient({
     return progress.some(p => p.word_index === wordIndex && p.learned);
   };
 
+  const isLookupInSRS = (word: string) => {
+    const cleaned = word.toLowerCase();
+    // Check if word matches standard vocabulary list
+    const stdMatch = vocabWords.find(vw => vw.word.toLowerCase() === cleaned);
+    if (stdMatch) {
+      return progress.some(p => p.word_index === stdMatch.word_index);
+    }
+    // Check if progress contains custom word index
+    return false;
+  };
+
+  const handleToggleLookupSRS = async (wordText: string, checked: boolean) => {
+    const supabase = createClient();
+    const cleaned = wordText.toLowerCase();
+    const todayStr = new Date().toISOString().split('T')[0];
+
+    // Find if word is in vocabWords
+    let wordIndex = vocabWords.find(w => w.word.toLowerCase() === cleaned)?.word_index;
+
+    if (!wordIndex) {
+      // Find maximum word_index in database
+      const { data: maxIdxRow } = await supabase
+        .from('vocab_words')
+        .select('word_index')
+        .order('word_index', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      
+      const nextIdx = (maxIdxRow?.word_index || 300) + 1;
+      wordIndex = nextIdx;
+
+      // Find detail from dictionary.json or use a placeholder
+      const dictMatch = (dictionary as any)[cleaned];
+      await supabase.from('vocab_words').insert({
+        word_index: nextIdx,
+        word: cleaned,
+        pronunciation: dictMatch?.pronunciation || '',
+        meaning: dictMatch?.meaning || 'Custom lookup word',
+        meaning_ja: dictMatch?.meaning_ja || 'カスタム翻訳',
+        example_sentence: dictMatch?.example || 'Context usage.',
+        month: 99,
+        week: 99,
+        day: 99
+      });
+    }
+
+    const indexToUse = wordIndex as number;
+
+    if (checked) {
+      await supabase.from('user_vocab_progress').upsert({
+        user_id: userId,
+        word_index: indexToUse,
+        learned: true,
+        due_date: todayStr,
+        review_count: 0,
+        ease_factor: 2.5,
+        interval: 1
+      }, { onConflict: 'user_id,word_index' });
+
+      setProgress(prev => {
+        const filtered = prev.filter(p => p.word_index !== indexToUse);
+        return [...filtered, {
+          word_index: indexToUse,
+          learned: true,
+          due_date: todayStr,
+          review_count: 0,
+          ease_factor: 2.5,
+          interval: 1
+        }];
+      });
+    } else {
+      await supabase
+        .from('user_vocab_progress')
+        .delete()
+        .eq('user_id', userId)
+        .eq('word_index', indexToUse);
+
+      setProgress(prev => prev.filter(p => p.word_index !== indexToUse));
+    }
+  };
+
+  // Group and sort lookups by frequency
+  const aggregatedLookups = Object.values(
+    lookups.reduce((acc: Record<string, any>, item) => {
+      const w = item.word.toLowerCase();
+      if (!acc[w]) {
+        acc[w] = {
+          word: item.word,
+          count: 0,
+          lastSeen: item.looked_up_at,
+          context_page: item.context_page
+        };
+      }
+      acc[w].count += 1;
+      if (new Date(item.looked_up_at) > new Date(acc[w].lastSeen)) {
+        acc[w].lastSeen = item.looked_up_at;
+      }
+      return acc;
+    }, {})
+  ).sort((a: any, b: any) => b.count - a.count || new Date(b.lastSeen).getTime() - new Date(a.lastSeen).getTime());
+
   // Filter words inside the library explorer
   const filteredWords = vocabWords.filter(word => {
     const matchesSearch = 
@@ -182,20 +286,27 @@ export default function VocabularyClient({
         </div>
 
         {/* Tab switcher */}
-        <div className="flex bg-card border border-border p-1 rounded-xl shadow-sm self-start sm:self-center select-none">
+        <div className="flex bg-card border border-border p-1 rounded-xl shadow-sm self-start sm:self-center select-none flex-wrap gap-1">
           <button
             onClick={() => setActiveTab('review')}
             className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer
-              ${activeTab === 'review' ? 'bg-sakura text-white' : 'text-ink-muted hover:text-sakura'}`}
+              ${activeTab === 'review' ? 'bg-sakura text-white font-black' : 'text-ink-muted hover:text-sakura'}`}
           >
             <Brain size={14} /> Review ({reviewWords.length})
           </button>
           <button
             onClick={() => setActiveTab('explorer')}
             className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer
-              ${activeTab === 'explorer' ? 'bg-sakura text-white' : 'text-ink-muted hover:text-sakura'}`}
+              ${activeTab === 'explorer' ? 'bg-sakura text-white font-black' : 'text-ink-muted hover:text-sakura'}`}
           >
             <Search size={14} /> Library Explorer
+          </button>
+          <button
+            onClick={() => setActiveTab('lookups')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer
+              ${activeTab === 'lookups' ? 'bg-sakura text-white font-black' : 'text-ink-muted hover:text-sakura'}`}
+          >
+            <History size={14} /> My Lookups ({aggregatedLookups.length})
           </button>
         </div>
       </div>
@@ -248,7 +359,7 @@ export default function VocabularyClient({
             </Card>
           )}
         </div>
-      ) : (
+      ) : activeTab === 'explorer' ? (
         <div className="space-y-6">
           {/* Progress tracker */}
           <Card className="border border-border bg-card/75 rounded-2xl shadow-sm">
@@ -370,6 +481,66 @@ export default function VocabularyClient({
                         <span className="font-bold not-italic text-ink mr-1">Example:</span>
                         "{word.example_sentence}"
                       </div>
+                    </CardContent>
+                  </Card>
+                );
+              })
+            )}
+          </div>
+        </div>
+      ) : (
+        /* Render My Lookups tab */
+        <div className="space-y-6 animate-fade-in">
+          <Card className="border border-border bg-card rounded-2xl p-5">
+            <h3 className="font-display font-bold text-sm text-ink mb-1">
+              Curiosity-driven Word Searches
+            </h3>
+            <p className="text-xs text-ink-muted leading-relaxed">
+              These are the words you double-clicked or selected for translation lookups across reading sessions, songs, and lessons. Add any to your SRS deck to review.
+            </p>
+          </Card>
+
+          <div className="grid grid-cols-1 gap-4">
+            {aggregatedLookups.length === 0 ? (
+              <div className="text-center py-16 text-sm text-ink-muted/50 italic border border-dashed border-border rounded-2xl select-none">
+                No looked up words recorded yet. Double-click any English word anywhere on the site to test lookups!
+              </div>
+            ) : (
+              (aggregatedLookups as any[]).map((lookup) => {
+                const isSRS = isLookupInSRS(lookup.word);
+                // Look up in dictionary or show fallback
+                const detail = (dictionary as any)[lookup.word.toLowerCase()];
+
+                return (
+                  <Card
+                    key={lookup.word}
+                    className={`border border-border bg-card rounded-2xl transition-all shadow-sm
+                      ${isSRS ? 'bg-sakura/5 border-sakura/20 border-l-4 border-l-sakura' : 'border-l-4 border-l-border/50'}`}
+                  >
+                    <CardContent className="p-4 sm:p-5 flex items-start justify-between gap-3">
+                      <div className="space-y-1.5 flex-1">
+                        <div className="flex items-baseline gap-2 flex-wrap">
+                          <span className="text-base font-bold text-ink">{lookup.word}</span>
+                          <Badge variant="outline" className="text-[8px] bg-sakura/10 text-sakura border-none font-bold select-none">
+                            Looked up {lookup.count}x
+                          </Badge>
+                          <span className="text-[9px] text-ink-muted">
+                            Last checked: {new Date(lookup.lastSeen).toLocaleDateString()} on {lookup.context_page}
+                          </span>
+                        </div>
+                        <p className="text-xs font-semibold text-ink-muted">
+                          {detail?.meaning || 'Custom vocabulary word'}
+                        </p>
+                        <p className="text-[11px] italic text-ink-muted/80">
+                          {detail?.meaning_ja || 'カスタム辞書検索'}
+                        </p>
+                      </div>
+
+                      <Checkbox
+                        checked={isSRS}
+                        onCheckedChange={(checked) => handleToggleLookupSRS(lookup.word, !!checked)}
+                        className="w-5 h-5 border-border data-[state=checked]:bg-sakura data-[state=checked]:border-sakura rounded-lg cursor-pointer mt-1"
+                      />
                     </CardContent>
                   </Card>
                 );

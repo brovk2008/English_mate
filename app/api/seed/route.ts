@@ -72,6 +72,7 @@ export async function GET() {
       word: w.word,
       pronunciation: w.pronunciation,
       meaning: w.meaning,
+      meaning_ja: w.meaning_ja || null,
       example_sentence: w.example_sentence
     }));
 

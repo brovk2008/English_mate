@@ -1,0 +1,722 @@
+[
+  {
+    "day": 1,
+    "sentence": "I am able to speak a little English now.",
+    "arrange_words": ["I", "am", "able", "to", "speak", "a", "little", "English", "now."],
+    "fill_gap": "able",
+    "fill_options": ["able", "ability", "abler", "ably"],
+    "translation": "私は今、少し英語を話すことができます。"
+  },
+  {
+    "day": 2,
+    "sentence": "We are talking about our favorite movies.",
+    "arrange_words": ["We", "are", "talking", "about", "our", "favorite", "movies."],
+    "fill_gap": "about",
+    "fill_options": ["about", "above", "around", "across"],
+    "translation": "私たちは好きな映画について話しています。"
+  },
+  {
+    "day": 3,
+    "sentence": "The birds are flying above the trees.",
+    "arrange_words": ["The", "birds", "are", "flying", "above", "the", "trees."],
+    "fill_gap": "above",
+    "fill_options": ["above", "under", "below", "between"],
+    "translation": "鳥たちが木々の上を飛んでいます。"
+  },
+  {
+    "day": 4,
+    "sentence": "Please accept this small gift from me.",
+    "arrange_words": ["Please", "accept", "this", "small", "gift", "from", "me."],
+    "fill_gap": "accept",
+    "fill_options": ["accept", "except", "access", "accuse"],
+    "translation": "私からのこの小さな贈り物を受け取ってください。"
+  },
+  {
+    "day": 5,
+    "sentence": "I opened a new bank account today.",
+    "arrange_words": ["I", "opened", "a", "new", "bank", "account", "today."],
+    "fill_gap": "account",
+    "fill_options": ["account", "amount", "accent", "accomplish"],
+    "translation": "私は今日、新しい銀行口座を開設しました。"
+  },
+  {
+    "day": 6,
+    "sentence": "You can achieve your goal if you study hard.",
+    "arrange_words": ["You", "can", "achieve", "your", "goal", "if", "you", "study", "hard."],
+    "fill_gap": "achieve",
+    "fill_options": ["achieve", "active", "acquire", "archive"],
+    "translation": "一生懸命勉強すれば、目標を達成することができます。"
+  },
+  {
+    "day": 7,
+    "sentence": "We walked across the street to the cafe.",
+    "arrange_words": ["We", "walked", "across", "the", "street", "to", "the", "cafe."],
+    "fill_gap": "across",
+    "fill_options": ["across", "along", "against", "around"],
+    "translation": "私たちは通りを渡ってカフェに行きました。"
+  },
+  {
+    "day": 8,
+    "sentence": "You must act quickly in an emergency.",
+    "arrange_words": ["You", "must", "act", "quickly", "in", "an", "emergency."],
+    "fill_gap": "act",
+    "fill_options": ["act", "actor", "active", "actual"],
+    "translation": "緊急時には迅速に行動しなければなりません。"
+  },
+  {
+    "day": 9,
+    "sentence": "She is very active and loves playing sports.",
+    "arrange_words": ["She", "is", "very", "active", "and", "loves", "playing", "sports."],
+    "fill_gap": "active",
+    "fill_options": ["active", "action", "activity", "actor"],
+    "translation": "彼女はとても活発で、スポーツをすることが大好きです。"
+  },
+  {
+    "day": 10,
+    "sentence": "He is a famous actor in action movies.",
+    "arrange_words": ["He", "is", "a", "famous", "actor", "in", "action", "movies."],
+    "fill_gap": "actor",
+    "fill_options": ["actor", "actress", "active", "action"],
+    "translation": "彼はアクション映画で有名な俳優です。"
+  },
+  {
+    "day": 11,
+    "sentence": "The actual cost was higher than we expected.",
+    "arrange_words": ["The", "actual", "cost", "was", "higher", "than", "we", "expected."],
+    "fill_gap": "actual",
+    "fill_options": ["actual", "active", "acting", "actions"],
+    "translation": "実際の費用は私たちが予想していたよりも高かった。"
+  },
+  {
+    "day": 12,
+    "sentence": "Please add some sugar to my coffee.",
+    "arrange_words": ["Please", "add", "some", "sugar", "to", "my", "coffee."],
+    "fill_gap": "add",
+    "fill_options": ["add", "aid", "ad", "ask"],
+    "translation": "私のコーヒーに砂糖を少し加えてください。"
+  },
+  {
+    "day": 13,
+    "sentence": "What is the address of your new house?",
+    "arrange_words": ["What", "is", "the", "address", "of", "your", "new", "house?"],
+    "fill_gap": "address",
+    "fill_options": ["address", "addict", "admit", "advice"],
+    "translation": "あなたの新しい家の住所はどこですか？"
+  },
+  {
+    "day": 14,
+    "sentence": "He had to admit that he made a mistake.",
+    "arrange_words": ["He", "had", "to", "admit", "that", "he", "made", "a", "mistake."],
+    "fill_gap": "admit",
+    "fill_options": ["admit", "adopt", "adapt", "admire"],
+    "translation": "彼は自分が間違いを犯したことを認めざるを得なかった。"
+  },
+  {
+    "day": 15,
+    "sentence": "I opened a new bank account today.",
+    "arrange_words": ["I", "opened", "a", "new", "bank", "account", "today."],
+    "fill_gap": "account",
+    "fill_options": ["account", "amount", "accent", "accomplish"],
+    "translation": "私は今日、新しい銀行口座を開設しました。"
+  },
+  {
+    "day": 16,
+    "sentence": "You should follow the advice of your doctor.",
+    "arrange_words": ["You", "should", "follow", "the", "advice", "of", "your", "doctor."],
+    "fill_gap": "advice",
+    "fill_options": ["advice", "advise", "advocate", "admit"],
+    "translation": "医師の助言に従うべきです。"
+  },
+  {
+    "day": 17,
+    "sentence": "I cannot afford to buy a new car right now.",
+    "arrange_words": ["I", "cannot", "afford", "to", "buy", "a", "new", "car", "right", "now."],
+    "fill_gap": "afford",
+    "fill_options": ["afford", "effort", "offer", "effect"],
+    "translation": "私は今、新しい車を買う余裕がありません。"
+  },
+  {
+    "day": 18,
+    "sentence": "She is afraid of spiders and dark rooms.",
+    "arrange_words": ["She", "is", "afraid", "of", "spiders", "and", "dark", "rooms."],
+    "fill_gap": "afraid",
+    "fill_options": ["afraid", "scared", "fear", "brave"],
+    "translation": "彼女はクモと暗い部屋が怖いです。"
+  },
+  {
+    "day": 19,
+    "sentence": "We had dinner after the movie finished.",
+    "arrange_words": ["We", "had", "dinner", "after", "the", "movie", "finished."],
+    "fill_gap": "after",
+    "fill_options": ["after", "before", "behind", "during"],
+    "translation": "映画が終わった後、私たちは夕食をとりました。"
+  },
+  {
+    "day": 20,
+    "sentence": "Let's meet in the afternoon tomorrow.",
+    "arrange_words": ["Let's", "meet", "in", "the", "afternoon", "tomorrow."],
+    "fill_gap": "afternoon",
+    "fill_options": ["afternoon", "morning", "evening", "night"],
+    "translation": "明日の午後に会いましょう。"
+  },
+  {
+    "day": 21,
+    "sentence": "Please try again if you fail the first time.",
+    "arrange_words": ["Please", "try", "again", "if", "you", "fail", "the", "first", "time."],
+    "fill_gap": "again",
+    "fill_options": ["again", "against", "ahead", "agree"],
+    "translation": "最初に失敗した場合は、もう一度試してください。"
+  },
+  {
+    "day": 22,
+    "sentence": "We are fighting against environmental pollution.",
+    "arrange_words": ["We", "are", "fighting", "against", "environmental", "pollution."],
+    "fill_gap": "against",
+    "fill_options": ["against", "agree", "along", "around"],
+    "translation": "私たちは環境汚染に立ち向かって戦っています。"
+  },
+  {
+    "day": 23,
+    "sentence": "What is the age of your oldest brother?",
+    "arrange_words": ["What", "is", "the", "age", "of", "your", "oldest", "brother?"],
+    "fill_gap": "age",
+    "fill_options": ["age", "ago", "old", "years"],
+    "translation": "あなたの一番上のお兄さんの年齢は何歳ですか？"
+  },
+  {
+    "day": 24,
+    "sentence": "The travel agency booked our flights.",
+    "arrange_words": ["The", "travel", "agency", "booked", "our", "flights."],
+    "fill_gap": "agency",
+    "fill_options": ["agency", "agent", "agenda", "agree"],
+    "translation": "旅行代理店が私たちのフライトを予約しました。"
+  },
+  {
+    "day": 25,
+    "sentence": "He is a secret agent working for the government.",
+    "arrange_words": ["He", "is", "a", "secret", "agent", "working", "for", "the", "government."],
+    "fill_gap": "agent",
+    "fill_options": ["agent", "agency", "actor", "active"],
+    "translation": "彼は政府のために働く秘密諜報員です。"
+  },
+  {
+    "day": 26,
+    "sentence": "We moved to this city three years ago.",
+    "arrange_words": ["We", "moved", "to", "this", "city", "three", "years", "ago."],
+    "fill_gap": "ago",
+    "fill_options": ["ago", "age", "before", "after"],
+    "translation": "私たちは3年前にこの街に引っ越してきました。"
+  },
+  {
+    "day": 27,
+    "sentence": "I agree with your opinion on this matter.",
+    "arrange_words": ["I", "agree", "with", "your", "opinion", "on", "this", "matter."],
+    "fill_gap": "agree",
+    "fill_options": ["agree", "argument", "admit", "angry"],
+    "translation": "この件に関するあなたの意見に同意します。"
+  },
+  {
+    "day": 28,
+    "sentence": "Go straight ahead and turn left at the corner.",
+    "arrange_words": ["Go", "straight", "ahead", "and", "turn", "left", "at", "the", "corner."],
+    "fill_gap": "ahead",
+    "fill_options": ["ahead", "again", "about", "above"],
+    "translation": "まっすぐ進み、角を左に曲がってください。"
+  },
+  {
+    "day": 29,
+    "sentence": "The mountain air was clean and fresh.",
+    "arrange_words": ["The", "mountain", "air", "was", "clean", "and", "fresh."],
+    "fill_gap": "air",
+    "fill_options": ["air", "wind", "water", "sky"],
+    "translation": "山の空気はきれいで新鮮でした。"
+  },
+  {
+    "day": 30,
+    "sentence": "I want to visit all the countries in Europe.",
+    "arrange_words": ["I", "want", "to", "visit", "all", "the", "countries", "in", "Europe."],
+    "fill_gap": "all",
+    "fill_options": ["all", "any", "some", "none"],
+    "translation": "ヨーロッパのすべての国を訪れたいです。"
+  },
+  {
+    "day": 31,
+    "sentence": "The old city streets were a labyrinth of tiny alleyways.",
+    "arrange_words": ["The", "old", "city", "streets", "were", "a", "labyrinth", "of", "tiny", "alleyways."],
+    "fill_gap": "labyrinth",
+    "fill_options": ["labyrinth", "library", "laboratory", "landscape"],
+    "translation": "古い市街の通りは、細い路地の迷宮のようでした。"
+  },
+  {
+    "day": 32,
+    "sentence": "Suddenly, during the grammar test, she had an epiphany.",
+    "arrange_words": ["Suddenly,", "during", "the", "grammar", "test,", "she", "had", "an", "epiphany."],
+    "fill_gap": "epiphany",
+    "fill_options": ["epiphany", "episode", "epitaph", "epic"],
+    "translation": "突然、文法のテスト中に、彼女はひらめきを得ました。"
+  },
+  {
+    "day": 33,
+    "sentence": "The actor read the poem in a sonorous voice.",
+    "arrange_words": ["The", "actor", "read", "the", "poem", "in", "a", "sonorous", "voice."],
+    "fill_gap": "sonorous",
+    "fill_options": ["sonorous", "silent", "sound", "severe"],
+    "translation": "その俳優は朗々とした声で詩を朗読した。"
+  },
+  {
+    "day": 34,
+    "sentence": "He is a gregarious person who makes friends easily.",
+    "arrange_words": ["He", "is", "a", "gregarious", "person", "who", "makes", "friends", "easily."],
+    "fill_gap": "gregarious",
+    "fill_options": ["gregarious", "gloomy", "generous", "gentle"],
+    "translation": "彼は社交的な人物で、すぐに友達を作ります。"
+  },
+  {
+    "day": 35,
+    "sentence": "The singer's voice was mellifluous and calming.",
+    "arrange_words": ["The", "singer's", "voice", "was", "mellifluous", "and", "calming."],
+    "fill_gap": "mellifluous",
+    "fill_options": ["mellifluous", "melancholy", "moderate", "mysterious"],
+    "translation": "歌手の声は甘美で落ち着くものだった。"
+  },
+  {
+    "day": 36,
+    "sentence": "The elder gave advice with great sagacity.",
+    "arrange_words": ["The", "elder", "gave", "advice", "with", "great", "sagacity."],
+    "fill_gap": "sagacity",
+    "fill_options": ["sagacity", "sadness", "severity", "security"],
+    "translation": "長老は非常な賢明さをもって助言を与えた。"
+  },
+  {
+    "day": 37,
+    "sentence": "They enjoyed an epicurean feast of traditional Kyoto cuisine.",
+    "arrange_words": ["They", "enjoyed", "an", "epicurean", "feast", "of", "traditional", "Kyoto", "cuisine."],
+    "fill_gap": "epicurean",
+    "fill_options": ["epicurean", "epidemic", "episode", "epoch"],
+    "translation": "彼らは伝統的な京都料理の美食の宴を楽しんだ。"
+  },
+  {
+    "day": 38,
+    "sentence": "Her dreams of floating houses were chimerical.",
+    "arrange_words": ["Her", "dreams", "of", "floating", "houses", "were", "chimerical."],
+    "fill_gap": "chimerical",
+    "fill_options": ["chimerical", "chemical", "charitable", "chronological"],
+    "translation": "空飛ぶ家についての彼女の夢は非現実的だった。"
+  },
+  {
+    "day": 39,
+    "sentence": "She was demure, but her English journal writing was full of passion.",
+    "arrange_words": ["She", "was", "demure,", "but", "her", "English", "journal", "writing", "was", "full", "of", "passion."],
+    "fill_gap": "demure",
+    "fill_options": ["demure", "demise", "demand", "demonstrate"],
+    "translation": "彼女は控えめだったが、英語の日記は情熱に満ちていた。"
+  },
+  {
+    "day": 40,
+    "sentence": "She took a surreptitious glance at her vocabulary sheet.",
+    "arrange_words": ["She", "took", "a", "surreptitious", "glance", "at", "her", "vocabulary", "sheet."],
+    "fill_gap": "surreptitious",
+    "fill_options": ["surreptitious", "surplus", "surrogate", "suspicious"],
+    "translation": "彼女は単語シートをこっそりと盗み見た。"
+  },
+  {
+    "day": 41,
+    "sentence": "Study is not a panacea, but it solves many problems.",
+    "arrange_words": ["Study", "is", "not", "a", "panacea,", "but", "it", "solves", "many", "problems."],
+    "fill_gap": "panacea",
+    "fill_options": ["panacea", "panorama", "pandemic", "paradox"],
+    "translation": "勉強は万能薬ではないが、多くの問題を解決する。"
+  },
+  {
+    "day": 42,
+    "sentence": "Clouds are transient, but the blue sky remains.",
+    "arrange_words": ["Clouds", "are", "transient,", "but", "the", "blue", "sky", "remains."],
+    "fill_gap": "transient",
+    "fill_options": ["transient", "transparent", "transaction", "transcend"],
+    "translation": "雲は一時的なものだが、青空は残り続ける。"
+  },
+  {
+    "day": 43,
+    "sentence": "A day spent writing English diaries in the park was pure felicity.",
+    "arrange_words": ["A", "day", "spent", "writing", "English", "diaries", "in", "the", "park", "was", "pure", "felicity."],
+    "fill_gap": "felicity",
+    "fill_options": ["felicity", "facility", "ferocity", "fidelity"],
+    "translation": "公園で英語の日記を書いて過ごす一日は、純粋な至福だった。"
+  },
+  {
+    "day": 44,
+    "sentence": "The grammar guide provided a lucid explanation.",
+    "arrange_words": ["The", "grammar", "guide", "provided", "a", "lucid", "explanation."],
+    "fill_gap": "lucid",
+    "fill_options": ["lucid", "lucky", "luxury", "ludicrous"],
+    "translation": "文法ガイドは分かりやすい説明を提供してくれた。"
+  },
+  {
+    "day": 45,
+    "sentence": "The library had a plethora of books about Kyoto history.",
+    "arrange_words": ["The", "library", "had", "a", "plethora", "of", "books", "about", "Kyoto", "history."],
+    "fill_gap": "plethora",
+    "fill_options": ["plethora", "plasma", "plateau", "plausible"],
+    "translation": "図書館には京都の歴史に関する本が過剰なほどあった。"
+  },
+  {
+    "day": 46,
+    "sentence": "The spring weather in London was capricious.",
+    "arrange_words": ["The", "spring", "weather", "in", "London", "was", "capricious."],
+    "fill_gap": "capricious",
+    "fill_options": ["capricious", "captivating", "capitalist", "charitable"],
+    "translation": "ロンドンの春の天気は気まぐれだった。"
+  },
+  {
+    "day": 47,
+    "sentence": "The market was filled with a cacophony of street sellers' cries.",
+    "arrange_words": ["The", "market", "was", "filled", "with", "a", "cacophony", "of", "street", "sellers'", "cries."],
+    "fill_gap": "cacophony",
+    "fill_options": ["cacophony", "harmony", "symphony", "catalyst"],
+    "translation": "市場は露天商の叫び声という不協和音で満ちていた。"
+  },
+  {
+    "day": 48,
+    "sentence": "She was ebullient after maintaining a fifty day streak.",
+    "arrange_words": ["She", "was", "ebullient", "after", "maintaining", "a", "fifty", "day", "streak."],
+    "fill_gap": "ebullient",
+    "fill_options": ["ebullient", "exhausted", "elegant", "eccentric"],
+    "translation": "彼女は50日間のストリークを維持した後、大はしゃぎしていた。"
+  },
+  {
+    "day": 49,
+    "sentence": "The student was taciturn in class but wrote rich diary entries.",
+    "arrange_words": ["The", "student", "was", "taciturn", "in", "class", "but", "wrote", "rich", "diary", "entries."],
+    "fill_gap": "taciturn",
+    "fill_options": ["taciturn", "talkative", "tactful", "tangible"],
+    "translation": "その生徒はクラスでは無口だったが、豊かな内容の日記を書いた。"
+  },
+  {
+    "day": 50,
+    "sentence": "The beauty of the mountain at sunrise was ineffable.",
+    "arrange_words": ["The", "beauty", "of", "the", "mountain", "at", "sunrise", "was", "ineffable."],
+    "fill_gap": "ineffable",
+    "fill_options": ["ineffable", "ineffective", "inefficient", "inevitable"],
+    "translation": "日の出の山の美しさは、言葉で表現できないものだった。"
+  },
+  {
+    "day": 51,
+    "sentence": "Cell phones have become ubiquitous in modern life.",
+    "arrange_words": ["Cell", "phones", "have", "become", "ubiquitous", "in", "modern", "life."],
+    "fill_gap": "ubiquitous",
+    "fill_options": ["ubiquitous", "ultimate", "unanimous", "unique"],
+    "translation": "携帯電話は現代生活においてどこにでもあるものになった。"
+  },
+  {
+    "day": 52,
+    "sentence": "Using spaced repetition flashcards is a pragmatic way to study.",
+    "arrange_words": ["Using", "spaced", "repetition", "flashcards", "is", "a", "pragmatic", "way", "to", "study."],
+    "fill_gap": "pragmatic",
+    "fill_options": ["pragmatic", "practical", "dramatic", "programmatic"],
+    "translation": "間隔反復フラッシュカードを使うのは、実践的な勉強方法だ。"
+  },
+  {
+    "day": 53,
+    "sentence": "The architect was fastidious about the building dimensions.",
+    "arrange_words": ["The", "architect", "was", "fastidious", "about", "the", "building", "dimensions."],
+    "fill_gap": "fastidious",
+    "fill_options": ["fastidious", "fascinating", "favorable", "fearless"],
+    "translation": "建築家は建物の寸法に非常にこだわりを持っていた。"
+  },
+  {
+    "day": 54,
+    "sentence": "The volunteer work showed pure altruism.",
+    "arrange_words": ["The", "volunteer", "work", "showed", "pure", "altruism."],
+    "fill_gap": "altruism",
+    "fill_options": ["altruism", "alteration", "altitude", "alliance"],
+    "translation": "ボランティア活動は純粋な利他主義を示していた。"
+  },
+  {
+    "day": 55,
+    "sentence": "The garrulous passenger kept talking for the entire bus ride.",
+    "arrange_words": ["The", "garrulous", "passenger", "kept", "talking", "for", "the", "entire", "bus", "ride."],
+    "fill_gap": "garrulous",
+    "fill_options": ["garrulous", "silent", "generous", "gullible"],
+    "translation": "おしゃべりな乗客はバスに乗っている間ずっと話し続けた。"
+  },
+  {
+    "day": 56,
+    "sentence": "The feedback from the teacher was candid but very helpful.",
+    "arrange_words": ["The", "feedback", "from", "the", "teacher", "was", "candid", "but", "very", "helpful."],
+    "fill_gap": "candid",
+    "fill_options": ["candid", "candidate", "candy", "casual"],
+    "translation": "先生からのフィードバックは率直だったが、とても役立った。"
+  },
+  {
+    "day": 57,
+    "sentence": "The palace rooms were decorated in opulent style.",
+    "arrange_words": ["The", "palace", "rooms", "were", "decorated", "in", "opulent", "style."],
+    "fill_gap": "opulent",
+    "fill_options": ["opulent", "opposite", "opinion", "optimistic"],
+    "translation": "宮殿の部屋は豪華なスタイルで装飾されていた。"
+  },
+  {
+    "day": 58,
+    "sentence": "She was scrupulous in her study habits.",
+    "arrange_words": ["She", "was", "scrupulous", "in", "her", "study", "habits."],
+    "fill_gap": "scrupulous",
+    "fill_options": ["scrupulous", "scripture", "sceptical", "scrollable"],
+    "translation": "彼女は勉強習慣において極めて細心だった。"
+  },
+  {
+    "day": 59,
+    "sentence": "She accepted the challenge with alacrity.",
+    "arrange_words": ["She", "accepted", "the", "challenge", "with", "alacrity."],
+    "fill_gap": "alacrity",
+    "fill_options": ["alacrity", "alarm", "altitude", "alliance"],
+    "translation": "彼女は敏活にその挑戦を受け入れた。"
+  },
+  {
+    "day": 60,
+    "sentence": "A wave of euphoria hit her when she graduated.",
+    "arrange_words": ["A", "wave", "of", "euphoria", "hit", "her", "when", "she", "graduated."],
+    "fill_gap": "euphoria",
+    "fill_options": ["euphoria", "eulogy", "euphemism", "evaluation"],
+    "translation": "卒業したとき、彼女は強烈な幸福感に包まれた。"
+  },
+  {
+    "day": 61,
+    "sentence": "The internet was filled with spurious claims.",
+    "arrange_words": ["The", "internet", "was", "filled", "with", "spurious", "claims."],
+    "fill_gap": "spurious",
+    "fill_options": ["spurious", "spiritual", "spectacular", "spontaneous"],
+    "translation": "インターネットは偽の主張で溢れていた。"
+  },
+  {
+    "day": 62,
+    "sentence": "The teacher had a benevolent smile.",
+    "arrange_words": ["The", "teacher", "had", "a", "benevolent", "smile."],
+    "fill_gap": "benevolent",
+    "fill_options": ["benevolent", "benefit", "beneficiary", "benefactor"],
+    "translation": "先生は慈愛に満ちた笑顔を浮かべていた。"
+  },
+  {
+    "day": 63,
+    "sentence": "Try to write clear sentences rather than verbose essays.",
+    "arrange_words": ["Try", "to", "write", "clear", "sentences", "rather", "than", "verbose", "essays."],
+    "fill_gap": "verbose",
+    "fill_options": ["verbose", "verbal", "verbatim", "vertical"],
+    "translation": "冗長なエッセイよりも、明確な文を書くようにしなさい。"
+  },
+  {
+    "day": 64,
+    "sentence": "She was reticent to talk about her mistakes.",
+    "arrange_words": ["She", "was", "reticent", "to", "talk", "about", "her", "mistakes."],
+    "fill_gap": "reticent",
+    "fill_options": ["reticent", "relative", "relevance", "reluctant"],
+    "translation": "彼女は自分の間違いについて話すのを控えていた。"
+  },
+  {
+    "day": 65,
+    "sentence": "Spring blossoms are beautiful because they are ephemeral.",
+    "arrange_words": ["Spring", "blossoms", "are", "beautiful", "because", "they", "are", "ephemeral."],
+    "fill_gap": "ephemeral",
+    "fill_options": ["ephemeral", "episode", "epic", "epitaph"],
+    "translation": "春の花は、はかないからこそ美しい。"
+  },
+  {
+    "day": 66,
+    "sentence": "It was an impetuous decision to travel without a map.",
+    "arrange_words": ["It", "was", "an", "impetuous", "decision", "to", "travel", "without", "a", "map."],
+    "fill_gap": "impetuous",
+    "fill_options": ["impetuous", "important", "impossible", "imperfect"],
+    "translation": "地図を持たずに旅行するのは、衝動的な決断だった。"
+  },
+  {
+    "day": 67,
+    "sentence": "Assiduous practice leads to excellent pronunciation.",
+    "arrange_words": ["Assiduous", "practice", "leads", "to", "excellent", "pronunciation."],
+    "fill_gap": "Assiduous",
+    "fill_options": ["Assiduous", "Assisted", "Assumed", "Associated"],
+    "translation": "根気強い練習が素晴らしい発音につながります。"
+  },
+  {
+    "day": 68,
+    "sentence": "She is a voracious reader of English literature.",
+    "arrange_words": ["She", "is", "a", "voracious", "reader", "of", "English", "literature."],
+    "fill_gap": "voracious",
+    "fill_options": ["voracious", "various", "victorious", "vulnerable"],
+    "translation": "彼女は英文学の貪欲な読者である。"
+  },
+  {
+    "day": 69,
+    "sentence": "Living a frugal life allowed them to save for their trip.",
+    "arrange_words": ["Living", "a", "frugal", "life", "allowed", "them", "to", "save", "for", "their", "trip."],
+    "fill_gap": "frugal",
+    "fill_options": ["frugal", "fruitful", "friendly", "frequent"],
+    "translation": "質素な暮らしをすることで、彼らは旅行の費用を貯めることができた。"
+  },
+  {
+    "day": 70,
+    "sentence": "A tenacious learner never gives up on hard grammar concepts.",
+    "arrange_words": ["A", "tenacious", "learner", "never", "gives", "up", "on", "hard", "grammar", "concepts."],
+    "fill_gap": "tenacious",
+    "fill_options": ["tenacious", "temporary", "tentative", "tension"],
+    "translation": "粘り強い学習者は、難しい文法概念を決して諦めない。"
+  },
+  {
+    "day": 71,
+    "sentence": "The servants were obsequious in the presence of the king.",
+    "arrange_words": ["The", "servants", "were", "obsequious", "in", "the", "presence", "of", "the", "king."],
+    "fill_gap": "obsequious",
+    "fill_options": ["obsequious", "obscure", "obvious", "obstinate"],
+    "translation": "使用人たちは王の前でへつらうようだった。"
+  },
+  {
+    "day": 72,
+    "sentence": "The movie plot was insipid and predictable.",
+    "arrange_words": ["The", "movie", "plot", "was", "insipid", "and", "predictable."],
+    "fill_gap": "insipid",
+    "fill_options": ["insipid", "inspired", "insightful", "instant"],
+    "translation": "映画のプロットは退屈で予測可能だった。"
+  },
+  {
+    "day": 73,
+    "sentence": "The winner was magnanimous and shook hands with the runner-up.",
+    "arrange_words": ["The", "winner", "was", "magnanimous", "and", "shook", "hands", "with", "the", "runner-up."],
+    "fill_gap": "magnanimous",
+    "fill_options": ["magnanimous", "magnetic", "magnitude", "magnificent"],
+    "translation": "勝者は寛大で、準優勝者と握手をした。"
+  },
+  {
+    "day": 74,
+    "sentence": "The country adopted a belligerent foreign policy.",
+    "arrange_words": ["The", "country", "adopted", "a", "belligerent", "foreign", "policy."],
+    "fill_gap": "belligerent",
+    "fill_options": ["belligerent", "beneficial", "belonging", "believable"],
+    "translation": "その国は好戦的な外交政策を採用した。"
+  },
+  {
+    "day": 75,
+    "sentence": "A sagacious leader makes decisions carefully.",
+    "arrange_words": ["A", "sagacious", "leader", "makes", "decisions", "carefully."],
+    "fill_gap": "sagacious",
+    "fill_options": ["sagacious", "sadistic", "salutary", "satisfactory"],
+    "translation": "賢明な指導者は慎重に決定を下す。"
+  },
+  {
+    "day": 76,
+    "sentence": "The loquacious host kept guests entertained with stories.",
+    "arrange_words": ["The", "loquacious", "host", "kept", "guests", "entertained", "with", "stories."],
+    "fill_gap": "loquacious",
+    "fill_options": ["loquacious", "logical", "localized", "lonely"],
+    "translation": "おしゃべりな司会者は、話でゲストを楽しませ続けた。"
+  },
+  {
+    "day": 77,
+    "sentence": "The manager was accused of nepotism when he hired his nephew.",
+    "arrange_words": ["The", "manager", "was", "accused", "of", "nepotism", "when", "he", "hired", "his", "nephew."],
+    "fill_gap": "nepotism",
+    "fill_options": ["nepotism", "neurosis", "neglect", "negotiation"],
+    "translation": "マネージャーは甥を雇った際、縁故主義だと非難された。"
+  },
+  {
+    "day": 78,
+    "sentence": "The hot afternoon made them feel indolent.",
+    "arrange_words": ["The", "hot", "afternoon", "made", "them", "feel", "indolent."],
+    "fill_gap": "indolent",
+    "fill_options": ["indolent", "innocent", "indirect", "indifferent"],
+    "translation": "暑い午後で、彼らは怠惰な気分になった。"
+  },
+  {
+    "day": 79,
+    "sentence": "Avoid adding superfluous words to your diary entry.",
+    "arrange_words": ["Avoid", "adding", "superfluous", "words", "to", "your", "diary", "entry."],
+    "fill_gap": "superfluous",
+    "fill_options": ["superfluous", "superficial", "supernatural", "superior"],
+    "translation": "日記の項目に余計な言葉を加えるのは避けなさい。"
+  },
+  {
+    "day": 80,
+    "sentence": "Young trees are vulnerable to strong winds.",
+    "arrange_words": ["Young", "trees", "are", "vulnerable", "to", "strong", "winds."],
+    "fill_gap": "vulnerable",
+    "fill_options": ["vulnerable", "valuable", "voluntary", "victorious"],
+    "translation": "若い木は強風に対して脆弱である。"
+  },
+  {
+    "day": 81,
+    "sentence": "The zealous volunteer worked long hours to plant flowers.",
+    "arrange_words": ["The", "zealous", "volunteer", "worked", "long", "hours", "to", "plant", "flowers."],
+    "fill_gap": "zealous",
+    "fill_options": ["zealous", "jealous", "zenith", "zodiac"],
+    "translation": "熱心なボランティアは、花を植えるために長時間働いた。"
+  },
+  {
+    "day": 82,
+    "sentence": "It was an audacious plan to build the entire platform.",
+    "arrange_words": ["It", "was", "an", "audacious", "plan", "to", "build", "the", "entire", "platform."],
+    "fill_gap": "audacious",
+    "fill_options": ["audacious", "audience", "authority", "auditorium"],
+    "translation": "プラットフォーム全体を構築するというのは、大胆な計画だった。"
+  },
+  {
+    "day": 83,
+    "sentence": "He had a cynical view of local politicians.",
+    "arrange_words": ["He", "had", "a", "cynical", "view", "of", "local", "politicians."],
+    "fill_gap": "cynical",
+    "fill_options": ["cynical", "cylinder", "crying", "critical"],
+    "translation": "彼は地元の政治家に対して冷笑的な見方をしていた。"
+  },
+  {
+    "day": 84,
+    "sentence": "The simple garden design had a high aesthetic value.",
+    "arrange_words": ["The", "simple", "garden", "design", "had", "a", "high", "aesthetic", "value."],
+    "fill_gap": "aesthetic",
+    "fill_options": ["aesthetic", "athletic", "authentic", "artistic"],
+    "translation": "シンプルな庭のデザインは美的な価値が高かった。"
+  },
+  {
+    "day": 85,
+    "sentence": "The benevolent host offered food and lodging to the traveler.",
+    "arrange_words": ["The", "benevolent", "host", "offered", "food", "and", "lodging", "to", "the", "traveler."],
+    "fill_gap": "benevolent",
+    "fill_options": ["benevolent", "benefit", "beneficiary", "benefactor"],
+    "translation": "親切なホストは旅行者に食事と宿を提供した。"
+  },
+  {
+    "day": 86,
+    "sentence": "The dictator was capricious, changing laws daily.",
+    "arrange_words": ["The", "dictator", "was", "capricious,", "changing", "laws", "daily."],
+    "fill_gap": "capricious",
+    "fill_options": ["capricious", "captivating", "capitalist", "charitable"],
+    "translation": "独裁者は気まぐれで、毎日法律を変えていた。"
+  },
+  {
+    "day": 87,
+    "sentence": "She sat in the corner, demure and thoughtful.",
+    "arrange_words": ["She", "sat", "in", "the", "corner,", "demure", "and", "thoughtful."],
+    "fill_gap": "demure",
+    "fill_options": ["demure", "demise", "demand", "demonstrate"],
+    "translation": "彼女は控えめで思慮深く、隅に座っていた。"
+  },
+  {
+    "day": 88,
+    "sentence": "The children were ebullient as they arrived at the park.",
+    "arrange_words": ["The", "children", "were", "ebullient", "as", "they", "arrived", "at", "the", "park."],
+    "fill_gap": "ebullient",
+    "fill_options": ["ebullient", "exhausted", "elegant", "eccentric"],
+    "translation": "子供たちは公園に到着すると大はしゃぎした。"
+  },
+  {
+    "day": 89,
+    "sentence": "He is fastidious about his clothes, always looking perfect.",
+    "arrange_words": ["He", "is", "fastidious", "about", "his", "clothes,", "always", "looking", "perfect."],
+    "fill_gap": "fastidious",
+    "fill_options": ["fastidious", "fascinating", "favorable", "fearless"],
+    "translation": "彼は服にこだわりがあり、いつも完璧に見えるようにしている。"
+  },
+  {
+    "day": 90,
+    "sentence": "Gregarious species like bees work together to build hives.",
+    "arrange_words": ["Gregarious", "species", "like", "bees", "work", "together", "to", "build", "hives."],
+    "fill_gap": "Gregarious",
+    "fill_options": ["Gregarious", "Gloomy", "Generous", "Gentle"],
+    "translation": "ミツバチのような群居性の種は、協力して巣を作ります。"
+  }
+]

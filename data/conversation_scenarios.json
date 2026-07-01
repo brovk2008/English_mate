@@ -1,0 +1,152 @@
+[
+  {
+    "id": "coffee-shop",
+    "title": "Ordering a Latte",
+    "difficulty": "Easy",
+    "description": "Practice ordering coffee and pastries at a local cafe.",
+    "roleA": "Barista (Server)",
+    "roleB": "Customer (You)",
+    "steps": [
+      {
+        "speaker": "Barista",
+        "text": "Hello! Welcome to Sakura Cafe. What can I get started for you today?",
+        "text_ja": "こんにちは！サクラカフェへようこそ。本日は何にいたしますか？"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Hi, I would like to order a hot cafe latte, please.",
+        "text_ja": "こんにちは、温かいカフェラテを一つお願いします。"
+      },
+      {
+        "speaker": "Barista",
+        "text": "Sure. What size would you like? We have small, medium, and large.",
+        "text_ja": "かしこまりました。サイズはいかがいたしますか？スモール、ミディアム、ラージがございます。"
+      },
+      {
+        "speaker": "Customer",
+        "text": "A medium size, please. And could I get that with oat milk?",
+        "text_ja": "ミディアムサイズでお願いします。オーツミルクで作っていただけますか？"
+      },
+      {
+        "speaker": "Barista",
+        "text": "Absolutely. Would you like any pastries or muffins with that?",
+        "text_ja": "もちろんです。ご一緒にペストリーやマフィンはいかがですか？"
+      },
+      {
+        "speaker": "Customer",
+        "text": "No, thanks. Just the latte. How much is it?",
+        "text_ja": "いいえ、結構です。ラテだけで。おいくらですか？"
+      },
+      {
+        "speaker": "Barista",
+        "text": "That will be five dollars and fifty cents. Cash or card?",
+        "text_ja": "5ドル50セントになります。現金ですか、カードですか？"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Card, please. Here is my contactless card.",
+        "text_ja": "カードでお願いします。タッチ決済カードです。"
+      },
+      {
+        "speaker": "Barista",
+        "text": "Perfect. Payment approved! Your latte will be ready at the counter in a minute.",
+        "text_ja": "ありがとうございます。決済完了です！ラテはすぐにカウンターでお渡しできます。"
+      }
+    ]
+  },
+  {
+    "id": "hotel-checkin",
+    "title": "Hotel Check-In",
+    "difficulty": "Medium",
+    "description": "Arrive at a hotel and check into your pre-booked room.",
+    "roleA": "Receptionist",
+    "roleB": "Guest (You)",
+    "steps": [
+      {
+        "speaker": "Receptionist",
+        "text": "Good afternoon, sir. Welcome to the Grand Central Hotel. How may I assist you?",
+        "text_ja": "こんにちは。グランドセントラルホテルへようこそ。どのようなご用件でしょうか？"
+      },
+      {
+        "speaker": "Guest",
+        "text": "Hello, I have a reservation under the name Tanaka for three nights.",
+        "text_ja": "こんにちは、タナカの名前で3泊の予約をしています。"
+      },
+      {
+        "speaker": "Receptionist",
+        "text": "Thank you. Let me pull up your record. Ah yes, a double room with a city view. May I see your passport and a credit card, please?",
+        "text_ja": "ありがとうございます。記録を確認いたします。はい、シティビューのダブルルームですね。パスポートとクレジットカードを拝見できますか？"
+      },
+      {
+        "speaker": "Guest",
+        "text": "Sure, here they are. Is breakfast included in my room booking?",
+        "text_ja": "はい、どうぞ。私の予約には朝食は含まれていますか？"
+      },
+      {
+        "speaker": "Receptionist",
+        "text": "Yes, breakfast is served from seven to ten in the lobby restaurant. Here is your keycard, room five-zero-six. The elevator is on your left.",
+        "text_ja": "はい、朝食は7時から10時までロビーのレストランで提供しております。こちらがカードキーで、お部屋は506号室です。エレベーターは左手にございます。"
+      },
+      {
+        "speaker": "Guest",
+        "text": "Thank you very much. What time is checkout on the departure day?",
+        "text_ja": "ありがとうございます。出発日のチェックアウトは何時ですか？"
+      },
+      {
+        "speaker": "Receptionist",
+        "text": "Checkout is at eleven AM. Have a pleasant stay with us!",
+        "text_ja": "チェックアウトは午前11時です。ごゆっくりお過ごしください！"
+      }
+    ]
+  },
+  {
+    "id": "shinkansen-ticket",
+    "title": "Booking a Shinkansen Ticket",
+    "difficulty": "Hard",
+    "description": "Book a bullet train ticket from Tokyo to Kyoto at a ticketing office.",
+    "roleA": "Agent",
+    "roleB": "Passenger (You)",
+    "steps": [
+      {
+        "speaker": "Agent",
+        "text": "Next passenger, please! Hello. How can I help you book your train today?",
+        "text_ja": "次の方どうぞ！こんにちは。本日はどの列車の予約をご希望ですか？"
+      },
+      {
+        "speaker": "Passenger",
+        "text": "Hi, I need to book two reserved seats on the Nozomi shinkansen from Tokyo to Kyoto for tomorrow morning.",
+        "text_ja": "こんにちは、明日の朝、東京から京都行きののぞみ新幹線の指定席を2席予約したいのですが。"
+      },
+      {
+        "speaker": "Agent",
+        "text": "Certainly. We have departures at eight-fifteen and eight-forty AM. Which one fits your schedule?",
+        "text_ja": "かしこまりました。午前8時15分発と8時40分発がございます。どちらがよろしいですか？"
+      },
+      {
+        "speaker": "Passenger",
+        "text": "The eight-fifteen train would be perfect. Are there window seats available?",
+        "text_ja": "8時15分の列車が理想的です。窓側の席は空いていますか？"
+      },
+      {
+        "speaker": "Agent",
+        "text": "Yes, I can seat you both in row ten, seats A and B. Seat A is a window seat. Would you like a regular car or a Green car?",
+        "text_ja": "はい、10列目のA席とB席をご用意できます。A席が窓側です。普通車とグリーン車、どちらになさいますか？"
+      },
+      {
+        "speaker": "Passenger",
+        "text": "A regular car is fine, thank you. Can we buy return tickets too?",
+        "text_ja": "普通車で大丈夫です。帰り（復路）のチケットも一緒に購入できますか？"
+      },
+      {
+        "speaker": "Agent",
+        "text": "Yes, return tickets are valid for seven days. That will be a total of twenty-eight thousand yen. Payment is cash only at this counter.",
+        "text_ja": "はい、復路チケットは7日間有効です。合計で28,000円になります。こちらの窓口はお支払いは現金のみとなります。"
+      },
+      {
+        "speaker": "Passenger",
+        "text": "No problem, here is thirty thousand yen. Thank you for your assistance.",
+        "text_ja": "問題ありません、3万円です。助かりました、ありがとうございます。"
+      }
+    ]
+  }
+]

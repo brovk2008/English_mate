@@ -17,6 +17,11 @@ import {
 import YouTubeEmbed from '@/components/YouTubeEmbed';
 import Flashcards from '@/components/Flashcards';
 import ConfettiBurst from '@/components/ConfettiBurst';
+import { useI18n } from '@/lib/i18n/context';
+import { queueSave, drainQueue } from '@/lib/offline-queue';
+import DailyTimeEstimate from '@/components/DailyTimeEstimate';
+import LyricsModal from '@/components/LyricsModal';
+import GrammarVisual from '@/components/GrammarVisual';
 
 interface VocabWord {
   word_index: number;
@@ -139,6 +144,7 @@ export default function DayClient({
   dailyQuote,
 }: DayClientProps) {
   const router = useRouter();
+  const { lang, t } = useI18n();
 
   // Progress states
   const [progress, setProgress] = useState(initialProgress);
@@ -158,11 +164,46 @@ export default function DayClient({
   const [songsNewWords, setSongsNewWords] = useState(progress.songs_new_words || '');
   const [caseohExpressions, setCaseohExpressions] = useState(progress.caseoh_expressions || '');
   const [diaryText, setDiaryText] = useState(progress.diary_text || '');
-  const [saveStatus, setSaveStatus] = useState<Record<string, 'idle' | 'saving' | 'saved'>>({
+  const [saveStatus, setSaveStatus] = useState<Record<string, 'idle' | 'saving' | 'saved' | 'failed'>>({
     song: 'idle',
     listening: 'idle',
     diary: 'idle',
   });
+
+  const [showLyricsModal, setShowLyricsModal] = useState(false);
+
+  const [canDoChecks, setCanDoChecks] = useState<Record<number, boolean>>({});
+
+  const [startedWatching, setStartedWatching] = useState(progress.listening_done || false);
+  const [comprehensionPct, setComprehensionPct] = useState<number | null>(progress.comprehension_pct || null);
+
+  const handleSaveComprehension = async (pct: number) => {
+    setComprehensionPct(pct);
+    const supabase = createClient();
+    try {
+      await supabase
+        .from('user_day_progress')
+        .upsert({
+          user_id: profile.id,
+          day_number: dayNum,
+          comprehension_pct: pct
+        }, { onConflict: 'user_id,day_number' });
+    } catch (err) {
+      console.error('Failed to save comprehension pct:', err);
+    }
+  };
+
+  // Match active song in curated catalog
+  const songsCatalog = require('@/data/songs.json');
+  const songMatch = songsCatalog.find(
+    (s: any) =>
+      s.title?.toLowerCase() === dayContent.song_title?.toLowerCase() ||
+      s.spotify_track_id === dayContent.spotify_track_id
+  );
+
+  const lastSavedRef = useRef(diaryText);
+  const lastSavedSongRef = useRef(songsNewWords);
+  const lastSavedListeningRef = useRef(caseohExpressions);
 
   // Confetti Burst Trigger
   const [triggerConfetti, setTriggerConfetti] = useState(false);
@@ -290,7 +331,97 @@ export default function DayClient({
     }
   };
 
-  // Auto-save text area on blur
+  // Render save indicator state text
+  const renderSaveIndicator = (status: 'idle' | 'saving' | 'saved' | 'failed') => {
+    switch (status) {
+      case 'saving':
+        return <span className="text-[10px] text-sakura-deep font-bold animate-pulse flex items-center gap-1">🔄 {t('day.saving')}</span>;
+      case 'saved':
+        return <span className="text-[10px] text-matcha font-bold flex items-center gap-1">{t('day.saved')}</span>;
+      case 'failed':
+        return <span className="text-[10px] text-amber-500 font-bold flex items-center gap-1" title="Offline. Queued for auto-retry.">⚠️ {t('day.save_failed')}</span>;
+      case 'idle':
+      default:
+        return null;
+    }
+  };
+
+  // Drain offline queue on boot
+  useEffect(() => {
+    const supabase = createClient();
+    drainQueue(supabase).catch(err => console.error('Error draining offline queue:', err));
+  }, []);
+
+  // Debounced auto-save triggers for songsNewWords, caseohExpressions, and diaryText
+  useEffect(() => {
+    if (songsNewWords === (progress.songs_new_words || '')) return;
+    setSaveStatus(prev => ({ ...prev, song: 'saving' }));
+    const delayDebounce = setTimeout(async () => {
+      await handleSaveTextField('songs_new_words', songsNewWords, 'song');
+      lastSavedSongRef.current = songsNewWords;
+    }, 1500);
+    return () => clearTimeout(delayDebounce);
+  }, [songsNewWords]);
+
+  useEffect(() => {
+    if (caseohExpressions === (progress.caseoh_expressions || '')) return;
+    setSaveStatus(prev => ({ ...prev, listening: 'saving' }));
+    const delayDebounce = setTimeout(async () => {
+      await handleSaveTextField('caseoh_expressions', caseohExpressions, 'listening');
+      lastSavedListeningRef.current = caseohExpressions;
+    }, 1500);
+    return () => clearTimeout(delayDebounce);
+  }, [caseohExpressions]);
+
+  useEffect(() => {
+    if (diaryText === (progress.diary_text || '')) return;
+    setSaveStatus(prev => ({ ...prev, diary: 'saving' }));
+    const delayDebounce = setTimeout(async () => {
+      await handleSaveTextField('diary_text', diaryText, 'diary');
+      lastSavedRef.current = diaryText;
+    }, 1500);
+    return () => clearTimeout(delayDebounce);
+  }, [diaryText]);
+
+  // Guaranteed delivery on exit / hidden state
+  useEffect(() => {
+    const saveOnLeave = () => {
+      if (diaryText && diaryText !== lastSavedRef.current) {
+        const payload = JSON.stringify({
+          dayNumber: dayNum,
+          userId: profile.id,
+          diaryText: diaryText
+        });
+        
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon('/api/save-diary', payload);
+        } else {
+          fetch('/api/save-diary', {
+            method: 'POST',
+            body: payload,
+            keepalive: true
+          });
+        }
+        lastSavedRef.current = diaryText;
+      }
+    };
+    
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        saveOnLeave();
+      }
+    };
+    
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('beforeunload', saveOnLeave);
+    
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('beforeunload', saveOnLeave);
+    };
+  }, [diaryText, dayNum, profile.id]);
+
+  // Auto-save text area on blur or debounce callback
   const handleSaveTextField = async (fieldName: string, value: string, statusKey: string) => {
     setSaveStatus(prev => ({ ...prev, [statusKey]: 'saving' }));
     const supabase = createClient();
@@ -307,18 +438,27 @@ export default function DayClient({
       updatePayload.diary_word_count = words;
     }
 
-    const { error } = await supabase
-      .from('user_day_progress')
-      .upsert(updatePayload, { onConflict: 'user_id,day_number' });
+    try {
+      const { error } = await supabase
+        .from('user_day_progress')
+        .upsert(updatePayload, { onConflict: 'user_id,day_number' });
 
-    if (error) {
-      console.error(`Error saving ${fieldName}:`, error.message);
-      setSaveStatus(prev => ({ ...prev, [statusKey]: 'idle' }));
-    } else {
+      if (error) throw error;
+      
       setSaveStatus(prev => ({ ...prev, [statusKey]: 'saved' }));
       setTimeout(() => {
         setSaveStatus(prev => ({ ...prev, [statusKey]: 'idle' }));
-      }, 1500);
+      }, 2000);
+    } catch (err: any) {
+      console.error(`Failed to save ${fieldName}:`, err.message || err);
+      // Queue save offline
+      queueSave(`text-field-${fieldName}`, {
+        fieldName,
+        value,
+        dayNum,
+        userId: profile.id
+      });
+      setSaveStatus(prev => ({ ...prev, [statusKey]: 'failed' }));
     }
   };
 
@@ -369,7 +509,7 @@ export default function DayClient({
 
   // Word count calculations
   const wordCount = diaryText.trim().split(/\s+/).filter(Boolean).length;
-  const targetWords = 150;
+  const targetWords = profile.daily_minutes === 30 ? 80 : profile.daily_minutes === 60 ? 100 : 150;
   const wordPercentage = Math.min(100, (wordCount / targetWords) * 100);
   const circleCircumference = 2 * Math.PI * 18; // radius = 18
 
@@ -404,10 +544,10 @@ export default function DayClient({
       {/* Header Navigation */}
       <div className="flex items-center justify-between">
         <Link href="/home" className="flex items-center gap-1.5 text-xs font-semibold text-ink-muted hover:text-sakura transition-colors select-none">
-          <ArrowLeft className="w-4 h-4" /> Back to Dashboard
+          <ArrowLeft className="w-4 h-4" /> {t('common.back')}
         </Link>
         <Badge variant="outline" className="border-border text-ink-muted select-none">
-          Month {dayContent.month} · Week {dayContent.week}
+          {t('common.month')} {dayContent.month} · {t('common.week')} {dayContent.week}
         </Badge>
       </div>
 
@@ -421,6 +561,9 @@ export default function DayClient({
             {dayContent.grammar_topic}
           </h1>
         </div>
+
+        {/* Dynamic time estimate banner */}
+        <DailyTimeEstimate dailyMinutes={profile.daily_minutes || 90} />
 
         {/* Dynamic quote box & daily tip */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -453,7 +596,7 @@ export default function DayClient({
               <BookOpen className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-base text-ink">
-              1. Vocabulary Swipe Cards
+              1. {t('day.vocabulary')}
             </span>
           </div>
           <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
@@ -497,7 +640,7 @@ export default function DayClient({
               <Layers className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-base text-ink">
-              2. Grammar Video Explainer
+              2. {t('day.grammar')}
             </span>
           </div>
           <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
@@ -535,6 +678,8 @@ export default function DayClient({
                     {dayContent.grammar_explainer}
                   </p>
                 </div>
+
+                <GrammarVisual topicKey={dayContent.grammar_topic || ''} />
 
                 {/* Collapsible Grammar Quick Quiz */}
                 <div className="border border-border/80 rounded-xl overflow-hidden bg-bg/25">
@@ -592,6 +737,45 @@ export default function DayClient({
                     )}
                   </div>
                 </div>
+
+                {/* CEFR Self-Assessment Can-Do */}
+                <div className="bg-[#FAF6F1]/50 border border-border/80 rounded-xl p-4 space-y-2.5">
+                  <span className="text-[10px] font-bold text-sakura-deep uppercase tracking-wider block">
+                    CEFR Can-Do self-assessment Checklist:
+                  </span>
+                  {[
+                    "I can recognize this grammar pattern in reading and listening.",
+                    "I can formulate correct affirmative and negative sentences with it.",
+                    "I can apply this grammar structure in my daily diary writing."
+                  ].map((desc, idx) => {
+                    const checked = !!canDoChecks[idx];
+                    return (
+                      <label key={idx} className="flex items-start gap-2.5 text-xs text-ink-muted cursor-pointer select-none leading-relaxed">
+                        <Checkbox
+                          checked={checked}
+                          onCheckedChange={(val) => {
+                            const updated = { ...canDoChecks, [idx]: !!val };
+                            setCanDoChecks(updated);
+                            if (updated[0] && updated[1] && updated[2]) {
+                              handleToggleCheck('grammar_done', true);
+                            }
+                          }}
+                          className="w-4 h-4 border-border rounded cursor-pointer mt-0.5"
+                        />
+                        <span>{desc}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+
+                <div className="pt-2 border-t border-border flex items-center justify-between">
+                  <span className="text-[10px] text-ink-muted">Want to practice this grammar topic?</span>
+                  <Link href="/sentence-builder">
+                    <Button size="sm" className="bg-[#E8A6B8] hover:bg-[#E293A7] text-white rounded-xl font-bold text-xs cursor-pointer shadow-sm">
+                      🎮 Play Sentence Builder
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
             </motion.div>
           )}
@@ -606,7 +790,7 @@ export default function DayClient({
               <Music className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-base text-ink">
-              3. Song: {dayContent.song_title}
+              3. {t('day.song')}: {dayContent.song_title}
             </span>
           </div>
           <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
@@ -643,16 +827,28 @@ export default function DayClient({
                   <div className="text-xs text-ink-muted italic">Spotify player failed to configure.</div>
                 )}
 
+                {songMatch && (
+                  <div className="pt-1 flex items-center justify-between gap-3">
+                    <span className="text-[10px] text-ink-muted leading-relaxed">
+                      This song supports interactive lyrics training!
+                    </span>
+                    <Button
+                      size="sm"
+                      onClick={() => setShowLyricsModal(true)}
+                      className="bg-sakura hover:bg-sakura-deep/90 text-white dark:text-bg rounded-xl font-bold text-xs cursor-pointer shadow-xs flex items-center gap-1"
+                    >
+                      🎤 Learn the Lyrics / 歌詞で学ぶ
+                    </Button>
+                  </div>
+                )}
+
                 {/* Words I Found Input */}
                 <div className="space-y-1.5 pt-2">
                   <div className="flex justify-between items-center">
                     <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
                       New Words I Heard (Slang & Idioms):
                     </label>
-                    <span className="text-[10px] text-ink-muted">
-                      {saveStatus.song === 'saving' && 'Saving...'}
-                      {saveStatus.song === 'saved' && 'Saved ✓'}
-                    </span>
+                    {renderSaveIndicator(saveStatus.song)}
                   </div>
                   <input
                     type="text"
@@ -677,7 +873,7 @@ export default function DayClient({
               <Video className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-base text-ink">
-              4. Listening: {dayContent.listening_label}
+              4. {t('day.listening')}: {dayContent.listening_label}
             </span>
           </div>
           <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
@@ -715,34 +911,99 @@ export default function DayClient({
                   )}
                 </div>
 
-                {dayContent.listening_youtube_id ? (
-                  <YouTubeEmbed youtubeId={dayContent.listening_youtube_id} title={dayContent.listening_label} />
+                {!startedWatching ? (
+                  /* Pre-watch Challenge Prompt */
+                  <div className="border border-border/80 bg-[#FAF6F1]/60 dark:bg-card/40 rounded-xl p-5 space-y-4 text-center">
+                    <div className="space-y-1.5">
+                      <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-widest block">
+                        Today's Video Challenge
+                      </span>
+                      <h4 className="font-display font-bold text-sm text-ink">
+                        Active Listening Checklist
+                      </h4>
+                    </div>
+
+                    <div className="text-left space-y-2 max-w-xs mx-auto text-xs text-ink-muted font-medium">
+                      {((dayContent.listening_challenge?.pre_watch) || [
+                        "Find 2 funny food-related comments.",
+                        `Identify how many times he says "${dayNum % 2 === 0 ? 'bro' : 'chat'}".`,
+                        "Write down 3 unknown vocabulary words."
+                      ]).map((item: string, idx: number) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <span className="text-sakura mt-0.5">🌸</span>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Button
+                      onClick={() => setStartedWatching(true)}
+                      className="bg-sakura hover:bg-sakura-deep text-white dark:text-bg rounded-xl font-bold text-xs px-5 py-2 cursor-pointer shadow-sm"
+                    >
+                      Start Watching & Challenge
+                    </Button>
+                  </div>
                 ) : (
-                  <div className="bg-bg/50 border border-dashed border-border rounded-xl aspect-video flex flex-col items-center justify-center text-center p-6 text-xs text-ink-muted select-none">
-                    <p className="font-semibold">Anime Listening Day</p>
-                    <p className="mt-1">Go to Crunchyroll or Netflix and watch an episode in English dub!</p>
+                  /* Video Embed & Post-watch checks */
+                  <div className="space-y-5 animate-fade-in">
+                    {dayContent.listening_youtube_id ? (
+                      <YouTubeEmbed youtubeId={dayContent.listening_youtube_id} title={dayContent.listening_label} />
+                    ) : (
+                      <div className="bg-bg/50 border border-dashed border-border rounded-xl aspect-video flex flex-col items-center justify-center text-center p-6 text-xs text-ink-muted select-none">
+                        <p className="font-semibold">Anime Listening Day</p>
+                        <p className="mt-1">Go to Crunchyroll or Netflix and watch an episode in English dub!</p>
+                      </div>
+                    )}
+
+                    {/* Comprehension selection row */}
+                    <div className="bg-bg/25 border border-border/60 rounded-xl p-4 space-y-2">
+                      <label className="text-[10px] font-bold text-ink-muted uppercase tracking-wider block">
+                        How much of this video did you understand?
+                      </label>
+                      <div className="grid grid-cols-3 gap-2">
+                        {[
+                          { label: 'Less than 50%', value: 30 },
+                          { label: 'About 50-70%', value: 60 },
+                          { label: 'More than 70%', value: 90 }
+                        ].map((choice) => {
+                          const isSelected = comprehensionPct !== null && Math.abs(comprehensionPct - choice.value) < 15;
+                          return (
+                            <button
+                              key={choice.value}
+                              onClick={() => handleSaveComprehension(choice.value)}
+                              className={`py-2 px-1 text-[10px] font-bold rounded-xl border text-center transition-all cursor-pointer
+                                ${isSelected ? 'border-sakura bg-sakura/5 text-sakura-deep font-black' : 'border-border text-ink-muted hover:border-sakura bg-card'}`}
+                            >
+                              {choice.label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Expressions Area */}
+                    <div className="space-y-1.5 pt-1">
+                      <div className="flex justify-between items-center">
+                        <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
+                          Challenge Notes & 3-Sentence Summary:
+                        </label>
+                        {renderSaveIndicator(saveStatus.listening)}
+                      </div>
+                      <Textarea
+                        value={caseohExpressions}
+                        onChange={(e) => setCaseohExpressions(e.target.value)}
+                        onBlur={() => handleSaveTextField('caseoh_expressions', caseohExpressions, 'listening')}
+                        onFocus={(e) => {
+                          setTimeout(() => {
+                            e.target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                          }, 300);
+                        }}
+                        placeholder="Write down what happened in the video. List any funny jokes or words he said..."
+                        className="w-full border-border bg-bg/20 hover:border-sakura focus:border-sakura focus:ring-2 focus:ring-sakura/20 rounded-xl text-sm font-medium transition-all min-h-[90px]"
+                      />
+                    </div>
                   </div>
                 )}
-
-                {/* Expressions Area */}
-                <div className="space-y-1.5 pt-2">
-                  <div className="flex justify-between items-center">
-                    <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
-                      What happened in this video? Write 3-5 sentences:
-                    </label>
-                    <span className="text-[10px] text-ink-muted">
-                      {saveStatus.listening === 'saving' && 'Saving...'}
-                      {saveStatus.listening === 'saved' && 'Saved ✓'}
-                    </span>
-                  </div>
-                  <Textarea
-                    value={caseohExpressions}
-                    onChange={(e) => setCaseohExpressions(e.target.value)}
-                    onBlur={() => handleSaveTextField('caseoh_expressions', caseohExpressions, 'listening')}
-                    placeholder="Describe the story briefly. Focus on expressions they used..."
-                    className="w-full border-border bg-bg/20 hover:border-sakura focus:border-sakura focus:ring-2 focus:ring-sakura/20 rounded-xl text-sm font-medium transition-all min-h-[90px]"
-                  />
-                </div>
               </CardContent>
             </motion.div>
           )}
@@ -757,7 +1018,7 @@ export default function DayClient({
               <FileText className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-base text-ink">
-              5. Daily English Diary
+              5. {t('day.writing')}
             </span>
           </div>
           <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
@@ -793,16 +1054,18 @@ export default function DayClient({
                     <label className="text-[10px] font-bold text-ink-muted tracking-wider uppercase block">
                       Write your diary entry (Target: 150+ words):
                     </label>
-                    <span className="text-[10px] text-ink-muted">
-                      {saveStatus.diary === 'saving' && 'Saving...'}
-                      {saveStatus.diary === 'saved' && 'Saved ✓'}
-                    </span>
+                    {renderSaveIndicator(saveStatus.diary)}
                   </div>
 
                   <Textarea
                     value={diaryText}
                     onChange={(e) => setDiaryText(e.target.value)}
                     onBlur={() => handleSaveTextField('diary_text', diaryText, 'diary')}
+                    onFocus={(e) => {
+                      setTimeout(() => {
+                        e.target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                      }, 300);
+                    }}
                     placeholder="Write freely in English about your day, reflecting on the prompt..."
                     className="w-full border-border bg-bg/20 hover:border-sakura focus:border-sakura focus:ring-2 focus:ring-sakura/20 rounded-xl text-sm font-medium transition-all min-h-[160px]"
                   />
@@ -841,7 +1104,7 @@ export default function DayClient({
               <Mic className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-base text-ink">
-              6. Speaking Practice
+              6. {t('day.speaking')}
             </span>
           </div>
           <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
@@ -888,10 +1151,10 @@ export default function DayClient({
           </div>
           <div className="space-y-1">
             <h2 className="font-display font-extrabold text-2xl text-ink">
-              🌸 Mission Complete! 🌸
+              {t('day.mission_complete')}
             </h2>
             <p className="text-sm text-ink-muted max-w-sm mx-auto">
-              Day {dayNum} / 90 — Beautiful work today. You kept your streak alive!
+              {t('home.day_of', { n: dayNum })} — Beautiful work today. You kept your streak alive!
             </p>
           </div>
 
@@ -904,12 +1167,22 @@ export default function DayClient({
             {dayNum < 90 && (
               <Link href={`/day/${dayNum + 1}`}>
                 <Button className="bg-sakura hover:bg-sakura-deep/90 text-white dark:text-bg rounded-xl font-bold cursor-pointer">
-                  See Day {dayNum + 1} Preview →
+                  {t('day.next_day', { n: dayNum + 1 })} →
                 </Button>
               </Link>
             )}
           </div>
         </Card>
+      )}
+      {/* 6. SPEAKING COMPLETE MODALS */}
+      {showLyricsModal && songMatch && (
+        <LyricsModal
+          song={songMatch}
+          onClose={() => setShowLyricsModal(false)}
+          onComplete={() => {
+            handleToggleCheck('song_done', true);
+          }}
+        />
       )}
     </div>
   );

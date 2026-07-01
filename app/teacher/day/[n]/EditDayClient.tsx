@@ -8,7 +8,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
-import { ArrowLeft, Save, Loader2, Sparkles } from 'lucide-react';
+import { ArrowLeft, Save, Loader2, Sparkles, Eye, X, BookOpen, Layers, Music, Video, FileText } from 'lucide-react';
+import GrammarVisual from '@/components/GrammarVisual';
 
 interface EditDayClientProps {
   dayNum: number;
@@ -19,6 +20,7 @@ export default function EditDayClient({ dayNum, dayContent }: EditDayClientProps
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   // Form states
   const [grammarTopic, setGrammarTopic] = useState(dayContent.grammar_topic || '');
@@ -93,13 +95,23 @@ export default function EditDayClient({ dayNum, dayContent }: EditDayClientProps
           </Badge>
         </div>
 
-        <div>
-          <h1 className="font-heading text-4xl font-bold tracking-tight text-[#33312E]">
-            Edit Day {dayNum} Curriculum
-          </h1>
-          <p className="text-sm text-[#73706B]">
-            Modify the grammar, song, listening exercises, and tips for this lesson.
-          </p>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h1 className="font-heading text-4xl font-bold tracking-tight text-[#33312E]">
+              Edit Day {dayNum} Curriculum
+            </h1>
+            <p className="text-sm text-[#73706B]">
+              Modify the grammar, song, listening exercises, and tips for this lesson.
+            </p>
+          </div>
+
+          <Button
+            type="button"
+            onClick={() => setIsPreviewOpen(true)}
+            className="bg-[#E8A6B8] hover:bg-[#E293A7] text-white rounded-xl font-bold text-xs h-9 px-4 cursor-pointer flex items-center gap-1 self-start sm:self-center shadow-xs"
+          >
+            <Eye size={14} /> Preview Lesson Layout
+          </Button>
         </div>
 
         <form onSubmit={handleSave} className="space-y-6">
@@ -354,6 +366,109 @@ export default function EditDayClient({ dayNum, dayContent }: EditDayClientProps
           </Card>
         </form>
       </div>
+
+      {/* Lesson Preview Modal */}
+      {isPreviewOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md p-4 overflow-y-auto">
+          <Card className="w-full max-w-2xl border border-border bg-[#FAF6F1] rounded-3xl p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto space-y-6 select-none">
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-border/40 pb-3">
+              <div>
+                <h3 className="font-display font-extrabold text-base text-ink">Lesson Day {dayNum} Live Preview</h3>
+                <p className="text-[10px] text-ink-muted">Simulating Student Dashboard View Mode</p>
+              </div>
+              <button
+                onClick={() => setIsPreviewOpen(false)}
+                className="text-ink-muted hover:text-sakura p-1 rounded-full hover:bg-bg/40 cursor-pointer"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {/* Simulated content scroll */}
+            <div className="space-y-6">
+              {/* 1. Vocabulary Title Card */}
+              <Card className="border border-border bg-card rounded-2xl p-4 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-sakura/10 text-sakura">
+                    <BookOpen className="w-4 h-4" />
+                  </div>
+                  <span className="font-display font-bold text-sm text-ink">1. Vocabulary Oxford List</span>
+                </div>
+                <Badge className="bg-bg text-ink-muted font-bold text-[9px] border-none select-none">10 Words</Badge>
+              </Card>
+
+              {/* 2. Grammar Topic Visual Explainer */}
+              <Card className="border border-border bg-card rounded-2xl overflow-hidden shadow-xs">
+                <div className="p-4 border-b border-border/40 flex items-center gap-3 bg-bg/5">
+                  <div className="p-2 rounded-xl bg-matcha/10 text-matcha">
+                    <Layers className="w-4 h-4" />
+                  </div>
+                  <span className="font-display font-bold text-sm text-ink">2. Grammar: {grammarTopic || 'Untitled Grammar'}</span>
+                </div>
+                <CardContent className="p-5 space-y-4">
+                  <div className="bg-bg/40 border border-border rounded-xl p-4">
+                    <span className="text-[10px] font-bold text-ink-muted uppercase block tracking-wider mb-2">Lesson Sheet</span>
+                    <p className="text-xs text-ink leading-relaxed whitespace-pre-wrap">{grammarExplainer || 'No explainer text entered.'}</p>
+                  </div>
+                  <GrammarVisual topicKey={grammarTopic} />
+                </CardContent>
+              </Card>
+
+              {/* 3. Song Playlist */}
+              <Card className="border border-border bg-card rounded-2xl p-4 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-sakura/10 text-sakura">
+                    <Music className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="font-display font-bold text-sm text-ink block">3. Song: {songTitle || 'No Song Title'}</span>
+                    <span className="text-[10px] text-ink-muted">by {songArtist || 'Unknown Artist'}</span>
+                  </div>
+                </div>
+              </Card>
+
+              {/* 4. Listening Practice */}
+              <Card className="border border-border bg-card rounded-2xl p-4 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-sakura/10 text-sakura">
+                    <Video className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="font-display font-bold text-sm text-ink block">4. Listening: {listeningLabel || 'No Listening Title'}</span>
+                    <span className="text-[10px] text-ink-muted uppercase font-bold tracking-widest">{listeningMode.replace('_', ' ')}</span>
+                  </div>
+                </div>
+              </Card>
+
+              {/* 5. Writing Prompt */}
+              <Card className="border border-border bg-card rounded-2xl overflow-hidden shadow-xs">
+                <div className="p-4 border-b border-border/40 flex items-center gap-3 bg-bg/5">
+                  <div className="p-2 rounded-xl bg-matcha/10 text-matcha">
+                    <FileText className="w-4 h-4" />
+                  </div>
+                  <span className="font-display font-bold text-sm text-ink">5. Writing Diary</span>
+                </div>
+                <CardContent className="p-5 space-y-3">
+                  <div className="bg-bg/40 border border-border rounded-xl p-4 border-l-2 border-l-gold">
+                    <span className="text-[10px] font-bold text-gold tracking-wider uppercase block mb-1">Diary Prompt</span>
+                    <p className="text-xs text-ink leading-relaxed">{writingPrompt || 'No prompt text entered.'}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="pt-2">
+              <Button
+                onClick={() => setIsPreviewOpen(false)}
+                className="w-full bg-[#5B7F6B] hover:bg-[#4E6D5B] text-white rounded-2xl font-bold py-3 text-sm cursor-pointer"
+              >
+                Close Preview
+              </Button>
+            </div>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }

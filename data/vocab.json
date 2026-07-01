@@ -4,2099 +4,2399 @@
     "word": "able",
     "pronunciation": "AY-bul",
     "meaning": "having the power or skill to do something",
-    "example_sentence": "I am able to speak a little English now."
+    "example_sentence": "I am able to speak a little English now.",
+    "meaning_ja": "何かをする力またはスキルを持っている"
   },
   {
     "word_index": 2,
     "word": "about",
     "pronunciation": "uh-BOUT",
     "meaning": "on the subject of; connected with",
-    "example_sentence": "We are talking about our favorite movies."
+    "example_sentence": "We are talking about our favorite movies.",
+    "meaning_ja": "という主題について;"
   },
   {
     "word_index": 3,
     "word": "above",
     "pronunciation": "uh-BUHV",
     "meaning": "at or to a higher place than something",
-    "example_sentence": "The birds are flying above the trees."
+    "example_sentence": "The birds are flying above the trees.",
+    "meaning_ja": "何かより高い場所で、または何かより高い場所へ"
   },
   {
     "word_index": 4,
     "word": "accept",
     "pronunciation": "uhk-SEPT",
     "meaning": "to agree to take something",
-    "example_sentence": "Please accept this small gift from me."
+    "example_sentence": "Please accept this small gift from me.",
+    "meaning_ja": "何かを受け取ることに同意する"
   },
   {
     "word_index": 5,
     "word": "account",
     "pronunciation": "uh-KOUNT",
     "meaning": "an arrangement with a bank or company",
-    "example_sentence": "I opened a new bank account today."
+    "example_sentence": "I opened a new bank account today.",
+    "meaning_ja": "銀行または会社との取り決め"
   },
   {
     "word_index": 6,
     "word": "achieve",
     "pronunciation": "uh-CHEEV",
     "meaning": "to succeed in doing something by effort",
-    "example_sentence": "You can achieve your goal if you study hard."
+    "example_sentence": "You can achieve your goal if you study hard.",
+    "meaning_ja": "努力して何かを成し遂げること"
   },
   {
     "word_index": 7,
     "word": "across",
     "pronunciation": "uh-KRAWS",
     "meaning": "from one side to the other",
-    "example_sentence": "We walked across the street to the cafe."
+    "example_sentence": "We walked across the street to the cafe.",
+    "meaning_ja": "一方からもう一方へ"
   },
   {
     "word_index": 8,
     "word": "act",
     "pronunciation": "akt",
     "meaning": "to do something for a particular reason",
-    "example_sentence": "You must act quickly in an emergency."
+    "example_sentence": "You must act quickly in an emergency.",
+    "meaning_ja": "特定の理由で何かをすること"
   },
   {
     "word_index": 9,
     "word": "active",
     "pronunciation": "AK-tiv",
     "meaning": "busy and doing a lot of things",
-    "example_sentence": "She is very active and loves playing sports."
+    "example_sentence": "She is very active and loves playing sports.",
+    "meaning_ja": "忙しくてたくさんのことをやっている"
   },
   {
     "word_index": 10,
     "word": "actor",
     "pronunciation": "AK-ter",
     "meaning": "a person who performs in a play or movie",
-    "example_sentence": "He is a famous actor in action movies."
+    "example_sentence": "He is a famous actor in action movies.",
+    "meaning_ja": "演劇や映画で演技する人"
   },
   {
     "word_index": 11,
     "word": "actual",
     "pronunciation": "AK-choo-uhl",
     "meaning": "real and not general or guessed",
-    "example_sentence": "The actual cost was higher than we expected."
+    "example_sentence": "The actual cost was higher than we expected.",
+    "meaning_ja": "一般的または推測ではなく現実のものである"
   },
   {
     "word_index": 12,
     "word": "add",
     "pronunciation": "ad",
     "meaning": "to put something together with something else",
-    "example_sentence": "Please add some sugar to my coffee."
+    "example_sentence": "Please add some sugar to my coffee.",
+    "meaning_ja": "何かを他のものと組み合わせる"
   },
   {
     "word_index": 13,
     "word": "address",
     "pronunciation": "uh-DRES",
     "meaning": "the details of where a building is",
-    "example_sentence": "What is the address of your new house?"
+    "example_sentence": "What is the address of your new house?",
+    "meaning_ja": "建物がどこにあるかの詳細"
   },
   {
     "word_index": 14,
     "word": "admit",
     "pronunciation": "uhd-MIT",
     "meaning": "to agree that something is true",
-    "example_sentence": "He had to admit that he made a mistake."
+    "example_sentence": "He had to admit that he made a mistake.",
+    "meaning_ja": "何かが真実であることに同意する"
   },
   {
     "word_index": 15,
     "word": "adult",
     "pronunciation": "uh-DUHLT",
     "meaning": "a fully grown person",
-    "example_sentence": "Tickets are cheaper for children than for adults."
+    "example_sentence": "Tickets are cheaper for children than for adults.",
+    "meaning_ja": "完全に成長した人"
   },
   {
     "word_index": 16,
     "word": "advice",
     "pronunciation": "uhd-VAYS",
     "meaning": "an opinion about what someone should do",
-    "example_sentence": "She gave me some excellent advice about my career."
+    "example_sentence": "She gave me some excellent advice about my career.",
+    "meaning_ja": "誰かが何をすべきかについての意見"
   },
   {
     "word_index": 17,
     "word": "afford",
     "pronunciation": "uh-FAWRD",
     "meaning": "to have enough money to buy something",
-    "example_sentence": "I cannot afford to buy a new car right now."
+    "example_sentence": "I cannot afford to buy a new car right now.",
+    "meaning_ja": "何かを買うのに十分なお金があること"
   },
   {
     "word_index": 18,
     "word": "afraid",
     "pronunciation": "uh-FRAYD",
     "meaning": "feeling fear or worry",
-    "example_sentence": "Do not be afraid of making mistakes when speaking."
+    "example_sentence": "Do not be afraid of making mistakes when speaking.",
+    "meaning_ja": "恐怖や心配を感じる"
   },
   {
     "word_index": 19,
     "word": "after",
     "pronunciation": "AF-ter",
     "meaning": "later than something; behind",
-    "example_sentence": "We had dinner after watching the movie."
+    "example_sentence": "We had dinner after watching the movie.",
+    "meaning_ja": "何かより遅い。"
   },
   {
     "word_index": 20,
     "word": "afternoon",
     "pronunciation": "af-ter-NOON",
     "meaning": "the period between midday and evening",
-    "example_sentence": "I usually study English in the afternoon."
+    "example_sentence": "I usually study English in the afternoon.",
+    "meaning_ja": "正午から夕方までの時間帯"
   },
   {
     "word_index": 21,
     "word": "again",
     "pronunciation": "uh-GEN",
     "meaning": "one more time; once more",
-    "example_sentence": "Can you say that again, please?"
+    "example_sentence": "Can you say that again, please?",
+    "meaning_ja": "もう一度;"
   },
   {
     "word_index": 22,
     "word": "against",
     "pronunciation": "uh-GENST",
     "meaning": "opposing or disagreeing with someone/something",
-    "example_sentence": "We are playing against the best team tomorrow."
+    "example_sentence": "We are playing against the best team tomorrow.",
+    "meaning_ja": "誰か/何かに反対したり反対したりする"
   },
   {
     "word_index": 23,
     "word": "age",
     "pronunciation": "ayj",
     "meaning": "the number of years someone has lived",
-    "example_sentence": "She looks young for her age."
+    "example_sentence": "She looks young for her age.",
+    "meaning_ja": "（人）が生きてきた年数"
   },
   {
     "word_index": 24,
     "word": "agency",
     "pronunciation": "AY-juhn-see",
     "meaning": "a business that provides a service",
-    "example_sentence": "He works at a travel agency in the city."
+    "example_sentence": "He works at a travel agency in the city.",
+    "meaning_ja": "サービスを提供する事業"
   },
   {
     "word_index": 25,
     "word": "agent",
     "pronunciation": "AY-juhnt",
     "meaning": "a person who acts for another person or group",
-    "example_sentence": "Our real estate agent helped us find a nice apartment."
+    "example_sentence": "Our real estate agent helped us find a nice apartment.",
+    "meaning_ja": "他の人またはグループのために行動する人"
   },
   {
     "word_index": 26,
     "word": "ago",
     "pronunciation": "uh-GOH",
     "meaning": "back in time; in the past",
-    "example_sentence": "I finished my homework an hour ago."
+    "example_sentence": "I finished my homework an hour ago.",
+    "meaning_ja": "過去に戻る。"
   },
   {
     "word_index": 27,
     "word": "agree",
     "pronunciation": "uh-GREE",
     "meaning": "to have the same opinion as someone else",
-    "example_sentence": "I agree with your idea completely."
+    "example_sentence": "I agree with your idea completely.",
+    "meaning_ja": "他の人と同じ意見を持つこと"
   },
   {
     "word_index": 28,
     "word": "ahead",
     "pronunciation": "uh-HED",
     "meaning": "in front of someone or something",
-    "example_sentence": "Walk straight ahead until you see the station."
+    "example_sentence": "Walk straight ahead until you see the station.",
+    "meaning_ja": "誰かまたは何かの前で"
   },
   {
     "word_index": 29,
     "word": "air",
     "pronunciation": "air",
     "meaning": "the mixture of gases that surrounds the earth",
-    "example_sentence": "The mountain air is very clean and fresh."
+    "example_sentence": "The mountain air is very clean and fresh.",
+    "meaning_ja": "地球を取り囲むガスの混合物"
   },
   {
     "word_index": 30,
     "word": "all",
     "pronunciation": "awl",
     "meaning": "the whole number or amount of something",
-    "example_sentence": "All the students passed the test."
+    "example_sentence": "All the students passed the test.",
+    "meaning_ja": "何かの全体の数または量"
   },
   {
     "word_index": 31,
     "word": "allow",
     "pronunciation": "uh-LOU",
     "meaning": "to let someone do something",
-    "example_sentence": "They do not allow smoking inside the library."
+    "example_sentence": "They do not allow smoking inside the library.",
+    "meaning_ja": "誰かに何かをさせること"
   },
   {
     "word_index": 32,
     "word": "almost",
     "pronunciation": "AWL-mohst",
     "meaning": "nearly; not quite",
-    "example_sentence": "Dinner is almost ready, please sit down."
+    "example_sentence": "Dinner is almost ready, please sit down.",
+    "meaning_ja": "ほぼ;"
   },
   {
     "word_index": 33,
     "word": "alone",
     "pronunciation": "uh-LOHN",
     "meaning": "without any other people",
-    "example_sentence": "She likes walking alone in the park."
+    "example_sentence": "She likes walking alone in the park.",
+    "meaning_ja": "他に人がいない状態で"
   },
   {
     "word_index": 34,
     "word": "along",
     "pronunciation": "uh-LAWNG",
     "meaning": "from one end to the other of something",
-    "example_sentence": "We walked along the river bank."
+    "example_sentence": "We walked along the river bank.",
+    "meaning_ja": "何かの端から端まで"
   },
   {
     "word_index": 35,
     "word": "already",
     "pronunciation": "awl-RED-ee",
     "meaning": "before now or before a particular time",
-    "example_sentence": "I have already finished my homework."
+    "example_sentence": "I have already finished my homework.",
+    "meaning_ja": "今より前、または特定の時間より前"
   },
   {
     "word_index": 36,
     "word": "also",
     "pronunciation": "AWL-soh",
     "meaning": "in addition; too",
-    "example_sentence": "He speaks Spanish and also a little French."
+    "example_sentence": "He speaks Spanish and also a little French.",
+    "meaning_ja": "加えて;"
   },
   {
     "word_index": 37,
     "word": "although",
     "pronunciation": "awl-THOH",
     "meaning": "even though; despite the fact that",
-    "example_sentence": "Although it was raining, we went for a walk."
+    "example_sentence": "Although it was raining, we went for a walk.",
+    "meaning_ja": "それでも;"
   },
   {
     "word_index": 38,
     "word": "always",
     "pronunciation": "AWL-wayz",
     "meaning": "at all times; every time",
-    "example_sentence": "She always drinks tea in the morning."
+    "example_sentence": "She always drinks tea in the morning.",
+    "meaning_ja": "いつでも;"
   },
   {
     "word_index": 39,
     "word": "amount",
     "pronunciation": "uh-MOUNT",
     "meaning": "a quantity of something",
-    "example_sentence": "We need a large amount of water for the garden."
+    "example_sentence": "We need a large amount of water for the garden.",
+    "meaning_ja": "何かの量"
   },
   {
     "word_index": 40,
     "word": "ancient",
     "pronunciation": "AYN-shuhnt",
     "meaning": "belonging to a period of history long ago",
-    "example_sentence": "They visited the ancient temples in Kyoto."
+    "example_sentence": "They visited the ancient temples in Kyoto.",
+    "meaning_ja": "遠い昔の歴史の一時期に属する"
   },
   {
     "word_index": 41,
     "word": "anger",
     "pronunciation": "ANG-ger",
     "meaning": "a strong feeling of being displeased",
-    "example_sentence": "He tried to control his anger when he heard the news."
+    "example_sentence": "He tried to control his anger when he heard the news.",
+    "meaning_ja": "強い不快感"
   },
   {
     "word_index": 42,
     "word": "angle",
     "pronunciation": "ANG-guhl",
     "meaning": "the space between two lines that meet",
-    "example_sentence": "The camera was set at a low angle."
+    "example_sentence": "The camera was set at a low angle.",
+    "meaning_ja": "交わる2本の線の間のスペース"
   },
   {
     "word_index": 43,
     "word": "animal",
     "pronunciation": "AN-i-muhl",
     "meaning": "a living thing that is not a plant",
-    "example_sentence": "A dog is a very loyal animal."
+    "example_sentence": "A dog is a very loyal animal.",
+    "meaning_ja": "植物ではない生き物"
   },
   {
     "word_index": 44,
     "word": "announce",
     "pronunciation": "uh-NOUNS",
     "meaning": "to make something known publicly",
-    "example_sentence": "They will announce the winner tomorrow."
+    "example_sentence": "They will announce the winner tomorrow.",
+    "meaning_ja": "何かを公に知らせること"
   },
   {
     "word_index": 45,
     "word": "another",
     "pronunciation": "uh-NUHTH-er",
     "meaning": "one more; different person or thing",
-    "example_sentence": "Can I have another cup of coffee?"
+    "example_sentence": "Can I have another cup of coffee?",
+    "meaning_ja": "もう一つ。"
   },
   {
     "word_index": 46,
     "word": "answer",
     "pronunciation": "AN-ser",
     "meaning": "something said or written to reply to a question",
-    "example_sentence": "He gave a clear answer to my question."
+    "example_sentence": "He gave a clear answer to my question.",
+    "meaning_ja": "質問に答えるために何か言ったり書いたりしたこと"
   },
   {
     "word_index": 47,
     "word": "anxiety",
     "pronunciation": "ang-ZAY-i-tee",
     "meaning": "a feeling of worry or nervousness",
-    "example_sentence": "He felt a lot of anxiety before the exam."
+    "example_sentence": "He felt a lot of anxiety before the exam.",
+    "meaning_ja": "心配または緊張の感情"
   },
   {
     "word_index": 48,
     "word": "any",
     "pronunciation": "EN-ee",
     "meaning": "one or some of a thing, no matter which",
-    "example_sentence": "Do you have any questions for me?"
+    "example_sentence": "Do you have any questions for me?",
+    "meaning_ja": "物事の 1 つまたはいくつか、どちらであっても"
   },
   {
     "word_index": 49,
     "word": "anyone",
     "pronunciation": "EN-ee-wuhn",
     "meaning": "any person",
-    "example_sentence": "Anyone can join the English club."
+    "example_sentence": "Anyone can join the English club.",
+    "meaning_ja": "誰でも"
   },
   {
     "word_index": 50,
     "word": "anything",
     "pronunciation": "EN-ee-thing",
     "meaning": "any thing, no matter which",
-    "example_sentence": "Is there anything else you need?"
+    "example_sentence": "Is there anything else you need?",
+    "meaning_ja": "何でも、どれでも"
   },
   {
     "word_index": 51,
     "word": "apart",
     "pronunciation": "uh-PAHRT",
     "meaning": "separated by a distance or time",
-    "example_sentence": "The two houses are about one mile apart."
+    "example_sentence": "The two houses are about one mile apart.",
+    "meaning_ja": "距離または時間によって隔てられる"
   },
   {
     "word_index": 52,
     "word": "apartment",
     "pronunciation": "uh-PAHRT-muhnt",
     "meaning": "a set of rooms for living in, usually on one floor",
-    "example_sentence": "They live in a modern apartment in Tokyo."
+    "example_sentence": "They live in a modern apartment in Tokyo.",
+    "meaning_ja": "通常は 1 つのフロアにある、住むための一連の部屋"
   },
   {
     "word_index": 53,
     "word": "apologize",
     "pronunciation": "uh-PAHL-uh-jayz",
     "meaning": "to say that you are sorry for something",
-    "example_sentence": "You should apologize for being late."
+    "example_sentence": "You should apologize for being late.",
+    "meaning_ja": "何かをごめんなさいと言う"
   },
   {
     "word_index": 54,
     "word": "apparent",
     "pronunciation": "uh-PAR-uhnt",
     "meaning": "easy to see or understand; clear",
-    "example_sentence": "It was apparent that she was not happy."
+    "example_sentence": "It was apparent that she was not happy.",
+    "meaning_ja": "見やすく、理解しやすい。"
   },
   {
     "word_index": 55,
     "word": "appeal",
     "pronunciation": "uh-PEEL",
     "meaning": "a deeply felt request for help or money",
-    "example_sentence": "The police made an appeal for information."
+    "example_sentence": "The police made an appeal for information.",
+    "meaning_ja": "助けやお金を求める深い感情"
   },
   {
     "word_index": 56,
     "word": "appear",
     "pronunciation": "uh-PEER",
     "meaning": "to start to be seen or to exist",
-    "example_sentence": "A dark cloud started to appear in the sky."
+    "example_sentence": "A dark cloud started to appear in the sky.",
+    "meaning_ja": "見られ始める、または存在し始める"
   },
   {
     "word_index": 57,
     "word": "apple",
     "pronunciation": "AP-uhl",
     "meaning": "a round fruit with red or green skin",
-    "example_sentence": "An apple a day keeps the doctor away."
+    "example_sentence": "An apple a day keeps the doctor away.",
+    "meaning_ja": "赤または緑の皮を持つ丸い果物"
   },
   {
     "word_index": 58,
     "word": "apply",
     "pronunciation": "uh-PLAY",
     "meaning": "to make a formal request for something",
-    "example_sentence": "I want to apply for a visa to travel."
+    "example_sentence": "I want to apply for a visa to travel.",
+    "meaning_ja": "何かを正式に要求すること"
   },
   {
     "word_index": 59,
     "word": "appoint",
     "pronunciation": "uh-POYNT",
     "meaning": "to choose someone for a job or position",
-    "example_sentence": "They will appoint a new manager soon."
+    "example_sentence": "They will appoint a new manager soon.",
+    "meaning_ja": "仕事や地位のために人を選ぶこと"
   },
   {
     "word_index": 60,
     "word": "area",
     "pronunciation": "AIR-ee-uh",
     "meaning": "a part of a place, town, or country",
-    "example_sentence": "There is a nice play area for kids here."
+    "example_sentence": "There is a nice play area for kids here.",
+    "meaning_ja": "場所、町、または国の一部"
   },
   {
     "word_index": 61,
     "word": "argue",
     "pronunciation": "AHR-gyoo",
     "meaning": "to speak angrily to someone because you disagree",
-    "example_sentence": "They always argue about what to watch."
+    "example_sentence": "They always argue about what to watch.",
+    "meaning_ja": "自分の意見が違うからといって誰かに怒って話すこと"
   },
   {
     "word_index": 62,
     "word": "arm",
     "pronunciation": "ahrm",
     "meaning": "either of the two long parts of the body",
-    "example_sentence": "He broke his arm while skiing."
+    "example_sentence": "He broke his arm while skiing.",
+    "meaning_ja": "体の2つの長い部分のどちらか"
   },
   {
     "word_index": 63,
     "word": "army",
     "pronunciation": "AHR-mee",
     "meaning": "a large group of soldiers trained to fight",
-    "example_sentence": "He joined the army after high school."
+    "example_sentence": "He joined the army after high school.",
+    "meaning_ja": "戦うために訓練された大勢の兵士のグループ"
   },
   {
     "word_index": 64,
     "word": "around",
     "pronunciation": "uh-ROUND",
     "meaning": "in a circle or in all directions",
-    "example_sentence": "We walked around the town center."
+    "example_sentence": "We walked around the town center.",
+    "meaning_ja": "円形または全方向に"
   },
   {
     "word_index": 65,
     "word": "arrange",
     "pronunciation": "uh-RAYNJ",
     "meaning": "to plan or organize something",
-    "example_sentence": "I will arrange a meeting for next week."
+    "example_sentence": "I will arrange a meeting for next week.",
+    "meaning_ja": "何かを計画したり組織したりすること"
   },
   {
     "word_index": 66,
     "word": "arrest",
     "pronunciation": "uh-REST",
     "meaning": "when the police take someone to keep them",
-    "example_sentence": "The police had to arrest the thief."
+    "example_sentence": "The police had to arrest the thief.",
+    "meaning_ja": "警察が誰かを連行して保管するとき"
   },
   {
     "word_index": 67,
     "word": "arrive",
     "pronunciation": "uh-RAYV",
     "meaning": "to reach a place at the end of a journey",
-    "example_sentence": "What time does the train arrive?"
+    "example_sentence": "What time does the train arrive?",
+    "meaning_ja": "旅の終わりの場所に到着する"
   },
   {
     "word_index": 68,
     "word": "art",
     "pronunciation": "ahrt",
     "meaning": "paintings, drawings, and sculptures",
-    "example_sentence": "She is studying modern art at university."
+    "example_sentence": "She is studying modern art at university.",
+    "meaning_ja": "絵画、素描、彫刻"
   },
   {
     "word_index": 69,
     "word": "article",
     "pronunciation": "AHR-ti-kuhl",
     "meaning": "a piece of writing in a newspaper or magazine",
-    "example_sentence": "I read an interesting article about AI."
+    "example_sentence": "I read an interesting article about AI.",
+    "meaning_ja": "新聞や雑誌に載った文章"
   },
   {
     "word_index": 70,
     "word": "artist",
     "pronunciation": "AHR-tist",
     "meaning": "a person who creates art, especially paintings",
-    "example_sentence": "He is a talented artist who paints landscapes."
+    "example_sentence": "He is a talented artist who paints landscapes.",
+    "meaning_ja": "芸術、特に絵画を創作する人"
   },
   {
     "word_index": 71,
     "word": "as",
     "pronunciation": "az",
     "meaning": "used to describe a role or state of someone/something",
-    "example_sentence": "She works as a teacher in a school."
+    "example_sentence": "She works as a teacher in a school.",
+    "meaning_ja": "誰か/何かの役割や状態を説明するために使用される"
   },
   {
     "word_index": 72,
     "word": "ask",
     "pronunciation": "ask",
     "meaning": "to say something to get information",
-    "example_sentence": "Can I ask you a personal question?"
+    "example_sentence": "Can I ask you a personal question?",
+    "meaning_ja": "情報を得るために何かを言うこと"
   },
   {
     "word_index": 73,
     "word": "asleep",
     "pronunciation": "uh-SLEEP",
     "meaning": "in a state of sleep; sleeping",
-    "example_sentence": "The baby is fast asleep in the crib."
+    "example_sentence": "The baby is fast asleep in the crib.",
+    "meaning_ja": "睡眠状態にある。"
   },
   {
     "word_index": 74,
     "word": "assist",
     "pronunciation": "uh-SIST",
     "meaning": "to help someone to do something",
-    "example_sentence": "The guide will assist you during the tour."
+    "example_sentence": "The guide will assist you during the tour.",
+    "meaning_ja": "誰かが何かをするのを助けること"
   },
   {
     "word_index": 75,
     "word": "assistant",
     "pronunciation": "uh-SIS-tuhnt",
     "meaning": "a person who helps someone in a job",
-    "example_sentence": "He works as a research assistant."
+    "example_sentence": "He works as a research assistant.",
+    "meaning_ja": "仕事で誰かを助ける人"
   },
   {
     "word_index": 76,
     "word": "associate",
     "pronunciation": "uh-SOH-shee-ayt",
     "meaning": "to connect someone or something in your mind",
-    "example_sentence": "Most people associate summer with hot weather."
+    "example_sentence": "Most people associate summer with hot weather.",
+    "meaning_ja": "心の中で誰かや何かを結び付けること"
   },
   {
     "word_index": 77,
     "word": "assume",
     "pronunciation": "uh-SOOM",
     "meaning": "to think that something is true without proof",
-    "example_sentence": "Do not assume that everything online is true."
+    "example_sentence": "Do not assume that everything online is true.",
+    "meaning_ja": "証拠がないのに何かが真実だと考えること"
   },
   {
     "word_index": 78,
     "word": "at",
     "pronunciation": "at",
     "meaning": "used to show a place, direction, or time",
-    "example_sentence": "Let us meet at the station at 5 PM."
+    "example_sentence": "Let us meet at the station at 5 PM.",
+    "meaning_ja": "場所、方向、または時間を示すために使用されます"
   },
   {
     "word_index": 79,
     "word": "attack",
     "pronunciation": "uh-TAK",
     "meaning": "an act of using violence to hurt someone",
-    "example_sentence": "The army launched an attack at dawn."
+    "example_sentence": "The army launched an attack at dawn.",
+    "meaning_ja": "暴力を使って誰かを傷つける行為"
   },
   {
     "word_index": 80,
     "word": "attempt",
     "pronunciation": "uh-TEMPT",
     "meaning": "an act of trying to do something difficult",
-    "example_sentence": "This is his first attempt to run a marathon."
+    "example_sentence": "This is his first attempt to run a marathon.",
+    "meaning_ja": "何か難しいことをしようとする行為"
   },
   {
     "word_index": 81,
     "word": "attend",
     "pronunciation": "uh-TEND",
     "meaning": "to go to or be present at a meeting, class, etc.",
-    "example_sentence": "He wants to attend the conference next month."
+    "example_sentence": "He wants to attend the conference next month.",
+    "meaning_ja": "会議や授業などに行く、または出席すること。"
   },
   {
     "word_index": 82,
     "word": "attention",
     "pronunciation": "uh-TEN-shuhn",
     "meaning": "the act of listening to or looking at someone/something",
-    "example_sentence": "Please pay attention to the instructions."
+    "example_sentence": "Please pay attention to the instructions.",
+    "meaning_ja": "誰か/何かを聞いたり見たりする行為"
   },
   {
     "word_index": 83,
     "word": "attitude",
     "pronunciation": "AT-i-tood",
     "meaning": "the way you think or feel about someone/something",
-    "example_sentence": "She has a very positive attitude toward life."
+    "example_sentence": "She has a very positive attitude toward life.",
+    "meaning_ja": "誰か/何かについての考え方や感じ方"
   },
   {
     "word_index": 84,
     "word": "attract",
     "pronunciation": "uh-TRAKT",
     "meaning": "to pull or draw someone/something toward you",
-    "example_sentence": "Flowers attract bees and butterflies."
+    "example_sentence": "Flowers attract bees and butterflies.",
+    "meaning_ja": "誰か/何かを自分の方に引っ張ったり引き寄せたりすること"
   },
   {
     "word_index": 85,
     "word": "audience",
     "pronunciation": "AW-dee-uhns",
     "meaning": "the group of people watching a show or play",
-    "example_sentence": "The audience cheered at the end of the show."
+    "example_sentence": "The audience cheered at the end of the show.",
+    "meaning_ja": "ショーや演劇を見ている人々のグループ"
   },
   {
     "word_index": 86,
     "word": "author",
     "pronunciation": "AW-ther",
     "meaning": "a person who writes a book or article",
-    "example_sentence": "Who is the author of this novel?"
+    "example_sentence": "Who is the author of this novel?",
+    "meaning_ja": "本や記事を書く人"
   },
   {
     "word_index": 87,
     "word": "authority",
     "pronunciation": "uh-THAWR-i-tee",
     "meaning": "the power or right to give orders",
-    "example_sentence": "She has the authority to make decisions."
+    "example_sentence": "She has the authority to make decisions.",
+    "meaning_ja": "命令を下す権限または権限"
   },
   {
     "word_index": 88,
     "word": "available",
     "pronunciation": "uh-VAY-luh-buhl",
     "meaning": "ready or free to be used or bought",
-    "example_sentence": "Is this seat available, or is someone sitting here?"
+    "example_sentence": "Is this seat available, or is someone sitting here?",
+    "meaning_ja": "すぐに使用できる、または無料で使用または購入できる"
   },
   {
     "word_index": 89,
     "word": "average",
     "pronunciation": "AV-er-ij",
     "meaning": "typical or normal; middle level",
-    "example_sentence": "The average temperature in June is 25 degrees."
+    "example_sentence": "The average temperature in June is 25 degrees.",
+    "meaning_ja": "典型的または正常。"
   },
   {
     "word_index": 90,
     "word": "avoid",
     "pronunciation": "uh-VOYD",
     "meaning": "to stay away from someone or something",
-    "example_sentence": "You should avoid eating too much junk food."
+    "example_sentence": "You should avoid eating too much junk food.",
+    "meaning_ja": "誰かまたは何かから遠ざかること"
   },
   {
     "word_index": 91,
     "word": "award",
     "pronunciation": "uh-WAWRD",
     "meaning": "a prize given to someone for an achievement",
-    "example_sentence": "He won the Best Actor award this year."
+    "example_sentence": "He won the Best Actor award this year.",
+    "meaning_ja": "功績に対して誰かに与えられる賞品"
   },
   {
     "word_index": 92,
     "word": "aware",
     "pronunciation": "uh-WAIR",
     "meaning": "knowing or realizing something",
-    "example_sentence": "Are you aware of the new rules?"
+    "example_sentence": "Are you aware of the new rules?",
+    "meaning_ja": "何かを知っている、または気づいている"
   },
   {
     "word_index": 93,
     "word": "away",
     "pronunciation": "uh-WAY",
     "meaning": "to or at a distance from a place or person",
-    "example_sentence": "Please put your books away."
+    "example_sentence": "Please put your books away.",
+    "meaning_ja": "場所や人へ、またはそこから離れた場所で"
   },
   {
     "word_index": 94,
     "word": "baby",
     "pronunciation": "BAY-bee",
     "meaning": "a very young child or animal",
-    "example_sentence": "The baby fell asleep in her arms."
+    "example_sentence": "The baby fell asleep in her arms.",
+    "meaning_ja": "非常に幼い子供または動物"
   },
   {
     "word_index": 95,
     "word": "back",
     "pronunciation": "bak",
     "meaning": "the part of the body opposite to the chest",
-    "example_sentence": "He has a sore back from sitting too long."
+    "example_sentence": "He has a sore back from sitting too long.",
+    "meaning_ja": "胸の反対側の体の部分"
   },
   {
     "word_index": 96,
     "word": "bad",
     "pronunciation": "bad",
     "meaning": "not good; of poor quality",
-    "example_sentence": "I have a bad cold and cannot go to work."
+    "example_sentence": "I have a bad cold and cannot go to work.",
+    "meaning_ja": "良くない;"
   },
   {
     "word_index": 97,
     "word": "bag",
     "pronunciation": "bag",
     "meaning": "a container made of thin cloth, paper, or plastic",
-    "example_sentence": "She put her wallet inside her bag."
+    "example_sentence": "She put her wallet inside her bag.",
+    "meaning_ja": "薄い布、紙、プラスチックでできた容器"
   },
   {
     "word_index": 98,
     "word": "balance",
     "pronunciation": "BAL-uhns",
     "meaning": "a state where things are equal or steady",
-    "example_sentence": "It is important to keep a good work-life balance."
+    "example_sentence": "It is important to keep a good work-life balance.",
+    "meaning_ja": "物事が等しい、または安定している状態"
   },
   {
     "word_index": 99,
     "word": "ball",
     "pronunciation": "bawl",
     "meaning": "a round object used in games and sports",
-    "example_sentence": "He kicked the ball into the goal."
+    "example_sentence": "He kicked the ball into the goal.",
+    "meaning_ja": "ゲームやスポーツで使用される丸い物体"
   },
   {
     "word_index": 100,
     "word": "band",
     "pronunciation": "band",
     "meaning": "a group of musicians who play music together",
-    "example_sentence": "My favorite rock band is playing tonight."
+    "example_sentence": "My favorite rock band is playing tonight.",
+    "meaning_ja": "一緒に音楽を演奏するミュージシャンのグループ"
   },
   {
     "word_index": 101,
     "word": "bank",
     "pronunciation": "bangk",
     "meaning": "an organization where people keep money",
-    "example_sentence": "I need to go to the bank to withdraw some cash."
+    "example_sentence": "I need to go to the bank to withdraw some cash.",
+    "meaning_ja": "人々がお金を保管する組織"
   },
   {
     "word_index": 102,
     "word": "bar",
     "pronunciation": "bahr",
     "meaning": "a place where drinks are sold and drunk",
-    "example_sentence": "We met at a quiet bar near the hotel."
+    "example_sentence": "We met at a quiet bar near the hotel.",
+    "meaning_ja": "飲み物を販売したり飲んだりする場所"
   },
   {
     "word_index": 103,
     "word": "base",
     "pronunciation": "bays",
     "meaning": "the lowest part or bottom of something",
-    "example_sentence": "The base of the statue is made of stone."
+    "example_sentence": "The base of the statue is made of stone.",
+    "meaning_ja": "何かの一番下の部分または底"
   },
   {
     "word_index": 104,
     "word": "basic",
     "pronunciation": "BAY-sik",
     "meaning": "forming the most important part of something",
-    "example_sentence": "He has a basic knowledge of computer programming."
+    "example_sentence": "He has a basic knowledge of computer programming.",
+    "meaning_ja": "何かの最も重要な部分を形成する"
   },
   {
     "word_index": 105,
     "word": "basis",
     "pronunciation": "BAY-sis",
     "meaning": "the reason or foundation for something",
-    "example_sentence": "This story is the basis for the movie."
+    "example_sentence": "This story is the basis for the movie.",
+    "meaning_ja": "何かの理由または根拠"
   },
   {
     "word_index": 106,
     "word": "battle",
     "pronunciation": "BAT-uhl",
     "meaning": "a fight between armies in a war",
-    "example_sentence": "The battle lasted for three days."
+    "example_sentence": "The battle lasted for three days.",
+    "meaning_ja": "戦争における軍隊間の戦い"
   },
   {
     "word_index": 107,
     "word": "be",
     "pronunciation": "bee",
     "meaning": "to exist or have a state/identity",
-    "example_sentence": "I want to be a doctor when I grow up."
+    "example_sentence": "I want to be a doctor when I grow up.",
+    "meaning_ja": "存在する、または状態/アイデンティティを持つこと"
   },
   {
     "word_index": 108,
     "word": "beach",
     "pronunciation": "beech",
     "meaning": "an area of sand next to the sea",
-    "example_sentence": "We spent the weekend lying on the beach."
+    "example_sentence": "We spent the weekend lying on the beach.",
+    "meaning_ja": "海の隣の砂浜のエリア"
   },
   {
     "word_index": 109,
     "word": "bear",
     "pronunciation": "bair",
     "meaning": "a large heavy animal with thick fur",
-    "example_sentence": "We saw a brown bear in the forest."
+    "example_sentence": "We saw a brown bear in the forest.",
+    "meaning_ja": "厚い毛皮を持つ大きくて重い動物"
   },
   {
     "word_index": 110,
     "word": "beat",
     "pronunciation": "beet",
     "meaning": "to defeat someone in a game or fight",
-    "example_sentence": "Our team managed to beat the champions."
+    "example_sentence": "Our team managed to beat the champions.",
+    "meaning_ja": "ゲームや戦いで誰かを倒すこと"
   },
   {
     "word_index": 111,
     "word": "beautiful",
     "pronunciation": "BYOO-ti-fuhl",
     "meaning": "very attractive to look at; lovely",
-    "example_sentence": "The sunset over the ocean was beautiful."
+    "example_sentence": "The sunset over the ocean was beautiful.",
+    "meaning_ja": "見た目はとても魅力的です。"
   },
   {
     "word_index": 112,
     "word": "beauty",
     "pronunciation": "BYOO-tee",
     "meaning": "the quality of being pleasing to look at",
-    "example_sentence": "She appreciated the beauty of the old garden."
+    "example_sentence": "She appreciated the beauty of the old garden.",
+    "meaning_ja": "見て楽しいという品質"
   },
   {
     "word_index": 113,
     "word": "because",
     "pronunciation": "bi-KAWZ",
     "meaning": "for the reason that; since",
-    "example_sentence": "I stayed at home because it was raining."
+    "example_sentence": "I stayed at home because it was raining.",
+    "meaning_ja": "という理由で;"
   },
   {
     "word_index": 114,
     "word": "become",
     "pronunciation": "bi-KUHM",
     "meaning": "to start to be something",
-    "example_sentence": "He wants to become a professional writer."
+    "example_sentence": "He wants to become a professional writer.",
+    "meaning_ja": "何かになり始めること"
   },
   {
     "word_index": 115,
     "word": "bed",
     "pronunciation": "bed",
     "meaning": "a piece of furniture that you sleep on",
-    "example_sentence": "I was so tired that I went straight to bed."
+    "example_sentence": "I was so tired that I went straight to bed.",
+    "meaning_ja": "あなたが寝る家具"
   },
   {
     "word_index": 116,
     "word": "bedroom",
     "pronunciation": "BED-room",
     "meaning": "a room for sleeping in",
-    "example_sentence": "Her bedroom has a large window facing the garden."
+    "example_sentence": "Her bedroom has a large window facing the garden.",
+    "meaning_ja": "寝るための部屋"
   },
   {
     "word_index": 117,
     "word": "beer",
     "pronunciation": "beer",
     "meaning": "an alcoholic drink made from grain",
-    "example_sentence": "He ordered a cold beer at the restaurant."
+    "example_sentence": "He ordered a cold beer at the restaurant.",
+    "meaning_ja": "穀物から作られたアルコール飲料"
   },
   {
     "word_index": 118,
     "word": "before",
     "pronunciation": "bi-FAWR",
     "meaning": "earlier than a particular time",
-    "example_sentence": "Please wash your hands before eating."
+    "example_sentence": "Please wash your hands before eating.",
+    "meaning_ja": "特定の時間よりも前に"
   },
   {
     "word_index": 119,
     "word": "begin",
     "pronunciation": "bi-GIN",
     "meaning": "to start to do or happen",
-    "example_sentence": "The class will begin at nine o'clock."
+    "example_sentence": "The class will begin at nine o'clock.",
+    "meaning_ja": "やり始めること、または起こり始めること"
   },
   {
     "word_index": 120,
     "word": "beginning",
     "pronunciation": "bi-GIN-ing",
     "meaning": "the start of something",
-    "example_sentence": "I liked the beginning of the movie best."
+    "example_sentence": "I liked the beginning of the movie best.",
+    "meaning_ja": "何かの始まり"
   },
   {
     "word_index": 121,
     "word": "behavior",
     "pronunciation": "bi-HAY-vyer",
     "meaning": "the way that someone acts or behaves",
-    "example_sentence": "His polite behavior impressed everyone."
+    "example_sentence": "His polite behavior impressed everyone.",
+    "meaning_ja": "誰かの行動や態度"
   },
   {
     "word_index": 122,
     "word": "behind",
     "pronunciation": "bi-HAYND",
     "meaning": "at the back of someone or something",
-    "example_sentence": "The keys fell behind the sofa."
+    "example_sentence": "The keys fell behind the sofa.",
+    "meaning_ja": "誰かまたは何かの後ろで"
   },
   {
     "word_index": 123,
     "word": "believe",
     "pronunciation": "bi-LEEV",
     "meaning": "to think that something is true",
-    "example_sentence": "I believe that he is telling the truth."
+    "example_sentence": "I believe that he is telling the truth.",
+    "meaning_ja": "何かが真実であると考えること"
   },
   {
     "word_index": 124,
     "word": "bell",
     "pronunciation": "bel",
     "meaning": "a hollow metal object that makes a ringing sound",
-    "example_sentence": "The church bell rings every hour."
+    "example_sentence": "The church bell rings every hour.",
+    "meaning_ja": "鳴り響く音を出す中空の金属物体"
   },
   {
     "word_index": 125,
     "word": "below",
     "pronunciation": "bi-LOH",
     "meaning": "in a lower position than something",
-    "example_sentence": "Please read the instructions below."
+    "example_sentence": "Please read the instructions below.",
+    "meaning_ja": "何かよりも低い位置にある"
   },
   {
     "word_index": 126,
     "word": "belt",
     "pronunciation": "belt",
     "meaning": "a strip of leather worn around the waist",
-    "example_sentence": "He fastened his seat belt before driving."
+    "example_sentence": "He fastened his seat belt before driving.",
+    "meaning_ja": "腰の周りに着用される革の細片"
   },
   {
     "word_index": 127,
     "word": "bend",
     "pronunciation": "bend",
     "meaning": "to curve or make something curve",
-    "example_sentence": "You have to bend your knees to jump."
+    "example_sentence": "You have to bend your knees to jump.",
+    "meaning_ja": "曲線を描く、または何かを曲線にする"
   },
   {
     "word_index": 128,
     "word": "beneath",
     "pronunciation": "bi-NEETH",
     "meaning": "under or in a lower position than",
-    "example_sentence": "The valley lay beneath the clouds."
+    "example_sentence": "The valley lay beneath the clouds.",
+    "meaning_ja": "～よりも低い、ま​​たはより低い位置にある"
   },
   {
     "word_index": 129,
     "word": "benefit",
     "pronunciation": "BEN-uh-fit",
     "meaning": "an advantage or useful effect",
-    "example_sentence": "Exercise offers a benefit to your health."
+    "example_sentence": "Exercise offers a benefit to your health.",
+    "meaning_ja": "利点または有益な効果"
   },
   {
     "word_index": 130,
     "word": "beside",
     "pronunciation": "bi-SAYD",
     "meaning": "next to or at the side of",
-    "example_sentence": "He came and sat beside me."
+    "example_sentence": "He came and sat beside me.",
+    "meaning_ja": "隣または横に"
   },
   {
     "word_index": 131,
     "word": "best",
     "pronunciation": "best",
     "meaning": "of the most excellent quality",
-    "example_sentence": "This is the best pizza I have ever eaten."
+    "example_sentence": "This is the best pizza I have ever eaten.",
+    "meaning_ja": "最も優れた品質の"
   },
   {
     "word_index": 132,
     "word": "bet",
     "pronunciation": "bet",
     "meaning": "to risk money on a future event",
-    "example_sentence": "I bet he will win the race today."
+    "example_sentence": "I bet he will win the race today.",
+    "meaning_ja": "将来の出来事にお金を賭ける"
   },
   {
     "word_index": 133,
     "word": "better",
     "pronunciation": "BET-er",
     "meaning": "of a higher standard or quality",
-    "example_sentence": "I feel much better after a good sleep."
+    "example_sentence": "I feel much better after a good sleep.",
+    "meaning_ja": "より高い標準または品質の"
   },
   {
     "word_index": 134,
     "word": "between",
     "pronunciation": "bi-TWEEN",
     "meaning": "in the space separating two things",
-    "example_sentence": "The shop is located between the bank and the bakery."
+    "example_sentence": "The shop is located between the bank and the bakery.",
+    "meaning_ja": "二つのものを隔てる空間の中で"
   },
   {
     "word_index": 135,
     "word": "beyond",
     "pronunciation": "bee-AHND",
     "meaning": "on the further side of; past",
-    "example_sentence": "The road continues beyond the hills."
+    "example_sentence": "The road continues beyond the hills.",
+    "meaning_ja": "の向こう側。"
   },
   {
     "word_index": 136,
     "word": "bicycle",
     "pronunciation": "BAY-si-kuhl",
     "meaning": "a vehicle with two wheels that you pedal",
-    "example_sentence": "He rides his bicycle to work every day."
+    "example_sentence": "He rides his bicycle to work every day.",
+    "meaning_ja": "ペダルをこぐ2つの車輪がついた乗り物"
   },
   {
     "word_index": 137,
     "word": "big",
     "pronunciation": "big",
     "meaning": "large in size, degree, or amount",
-    "example_sentence": "They live in a big house in the suburbs."
+    "example_sentence": "They live in a big house in the suburbs.",
+    "meaning_ja": "サイズ、程度、または量が大きい"
   },
   {
     "word_index": 138,
     "word": "bill",
     "pronunciation": "bil",
     "meaning": "a document showing how much money you owe",
-    "example_sentence": "The waiter brought us the bill for dinner."
+    "example_sentence": "The waiter brought us the bill for dinner.",
+    "meaning_ja": "どれくらいのお金を借りているかを示す文書"
   },
   {
     "word_index": 139,
     "word": "billion",
     "pronunciation": "BIL-yuhn",
     "meaning": "the number 1,000,000,000",
-    "example_sentence": "The world population is over eight billion."
+    "example_sentence": "The world population is over eight billion.",
+    "meaning_ja": "1,000,000,000という数字"
   },
   {
     "word_index": 140,
     "word": "bird",
     "pronunciation": "burd",
     "meaning": "a creature with feathers and wings",
-    "example_sentence": "A blue bird is sitting on the fence."
+    "example_sentence": "A blue bird is sitting on the fence.",
+    "meaning_ja": "羽と翼を持つ生き物"
   },
   {
     "word_index": 141,
     "word": "birth",
     "pronunciation": "burth",
     "meaning": "the time when a baby is born",
-    "example_sentence": "She gave birth to a healthy baby girl."
+    "example_sentence": "She gave birth to a healthy baby girl.",
+    "meaning_ja": "赤ちゃんが生まれる時期"
   },
   {
     "word_index": 142,
     "word": "bit",
     "pronunciation": "bit",
     "meaning": "a small piece or amount of something",
-    "example_sentence": "Can I have a little bit of cake?"
+    "example_sentence": "Can I have a little bit of cake?",
+    "meaning_ja": "何かの小片または量"
   },
   {
     "word_index": 143,
     "word": "bite",
     "pronunciation": "bayt",
     "meaning": "to use your teeth to cut something",
-    "example_sentence": "Be careful, the dog might bite you."
+    "example_sentence": "Be careful, the dog might bite you.",
+    "meaning_ja": "歯を使って何かを切ること"
   },
   {
     "word_index": 144,
     "word": "black",
     "pronunciation": "blak",
     "meaning": "having the darkest color like coal",
-    "example_sentence": "She wore a elegant black dress to the party."
+    "example_sentence": "She wore a elegant black dress to the party.",
+    "meaning_ja": "石炭のように最も暗い色をしている"
   },
   {
     "word_index": 145,
     "word": "blade",
     "pronunciation": "blayd",
     "meaning": "the flat sharp part of a knife or tool",
-    "example_sentence": "The blade of this knife is very sharp."
+    "example_sentence": "The blade of this knife is very sharp.",
+    "meaning_ja": "ナイフまたは工具の平らで鋭い部分"
   },
   {
     "word_index": 146,
     "word": "blame",
     "pronunciation": "blaym",
     "meaning": "to think or say that someone is responsible for a bad thing",
-    "example_sentence": "Do not blame others for your mistakes."
+    "example_sentence": "Do not blame others for your mistakes.",
+    "meaning_ja": "誰かが悪い事の責任があると考えたり言うこと"
   },
   {
     "word_index": 147,
     "word": "blank",
     "pronunciation": "blangk",
     "meaning": "empty, with no writing or decoration",
-    "example_sentence": "Please write your name on a blank sheet of paper."
+    "example_sentence": "Please write your name on a blank sheet of paper.",
+    "meaning_ja": "何も書かれていない、何も装飾されていない、空の状態"
   },
   {
     "word_index": 148,
     "word": "blind",
     "pronunciation": "blaynd",
     "meaning": "unable to see",
-    "example_sentence": "He has a guide dog because he is blind."
+    "example_sentence": "He has a guide dog because he is blind.",
+    "meaning_ja": "見えない"
   },
   {
     "word_index": 149,
     "word": "block",
     "pronunciation": "blahk",
     "meaning": "a solid piece of hard material",
-    "example_sentence": "The children are playing with wooden blocks."
+    "example_sentence": "The children are playing with wooden blocks.",
+    "meaning_ja": "硬い材料の固体片"
   },
   {
     "word_index": 150,
     "word": "blood",
     "pronunciation": "bluhd",
     "meaning": "the red liquid that flows through the body",
-    "example_sentence": "He donated blood at the hospital today."
+    "example_sentence": "He donated blood at the hospital today.",
+    "meaning_ja": "体中を流れる赤い液体"
   },
   {
     "word_index": 151,
     "word": "blow",
     "pronunciation": "bloh",
     "meaning": "when air moves; to force air out",
-    "example_sentence": "The wind began to blow very hard."
+    "example_sentence": "The wind began to blow very hard.",
+    "meaning_ja": "空気が動くとき。"
   },
   {
     "word_index": 152,
     "word": "blue",
     "pronunciation": "bloo",
     "meaning": "having the color of the clear sky",
-    "example_sentence": "She has beautiful blue eyes."
+    "example_sentence": "She has beautiful blue eyes.",
+    "meaning_ja": "澄んだ空の色をしている"
   },
   {
     "word_index": 153,
     "word": "board",
     "pronunciation": "bawrd",
     "meaning": "a flat piece of wood or other hard material",
-    "example_sentence": "The teacher wrote the words on the board."
+    "example_sentence": "The teacher wrote the words on the board.",
+    "meaning_ja": "平らな木片または他の硬い材料"
   },
   {
     "word_index": 154,
     "word": "boat",
     "pronunciation": "boht",
     "meaning": "a vehicle used for traveling on water",
-    "example_sentence": "We took a small boat across the lake."
+    "example_sentence": "We took a small boat across the lake.",
+    "meaning_ja": "水上を移動するために使用される乗り物"
   },
   {
     "word_index": 155,
     "word": "body",
     "pronunciation": "BAHD-ee",
     "meaning": "the whole physical structure of a person",
-    "example_sentence": "Regular exercise is good for your body."
+    "example_sentence": "Regular exercise is good for your body.",
+    "meaning_ja": "人の身体構造全体"
   },
   {
     "word_index": 156,
     "word": "bomb",
     "pronunciation": "bahm",
     "meaning": "a weapon designed to explode and cause damage",
-    "example_sentence": "The bomb exploded near the bridge."
+    "example_sentence": "The bomb exploded near the bridge.",
+    "meaning_ja": "爆発してダメージを与えるように設計された武器"
   },
   {
     "word_index": 157,
     "word": "bond",
     "pronunciation": "bahnd",
     "meaning": "something that joins or connects people",
-    "example_sentence": "There is a strong bond between the two sisters."
+    "example_sentence": "There is a strong bond between the two sisters.",
+    "meaning_ja": "人々を結びつけたり、結びつけたりするもの"
   },
   {
     "word_index": 158,
     "word": "bone",
     "pronunciation": "bohn",
     "meaning": "any of the hard parts inside the body",
-    "example_sentence": "He broke a bone in his foot."
+    "example_sentence": "He broke a bone in his foot.",
+    "meaning_ja": "体の内部の硬い部分のいずれか"
   },
   {
     "word_index": 159,
     "word": "book",
     "pronunciation": "buk",
     "meaning": "a written work that is printed or online",
-    "example_sentence": "I am reading a very interesting book now."
+    "example_sentence": "I am reading a very interesting book now.",
+    "meaning_ja": "印刷またはオンラインで書かれた著作物"
   },
   {
     "word_index": 160,
     "word": "boot",
     "pronunciation": "boot",
     "meaning": "a sturdy shoe that covers the foot and ankle",
-    "example_sentence": "She bought a pair of warm leather boots."
+    "example_sentence": "She bought a pair of warm leather boots.",
+    "meaning_ja": "足と足首を覆う丈夫な靴"
   },
   {
     "word_index": 161,
     "word": "border",
     "pronunciation": "BAWR-der",
     "meaning": "the line dividing two countries",
-    "example_sentence": "We had to show our passports at the border."
+    "example_sentence": "We had to show our passports at the border.",
+    "meaning_ja": "2つの国を分ける線"
   },
   {
     "word_index": 162,
     "word": "bore",
     "pronunciation": "bawr",
     "meaning": "to make someone feel tired or uninterested",
-    "example_sentence": "His long speeches always bore the audience."
+    "example_sentence": "His long speeches always bore the audience.",
+    "meaning_ja": "誰かを疲れさせたり、興味をなくさせたりすること"
   },
   {
     "word_index": 163,
     "word": "born",
     "pronunciation": "bawrn",
     "meaning": "brought into life by birth",
-    "example_sentence": "She was born in Tokyo in 2003."
+    "example_sentence": "She was born in Tokyo in 2003.",
+    "meaning_ja": "誕生によって命がもたらされた"
   },
   {
     "word_index": 164,
     "word": "borrow",
     "pronunciation": "BAHR-oh",
     "meaning": "to take something with permission to return it",
-    "example_sentence": "Can I borrow your pen for a second?"
+    "example_sentence": "Can I borrow your pen for a second?",
+    "meaning_ja": "返す許可を得て何かを取ること"
   },
   {
     "word_index": 165,
     "word": "boss",
     "pronunciation": "bahs",
     "meaning": "the person who is in charge of you at work",
-    "example_sentence": "My boss gave me some useful advice today."
+    "example_sentence": "My boss gave me some useful advice today.",
+    "meaning_ja": "職場であなたの担当者"
   },
   {
     "word_index": 166,
     "word": "both",
     "pronunciation": "bohth",
     "meaning": "two people or things together",
-    "example_sentence": "Both of my brothers live in Osaka."
+    "example_sentence": "Both of my brothers live in Osaka.",
+    "meaning_ja": "二人の人、または一緒に何かをする"
   },
   {
     "word_index": 167,
     "word": "bottle",
     "pronunciation": "BAHT-uhl",
     "meaning": "a container for liquids, usually glass or plastic",
-    "example_sentence": "He drank a bottle of water after running."
+    "example_sentence": "He drank a bottle of water after running.",
+    "meaning_ja": "液体用の容器、通常はガラスまたはプラスチック"
   },
   {
     "word_index": 168,
     "word": "bottom",
     "pronunciation": "BAHT-uhm",
     "meaning": "the lowest part of something",
-    "example_sentence": "The answers are at the bottom of the page."
+    "example_sentence": "The answers are at the bottom of the page.",
+    "meaning_ja": "何かの一番下の部分"
   },
   {
     "word_index": 169,
     "word": "bound",
     "pronunciation": "bound",
     "meaning": "certain or extremely likely to happen",
-    "example_sentence": "You are bound to pass the test if you study."
+    "example_sentence": "You are bound to pass the test if you study.",
+    "meaning_ja": "確実に起こる、または起こる可能性が非常に高い"
   },
   {
     "word_index": 170,
     "word": "bowl",
     "pronunciation": "bohl",
     "meaning": "a round deep dish used for food",
-    "example_sentence": "She ate a bowl of hot soup for lunch."
+    "example_sentence": "She ate a bowl of hot soup for lunch.",
+    "meaning_ja": "食べ物に使われる丸い深い皿"
   },
   {
     "word_index": 171,
     "word": "box",
     "pronunciation": "bahks",
     "meaning": "a container with flat sides and a lid",
-    "example_sentence": "Put all the toys back in the box."
+    "example_sentence": "Put all the toys back in the box.",
+    "meaning_ja": "平らな側面と蓋のある容器"
   },
   {
     "word_index": 172,
     "word": "boy",
     "pronunciation": "boy",
     "meaning": "a male child or young man",
-    "example_sentence": "The young boy was flying a kite in the park."
+    "example_sentence": "The young boy was flying a kite in the park.",
+    "meaning_ja": "男の子供または若者"
   },
   {
     "word_index": 173,
     "word": "brain",
     "pronunciation": "brayn",
     "meaning": "the organ inside the head that controls thought",
-    "example_sentence": "The brain needs sleep to function well."
+    "example_sentence": "The brain needs sleep to function well.",
+    "meaning_ja": "思考を制御する頭の中にある器官"
   },
   {
     "word_index": 174,
     "word": "branch",
     "pronunciation": "branch",
     "meaning": "a part of a tree that grows out from the trunk",
-    "example_sentence": "A bird is sitting on a branch of the tree."
+    "example_sentence": "A bird is sitting on a branch of the tree.",
+    "meaning_ja": "幹から伸びる木の一部"
   },
   {
     "word_index": 175,
     "word": "brand",
     "pronunciation": "brand",
     "meaning": "a product made by a particular company",
-    "example_sentence": "What brand of shoes do you prefer?"
+    "example_sentence": "What brand of shoes do you prefer?",
+    "meaning_ja": "特定の会社が作った製品"
   },
   {
     "word_index": 176,
     "word": "bread",
     "pronunciation": "bred",
     "meaning": "a common food made from flour and water",
-    "example_sentence": "I usually eat bread and butter for breakfast."
+    "example_sentence": "I usually eat bread and butter for breakfast.",
+    "meaning_ja": "小麦粉と水から作られる一般的な食べ物"
   },
   {
     "word_index": 177,
     "word": "break",
     "pronunciation": "brayk",
     "meaning": "to separate into pieces by force; a short rest",
-    "example_sentence": "Be careful not to break the glass. Let us take a short break."
+    "example_sentence": "Be careful not to break the glass. Let us take a short break.",
+    "meaning_ja": "力ずくでバラバラにすること。"
   },
   {
     "word_index": 178,
     "word": "breakfast",
     "pronunciation": "BREK-fuhst",
     "meaning": "the first meal of the day",
-    "example_sentence": "I always eat breakfast at seven o'clock."
+    "example_sentence": "I always eat breakfast at seven o'clock.",
+    "meaning_ja": "その日の最初の食事"
   },
   {
     "word_index": 179,
     "word": "breast",
     "pronunciation": "brest",
     "meaning": "either of the two soft organs on a woman's chest",
-    "example_sentence": "The mother held the baby to her breast."
+    "example_sentence": "The mother held the baby to her breast.",
+    "meaning_ja": "女性の胸にある 2 つの柔らかい器官のいずれか"
   },
   {
     "word_index": 180,
     "word": "breath",
     "pronunciation": "breth",
     "meaning": "the air that you take in and blow out",
-    "example_sentence": "He took a deep breath before speaking."
+    "example_sentence": "He took a deep breath before speaking.",
+    "meaning_ja": "あなたが吸って吐き出す空気"
   },
   {
     "word_index": 181,
     "word": "breathe",
     "pronunciation": "breeth",
     "meaning": "to take air into your lungs and send it out",
-    "example_sentence": "It is hard to breathe in this hot room."
+    "example_sentence": "It is hard to breathe in this hot room.",
+    "meaning_ja": "肺に空気を取り込んで送り出す"
   },
   {
     "word_index": 182,
     "word": "bridge",
     "pronunciation": "brij",
     "meaning": "a structure built over a river or road",
-    "example_sentence": "We walked across the old stone bridge."
+    "example_sentence": "We walked across the old stone bridge.",
+    "meaning_ja": "川または道路の上に建てられた構造物"
   },
   {
     "word_index": 183,
     "word": "brief",
     "pronunciation": "breef",
     "meaning": "lasting only a short time; short",
-    "example_sentence": "The manager gave a brief summary of the project."
+    "example_sentence": "The manager gave a brief summary of the project.",
+    "meaning_ja": "短期間しか続かない。"
   },
   {
     "word_index": 184,
     "word": "bright",
     "pronunciation": "brayt",
     "meaning": "shining with a lot of light",
-    "example_sentence": "The stars are very bright tonight."
+    "example_sentence": "The stars are very bright tonight.",
+    "meaning_ja": "たくさんの光で輝いている"
   },
   {
     "word_index": 185,
     "word": "bring",
     "pronunciation": "bring",
     "meaning": "to come to a place with someone/something",
-    "example_sentence": "Please bring your dictionary to class tomorrow."
+    "example_sentence": "Please bring your dictionary to class tomorrow.",
+    "meaning_ja": "誰か/何かと一緒に場所に来ること"
   },
   {
     "word_index": 186,
     "word": "broad",
     "pronunciation": "brawd",
     "meaning": "wide; including a large variety of things",
-    "example_sentence": "He has a broad knowledge of world history."
+    "example_sentence": "He has a broad knowledge of world history.",
+    "meaning_ja": "広い;"
   },
   {
     "word_index": 187,
     "word": "brother",
     "pronunciation": "BRUH-ther",
     "meaning": "a boy or man who has the same parents as you",
-    "example_sentence": "My older brother is a university student."
+    "example_sentence": "My older brother is a university student.",
+    "meaning_ja": "あなたと同じ両親を持つ少年または男性"
   },
   {
     "word_index": 188,
     "word": "brown",
     "pronunciation": "broun",
     "meaning": "having the color of earth or wood",
-    "example_sentence": "He has brown hair and brown eyes."
+    "example_sentence": "He has brown hair and brown eyes.",
+    "meaning_ja": "土または木の色をしている"
   },
   {
     "word_index": 189,
     "word": "brush",
     "pronunciation": "bruhn",
     "meaning": "an object with bristles used for cleaning or painting",
-    "example_sentence": "You should brush your teeth twice a day."
+    "example_sentence": "You should brush your teeth twice a day.",
+    "meaning_ja": "掃除や塗装に使用される毛のある物体"
   },
   {
     "word_index": 190,
     "word": "budget",
     "pronunciation": "BUHJ-it",
     "meaning": "the amount of money available for a purpose",
-    "example_sentence": "We are working on a very tight budget."
+    "example_sentence": "We are working on a very tight budget.",
+    "meaning_ja": "ある目的に利用できるお金の量"
   },
   {
     "word_index": 191,
     "word": "build",
     "pronunciation": "bild",
     "meaning": "to make something by putting parts together",
-    "example_sentence": "They plan to build a new library here."
+    "example_sentence": "They plan to build a new library here.",
+    "meaning_ja": "部品を組み合わせて何かを作ること"
   },
   {
     "word_index": 192,
     "word": "building",
     "pronunciation": "BIL-ding",
     "meaning": "a structure with walls and a roof",
-    "example_sentence": "That tall building is a famous hotel."
+    "example_sentence": "That tall building is a famous hotel.",
+    "meaning_ja": "壁と屋根のある構造物"
   },
   {
     "word_index": 193,
     "word": "bullet",
     "pronunciation": "BUHL-it",
     "meaning": "a small metal object fired from a gun",
-    "example_sentence": "The bullet hit the target precisely."
+    "example_sentence": "The bullet hit the target precisely.",
+    "meaning_ja": "銃から発射される小さな金属製の物体"
   },
   {
     "word_index": 194,
     "word": "bunch",
     "pronunciation": "buhnch",
     "meaning": "a group of things growing or tied together",
-    "example_sentence": "He bought a bunch of flowers for his mother."
+    "example_sentence": "He bought a bunch of flowers for his mother.",
+    "meaning_ja": "成長している、または一緒に結びついているもののグループ"
   },
   {
     "word_index": 195,
     "word": "burn",
     "pronunciation": "burn",
     "meaning": "to damage or destroy something by fire",
-    "example_sentence": "The campfire began to burn brightly."
+    "example_sentence": "The campfire began to burn brightly.",
+    "meaning_ja": "火によって物を損傷したり破壊したりすること"
   },
   {
     "word_index": 196,
     "word": "burst",
     "pronunciation": "burst",
     "meaning": "to break open suddenly",
-    "example_sentence": "The balloon will burst if you blow it up more."
+    "example_sentence": "The balloon will burst if you blow it up more.",
+    "meaning_ja": "突然こじ開ける"
   },
   {
     "word_index": 197,
     "word": "bury",
     "pronunciation": "BER-ee",
     "meaning": "to put a dead body or object in the ground",
-    "example_sentence": "They decided to bury the treasure under the tree."
+    "example_sentence": "They decided to bury the treasure under the tree.",
+    "meaning_ja": "死体や物体を地面に埋めること"
   },
   {
     "word_index": 198,
     "word": "bus",
     "pronunciation": "buhs",
     "meaning": "a large vehicle that carries passengers along a route",
-    "example_sentence": "I catch the bus to school every morning."
+    "example_sentence": "I catch the bus to school every morning.",
+    "meaning_ja": "ルートに沿って乗客を運ぶ大型車両"
   },
   {
     "word_index": 199,
     "word": "business",
     "pronunciation": "BIZ-nis",
     "meaning": "the activity of making, buying, or selling things",
-    "example_sentence": "He started a new import-export business."
+    "example_sentence": "He started a new import-export business.",
+    "meaning_ja": "物を作る、買う、または売る活動"
   },
   {
     "word_index": 200,
     "word": "busy",
     "pronunciation": "BIZ-ee",
     "meaning": "having a lot of things to do; not free",
-    "example_sentence": "She is busy preparing for her exams."
+    "example_sentence": "She is busy preparing for her exams.",
+    "meaning_ja": "やるべきことがたくさんある。"
   },
   {
     "word_index": 201,
     "word": "but",
     "pronunciation": "buht",
     "meaning": "used to introduce a contrasting statement",
-    "example_sentence": "I want to go, but I have no money."
+    "example_sentence": "I want to go, but I have no money.",
+    "meaning_ja": "対照的な発言を導入するために使用される"
   },
   {
     "word_index": 202,
     "word": "butter",
     "pronunciation": "BUHT-er",
     "meaning": "a yellow fat made from milk",
-    "example_sentence": "Please spread some butter on the toast."
+    "example_sentence": "Please spread some butter on the toast.",
+    "meaning_ja": "牛乳から作られた黄色の脂肪"
   },
   {
     "word_index": 203,
     "word": "button",
     "pronunciation": "BUHT-uhn",
     "meaning": "a small round object used to fasten clothes",
-    "example_sentence": "He lost a button from his shirt."
+    "example_sentence": "He lost a button from his shirt.",
+    "meaning_ja": "衣服を留めるために使用される小さな丸い物体"
   },
   {
     "word_index": 204,
     "word": "buy",
     "pronunciation": "bay",
     "meaning": "to get something by paying money",
-    "example_sentence": "I want to buy some fresh fruit."
+    "example_sentence": "I want to buy some fresh fruit.",
+    "meaning_ja": "お金を払って何かを得る"
   },
   {
     "word_index": 205,
     "word": "by",
     "pronunciation": "bay",
     "meaning": "near; not later than; through the action of",
-    "example_sentence": "The school is by the river. Please finish it by Monday."
+    "example_sentence": "The school is by the river. Please finish it by Monday.",
+    "meaning_ja": "近く;"
   },
   {
     "word_index": 206,
     "word": "cabin",
     "pronunciation": "KAB-in",
     "meaning": "a small simple house, usually made of wood",
-    "example_sentence": "We stayed in a cozy cabin in the woods."
+    "example_sentence": "We stayed in a cozy cabin in the woods.",
+    "meaning_ja": "小さくてシンプルな家、通常は木で作られています"
   },
   {
     "word_index": 207,
     "word": "cabinet",
     "pronunciation": "KAB-i-nit",
     "meaning": "a piece of furniture with shelves or drawers",
-    "example_sentence": "Keep the cups in the kitchen cabinet."
+    "example_sentence": "Keep the cups in the kitchen cabinet.",
+    "meaning_ja": "棚または引き出しが付いた家具"
   },
   {
     "word_index": 208,
     "word": "cable",
     "pronunciation": "KAY-buhl",
     "meaning": "a strong thick wire or rope",
-    "example_sentence": "The television is connected to the cable."
+    "example_sentence": "The television is connected to the cable.",
+    "meaning_ja": "強くて太いワイヤーまたはロープ"
   },
   {
     "word_index": 209,
     "word": "cake",
     "pronunciation": "kayk",
     "meaning": "a sweet baked food made from flour and sugar",
-    "example_sentence": "She baked a chocolate cake for my birthday."
+    "example_sentence": "She baked a chocolate cake for my birthday.",
+    "meaning_ja": "小麦粉と砂糖から作られた甘い焼き菓子"
   },
   {
     "word_index": 210,
     "word": "calculate",
     "pronunciation": "KAL-kyuh-layt",
     "meaning": "to find a number using math",
-    "example_sentence": "We need to calculate the cost of our trip."
+    "example_sentence": "We need to calculate the cost of our trip.",
+    "meaning_ja": "数学を使って数値を見つけるには"
   },
   {
     "word_index": 211,
     "word": "call",
     "pronunciation": "kawl",
     "meaning": "to give a name; to telephone someone",
-    "example_sentence": "Please call me when you arrive."
+    "example_sentence": "Please call me when you arrive.",
+    "meaning_ja": "名前を付けること。"
   },
   {
     "word_index": 212,
     "word": "calm",
     "pronunciation": "kahm",
     "meaning": "peaceful, quiet, and not worried",
-    "example_sentence": "The sea was very calm this morning."
+    "example_sentence": "The sea was very calm this morning.",
+    "meaning_ja": "平和で静かで心配がない"
   },
   {
     "word_index": 213,
     "word": "camera",
     "pronunciation": "KAM-er-uh",
     "meaning": "a device used for taking photos or videos",
-    "example_sentence": "He bought a new digital camera."
+    "example_sentence": "He bought a new digital camera.",
+    "meaning_ja": "写真やビデオを撮影するために使用されるデバイス"
   },
   {
     "word_index": 214,
     "word": "camp",
     "pronunciation": "kamp",
     "meaning": "a place where people stay in tents",
-    "example_sentence": "We set up our camp near the river."
+    "example_sentence": "We set up our camp near the river.",
+    "meaning_ja": "人々がテントに泊まる場所"
   },
   {
     "word_index": 215,
     "word": "campaign",
     "pronunciation": "kam-PAYN",
     "meaning": "a planned series of activities to achieve a goal",
-    "example_sentence": "The politician started his election campaign."
+    "example_sentence": "The politician started his election campaign.",
+    "meaning_ja": "目標を達成するために計画された一連の活動"
   },
   {
     "word_index": 216,
     "word": "can",
     "pronunciation": "kan",
     "meaning": "to be able to do something",
-    "example_sentence": "She can speak English very fluently."
+    "example_sentence": "She can speak English very fluently.",
+    "meaning_ja": "何かができるようになる"
   },
   {
     "word_index": 217,
     "word": "cancel",
     "pronunciation": "KAN-suhl",
     "meaning": "to decide that a planned event will not happen",
-    "example_sentence": "They had to cancel the meeting due to rain."
+    "example_sentence": "They had to cancel the meeting due to rain.",
+    "meaning_ja": "予定されていた出来事が起こらないと決定する"
   },
   {
     "word_index": 218,
     "word": "cancer",
     "pronunciation": "KAN-ser",
     "meaning": "a serious disease caused by abnormal cells",
-    "example_sentence": "He is recovering from cancer treatment."
+    "example_sentence": "He is recovering from cancer treatment.",
+    "meaning_ja": "異常な細胞によって引き起こされる深刻な病気"
   },
   {
     "word_index": 219,
     "word": "candidate",
     "pronunciation": "KAN-di-dayt",
     "meaning": "a person who is trying to be elected",
-    "example_sentence": "She is a candidate for the mayor position."
+    "example_sentence": "She is a candidate for the mayor position.",
+    "meaning_ja": "当選しようとしている人"
   },
   {
     "word_index": 220,
     "word": "candle",
     "pronunciation": "KAN-duhl",
     "meaning": "a stick of wax that burns to give light",
-    "example_sentence": "We lit a candle when the power went out."
+    "example_sentence": "We lit a candle when the power went out.",
+    "meaning_ja": "燃えて光を与える蝋の棒"
   },
   {
     "word_index": 221,
     "word": "candy",
     "pronunciation": "KAN-dee",
     "meaning": "sweet food made with sugar",
-    "example_sentence": "Kids love eating colorful candy."
+    "example_sentence": "Kids love eating colorful candy.",
+    "meaning_ja": "砂糖を使った甘い食べ物"
   },
   {
     "word_index": 222,
     "word": "cap",
     "pronunciation": "kap",
     "meaning": "a type of soft hat with a curved front part",
-    "example_sentence": "He wore a baseball cap to block the sun."
+    "example_sentence": "He wore a baseball cap to block the sun.",
+    "meaning_ja": "前部が湾曲したソフトハットの一種"
   },
   {
     "word_index": 223,
     "word": "capable",
     "pronunciation": "KAY-puh-buhl",
     "meaning": "having the ability to do something well",
-    "example_sentence": "She is a very capable manager."
+    "example_sentence": "She is a very capable manager.",
+    "meaning_ja": "何かをうまくやる能力がある"
   },
   {
     "word_index": 224,
     "word": "capacity",
     "pronunciation": "kuh-PAS-i-tee",
     "meaning": "the maximum amount that something can contain",
-    "example_sentence": "The stadium has a capacity of fifty thousand."
+    "example_sentence": "The stadium has a capacity of fifty thousand.",
+    "meaning_ja": "何かが含むことができる最大量"
   },
   {
     "word_index": 225,
     "word": "capital",
     "pronunciation": "KAP-i-tuhl",
     "meaning": "the city where the government is located",
-    "example_sentence": "Paris is the capital of France."
+    "example_sentence": "Paris is the capital of France.",
+    "meaning_ja": "政府がある都市"
   },
   {
     "word_index": 226,
     "word": "captain",
     "pronunciation": "KAP-tin",
     "meaning": "the person in command of a ship or team",
-    "example_sentence": "He is the captain of our football team."
+    "example_sentence": "He is the captain of our football team.",
+    "meaning_ja": "船またはチームの指揮をとる人"
   },
   {
     "word_index": 227,
     "word": "capture",
     "pronunciation": "KAP-cher",
     "meaning": "to catch a person or animal by force",
-    "example_sentence": "The soldiers managed to capture the castle."
+    "example_sentence": "The soldiers managed to capture the castle.",
+    "meaning_ja": "人や動物を力ずくで捕まえる"
   },
   {
     "word_index": 228,
     "word": "car",
     "pronunciation": "kahr",
     "meaning": "a road vehicle with four wheels and an engine",
-    "example_sentence": "She drives a small red car to work."
+    "example_sentence": "She drives a small red car to work.",
+    "meaning_ja": "4つの車輪とエンジンを備えた道路車両"
   },
   {
     "word_index": 229,
     "word": "card",
     "pronunciation": "kahrd",
     "meaning": "a small piece of stiff paper or plastic",
-    "example_sentence": "He paid for the groceries with a credit card."
+    "example_sentence": "He paid for the groceries with a credit card.",
+    "meaning_ja": "硬い紙またはプラスチックの小片"
   },
   {
     "word_index": 230,
     "word": "care",
     "pronunciation": "kair",
     "meaning": "to feel interest or worry about someone/something",
-    "example_sentence": "I really care about my family's health."
+    "example_sentence": "I really care about my family's health.",
+    "meaning_ja": "誰か/何かについて興味や心配を感じること"
   },
   {
     "word_index": 231,
     "word": "career",
     "pronunciation": "kuh-REER",
     "meaning": "a job or profession that you do for a long time",
-    "example_sentence": "She wants a career in medical research."
+    "example_sentence": "She wants a career in medical research.",
+    "meaning_ja": "あなたが長期間行う仕事または職業"
   },
   {
     "word_index": 232,
     "word": "careful",
     "pronunciation": "KAIR-fuhl",
     "meaning": "giving attention to avoid danger or mistakes",
-    "example_sentence": "Please be careful when you cross the street."
+    "example_sentence": "Please be careful when you cross the street.",
+    "meaning_ja": "危険や間違いを避けるために注意を払う"
   },
   {
     "word_index": 233,
     "word": "careless",
     "pronunciation": "KAIR-lis",
     "meaning": "not giving enough attention to avoid mistakes",
-    "example_sentence": "It was careless of him to lose his keys."
+    "example_sentence": "It was careless of him to lose his keys.",
+    "meaning_ja": "間違いを避けるために十分な注意を払っていない"
   },
   {
     "word_index": 234,
     "word": "cargo",
     "pronunciation": "KAHR-goh",
     "meaning": "goods carried on a ship, plane, or truck",
-    "example_sentence": "The cargo ship arrived at the port today."
+    "example_sentence": "The cargo ship arrived at the port today.",
+    "meaning_ja": "船、飛行機、またはトラックで運ばれる商品"
   },
   {
     "word_index": 235,
     "word": "carpet",
     "pronunciation": "KAHR-pit",
     "meaning": "a thick heavy cover for a floor",
-    "example_sentence": "We bought a soft blue carpet for the living room."
+    "example_sentence": "We bought a soft blue carpet for the living room.",
+    "meaning_ja": "床用の厚くて重いカバー"
   },
   {
     "word_index": 236,
     "word": "carriage",
     "pronunciation": "KAR-ij",
     "meaning": "a vehicle with wheels pulled by horses",
-    "example_sentence": "They rode in a horse-drawn carriage."
+    "example_sentence": "They rode in a horse-drawn carriage.",
+    "meaning_ja": "馬が引く車輪のついた乗り物"
   },
   {
     "word_index": 237,
     "word": "carry",
     "pronunciation": "KAR-ee",
     "meaning": "to hold and move something to another place",
-    "example_sentence": "Could you help me carry these heavy bags?"
+    "example_sentence": "Could you help me carry these heavy bags?",
+    "meaning_ja": "何かを保持して別の場所に移動する"
   },
   {
     "word_index": 238,
     "word": "case",
     "pronunciation": "kays",
     "meaning": "a particular situation or example of something",
-    "example_sentence": "In this case, the rules do not apply."
+    "example_sentence": "In this case, the rules do not apply.",
+    "meaning_ja": "特定の状況または何かの例"
   },
   {
     "word_index": 239,
     "word": "cash",
     "pronunciation": "kash",
     "meaning": "money in the form of coins or notes",
-    "example_sentence": "Do you want to pay in cash or by card?"
+    "example_sentence": "Do you want to pay in cash or by card?",
+    "meaning_ja": "硬貨または紙幣の形のお金"
   },
   {
     "word_index": 240,
     "word": "cast",
     "pronunciation": "kast",
     "meaning": "to throw something; all the actors in a play",
-    "example_sentence": "He cast his fishing line into the water."
+    "example_sentence": "He cast his fishing line into the water.",
+    "meaning_ja": "何かを投げる。"
   },
   {
     "word_index": 241,
     "word": "castle",
     "pronunciation": "KAS-uhl",
     "meaning": "a large strong building built in the past",
-    "example_sentence": "We visited a beautiful historic castle in Europe."
+    "example_sentence": "We visited a beautiful historic castle in Europe.",
+    "meaning_ja": "過去に建てられた大きくて丈夫な建物"
   },
   {
     "word_index": 242,
     "word": "cat",
     "pronunciation": "kat",
     "meaning": "a small furry animal kept as a pet",
-    "example_sentence": "A cat is sleeping on the windowsill."
+    "example_sentence": "A cat is sleeping on the windowsill.",
+    "meaning_ja": "ペットとして飼われている毛皮で覆われた小さな動物"
   },
   {
     "word_index": 243,
     "word": "catch",
     "pronunciation": "kach",
     "meaning": "to stop and hold a moving object",
-    "example_sentence": "Try to catch the ball before it drops."
+    "example_sentence": "Try to catch the ball before it drops.",
+    "meaning_ja": "動いている物体を止めて保持すること"
   },
   {
     "word_index": 244,
     "word": "category",
     "pronunciation": "KAT-uh-gawr-ee",
     "meaning": "a group of people or things with shared qualities",
-    "example_sentence": "Which category does this book belong to?"
+    "example_sentence": "Which category does this book belong to?",
+    "meaning_ja": "共通の性質を持つ人々または物事のグループ"
   },
   {
     "word_index": 245,
     "word": "cause",
     "pronunciation": "kawz",
     "meaning": "to make something happen; the reason for something",
-    "example_sentence": "A small spark can cause a large forest fire."
+    "example_sentence": "A small spark can cause a large forest fire.",
+    "meaning_ja": "何かを実現すること。"
   },
   {
     "word_index": 246,
     "word": "cave",
     "pronunciation": "kayv",
     "meaning": "a large natural hole in the side of a hill",
-    "example_sentence": "We explored a dark cave on our vacation."
+    "example_sentence": "We explored a dark cave on our vacation.",
+    "meaning_ja": "丘の側面にある大きな自然の穴"
   },
   {
     "word_index": 247,
     "word": "ceiling",
     "pronunciation": "SEE-ling",
     "meaning": "the inner surface of the top of a room",
-    "example_sentence": "They painted the bedroom ceiling white."
+    "example_sentence": "They painted the bedroom ceiling white.",
+    "meaning_ja": "部屋の上部の内面"
   },
   {
     "word_index": 248,
     "word": "celebrate",
     "pronunciation": "SEL-uh-brayt",
     "meaning": "to do something special for an event",
-    "example_sentence": "We went out to celebrate her graduation."
+    "example_sentence": "We went out to celebrate her graduation.",
+    "meaning_ja": "イベントのために何か特別なことをする"
   },
   {
     "word_index": 249,
     "word": "celebrity",
     "pronunciation": "suh-LEB-ri-tee",
     "meaning": "a famous person",
-    "example_sentence": "She became a global celebrity after the movie."
+    "example_sentence": "She became a global celebrity after the movie.",
+    "meaning_ja": "有名人"
   },
   {
     "word_index": 250,
     "word": "cell",
     "pronunciation": "sel",
     "meaning": "the smallest basic unit of a living thing",
-    "example_sentence": "Red blood cells carry oxygen around the body."
+    "example_sentence": "Red blood cells carry oxygen around the body.",
+    "meaning_ja": "the smallest basic unit of a living thing"
   },
   {
     "word_index": 251,
     "word": "cemetery",
     "pronunciation": "SEM-uh-ter-ee",
     "meaning": "an area of ground where dead people are buried",
-    "example_sentence": "We placed flowers on the grave in the cemetery."
+    "example_sentence": "We placed flowers on the grave in the cemetery.",
+    "meaning_ja": "死者が埋葬されている地面の領域"
   },
   {
     "word_index": 252,
     "word": "center",
     "pronunciation": "SEN-ter",
     "meaning": "the middle point or part of something",
-    "example_sentence": "The fountain is in the center of the square."
+    "example_sentence": "The fountain is in the center of the square.",
+    "meaning_ja": "何かの中間点または部分"
   },
   {
     "word_index": 253,
     "word": "central",
     "pronunciation": "SEN-truhl",
     "meaning": "located in the middle of something",
-    "example_sentence": "The central station is very busy at rush hour."
+    "example_sentence": "The central station is very busy at rush hour.",
+    "meaning_ja": "何かの真ん中に位置する"
   },
   {
     "word_index": 254,
     "word": "century",
     "pronunciation": "SEN-chuh-ee",
     "meaning": "a period of one hundred years",
-    "example_sentence": "We live in the twenty-first century."
+    "example_sentence": "We live in the twenty-first century.",
+    "meaning_ja": "百年の期間"
   },
   {
     "word_index": 255,
     "word": "ceremony",
     "pronunciation": "SER-uh-moh-nee",
     "meaning": "a formal public or religious event",
-    "example_sentence": "The wedding ceremony was beautiful."
+    "example_sentence": "The wedding ceremony was beautiful.",
+    "meaning_ja": "正式な公的行事または宗教的な行事"
   },
   {
     "word_index": 256,
     "word": "certain",
     "pronunciation": "SUR-tuhn",
     "meaning": "sure and having no doubt about something",
-    "example_sentence": "I am certain that I locked the door."
+    "example_sentence": "I am certain that I locked the door.",
+    "meaning_ja": "確かに、何かについて何の疑問も持たない"
   },
   {
     "word_index": 257,
     "word": "certainly",
     "pronunciation": "SUR-tuhn-lee",
     "meaning": "without any doubt; definitely",
-    "example_sentence": "I will certainly help you with your project."
+    "example_sentence": "I will certainly help you with your project.",
+    "meaning_ja": "without any doubt;"
   },
   {
     "word_index": 258,
     "word": "chain",
     "pronunciation": "chayn",
     "meaning": "a row of metal rings connected together",
-    "example_sentence": "He locked his bicycle with a strong chain."
+    "example_sentence": "He locked his bicycle with a strong chain.",
+    "meaning_ja": "一緒に接続された金属リングの列"
   },
   {
     "word_index": 259,
     "word": "chair",
     "pronunciation": "chair",
     "meaning": "a piece of furniture for one person to sit on",
-    "example_sentence": "Please take a chair and sit down."
+    "example_sentence": "Please take a chair and sit down.",
+    "meaning_ja": "一人が座るための家具"
   },
   {
     "word_index": 260,
     "word": "chairman",
     "pronunciation": "CHAIR-muhn",
     "meaning": "the person in charge of a meeting or company",
-    "example_sentence": "The chairman opened the meeting with a speech."
+    "example_sentence": "The chairman opened the meeting with a speech.",
+    "meaning_ja": "会議や会社の責任者"
   },
   {
     "word_index": 261,
     "word": "challenge",
     "pronunciation": "CHAL-inj",
     "meaning": "something new and difficult that needs effort",
-    "example_sentence": "Learning a new language is a great challenge."
+    "example_sentence": "Learning a new language is a great challenge.",
+    "meaning_ja": "努力が必要な新しくて難しいこと"
   },
   {
     "word_index": 262,
     "word": "chamber",
     "pronunciation": "CHAYM-ber",
     "meaning": "a hall or large room for formal meetings",
-    "example_sentence": "The council met in the town chamber."
+    "example_sentence": "The council met in the town chamber.",
+    "meaning_ja": "公式な会議のためのホールまたは大きな部屋"
   },
   {
     "word_index": 263,
     "word": "champion",
     "pronunciation": "CHAMP-ee-uhn",
     "meaning": "a person or team that wins a competition",
-    "example_sentence": "She is the world chess champion."
+    "example_sentence": "She is the world chess champion.",
+    "meaning_ja": "競争に勝つ人またはチーム"
   },
   {
     "word_index": 264,
     "word": "chance",
     "pronunciation": "chans",
     "meaning": "the possibility of something happening",
-    "example_sentence": "Is there any chance of rain today?"
+    "example_sentence": "Is there any chance of rain today?",
+    "meaning_ja": "何かが起こる可能性"
   },
   {
     "word_index": 265,
     "word": "change",
     "pronunciation": "chaynjs",
     "meaning": "to make or become different; to swap",
-    "example_sentence": "I need to change my wet clothes."
+    "example_sentence": "I need to change my wet clothes.",
+    "meaning_ja": "違うものを作る、あるいは変わること。"
   },
   {
     "word_index": 266,
     "word": "channel",
     "pronunciation": "CHAN-uhl",
     "meaning": "a television station; a route for water",
-    "example_sentence": "Switch to the sports channel, please."
+    "example_sentence": "Switch to the sports channel, please.",
+    "meaning_ja": "テレビ局。"
   },
   {
     "word_index": 267,
     "word": "chaos",
     "pronunciation": "KAY-ahs",
     "meaning": "a state of total confusion and lack of order",
-    "example_sentence": "The heavy snow caused chaos on the roads."
+    "example_sentence": "The heavy snow caused chaos on the roads.",
+    "meaning_ja": "完全な混乱と秩序の欠如の状態"
   },
   {
     "word_index": 268,
     "word": "chapter",
     "pronunciation": "CHAP-ter",
     "meaning": "a section of a book with a number or title",
-    "example_sentence": "I am reading the third chapter of the book."
+    "example_sentence": "I am reading the third chapter of the book.",
+    "meaning_ja": "番号またはタイトルが付いた本のセクション"
   },
   {
     "word_index": 269,
     "word": "character",
     "pronunciation": "KAR-ik-ter",
     "meaning": "the qualities of a person; a person in a book",
-    "example_sentence": "She has a very strong and kind character."
+    "example_sentence": "She has a very strong and kind character.",
+    "meaning_ja": "人の資質。"
   },
   {
     "word_index": 270,
     "word": "charge",
     "pronunciation": "chahrj",
     "meaning": "the price asked for goods or services",
-    "example_sentence": "There is no extra charge for delivery."
+    "example_sentence": "There is no extra charge for delivery.",
+    "meaning_ja": "商品またはサービスに要求される価格"
   },
   {
     "word_index": 271,
     "word": "charity",
     "pronunciation": "CHAR-i-tee",
     "meaning": "an organization that helps people in need",
-    "example_sentence": "All the money raised will go to a local charity."
+    "example_sentence": "All the money raised will go to a local charity.",
+    "meaning_ja": "困っている人を助ける組織"
   },
   {
     "word_index": 272,
     "word": "chart",
     "pronunciation": "chahrt",
     "meaning": "a drawing that shows information simply",
-    "example_sentence": "The pie chart shows our monthly expenses."
+    "example_sentence": "The pie chart shows our monthly expenses.",
+    "meaning_ja": "情報を簡単に示す図"
   },
   {
     "word_index": 273,
     "word": "chase",
     "pronunciation": "chays",
     "meaning": "to run after someone/something to catch them",
-    "example_sentence": "The dog loves to chase birds in the park."
+    "example_sentence": "The dog loves to chase birds in the park.",
+    "meaning_ja": "捕まえるために誰か/何かを追いかけること"
   },
   {
     "word_index": 274,
     "word": "chat",
     "pronunciation": "chat",
     "meaning": "to talk in a friendly, informal way",
-    "example_sentence": "We sat in the cafe and had a nice chat."
+    "example_sentence": "We sat in the cafe and had a nice chat.",
+    "meaning_ja": "フレンドリーでカジュアルな方法で話すこと"
   },
   {
     "word_index": 275,
     "word": "cheap",
     "pronunciation": "cheep",
     "meaning": "costing little money; not expensive",
-    "example_sentence": "Tickets are cheaper if you buy them online."
+    "example_sentence": "Tickets are cheaper if you buy them online.",
+    "meaning_ja": "お金がほとんどかかりません。"
   },
   {
     "word_index": 276,
     "word": "cheat",
     "pronunciation": "cheet",
     "meaning": "to act dishonestly to gain an advantage",
-    "example_sentence": "You should never cheat on an exam."
+    "example_sentence": "You should never cheat on an exam.",
+    "meaning_ja": "利益を得るために不誠実な行為をする"
   },
   {
     "word_index": 277,
     "word": "check",
     "pronunciation": "chek",
     "meaning": "to examine something to make sure it is correct",
-    "example_sentence": "Please check your answers before submitting."
+    "example_sentence": "Please check your answers before submitting.",
+    "meaning_ja": "何かを調べてそれが正しいことを確認すること"
   },
   {
     "word_index": 278,
     "word": "cheek",
     "pronunciation": "cheek",
     "meaning": "either side of the face below the eyes",
-    "example_sentence": "She kissed him on the cheek."
+    "example_sentence": "She kissed him on the cheek.",
+    "meaning_ja": "顔の両側の目の下"
   },
   {
     "word_index": 279,
     "word": "cheer",
     "pronunciation": "cheer",
     "meaning": "to shout loudly to show approval or support",
-    "example_sentence": "The crowd began to cheer for the team."
+    "example_sentence": "The crowd began to cheer for the team.",
+    "meaning_ja": "承認や支持を示すために大声で叫ぶこと"
   },
   {
     "word_index": 280,
     "word": "cheerful",
     "pronunciation": "CHEER-fuhl",
     "meaning": "happy and showing it by behavior",
-    "example_sentence": "She always has a cheerful smile on her face."
+    "example_sentence": "She always has a cheerful smile on her face.",
+    "meaning_ja": "幸せでそれを行動で示す"
   },
   {
     "word_index": 281,
     "word": "cheese",
     "pronunciation": "cheez",
     "meaning": "a yellow or white food made from milk",
-    "example_sentence": "I love eating bread with melted cheese."
+    "example_sentence": "I love eating bread with melted cheese.",
+    "meaning_ja": "牛乳から作られた黄色または白色の食品"
   },
   {
     "word_index": 282,
     "word": "chef",
     "pronunciation": "shef",
     "meaning": "a professional cook in a restaurant",
-    "example_sentence": "The head chef prepared a special dinner for us."
+    "example_sentence": "The head chef prepared a special dinner for us.",
+    "meaning_ja": "レストランのプロの料理人"
   },
   {
     "word_index": 283,
     "word": "chemical",
     "pronunciation": "KEM-i-kuhl",
     "meaning": "a substance produced by chemistry",
-    "example_sentence": "They do not use harmful chemicals on these crops."
+    "example_sentence": "They do not use harmful chemicals on these crops.",
+    "meaning_ja": "化学によって生成される物質"
   },
   {
     "word_index": 284,
     "word": "chemistry",
     "pronunciation": "KEM-i-stree",
     "meaning": "the scientific study of substances",
-    "example_sentence": "We did an interesting experiment in chemistry class."
+    "example_sentence": "We did an interesting experiment in chemistry class.",
+    "meaning_ja": "物質の科学的研究"
   },
   {
     "word_index": 285,
     "word": "chest",
     "pronunciation": "chest",
     "meaning": "the upper front part of the body",
-    "example_sentence": "He felt a sudden pain in his chest."
+    "example_sentence": "He felt a sudden pain in his chest.",
+    "meaning_ja": "体の前部上部"
   },
   {
     "word_index": 286,
     "word": "chicken",
     "pronunciation": "CHIK-in",
     "meaning": "a common bird kept for its eggs and meat",
-    "example_sentence": "We had grilled chicken and salad for dinner."
+    "example_sentence": "We had grilled chicken and salad for dinner.",
+    "meaning_ja": "卵と肉のために飼われる一般的な鳥"
   },
   {
     "word_index": 287,
     "word": "chief",
     "pronunciation": "cheef",
     "meaning": "most important; leader of a group",
-    "example_sentence": "The chief reason for our success was teamwork."
+    "example_sentence": "The chief reason for our success was teamwork.",
+    "meaning_ja": "最も重要なこと。"
   },
   {
     "word_index": 288,
     "word": "child",
     "pronunciation": "chayld",
     "meaning": "a young human who is not yet an adult",
-    "example_sentence": "The child was playing happily with her toys."
+    "example_sentence": "The child was playing happily with her toys.",
+    "meaning_ja": "まだ大人になっていない若い人間"
   },
   {
     "word_index": 289,
     "word": "childhood",
     "pronunciation": "CHAYLD-hud",
     "meaning": "the period of time when you are a child",
-    "example_sentence": "She had a very happy childhood in the countryside."
+    "example_sentence": "She had a very happy childhood in the countryside.",
+    "meaning_ja": "あなたが子供の頃の期間"
   },
   {
     "word_index": 290,
     "word": "chin",
     "pronunciation": "chin",
     "meaning": "the part of the face below the mouth",
-    "example_sentence": "He rested his chin on his hand."
+    "example_sentence": "He rested his chin on his hand.",
+    "meaning_ja": "顔の口の下の部分"
   },
   {
     "word_index": 291,
     "word": "chocolate",
     "pronunciation": "CHAHK-lit",
     "meaning": "a sweet brown food made from cocoa",
-    "example_sentence": "I bought a bar of dark chocolate."
+    "example_sentence": "I bought a bar of dark chocolate.",
+    "meaning_ja": "カカオから作られた甘い茶色の食べ物"
   },
   {
     "word_index": 292,
     "word": "choice",
     "pronunciation": "choys",
     "meaning": "the act of choosing between things",
-    "example_sentence": "You have a choice between tea and coffee."
+    "example_sentence": "You have a choice between tea and coffee.",
+    "meaning_ja": "物事の間で選択する行為"
   },
   {
     "word_index": 293,
     "word": "choose",
     "pronunciation": "chooz",
     "meaning": "to pick someone or something from a group",
-    "example_sentence": "It is difficult to choose what to wear today."
+    "example_sentence": "It is difficult to choose what to wear today.",
+    "meaning_ja": "グループから誰かまたは何かを選ぶこと"
   },
   {
     "word_index": 294,
     "word": "church",
     "pronunciation": "church",
     "meaning": "a building where Christians go to worship",
-    "example_sentence": "The church was built in the twelfth century."
+    "example_sentence": "The church was built in the twelfth century.",
+    "meaning_ja": "キリスト教徒が礼拝に行く建物"
   },
   {
     "word_index": 295,
     "word": "cigarette",
     "pronunciation": "SIG-uh-ret",
     "meaning": "a thin tube of paper filled with tobacco",
-    "example_sentence": "He lit a cigarette while waiting for the bus."
+    "example_sentence": "He lit a cigarette while waiting for the bus.",
+    "meaning_ja": "タバコが詰まった細い紙管"
   },
   {
     "word_index": 296,
     "word": "cinema",
     "pronunciation": "SIN-uh-muh",
     "meaning": "a theater where movies are shown",
-    "example_sentence": "We are going to the cinema this evening."
+    "example_sentence": "We are going to the cinema this evening.",
+    "meaning_ja": "映画が上映される劇場"
   },
   {
     "word_index": 297,
     "word": "circle",
     "pronunciation": "SUR-kuhl",
     "meaning": "a completely round flat shape",
-    "example_sentence": "The children sat in a circle on the floor."
+    "example_sentence": "The children sat in a circle on the floor.",
+    "meaning_ja": "完全に丸い平らな形状"
   },
   {
     "word_index": 298,
     "word": "circumstance",
     "pronunciation": "SUR-kuhm-stans",
     "meaning": "the facts or conditions of a situation",
-    "example_sentence": "The police are investigating the circumstance of the accident."
+    "example_sentence": "The police are investigating the circumstance of the accident.",
+    "meaning_ja": "状況の事実または条件"
   },
   {
     "word_index": 299,
     "word": "citizen",
     "pronunciation": "SIT-i-zuhn",
     "meaning": "a person who is a legal member of a country",
-    "example_sentence": "He is a citizen of both Japan and Canada."
+    "example_sentence": "He is a citizen of both Japan and Canada.",
+    "meaning_ja": "ある国の法的加盟国である人"
   },
   {
     "word_index": 300,
     "word": "city",
     "pronunciation": "SIT-ee",
     "meaning": "a large and important town",
-    "example_sentence": "Tokyo is a very clean and safe city."
+    "example_sentence": "Tokyo is a very clean and safe city.",
+    "meaning_ja": "大きくて重要な町"
   }
 ]

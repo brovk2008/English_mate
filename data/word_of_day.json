@@ -1,0 +1,812 @@
+[
+  {
+    "day": 1,
+    "word": "serendipity",
+    "pronunciation": "ser-en-DIP-i-tee",
+    "meaning": "Finding something wonderful by accident",
+    "meaning_ja": "偶然に素晴らしいものを見つけること",
+    "example": "Finding this English course was pure serendipity.",
+    "fun_fact": "Coined in 1754 from a Persian fairy tale, 'The Three Princes of Serendippe'."
+  },
+  {
+    "day": 2,
+    "word": "solitude",
+    "pronunciation": "SOL-i-tood",
+    "meaning": "The state of being alone, especially when this is peaceful and pleasant",
+    "meaning_ja": "（特に穏やかで愉快な）一人でいる状態、孤独の楽しみ",
+    "example": "She enjoyed the solitude of the quiet morning.",
+    "fun_fact": "Derived from the Latin word 'solus', meaning alone or sole."
+  },
+  {
+    "day": 3,
+    "word": "luminous",
+    "pronunciation": "LOO-muh-nuhs",
+    "meaning": "Brightly shining, full of light",
+    "meaning_ja": "光り輝く、非常に明るい",
+    "example": "The moon cast a luminous glow over the cherry blossoms.",
+    "fun_fact": "Comes from the Latin root 'lumen', meaning light."
+  },
+  {
+    "day": 4,
+    "word": "resilient",
+    "pronunciation": "ri-ZIL-yuhnt",
+    "meaning": "Able to recover quickly from difficult conditions",
+    "meaning_ja": "困難からすぐに立ち直る力がある、回復力のある",
+    "example": "Cherry trees are resilient enough to bloom again after harsh winters.",
+    "fun_fact": "Originally from Latin 'resilire', meaning to bounce back or recoil."
+  },
+  {
+    "day": 5,
+    "word": "eloquent",
+    "pronunciation": "EL-uh-kwuhnt",
+    "meaning": "Fluent or persuasive in speaking or writing",
+    "meaning_ja": "話し言葉や書き言葉が流暢で説得力のある、雄弁な",
+    "example": "Her speech about cross-cultural journey was truly eloquent.",
+    "fun_fact": "Related to the Latin verb 'loqui', which means to speak."
+  },
+  {
+    "day": 6,
+    "word": "ephemeral",
+    "pronunciation": "i-FEM-er-uhl",
+    "meaning": "Lasting for a very short time",
+    "meaning_ja": "ごく短い時間しか続かない、はかない",
+    "example": "The sakura blossoms are beautiful because they are ephemeral.",
+    "fun_fact": "Originally a Greek medical term for a fever that lasted only one day."
+  },
+  {
+    "day": 7,
+    "word": "cherish",
+    "pronunciation": "CHER-ish",
+    "meaning": "To protect and care for someone or something lovingly",
+    "meaning_ja": "誰かや何かを愛情込めて保護し、大切にする",
+    "example": "I cherish the moments we spend pair programming.",
+    "fun_fact": "Traces back to the Old French word 'cher', which means dear."
+  },
+  {
+    "day": 8,
+    "word": "nostalgia",
+    "pronunciation": "no-STAL-juh",
+    "meaning": "A sentimental longing for the past",
+    "meaning_ja": "過去に対する感傷的な憧れ、郷愁、ノスタルジー",
+    "example": "Listening to old songs brings back a wave of nostalgia.",
+    "fun_fact": "Coined by a Swiss medical student in 1688 from Greek words meaning 'homecoming pain'."
+  },
+  {
+    "day": 9,
+    "word": "compassion",
+    "pronunciation": "kuhm-PASH-uhn",
+    "meaning": "Sympathy and concern for the sufferings of others",
+    "meaning_ja": "他人の苦しみに対する同情や思いやり",
+    "example": "The teacher showed great compassion to the struggling student.",
+    "fun_fact": "Literally means 'suffering with' in Latin."
+  },
+  {
+    "day": 10,
+    "word": "wanderlust",
+    "pronunciation": "WAHN-der-lust",
+    "meaning": "A strong desire to travel and explore the world",
+    "meaning_ja": "世界を旅行し探検したいという強い欲求、放浪癖",
+    "example": "Her wanderlust led her to spend a gap year in Kyoto.",
+    "fun_fact": "Borrowed from German, combining 'wandern' (to hike) and 'Lust' (desire)."
+  },
+  {
+    "day": 11,
+    "word": "melancholy",
+    "pronunciation": "MEL-uhn-kol-ee",
+    "meaning": "A feeling of pensive sadness, typically with no obvious cause",
+    "meaning_ja": "物思いに沈んだ悲しみ、憂鬱",
+    "example": "The sound of rain outside induced a gentle melancholy.",
+    "fun_fact": "From Greek 'melas' (black) and 'khole' (bile) - ancient medicine linked sadness to black bile."
+  },
+  {
+    "day": 12,
+    "word": "harmony",
+    "pronunciation": "HAHR-muh-nee",
+    "meaning": "The state of peaceful agreement and cooperation",
+    "meaning_ja": "調和、平和な合意と協力の状態",
+    "example": "The garden was designed to be in perfect harmony with nature.",
+    "fun_fact": "Related to the Greek word 'harmos', which means joint or link."
+  },
+  {
+    "day": 13,
+    "word": "solace",
+    "pronunciation": "SOL-is",
+    "meaning": "Comfort or consolation in a time of distress or sadness",
+    "meaning_ja": "苦痛や悲しみの時の慰めや安らぎ",
+    "example": "She found solace in writing her daily English diary.",
+    "fun_fact": "Traces back to the Latin verb 'solari', which means to console."
+  },
+  {
+    "day": 14,
+    "word": "gratitude",
+    "pronunciation": "GRAT-i-tood",
+    "meaning": "The quality of being thankful and showing appreciation",
+    "meaning_ja": "感謝していること、感謝の気持ちを表すこと",
+    "example": "She expressed her gratitude to the teacher for awarding a streak freeze.",
+    "fun_fact": "Derived from the Latin word 'gratus', meaning pleasing or thankful."
+  },
+  {
+    "day": 15,
+    "word": "aurora",
+    "pronunciation": "uh-RAWR-uh",
+    "meaning": "A natural light display in the sky, especially in high-latitude regions",
+    "meaning_ja": "極光、オーロラ、天然の光ディスプレイ",
+    "example": "They traveled north to see the spectacular aurora borealis.",
+    "fun_fact": "Named after the Roman goddess of dawn, Aurora."
+  },
+  {
+    "day": 16,
+    "word": "radiant",
+    "pronunciation": "RAY-dee-uhnt",
+    "meaning": "Shining or glowing brightly",
+    "meaning_ja": "明るく輝いている、または光り輝いている、晴れやかな",
+    "example": "She gave a radiant smile after passing the vocabulary quiz.",
+    "fun_fact": "Comes from the Latin verb 'radiare', which means to emit beams or rays."
+  },
+  {
+    "day": 17,
+    "word": "tranquil",
+    "pronunciation": "TRANG-kwil",
+    "meaning": "Free from disturbance; calm and peaceful",
+    "meaning_ja": "騒乱のない、穏やかで平和な",
+    "example": "The tea house was built next to a tranquil pond.",
+    "fun_fact": "From Latin 'tranquillus', meaning quiet or calm."
+  },
+  {
+    "day": 18,
+    "word": "ambiguity",
+    "pronunciation": "am-bi-GYOO-i-tee",
+    "meaning": "The quality of being open to more than one interpretation",
+    "meaning_ja": "複数の解釈が可能であること、曖昧さ",
+    "example": "To avoid ambiguity, write clear example sentences.",
+    "fun_fact": "From Latin 'ambiguus', which means doubtful or uncertain."
+  },
+  {
+    "day": 19,
+    "word": "curiosity",
+    "pronunciation": "kyoo-ree-OS-i-tee",
+    "meaning": "A strong desire to know or learn something",
+    "meaning_ja": "何かを知りたい、または学びたいという強い欲求、好奇心",
+    "example": "Her curiosity led her to study English grammar timeline rules.",
+    "fun_fact": "Related to the Latin 'cura', meaning care or concern."
+  },
+  {
+    "day": 20,
+    "word": "compass",
+    "pronunciation": "KUHM-puhs",
+    "meaning": "An instrument containing a magnetized pointer which shows the direction of magnetic north",
+    "meaning_ja": "羅針盤、コンパス",
+    "example": "The travelers used a compass to navigate through the dense forest.",
+    "fun_fact": "Derived from Latin 'compassare', meaning to measure with steps."
+  },
+  {
+    "day": 21,
+    "word": "zenith",
+    "pronunciation": "ZEE-nith",
+    "meaning": "The highest point reached by a celestial or other object",
+    "meaning_ja": "天頂、絶頂、最高点",
+    "example": "At the zenith of his career, the actor was known worldwide.",
+    "fun_fact": "From Arabic 'samt ar-ras', which means path over the head."
+  },
+  {
+    "day": 22,
+    "word": "courage",
+    "pronunciation": "KUR-ij",
+    "meaning": "The ability to do something that frightens one",
+    "meaning_ja": "恐れていることを行う能力、勇気",
+    "example": "It took courage to speak English in front of the native speakers.",
+    "fun_fact": "Derived from the Latin word 'cor', which means heart."
+  },
+  {
+    "day": 23,
+    "word": "harmony",
+    "pronunciation": "HAHR-muh-nee",
+    "meaning": "An orderly or pleasing arrangement of parts",
+    "meaning_ja": "秩序ある、または心地よい配置、調和",
+    "example": "We seek harmony between modern features and clean styling.",
+    "fun_fact": "Derived from Greek 'harmonia', meaning agreement or joint."
+  },
+  {
+    "day": 24,
+    "word": "aesthetic",
+    "pronunciation": "es-THET-ik",
+    "meaning": "Concerned with beauty or the appreciation of beauty",
+    "meaning_ja": "美的な、美学に関する、または美の鑑賞に関する",
+    "example": "The application's paper stationery aesthetic is exceptionally calming.",
+    "fun_fact": "Originally from the Greek word 'aisthesis', meaning perception or sensation."
+  },
+  {
+    "day": 25,
+    "word": "persistence",
+    "pronunciation": "per-SIS-tuhns",
+    "meaning": "Firm or obstinate continuance in a course of action in spite of difficulty",
+    "meaning_ja": "困難があっても粘り強く行動を継続すること、粘り強さ",
+    "example": "Persistence is key to maintaining a 90-day learning streak.",
+    "fun_fact": "From Latin 'persistere', which means to stand firm to the end."
+  },
+  {
+    "day": 26,
+    "word": "jubilant",
+    "pronunciation": "JOO-buh-luhnt",
+    "meaning": "Feeling or expressing great happiness and triumph",
+    "meaning_ja": "大きな幸せや勝利感を感じる、または表現する、歓喜に満ちた",
+    "example": "She was jubilant when she completed all 6 checklist items.",
+    "fun_fact": "Related to the Latin verb 'jubilare', which means to shout for joy."
+  },
+  {
+    "day": 27,
+    "word": "meticulous",
+    "pronunciation": "muh-TIK-yuh-luhs",
+    "meaning": "Showing great attention to detail; very careful and precise",
+    "meaning_ja": "細部まで非常によく注意を払う、細心な、綿密な",
+    "example": "The teacher's quick-correct panels provided meticulous corrections.",
+    "fun_fact": "Originally derived from the Latin word for fearful, 'meticulosus'."
+  },
+  {
+    "day": 28,
+    "word": "halcyon",
+    "pronunciation": "HAL-see-uhn",
+    "meaning": "Denoting a period of time in the past that was idyllically happy and peaceful",
+    "meaning_ja": "穏やかな、平穏な、昔の幸福で平和な時代を指す",
+    "example": "She recalled the halcyon days of summer vacation in Kyoto.",
+    "fun_fact": "Named after a mythical bird that nested on the sea, calming the waves."
+  },
+  {
+    "day": 29,
+    "word": "eloquence",
+    "pronunciation": "EL-uh-kwuhns",
+    "meaning": "Fluent or persuasive speaking or writing",
+    "meaning_ja": "流暢で説得力のある話し方や書き方、雄弁",
+    "example": "The prose in her English diary showed a growing eloquence.",
+    "fun_fact": "Comes from the Latin 'eloqui', to speak out."
+  },
+  {
+    "day": 30,
+    "word": "petrichor",
+    "pronunciation": "PE-tri-kuhr",
+    "meaning": "A pleasant smell that frequently accompanies the first rain after a long period of warm, dry weather",
+    "meaning_ja": "乾燥した天候の後の最初の雨に伴う心地よい香り、雨上がりの匂い",
+    "example": "The petrichor was strong after the sudden summer storm.",
+    "fun_fact": "Coined in 1964 from Greek 'petra' (stone) and 'ichor' (the fluid that flows in the veins of the gods)."
+  },
+  {
+    "day": 31,
+    "word": "labyrinth",
+    "pronunciation": "LAB-uh-rinth",
+    "meaning": "A complicated irregular network of passages or paths",
+    "meaning_ja": "複雑で不規則な通路や経路のネットワーク、迷宮",
+    "example": "The old city streets were a labyrinth of tiny alleyways.",
+    "fun_fact": "From the Greek 'labyrinthos', referring to the Cretan maze built to house the Minotaur."
+  },
+  {
+    "day": 32,
+    "word": "epiphany",
+    "pronunciation": "i-PIF-uh-nee",
+    "meaning": "A moment of sudden and great revelation or realization",
+    "meaning_ja": "突然の重大な啓示や気づきの瞬間、ひらめき",
+    "example": "Suddenly, during the grammar test, she had an epiphany and understood the rules.",
+    "fun_fact": "Originally from Greek 'epiphainein', meaning to manifest or reveal."
+  },
+  {
+    "day": 33,
+    "word": "sonorous",
+    "pronunciation": "suh-NAWR-uhs",
+    "meaning": "Imposingly deep and full",
+    "meaning_ja": "印象深く深く豊かな響き、朗々とした",
+    "example": "The actor read the poem in a sonorous voice.",
+    "fun_fact": "Derived from the Latin noun 'sonor', meaning sound."
+  },
+  {
+    "day": 34,
+    "word": "gregarious",
+    "pronunciation": "gri-GAIR-ee-uhs",
+    "meaning": "Fond of company; sociable",
+    "meaning_ja": "他者との交流を好む、社交的な",
+    "example": "He is a gregarious person who makes friends easily.",
+    "fun_fact": "Comes from the Latin 'grex', meaning herd or flock."
+  },
+  {
+    "day": 35,
+    "word": "mellifluous",
+    "pronunciation": "muh-LIF-loo-uhs",
+    "meaning": "Sweet or musical; pleasant to hear",
+    "meaning_ja": "甘い、または音楽のような、聞いて心地よい",
+    "example": "The singer's voice was mellifluous and calming.",
+    "fun_fact": "Literally means 'flowing like honey' in Latin."
+  },
+  {
+    "day": 36,
+    "word": "sagacity",
+    "pronunciation": "suh-GAS-i-tee",
+    "meaning": "The quality of having or showing keen mental discernment and good judgment",
+    "meaning_ja": "鋭い精神的洞察力や的確な判断力を持っていること、賢明さ",
+    "example": "The elder gave advice with great sagacity.",
+    "fun_fact": "Derived from the Latin adjective 'sagax', meaning wise or prophetic."
+  },
+  {
+    "day": 37,
+    "word": "epicurean",
+    "pronunciation": "ep-i-kyoo-REE-uhn",
+    "meaning": "Devoted to the pursuit of sensual pleasure, especially to the enjoyment of good food and comfort",
+    "meaning_ja": "感覚的な快楽、特に美味しい食べ物や快適さの追求に捧げられた、享楽的な",
+    "example": "They enjoyed an epicurean feast of traditional Kyoto cuisine.",
+    "fun_fact": "Named after Epicurus, the ancient Greek philosopher who advocated pleasure as the highest good."
+  },
+  {
+    "day": 38,
+    "word": "chimerical",
+    "pronunciation": "ky-MER-i-kuhl",
+    "meaning": "Hoped for but illusory or impossible to achieve",
+    "meaning_ja": "望まれるが幻の、または達成不可能な、空想の",
+    "example": "Her dreams of floating houses were chimerical.",
+    "fun_fact": "Named after the Chimera, a fire-breathing monster from Greek mythology composed of different animals."
+  },
+  {
+    "day": 39,
+    "word": "demure",
+    "pronunciation": "di-KYOOR",
+    "meaning": "Reserved, modest, and shy",
+    "meaning_ja": "控えめで、謙虚で、内気な",
+    "example": "She was demure, but her English journal writing was full of passion.",
+    "fun_fact": "Comes from the Old French word 'meur', meaning mature or ripe."
+  },
+  {
+    "day": 40,
+    "word": "surreptitious",
+    "pronunciation": "sur-uhp-TISH-uhs",
+    "meaning": "Kept secret, especially because it would not be approved of",
+    "meaning_ja": "秘密にされた（特に承認されない理由で）、こっそりした",
+    "example": "She took a surreptitious glance at her vocabulary sheet.",
+    "fun_fact": "From Latin 'surripere', meaning to snatch secretly or steal."
+  },
+  {
+    "day": 41,
+    "word": "panacea",
+    "pronunciation": "pan-uh-SEE-uh",
+    "meaning": "A solution or remedy for all difficulties or diseases",
+    "meaning_ja": "すべての困難や病気に対する解決策や治療法、万能薬",
+    "example": "Study is not a panacea, but it solves many problems.",
+    "fun_fact": "Named after Panakeia, the Greek goddess of universal remedy."
+  },
+  {
+    "day": 42,
+    "word": "transient",
+    "pronunciation": "TRAN-zhuhnt",
+    "meaning": "Lasting only for a short time; impermanent",
+    "meaning_ja": "短い時間しか続かない、一時的な、はかない",
+    "example": "Clouds are transient, but the blue sky remains.",
+    "fun_fact": "Derived from the Latin verb 'transire', meaning to go across or pass away."
+  },
+  {
+    "day": 43,
+    "word": "felicity",
+    "pronunciation": "fuh-LIS-i-tee",
+    "meaning": "Intense happiness",
+    "meaning_ja": "強烈な幸福、至福",
+    "example": "A day spent writing English diaries in the park was pure felicity.",
+    "fun_fact": "Derived from the Latin noun 'felicitas', meaning good luck or happiness."
+  },
+  {
+    "day": 44,
+    "word": "lucid",
+    "pronunciation": "LOO-sid",
+    "meaning": "Expressed clearly; easy to understand",
+    "meaning_ja": "明確に表現された、分かりやすい",
+    "example": "The grammar guide provided a lucid explanation of connection clauses.",
+    "fun_fact": "Derived from the Latin root 'lux', meaning light."
+  },
+  {
+    "day": 45,
+    "word": "plethora",
+    "pronunciation": "PLETH-er-uh",
+    "meaning": "A large or excessive amount of something",
+    "meaning_ja": "何か多量または過剰な量、過多",
+    "example": "The library had a plethora of books about Kyoto history.",
+    "fun_fact": "Originally a medical term in Greek meaning fullness of blood."
+  },
+  {
+    "day": 46,
+    "word": "capricious",
+    "pronunciation": "kuh-PRISH-uhs",
+    "meaning": "Given to sudden and unaccountable changes of mood or behavior",
+    "meaning_ja": "気分や行動が突然かつ説明のつかない変化をすること、気まぐれな",
+    "example": "The spring weather in London was capricious.",
+    "fun_fact": "Traced back to Italian 'capriccio', which means a sudden start or shiver of fear."
+  },
+  {
+    "day": 47,
+    "word": "cacophony",
+    "pronunciation": "kuh-KOF-uh-nee",
+    "meaning": "A harsh, discordant mixture of sounds",
+    "meaning_ja": "耳障りで調和しない音の混合、不協和音",
+    "example": "The market was filled with a cacophony of street sellers' cries.",
+    "fun_fact": "Combines Greek roots 'kakos' (bad) and 'phone' (voice/sound)."
+  },
+  {
+    "day": 48,
+    "word": "ebullient",
+    "pronunciation": "i-BUHL-yuhnt",
+    "meaning": "Cheerful and full of energy",
+    "meaning_ja": "元気いっぱいで活力に満ちた、溢れんばかりの元気を有する",
+    "example": "She was ebullient after maintaining a 50-day streak.",
+    "fun_fact": "Literally means 'boiling over' in Latin."
+  },
+  {
+    "day": 49,
+    "word": "taciturn",
+    "pronunciation": "TAS-i-turn",
+    "meaning": "Reserved or uncommunicative in speech; saying little",
+    "meaning_ja": "言葉少なで、控えめな、無口な",
+    "example": "The student was taciturn in class but wrote rich diary entries.",
+    "fun_fact": "Related to the Latin verb 'tacere', which means to be silent."
+  },
+  {
+    "day": 50,
+    "word": "ineffable",
+    "pronunciation": "in-EF-uh-bul",
+    "meaning": "Too great or extreme to be expressed in words",
+    "meaning_ja": "言葉で表現できないほど素晴らしい、または極端な",
+    "example": "The beauty of the mountain at sunrise was ineffable.",
+    "fun_fact": "Traces back to the Latin verb 'effari', which means to speak out."
+  },
+  {
+    "day": 51,
+    "word": "ubiquitous",
+    "pronunciation": "yoo-BIK-wi-tuhs",
+    "meaning": "Present, appearing, or found everywhere",
+    "meaning_ja": "どこにでも存在している、または見つかる、偏在する",
+    "example": "Cell phones have become ubiquitous in modern life.",
+    "fun_fact": "From the Latin word 'ubique', meaning everywhere."
+  },
+  {
+    "day": 52,
+    "word": "pragmatic",
+    "pronunciation": "prag-MAT-ik",
+    "meaning": "Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations",
+    "meaning_ja": "理論的ではなく実践的な考慮に基づいて賢明かつ現実的に物事に対処する、実用的な",
+    "example": "Using spaced repetition flashcards is a pragmatic way to study vocabulary.",
+    "fun_fact": "Derived from Greek 'pragma', meaning deed or action."
+  },
+  {
+    "day": 53,
+    "word": "fastidious",
+    "pronunciation": "fa-STID-ee-uhs",
+    "meaning": "Very attentive to and concerned about accuracy and detail",
+    "meaning_ja": "細部や正確さに非常に注意を払い、気にする、こだわりを持つ",
+    "example": "The architect was fastidious about the building dimensions.",
+    "fun_fact": "Originally meant 'disdainful' or 'difficult to please' in Latin."
+  },
+  {
+    "day": 54,
+    "word": "altruism",
+    "pronunciation": "AL-troo-iz-uhm",
+    "meaning": "The belief in or practice of disinterested and selfless concern for the well-being of others",
+    "meaning_ja": "他人の幸福に対する無私無欲の配慮の信念または実践、利他主義",
+    "example": "The volunteer work showed pure altruism.",
+    "fun_fact": "Coined in French by Auguste Comte from Italian 'altrui', meaning other people."
+  },
+  {
+    "day": 55,
+    "word": "garrulous",
+    "pronunciation": "GA-ruh-luhs",
+    "meaning": "Excessively talkative, especially on trivial matters",
+    "meaning_ja": "特につまらない事柄について過度におしゃべりな、多弁な",
+    "example": "The garrulous passenger kept talking for the entire bus ride.",
+    "fun_fact": "From the Latin verb 'garrire', meaning to chatter."
+  },
+  {
+    "day": 56,
+    "word": "candid",
+    "pronunciation": "KAN-did",
+    "meaning": "Truthful and straightforward; frank",
+    "meaning_ja": "真実であり、まっすぐな、率直な",
+    "example": "The feedback from the teacher was candid but very helpful.",
+    "fun_fact": "Derived from the Latin adjective 'candidus', meaning white or bright."
+  },
+  {
+    "day": 57,
+    "word": "opulent",
+    "pronunciation": "OP-yuh-luhnt",
+    "meaning": "Ostentatiously rich and luxurious or lavish",
+    "meaning_ja": "贅沢で豪華な、または豪華な、富裕な",
+    "example": "The palace rooms were decorated in opulent style.",
+    "fun_fact": "Related to the Latin noun 'ops', meaning power or wealth."
+  },
+  {
+    "day": 58,
+    "word": "scrupulous",
+    "pronunciation": "SKROO-pyuh-luhs",
+    "meaning": "Very concerned to avoid doing wrong; diligent, thorough, and extremely attentive to details",
+    "meaning_ja": "悪事を避けることに非常に注意を払う、勤勉で細部まで非常に注意深い",
+    "example": "She was scrupulous in her study habits, never missing a checklist item.",
+    "fun_fact": "Derived from Latin 'scrupulus', a small sharp stone that causes anxiety in a shoe."
+  },
+  {
+    "day": 59,
+    "word": "alacrity",
+    "pronunciation": "uh-LAK-ri-tee",
+    "meaning": "Brisk and cheerful readiness",
+    "meaning_ja": "きびきびとした陽気な即応性、敏活さ",
+    "example": "She accepted the challenge with alacrity.",
+    "fun_fact": "Comes from the Latin adjective 'alacer', meaning lively or brisk."
+  },
+  {
+    "day": 60,
+    "word": "euphoria",
+    "pronunciation": "yoo-FAWR-ee-uh",
+    "meaning": "A feeling or state of intense excitement and happiness",
+    "meaning_ja": "強烈な興奮や幸福感の感覚や状態、幸福感",
+    "example": "A wave of euphoria hit her when she graduated from the 90-day course.",
+    "fun_fact": "Greek word literally meaning 'the power of enduring easily'."
+  },
+  {
+    "day": 61,
+    "word": "spurious",
+    "pronunciation": "SPYOOR-ee-uhs",
+    "meaning": "Not being what it purports to be; false or fake",
+    "meaning_ja": "本物でない、偽の、誤った",
+    "example": "The internet was filled with spurious claims.",
+    "fun_fact": "Originally referred to illegitimate children in Latin legal contexts."
+  },
+  {
+    "day": 62,
+    "word": "benevolent",
+    "pronunciation": "buh-NEV-uh-luhnt",
+    "meaning": "Well meaning and kindly",
+    "meaning_ja": "親切で思いやりのある、慈善心のある",
+    "example": "The teacher had a benevolent smile that encouraged the student.",
+    "fun_fact": "Derived from Latin roots meaning 'wishing well'."
+  },
+  {
+    "day": 63,
+    "word": "verbose",
+    "pronunciation": "ver-BOHS",
+    "meaning": "Using or expressed in more words than are needed",
+    "meaning_ja": "必要以上の言葉を使用する、冗長な、多弁な",
+    "example": "Try to write clear sentences rather than verbose essays.",
+    "fun_fact": "From the Latin word 'verbum', which means word."
+  },
+  {
+    "day": 64,
+    "word": "reticent",
+    "pronunciation": "RET-i-suhnt",
+    "meaning": "Not revealing one's thoughts or feelings readily",
+    "meaning_ja": "自分の考えや感情を容易に明かさない、控えめな、無口な",
+    "example": "She was reticent to talk about her mistakes in public.",
+    "fun_fact": "Related to the Latin verb 'tacere', meaning to be silent."
+  },
+  {
+    "day": 65,
+    "word": "ephemeral",
+    "pronunciation": "i-FEM-er-uhl",
+    "meaning": "Transient; temporary",
+    "meaning_ja": "はかない、一時的な、ごく短い時間しか続かない",
+    "example": "Spring blossoms are beautiful because they are ephemeral.",
+    "fun_fact": "Originally Greek word meaning lasting for one day."
+  },
+  {
+    "day": 66,
+    "word": "impetuous",
+    "pronunciation": "im-PECH-oo-uhs",
+    "meaning": "Acting or done quickly and without thought or care",
+    "meaning_ja": "素早く、かつ思考や注意を払わずに行われる、衝動的な",
+    "example": "It was an impetuous decision to travel without a map.",
+    "fun_fact": "From Latin 'impetus', meaning an attack or sudden movement."
+  },
+  {
+    "day": 67,
+    "word": "assiduous",
+    "pronunciation": "uh-SIJ-oo-uhs",
+    "meaning": "Showing great care and perseverance",
+    "meaning_ja": "細心の注意と忍耐力を示す、根気強い、勤勉な",
+    "example": "Assiduous practice leads to excellent pronunciation.",
+    "fun_fact": "Related to the Latin verb 'assidere', meaning to sit down to (a task)."
+  },
+  {
+    "day": 68,
+    "word": "voracious",
+    "pronunciation": "vaw-RAY-shuhs",
+    "meaning": "Engaging in an activity with great eagerness or enthusiasm",
+    "meaning_ja": "大きな熱意や熱心さを持って活動に従事する、貪欲な",
+    "example": "She is a voracious reader of English literature.",
+    "fun_fact": "Derived from the Latin verb 'vorare', meaning to swallow or devour."
+  },
+  {
+    "day": 69,
+    "word": "frugal",
+    "pronunciation": "FROO-guhl",
+    "meaning": "Sparing or economical with regard to money or food",
+    "meaning_ja": "お金や食べ物に関して倹約的な、質素な",
+    "example": "Living a frugal life allowed them to save for their trip.",
+    "fun_fact": "Derived from the Latin word 'frux', meaning fruit or value."
+  },
+  {
+    "day": 70,
+    "word": "tenacious",
+    "pronunciation": "tuh-NAY-shuhs",
+    "meaning": "Tending to keep a firm hold of something; clinging or adhering closely",
+    "meaning_ja": "しっかりと物を保持する傾向がある、粘り強い、頑固な",
+    "example": "A tenacious learner never gives up on hard grammar concepts.",
+    "fun_fact": "Traces back to the Latin verb 'tenere', which means to hold."
+  },
+  {
+    "day": 71,
+    "word": "obsequious",
+    "pronunciation": "uhb-SEE-kwee-uhs",
+    "meaning": "Obedient or attentive to an excessive or servile degree",
+    "meaning_ja": "過度、または卑屈な程度に従順で親切な、おもねるような",
+    "example": "The servants were obsequious in the presence of the king.",
+    "fun_fact": "Derived from Latin roots meaning 'following after' or complying."
+  },
+  {
+    "day": 72,
+    "word": "insipid",
+    "pronunciation": "in-SIP-id",
+    "meaning": "Lacking vigor or interest",
+    "meaning_ja": "活力や興味に欠ける、面白みのない",
+    "example": "The movie plot was insipid and predictable.",
+    "fun_fact": "Combines Latin prefix 'in-' (not) and 'sapidus' (tasty/wise)."
+  },
+  {
+    "day": 73,
+    "word": "magnanimous",
+    "pronunciation": "mag-NAN-i-muhs",
+    "meaning": "Very generous or forgiving, especially toward a rival or someone less powerful than oneself",
+    "meaning_ja": "非常に寛大で許す心を持つ（特に競争相手や自分より力の弱い人に対して）",
+    "example": "The winner was magnanimous and shook hands with the runner-up.",
+    "fun_fact": "Literally means 'great-souled' in Latin."
+  },
+  {
+    "day": 74,
+    "word": "belligerent",
+    "pronunciation": "buh-LIJ-er-uhnt",
+    "meaning": "Hostile and aggressive",
+    "meaning_ja": "敵対的で攻撃的な、好戦的な",
+    "example": "The country adopted a belligerent foreign policy.",
+    "fun_fact": "Derived from Latin roots meaning 'waging war'."
+  },
+  {
+    "day": 75,
+    "word": "sagacious",
+    "pronunciation": "suh-GAY-shuhs",
+    "meaning": "Wise; showing keen mental discernment",
+    "meaning_ja": "賢明な、鋭い精神的洞察力を示す",
+    "example": "A sagacious leader makes decisions carefully.",
+    "fun_fact": "Related to Latin 'sagacity', meaning sharp perception."
+  },
+  {
+    "day": 76,
+    "word": "loquacious",
+    "pronunciation": "loh-KWAY-shuhs",
+    "meaning": "Tending to talk a great deal; talkative",
+    "meaning_ja": "非常によくしゃべる傾向がある、おしゃべりな",
+    "example": "The loquacious host kept guests entertained with stories.",
+    "fun_fact": "Derived from the Latin verb 'loqui', meaning to speak."
+  },
+  {
+    "day": 77,
+    "word": "nepotism",
+    "pronunciation": "NEP-uh-tiz-uhm",
+    "meaning": "The practice among those with power or influence of favoring relatives or friends, especially by giving them jobs",
+    "meaning_ja": "権力や影響力を持つ人が親族や友人を優遇すること、縁故主義",
+    "example": "The manager was accused of nepotism when he hired his nephew.",
+    "fun_fact": "Derived from the Italian word 'nepote', meaning nephew (originally referring to papal privileges)."
+  },
+  {
+    "day": 78,
+    "word": "indolent",
+    "pronunciation": "IN-duh-luhnt",
+    "meaning": "Wanting to avoid activity or exertion; lazy",
+    "meaning_ja": "活動や運動を避けたがる、怠惰な",
+    "example": "The hot afternoon made them feel indolent.",
+    "fun_fact": "Literally means 'not feeling pain' in Latin, which evolved to mean idle."
+  },
+  {
+    "day": 79,
+    "word": "superfluous",
+    "pronunciation": "soo-PER-floo-uhs",
+    "meaning": "Unnecessary, especially through being more than enough",
+    "meaning_ja": "不必要な、特に十分すぎるために無駄な、余分な",
+    "example": "Avoid adding superfluous words to your diary entry.",
+    "fun_fact": "Literally means 'overflowing' in Latin."
+  },
+  {
+    "day": 80,
+    "word": "vulnerable",
+    "pronunciation": "VUL-ner-uh-bul",
+    "meaning": "Susceptible to physical or emotional attack or harm",
+    "meaning_ja": "物理的、または感情的な攻撃や危害を受けやすい、脆弱な",
+    "example": "Young trees are vulnerable to strong winds.",
+    "fun_fact": "Derived from the Latin noun 'vulnus', meaning wound."
+  },
+  {
+    "day": 81,
+    "word": "zealous",
+    "pronunciation": "ZEL-uhs",
+    "meaning": "Having or showing zeal; passionate and enthusiastic",
+    "meaning_ja": "熱意を持っている、または示す、情熱的な、熱心な",
+    "example": "The zealous volunteer worked long hours to plant flowers.",
+    "fun_fact": "Related to the noun 'zeal', which comes from Greek 'zelos', meaning emulation or ardor."
+  },
+  {
+    "day": 82,
+    "word": "audacious",
+    "pronunciation": "aw-DAY-shuhs",
+    "meaning": "Showing a willingness to take surprisingly bold risks",
+    "meaning_ja": "驚くほど大胆なリスクを取る意志を示す、大胆不敵な",
+    "example": "It was an audacious plan to build the entire platform in a week.",
+    "fun_fact": "From the Latin verb 'audere', meaning to dare."
+  },
+  {
+    "day": 83,
+    "word": "cynical",
+    "pronunciation": "SIN-i-kuhl",
+    "meaning": "Believing that people are motivated by self-interest; distrustful of human sincerity or integrity",
+    "meaning_ja": "人が利己主義によって動機付けられていると信じる、皮肉な、冷笑的な",
+    "example": "He had a cynical view of local politicians.",
+    "fun_fact": "Derived from the Cynics, an ancient school of Greek philosophers who rejected social conventions."
+  },
+  {
+    "day": 84,
+    "word": "aesthetic",
+    "pronunciation": "es-THET-ik",
+    "meaning": "Artistic; beautiful",
+    "meaning_ja": "美的な、芸術的な",
+    "example": "The simple garden design had a high aesthetic value.",
+    "fun_fact": "From Greek word relating to sensory perception."
+  },
+  {
+    "day": 85,
+    "word": "benevolent",
+    "pronunciation": "buh-NEV-uh-luhnt",
+    "meaning": "Kind; generous",
+    "meaning_ja": "親切な、慈悲深い",
+    "example": "The benevolent host offered food and lodging to the traveler.",
+    "fun_fact": "Traces back to Latin meaning well-wishing."
+  },
+  {
+    "day": 86,
+    "word": "capricious",
+    "pronunciation": "kuh-PRISH-uhs",
+    "meaning": "Unpredictable; fickle",
+    "meaning_ja": "気まぐれな、予測不能な",
+    "example": "The dictator was capricious, changing laws daily.",
+    "fun_fact": "Italian origin meaning start or sudden movement."
+  },
+  {
+    "day": 87,
+    "word": "demure",
+    "pronunciation": "di-KYOOR",
+    "meaning": "Modest; quiet",
+    "meaning_ja": "控えめな、つつましい",
+    "example": "She sat in the corner, demure and thoughtful.",
+    "fun_fact": "Old French word meaning mature."
+  },
+  {
+    "day": 88,
+    "word": "ebullient",
+    "pronunciation": "i-BUHL-yuhnt",
+    "meaning": "Exuberant; high-spirited",
+    "meaning_ja": "大はしゃぎの、元気いっぱいの",
+    "example": "The children were ebullient as they arrived at the amusement park.",
+    "fun_fact": "Latin meaning boiling over."
+  },
+  {
+    "day": 89,
+    "word": "fastidious",
+    "pronunciation": "fa-STID-ee-uhs",
+    "meaning": "Hard to please; critical",
+    "meaning_ja": "気難しい、細部にこだわる",
+    "example": "He is fastidious about his clothes, always looking perfect.",
+    "fun_fact": "Latin origin meaning disdainful."
+  },
+  {
+    "day": 90,
+    "word": "gregarious",
+    "pronunciation": "gri-GAIR-ee-uhs",
+    "meaning": "Sociable; companionable",
+    "meaning_ja": "社交的な、群れを好む",
+    "example": "Gregarious species like bees work together to build hives.",
+    "fun_fact": "Latin origin meaning group or herd."
+  }
+]

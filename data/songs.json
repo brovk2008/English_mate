@@ -1,0 +1,61 @@
+[
+  {
+    "spotify_track_id": "1zHUEIQ6yzaWBzhNCV1SGW",
+    "title": "Sofia",
+    "artist": "Clairo",
+    "lyrics_lines": [
+      {
+        "line": "I get a little bit nervous when you're around",
+        "highlight_words": ["nervous", "around"],
+        "gap_word": "nervous",
+        "gap_options": ["nervous", "happy", "scared", "bored"]
+      },
+      {
+        "line": "I think we could do it if we tried",
+        "highlight_words": ["could", "tried"],
+        "gap_word": "tried",
+        "gap_options": ["failed", "cried", "tried", "forgot"]
+      },
+      {
+        "line": "I don't want to lose you now",
+        "highlight_words": ["want", "lose"],
+        "gap_word": "lose",
+        "gap_options": ["find", "lose", "see", "meet"]
+      }
+    ],
+    "key_vocabulary": [
+      { "word": "nervous", "meaning": "feeling worried or anxious", "meaning_ja": "緊張している" },
+      { "word": "around", "meaning": "nearby; in the area", "meaning_ja": "近くにいる" },
+      { "word": "lose", "meaning": "to no longer have something; fail to keep", "meaning_ja": "失う" }
+    ]
+  },
+  {
+    "spotify_track_id": "0V3wPSPpKgoGPF9jJvC1rk",
+    "title": "Closer",
+    "artist": "The Chainsmokers",
+    "lyrics_lines": [
+      {
+        "line": "Hey, I was doing just fine before I met you",
+        "highlight_words": ["fine", "met"],
+        "gap_word": "fine",
+        "gap_options": ["fine", "sad", "sick", "busy"]
+      },
+      {
+        "line": "I drink too much and that's an issue",
+        "highlight_words": ["issue"],
+        "gap_word": "issue",
+        "gap_options": ["blessing", "joke", "issue", "habit"]
+      },
+      {
+        "line": "Pull me closer in the backseat of your Rover",
+        "highlight_words": ["closer", "backseat"],
+        "gap_word": "closer",
+        "gap_options": ["closer", "away", "higher", "louder"]
+      }
+    ],
+    "key_vocabulary": [
+      { "word": "issue", "meaning": "an important topic or problem for discussion", "meaning_ja": "問題、課題" },
+      { "word": "closer", "meaning": "at a shorter distance", "meaning_ja": "もっと近くに" }
+    ]
+  }
+]

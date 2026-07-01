@@ -1,0 +1,236 @@
+{
+  "serendipity": {
+    "pronunciation": "ser-en-DIP-i-tee",
+    "meaning": "Finding something wonderful by accident",
+    "meaning_ja": "偶然に素晴らしいものを見つけること",
+    "example": "Finding this song was pure serendipity."
+  },
+  "gonna": {
+    "pronunciation": "GUN-uh",
+    "meaning": "Informal contraction of 'going to'",
+    "meaning_ja": "（くだけた表現）〜するつもり、〜する予定",
+    "example": "I'm gonna learn English no matter what."
+  },
+  "wanna": {
+    "pronunciation": "WAH-nuh",
+    "meaning": "Informal contraction of 'want to' or 'want a'",
+    "meaning_ja": "（くだけた表現）〜したい",
+    "example": "I wanna hold a fluent English conversation."
+  },
+  "gotta": {
+    "pronunciation": "GOT-uh",
+    "meaning": "Informal contraction of 'have got to' or 'got to' (must)",
+    "meaning_ja": "（くだけた表現）〜しなければならない",
+    "example": "I gotta study my grammar cards today."
+  },
+  "kinda": {
+    "pronunciation": "KYNE-duh",
+    "meaning": "Informal contraction of 'kind of' (somewhat)",
+    "meaning_ja": "（くだけた表現）ちょっと、ある程度",
+    "example": "This lesson is kinda difficult but fun."
+  },
+  "sorta": {
+    "pronunciation": "SOR-tuh",
+    "meaning": "Informal contraction of 'sort of'",
+    "meaning_ja": "（くだけた表現）多少、言ってみれば",
+    "example": "I sorta understand what they are saying."
+  },
+  "lemme": {
+    "pronunciation": "LEM-mee",
+    "meaning": "Informal contraction of 'let me'",
+    "meaning_ja": "（くだけた表現）私に〜させて",
+    "example": "Lemme check my vocabulary score list."
+  },
+  "dunno": {
+    "pronunciation": "duh-NOH",
+    "meaning": "Informal contraction of 'don't know'",
+    "meaning_ja": "（くだけた表現）わからない、知らない",
+    "example": "I dunno how to explain this slang phrase."
+  },
+  "outta": {
+    "pronunciation": "OW-tuh",
+    "meaning": "Informal contraction of 'out of'",
+    "meaning_ja": "（くだけた表現）〜から外へ、〜が切れて",
+    "example": "I'm outta streak freezes! Protect my days!"
+  },
+  "watcha": {
+    "pronunciation": "WAH-chuh",
+    "meaning": "Informal contraction of 'what are you' or 'what have you'",
+    "meaning_ja": "（くだけた表現）あなたは何を〜しているの？",
+    "example": "Watcha doing for your listening challenge?"
+  },
+  "bro": {
+    "pronunciation": "broh",
+    "meaning": "Slang short for brother; used to refer to a friend",
+    "meaning_ja": "（スラング）おい、相棒、君（主に親しい仲で使われる）",
+    "example": "Bro, did you see CaseOh's latest stream?"
+  },
+  "chat": {
+    "pronunciation": "chat",
+    "meaning": "An online audience in a livestream; informal conversation",
+    "meaning_ja": "雑談、（ストリーミングの）視聴者一同",
+    "example": "CaseOh always yells at chat when they tease him."
+  },
+  "noob": {
+    "pronunciation": "noob",
+    "meaning": "Slang for a beginner or novice at something",
+    "meaning_ja": "（ネットスラング）初心者、新参者、下手くそ",
+    "example": "Don't worry, everyone starts as a noob."
+  },
+  "flex": {
+    "pronunciation": "fleks",
+    "meaning": "Slang: to show off accomplishments or belongings boastfully",
+    "meaning_ja": "（ネットスラング）自慢する、見せびらかす",
+    "example": "Boasting a 90-day streak is a massive flex."
+  },
+  "salty": {
+    "pronunciation": "SAWL-tee",
+    "meaning": "Slang: feeling upset, angry, or bitter over minor things",
+    "meaning_ja": "（スラング）悔しがっている、イライラしている",
+    "example": "He got salty after losing the trivia quiz."
+  },
+  "lit": {
+    "pronunciation": "lit",
+    "meaning": "Slang: exciting, amazing, or fun",
+    "meaning_ja": "（スラング）超楽しい、イケてる、盛り上がっている",
+    "example": "This Spotify learning playlist is lit!"
+  },
+  "slay": {
+    "pronunciation": "sley",
+    "meaning": "Slang: to perform exceptionally well or look great",
+    "meaning_ja": "（スラング）見事にやってのける、最高にキマっている",
+    "example": "You absolutely slayed that speaking prompt!"
+  },
+  "vibes": {
+    "pronunciation": "vibez",
+    "meaning": "The emotional atmosphere or mood of a place, song, or person",
+    "meaning_ja": "（口語）雰囲気、フィーリング、ノリ",
+    "example": "This coffee shop has perfect studying vibes."
+  },
+  "hype": {
+    "pronunciation": "huyp",
+    "meaning": "Excitement or publicity surrounding something",
+    "meaning_ja": "（口語）興奮、熱狂、大評判",
+    "example": "The new season of the anime is worth the hype."
+  },
+  "sus": {
+    "pronunciation": "suhs",
+    "meaning": "Slang short for suspicious; questionable",
+    "meaning_ja": "（ネットスラング）怪しい、胡散臭い",
+    "example": "That definition popup looks kinda sus."
+  },
+  "cap": {
+    "pronunciation": "kap",
+    "meaning": "Slang: a lie or exaggeration (often used as 'no cap' meaning 'no lie')",
+    "meaning_ja": "（スラング）嘘、でたらめ（no cap＝本当だよ）",
+    "example": "I finished the Day 10 quiz, no cap."
+  },
+  "goat": {
+    "pronunciation": "goht",
+    "meaning": "Acronym: Greatest Of All Time",
+    "meaning_ja": "史上最高の人物、レジェンド",
+    "example": "CaseOh is the absolute GOAT of funny reactions."
+  },
+  "simp": {
+    "pronunciation": "simp",
+    "meaning": "Slang: showing excessive attention or submissiveness to someone",
+    "meaning_ja": "（ネットスラング）特定の相手に尽くしすぎる人、盲目的なファン",
+    "example": "He is such a simp for that anime character."
+  },
+  "bet": {
+    "pronunciation": "bet",
+    "meaning": "Slang: agreement, like 'OK' or 'You're on!'",
+    "meaning_ja": "（スラング）了解、もちろん、受けて立つよ",
+    "example": "'Wanna practice speaking?' 'Bet, let's start.'"
+  },
+  "cringe": {
+    "pronunciation": "krinj",
+    "meaning": "Feeling deep embarrassment or awkwardness due to someone's behavior",
+    "meaning_ja": "ドン引き、見ていて恥ずかしくなる、痛々しい",
+    "example": "Some of his jokes make the whole chat cringe."
+  },
+  "chill": {
+    "pronunciation": "chil",
+    "meaning": "To relax or calm down; easygoing",
+    "meaning_ja": "（口語）のんびりする、落ち着く、リラックスした",
+    "example": "I'm just gonna chill and listen to Clairo tonight."
+  },
+  "fire": {
+    "pronunciation": "fuy-er",
+    "meaning": "Slang: extremely good, cool, or amazing",
+    "meaning_ja": "（スラング）最高、ヤバい、超かっこいい",
+    "example": "Clairo's new track is straight fire."
+  },
+  "ghost": {
+    "pronunciation": "gohst",
+    "meaning": "Slang: to suddenly stop communicating with someone without warning",
+    "meaning_ja": "（スラング）突然連絡を絶つ、音信不通になる",
+    "example": "Don't ghost your English tutor! Complete your writing."
+  },
+  "stan": {
+    "pronunciation": "stan",
+    "meaning": "Slang: an obsessive or extremely devoted fan",
+    "meaning_ja": "（スラング）熱狂的なファン、オタク",
+    "example": "I stan this Japanese stationary journal design."
+  },
+  "lowkey": {
+    "pronunciation": "LOH-kee",
+    "meaning": "Slang: secretly, quietly, or moderately",
+    "meaning_ja": "（口語）ひそかに、実は、控えめに",
+    "example": "I lowkey want to finish all 90 days in a row."
+  },
+  "highkey": {
+    "pronunciation": "HY-kee",
+    "meaning": "Slang: openly, clearly, or intensely",
+    "meaning_ja": "（口語）堂々と、明らかに、非常に",
+    "example": "I highkey love the cherry blossom animation."
+  },
+  "extra": {
+    "pronunciation": "EKS-truh",
+    "meaning": "Slang: dramatic, excessive, or over the top",
+    "meaning_ja": "（口語）大げさな、やりすぎの、目立ちたがりの",
+    "example": "She is so extra with her diary fonts."
+  },
+  "shade": {
+    "pronunciation": "sheyd",
+    "meaning": "Slang: disrespectful or sneaky insults (to 'throw shade')",
+    "meaning_ja": "（口語）当てこすり、遠回しな批判や悪口",
+    "example": "Chat was throwing shade at CaseOh's gaming skills."
+  },
+  "shook": {
+    "pronunciation": "shook",
+    "meaning": "Slang: extremely shocked, surprised, or shaken up",
+    "meaning_ja": "（口語）ひどくショックを受けた、驚愕した",
+    "example": "I was shook when I saw the length of that dialogue."
+  },
+  "slang": {
+    "pronunciation": "slang",
+    "meaning": "Very informal words and phrases common in speech",
+    "meaning_ja": "俗語、スラング",
+    "example": "Learning internet slang helps you understand streams."
+  },
+  "anime": {
+    "pronunciation": "AN-i-mey",
+    "meaning": "Japanese style of motion-picture animation",
+    "meaning_ja": "アニメ",
+    "example": "I understand anime dialogue much better now."
+  },
+  "streamer": {
+    "pronunciation": "STREE-mer",
+    "meaning": "A person who broadcasts themselves live online",
+    "meaning_ja": "配信者、ストリーマー",
+    "example": "CaseOh is a very popular Twitch streamer."
+  },
+  "dub": {
+    "pronunciation": "duhb",
+    "meaning": "A translation of a video where voices are replaced",
+    "meaning_ja": "吹き替え、ダビング",
+    "example": "I prefer to watch anime dubs to test my hearing."
+  },
+  "sub": {
+    "pronunciation": "suhb",
+    "meaning": "Subtitles or informal subscription",
+    "meaning_ja": "字幕、サブタイトル",
+    "example": "Try watching CaseOh videos without subs today."
+  }
+}

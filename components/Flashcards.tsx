@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, useMotionValue, useTransform, useAnimation, AnimatePresence } from 'framer-motion';
 import { Check, X, RotateCw, Sparkles, BookOpen } from 'lucide-react';
+import { useI18n } from '@/lib/i18n/context';
 
 interface Word {
   id?: number;
@@ -10,6 +11,7 @@ interface Word {
   word: string;
   pronunciation: string | null;
   meaning: string;
+  meaning_ja?: string | null;
   example_sentence: string;
 }
 
@@ -21,6 +23,7 @@ interface FlashcardsProps {
 }
 
 export default function Flashcards({ words, learnedIndices, onWordMastered, onAllCompleted }: FlashcardsProps) {
+  const { lang, t } = useI18n();
   // We keep a local queue of words to study
   // Words swiped left (again) are moved to the end of the queue
   const [deck, setDeck] = useState<Word[]>([]);
@@ -205,17 +208,17 @@ export default function Flashcards({ words, learnedIndices, onWordMastered, onAl
                 className="absolute inset-0 bg-card rounded-2xl p-6 flex flex-col justify-between border-2 border-sakura/20"
               >
                 <div className="text-[10px] font-bold text-sakura-deep uppercase tracking-wider">
-                  Back · Tap to Flip
+                  {t('vocab.tap_to_flip')}
                 </div>
                 <div className="flex flex-col justify-center flex-1 text-left space-y-3 mt-2 overflow-y-auto">
                   <div>
-                    <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">Meaning</span>
+                    <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">{t('vocab.meaning')}</span>
                     <p className="text-sm font-semibold text-ink leading-relaxed">
-                      {currentWord.meaning}
+                      {lang === 'ja' && currentWord.meaning_ja ? currentWord.meaning_ja : currentWord.meaning}
                     </p>
                   </div>
                   <div>
-                    <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">Example</span>
+                    <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">{t('vocab.example')}</span>
                     <p className="text-xs text-ink-muted italic leading-relaxed">
                       "{currentWord.example_sentence}"
                     </p>
@@ -225,7 +228,7 @@ export default function Flashcards({ words, learnedIndices, onWordMastered, onAl
                   onClick={(e) => { e.stopPropagation(); handleFlip(); }}
                   className="flex items-center justify-center gap-1 mx-auto py-1.5 px-3 bg-bg hover:bg-sakura/10 text-ink-muted hover:text-sakura rounded-lg text-xs font-semibold border border-border/70 transition-colors cursor-pointer"
                 >
-                  <RotateCw size={12} /> Flip Card
+                  <RotateCw size={12} /> {t('vocab.tap_to_flip')}
                 </button>
               </div>
             </motion.div>

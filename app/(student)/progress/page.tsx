@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import ProgressClient from './ProgressClient';
+import { checkAchievements } from '@/lib/check-achievements';
 
 export const dynamic = 'force-dynamic';
 
@@ -22,6 +23,17 @@ export default async function ProgressPage() {
   if (!profile) {
     redirect('/auth/callback');
   }
+
+  // 1.5 Run achievements check dynamically
+  await checkAchievements(user.id, supabase);
+
+  // 1.6 Fetch earned badges IDs
+  const { data: achievements } = await supabase
+    .from('achievements')
+    .select('badge_id')
+    .eq('user_id', user.id);
+
+  const earnedBadgeIds = (achievements || []).map((a: any) => a.badge_id);
 
   // 2. Fetch all user day progress rows
   const { data: progressList } = await supabase
@@ -57,6 +69,43 @@ export default async function ProgressPage() {
       words: p.diary_word_count,
     }));
 
+  // Prepare chart data for listening comprehension percentage over time
+  const listeningChartData = (progressList || [])
+    .filter(p => p.comprehension_pct !== null && p.comprehension_pct !== undefined)
+    .map(p => ({
+      day: `D${p.day_number}`,
+      comprehension: p.comprehension_pct,
+    }));
+
+  // Fetch mistakes for category analytics
+  const { data: mistakes } = await supabase
+    .from('mistake_log')
+    .select('category')
+    .eq('user_id', user.id);
+
+  const mistakeCounts: Record<string, number> = {
+    Grammar: 0,
+    Preposition: 0,
+    Article: 0,
+    Vocabulary: 0,
+    Spelling: 0,
+    Other: 0
+  };
+
+  (mistakes || []).forEach((m: any) => {
+    const cat = m.category || 'Other';
+    if (mistakeCounts[cat] !== undefined) {
+      mistakeCounts[cat]++;
+    } else {
+      mistakeCounts['Other']++;
+    }
+  });
+
+  const mistakeChartData = Object.entries(mistakeCounts).map(([name, count]) => ({
+    name,
+    count
+  }));
+
   return (
     <ProgressClient
       profile={profile}
@@ -65,6 +114,9 @@ export default async function ProgressPage() {
       songsCount={songsDoneCount}
       videosCount={videosDoneCount}
       chartData={chartData}
+      listeningChartData={listeningChartData}
+      mistakeChartData={mistakeChartData}
+      earnedBadgeIds={earnedBadgeIds}
     />
   );
 }

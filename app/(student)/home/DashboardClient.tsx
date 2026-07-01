@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import WeekStrip from '@/components/WeekStrip';
 import DailyNudge from '@/components/DailyNudge';
+import { useI18n } from '@/lib/i18n/context';
 import { ChevronRight, Megaphone, AlertCircle, Award, Sparkles, BookOpen, Layers, Music, Video, FileText, Mic } from 'lucide-react';
 
 interface Profile {
@@ -19,6 +20,7 @@ interface Profile {
   avatar_url: string | null;
   start_date: string;
   role: string;
+  cefr_level?: string | null;
 }
 
 interface DayProgress {
@@ -57,6 +59,8 @@ interface DashboardClientProps {
   streak: number;
   freezes: number;
   dailyQuote: { day: number; quote: string; author: string };
+  wordOfDay?: any;
+  alertCategory?: string | null;
 }
 
 const TASK_KEYS = [
@@ -81,8 +85,11 @@ export default function DashboardClient({
   streak,
   freezes,
   dailyQuote,
+  wordOfDay,
+  alertCategory,
 }: DashboardClientProps) {
   const router = useRouter();
+  const { lang, t } = useI18n();
   const [progress, setProgress] = useState<DayProgress>(initialProgress);
   const [localWeekProgress, setLocalWeekProgress] = useState<any[]>(weekProgressList);
   const [celebrate, setCelebrate] = useState(false);
@@ -90,10 +97,31 @@ export default function DashboardClient({
   // Pick Japanese greeting based on local hour
   const getGreeting = () => {
     const hour = new Date().getHours();
-    if (hour < 12) return 'おはよう'; // ohayou (morning)
-    if (hour < 18) return 'こんにちは'; // konnichiwa (afternoon)
-    return 'こんばんは'; // konbanwa (evening)
+    if (hour < 12) return t('home.greeting_morning');
+    if (hour < 18) return t('home.greeting_afternoon');
+    return t('home.greeting_evening');
   };
+
+  // Load study tips
+  const studyTips = require('@/data/study_tips.json');
+  const currentTip = studyTips[(currentDayNum - 1) % studyTips.length] || studyTips[0];
+
+  // Milestone calculation
+  let nextMilestone = 30;
+  let milestoneLabel = "Day 30: Intermediate Phase";
+  if (currentDayNum > 60) {
+    nextMilestone = 90;
+    milestoneLabel = "Day 90: Fluency Graduation";
+  } else if (currentDayNum > 30) {
+    nextMilestone = 60;
+    milestoneLabel = "Day 60: Advanced Phase";
+  }
+
+  const prevMilestone = nextMilestone === 30 ? 0 : nextMilestone === 60 ? 30 : 60;
+  const daysLeft = nextMilestone - currentDayNum;
+  const totalPhaseDays = nextMilestone - prevMilestone;
+  const daysIntoPhase = currentDayNum - prevMilestone;
+  const milestoneProgress = (daysIntoPhase / totalPhaseDays) * 100;
 
   // Check if all 6 tasks are done
   const isDayComplete = 
@@ -168,14 +196,35 @@ export default function DashboardClient({
           <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-ink">
             {getGreeting()}, {profile.display_name}! 👋
           </h1>
-          <p className="text-sm text-ink-muted mt-0.5">
-            Phase: <span className="font-display italic font-semibold text-sakura-deep">{dayContent.phase_title} 🌱</span>
-          </p>
+          <div className="flex items-center flex-wrap gap-2 mt-1">
+            <span className="text-sm text-ink-muted">
+              Phase: <span className="font-display italic font-semibold text-sakura-deep">{dayContent.phase_title}</span>
+            </span>
+            {profile.cefr_level && (
+              <Badge variant="outline" className="bg-sakura/10 text-sakura-deep border-sakura-deep/20 font-bold select-none text-[9px] px-1.5 py-0">
+                {profile.cefr_level} 🌱
+              </Badge>
+            )}
+          </div>
         </div>
         <div className="text-xs sm:text-sm text-left sm:text-right text-ink-muted">
           Today is <span className="font-bold text-ink">{dayContent.weekday}</span>
         </div>
       </div>
+
+      {alertCategory && (
+        <Card className="border border-red-200 bg-red-500/5 dark:bg-red-950/15 rounded-2xl p-4 shadow-xs flex items-start gap-3 border-l-4 border-l-red-500 select-none">
+          <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+          <div className="space-y-1">
+            <h4 className="text-xs sm:text-sm font-extrabold text-red-700 dark:text-red-400">
+              ⚠️ Attention Needed: Repeated "{alertCategory}" Slips!
+            </h4>
+            <p className="text-[11px] text-ink-muted leading-relaxed">
+              You have accumulated 3 or more logged mistakes under the <span className="font-bold text-ink">{alertCategory}</span> category. Visit your <Link href="/progress" className="underline font-bold text-sakura hover:text-sakura-deep transition-all">Stats Center</Link> to review these mistakes.
+            </p>
+          </div>
+        </Card>
+      )}
 
       {/* Main Journey Progress Card */}
       <Card className="relative overflow-hidden border border-border bg-card/90 shadow-sm rounded-2xl">
@@ -228,6 +277,59 @@ export default function DashboardClient({
 
       {/* Signature Weekly Petal Calendar Strip */}
       <WeekStrip currentDay={currentDayNum} weekProgress={localWeekProgress} />
+
+      {/* Word of the Day Widget */}
+      {wordOfDay && (
+        <Card className="border border-border bg-[#FAF1F3]/30 dark:bg-card/45 rounded-2xl shadow-sm overflow-hidden select-none">
+          <CardHeader className="pb-2 border-b border-border/40 flex flex-row items-center gap-2">
+            <Sparkles className="w-4 h-4 text-sakura" />
+            <h4 className="font-display font-extrabold text-[10px] text-ink-muted uppercase tracking-wider">
+              Word of the Day / 今日の一言
+            </h4>
+          </CardHeader>
+          <CardContent className="p-5 space-y-4">
+            <div>
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="font-display font-black text-2xl text-ink">
+                  {wordOfDay.word}
+                </span>
+                <span className="text-xs text-ink-muted font-mono">
+                  /{wordOfDay.pronunciation}/
+                </span>
+              </div>
+
+              <div className="mt-2.5 space-y-1">
+                <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">
+                  {t('vocab.meaning')}
+                </span>
+                <p className="text-sm font-semibold text-ink leading-relaxed">
+                  {lang === 'ja' ? wordOfDay.meaning_ja : wordOfDay.meaning}
+                </p>
+              </div>
+
+              <div className="mt-3 space-y-1">
+                <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">
+                  {t('vocab.example')}
+                </span>
+                <p className="text-xs text-ink-muted italic leading-relaxed">
+                  "{wordOfDay.example}"
+                </p>
+              </div>
+
+              {wordOfDay.fun_fact && (
+                <div className="mt-4 bg-bg/50 border border-border/60 rounded-xl p-3">
+                  <span className="text-[9px] font-bold text-sakura-deep block uppercase tracking-wider mb-1">
+                    Etymology / Fun Fact
+                  </span>
+                  <p className="text-[11px] text-ink leading-relaxed font-medium">
+                    {wordOfDay.fun_fact}
+                  </p>
+                </div>
+              )}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Today's Checklist */}
       <Card className="border border-border bg-card rounded-2xl overflow-hidden">
@@ -287,6 +389,143 @@ export default function DashboardClient({
           })}
         </CardContent>
       </Card>
+
+      {/* Daily Quiz Banner Widget */}
+      <Card className="border border-border bg-[#FAF6F1]/70 dark:bg-card rounded-2xl p-5 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 select-none">
+        <div className="space-y-1">
+          <h3 className="font-display text-lg font-bold text-ink flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-sakura animate-pulse" />
+            {t('quiz.title') || 'Vocabulary Challenge'}
+          </h3>
+          <p className="text-xs text-ink-muted leading-relaxed">
+            Test your recollection of unlocked vocabulary words. Missed words will automatically reappear tomorrow.
+          </p>
+        </div>
+        <Link href="/quiz" className="shrink-0">
+          <Button className="bg-[#E8A6B8] hover:bg-[#E293A7] text-white rounded-xl font-bold px-5 py-2 cursor-pointer shadow-sm">
+            Start Daily Quiz
+          </Button>
+        </Link>
+      </Card>
+
+      {/* Bonus Practice Rooms Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 select-none">
+        <Link href="/reading" className="group">
+          <Card className="border border-border bg-card hover:border-sakura hover:bg-sakura/5 rounded-2xl p-4 transition-all duration-200 cursor-pointer shadow-xs flex flex-col space-y-2 h-full">
+            <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-wider block">
+              Graded Reading
+            </span>
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-xl bg-sakura/10 text-sakura group-hover:scale-105 transition-transform">
+                <BookOpen className="w-4 h-4" />
+              </div>
+              <span className="font-bold text-xs text-ink font-heading">Reading Room</span>
+            </div>
+            <p className="text-[10px] text-ink-muted leading-relaxed">
+              Read graded passages with instant word-tap translation lookups.
+            </p>
+          </Card>
+        </Link>
+
+        <Link href="/conversation" className="group">
+          <Card className="border border-border bg-card hover:border-sakura hover:bg-sakura/5 rounded-2xl p-4 transition-all duration-200 cursor-pointer shadow-xs flex flex-col space-y-2 h-full">
+            <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-wider block">
+              Dialogue Practice
+            </span>
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-xl bg-matcha/10 text-matcha group-hover:scale-105 transition-transform">
+                <Mic className="w-4 h-4" />
+              </div>
+              <span className="font-bold text-xs text-ink font-heading">Roleplay Room</span>
+            </div>
+            <p className="text-[10px] text-ink-muted leading-relaxed">
+              Roleplay real-world dialogues with text-to-speech support.
+            </p>
+          </Card>
+        </Link>
+
+        <Link href="/sentence-builder" className="group">
+          <Card className="border border-border bg-card hover:border-sakura hover:bg-sakura/5 rounded-2xl p-4 transition-all duration-200 cursor-pointer shadow-xs flex flex-col space-y-2 h-full">
+            <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-wider block">
+              Grammar Builder
+            </span>
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-xl bg-gold/10 text-gold group-hover:scale-105 transition-transform">
+                <Layers className="w-4 h-4" />
+              </div>
+              <span className="font-bold text-xs text-ink font-heading">Sentence Builder</span>
+            </div>
+            <p className="text-[10px] text-ink-muted leading-relaxed">
+              Build sentences using scrambled tiles or gap-fill connectors.
+            </p>
+          </Card>
+        </Link>
+
+        <Link href="/songs" className="group">
+          <Card className="border border-border bg-card hover:border-sakura hover:bg-sakura/5 rounded-2xl p-4 transition-all duration-200 cursor-pointer shadow-xs flex flex-col space-y-2 h-full">
+            <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-wider block">
+              Music Lyrics
+            </span>
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-xl bg-sakura/10 text-sakura group-hover:scale-105 transition-transform">
+                <Music className="w-4 h-4" />
+              </div>
+              <span className="font-bold text-xs text-ink font-heading">Song Playlist</span>
+            </div>
+            <p className="text-[10px] text-ink-muted leading-relaxed">
+              Listen to Clairo/Spotify tracks and test fill-in-the-gap lyrics.
+            </p>
+          </Card>
+        </Link>
+      </div>
+
+      {/* Daily Study Tips & Milestone Countdowns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 select-none">
+        {/* Daily Tip Card */}
+        <Card className="border border-border bg-[#FAF6F1]/60 dark:bg-card/45 rounded-2xl p-5 shadow-xs flex items-start gap-4">
+          <div className="w-10 h-10 rounded-xl bg-sakura/10 text-sakura flex items-center justify-center shrink-0">
+            <Sparkles className="w-5 h-5 animate-pulse" />
+          </div>
+          <div className="space-y-1">
+            <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-widest block">
+              Study Tip of the Day
+            </span>
+            <p className="text-xs text-ink-muted leading-relaxed font-semibold">
+              {currentTip.tip}
+            </p>
+          </div>
+        </Card>
+
+        {/* Milestone Tracker Card */}
+        <Card className="border border-border bg-card rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+          <div className="flex justify-between items-start gap-2">
+            <div className="space-y-1">
+              <span className="text-[9px] font-bold text-sakura-deep uppercase tracking-widest block">
+                Next Journey Milestone
+              </span>
+              <h4 className="text-sm font-extrabold text-ink">
+                {milestoneLabel}
+              </h4>
+            </div>
+            <Badge className="bg-sakura/10 text-sakura-deep hover:bg-sakura/10 border-none font-bold text-[10px]">
+              {daysLeft} Days Left
+            </Badge>
+          </div>
+
+          <div className="space-y-2 mt-4">
+            <div className="flex justify-between text-[10px] font-bold text-ink-muted">
+              <span>Day {currentDayNum} of {nextMilestone}</span>
+              <span>{Math.round(milestoneProgress)}% Phase Progress</span>
+            </div>
+            <div className="w-full bg-bg dark:bg-card border border-border h-2 rounded-full overflow-hidden">
+              <div
+                style={{ width: `${milestoneProgress}%` }}
+                className="bg-sakura h-full rounded-full transition-all duration-300"
+              />
+            </div>
+          </div>
+        </Card>
+      </div>
 
       {/* Announcements & Mistake teaser grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
