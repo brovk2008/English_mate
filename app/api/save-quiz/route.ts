@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { awardXP } from '@/lib/award-xp';
 
 export async function POST(request: Request) {
   try {
@@ -66,7 +67,21 @@ export async function POST(request: Request) {
       }
     }
 
-    return NextResponse.json({ success: true });
+    // 3. Award XP
+    const correctXP = score * 5; // 5 XP per correct answer
+    let totalXPAwarded = correctXP;
+
+    if (correctXP > 0) {
+      await awardXP(user.id, 'quiz_correct_answer', correctXP, dayNumber || null);
+    }
+    
+    if (score === total && total > 0) {
+      const perfectXP = 30; // perfect score bonus
+      await awardXP(user.id, 'quiz_perfect_score', perfectXP, dayNumber || null);
+      totalXPAwarded += perfectXP;
+    }
+
+    return NextResponse.json({ success: true, xpEarned: totalXPAwarded });
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });
   }

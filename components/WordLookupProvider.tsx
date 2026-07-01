@@ -164,6 +164,7 @@ export default function WordLookupProvider({ children }: { children: React.React
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
+      utterance.rate = 0.85; // slower, natural pace
       window.speechSynthesis.speak(utterance);
     }
   };

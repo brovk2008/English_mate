@@ -10,7 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { 
   ArrowLeft, CheckCircle2, FileText, Send, AlertCircle, 
-  Sparkles, Check, ChevronRight, HelpCircle
+  Sparkles, Check, ChevronRight, HelpCircle, Award
 } from 'lucide-react';
 
 interface Student {
@@ -322,20 +322,27 @@ export default function ReviewStudentClient({
       </div>
 
       {/* Profile summary card */}
-      <Card className="border border-[#E8E2D9] bg-white rounded-2xl p-5 flex items-center gap-4">
-        <Avatar className="w-14 h-14 ring-2 ring-[#E8A6B8]/30">
-          <AvatarImage src={student.avatar_url || ''} />
-          <AvatarFallback className="bg-[#FAF1F3] text-[#E8A6B8] font-bold text-lg">
-            {student.display_name?.substring(0, 2).toUpperCase()}
-          </AvatarFallback>
-        </Avatar>
-        <div>
-          <h2 className="font-heading text-2xl font-bold text-[#33312E]">{student.display_name}</h2>
-          <p className="text-xs text-[#73706B]">{student.email}</p>
-          <span className="text-[10px] text-[#73706B]/50 block mt-1">
-            Day 1 Anchor: {new Date(student.start_date).toLocaleDateString()}
-          </span>
+      <Card className="border border-[#E8E2D9] bg-white rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <Avatar className="w-14 h-14 ring-2 ring-[#E8A6B8]/30">
+            <AvatarImage src={student.avatar_url || ''} />
+            <AvatarFallback className="bg-[#FAF1F3] text-[#E8A6B8] font-bold text-lg">
+              {student.display_name?.substring(0, 2).toUpperCase()}
+            </AvatarFallback>
+          </Avatar>
+          <div>
+            <h2 className="font-heading text-2xl font-bold text-[#33312E]">{student.display_name}</h2>
+            <p className="text-xs text-[#73706B]">{student.email}</p>
+            <span className="text-[10px] text-[#73706B]/50 block mt-1">
+              Day 1 Anchor: {new Date(student.start_date).toLocaleDateString()}
+            </span>
+          </div>
         </div>
+        <Link href={`/certificate?preview_student_id=${student.id}`} target="_blank" className="print:hidden">
+          <Button size="sm" className="bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs gap-1.5 flex items-center shrink-0 cursor-pointer border-none font-bold">
+            <Award className="w-4 h-4" /> Preview Certificate
+          </Button>
+        </Link>
       </Card>
 
       {/* Submissions Index */}

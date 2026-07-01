@@ -5,8 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Progress } from '@/components/ui/progress';
 import { 
   Award, BookOpen, Calendar, Clock, FileText, Flame, 
-  Layers, Mic, Sparkles, TrendingUp, Trophy, Video, AlertTriangle, BarChart2, Music
+  Layers, Mic, Sparkles, TrendingUp, Trophy, Video, AlertTriangle, BarChart2, Music,
+  Sprout, Target, PenTool, Star, Lock, GraduationCap
 } from 'lucide-react';
+import Link from 'next/link';
 import { 
   ResponsiveContainer, AreaChart, Area, XAxis, YAxis, 
   Tooltip, CartesianGrid, ReferenceLine, LineChart, Line, BarChart, Bar, Cell
@@ -15,10 +17,20 @@ import {
 import { BADGES } from '@/lib/check-achievements';
 import { useI18n } from '@/lib/i18n/context';
 
+const BADGE_ICONS: Record<string, any> = {
+  first_step: Sprout,
+  streak_3: Flame,
+  vocab_master: BookOpen,
+  quiz_ace: Target,
+  writing_guru: PenTool,
+  speaking_star: Star,
+};
+
 interface ProgressClientProps {
   profile: any;
   completedCount: number;
   wordsLearnedCount: number;
+  libraryMasteredCount: number;
   songsCount: number;
   videosCount: number;
   chartData: Array<{ day: string; words: number }>;
@@ -31,6 +43,7 @@ export default function ProgressClient({
   profile,
   completedCount,
   wordsLearnedCount,
+  libraryMasteredCount,
   songsCount,
   videosCount,
   chartData,
@@ -46,6 +59,7 @@ export default function ProgressClient({
 
   const totalDaysPercent = Math.round((completedCount / 90) * 100);
   const wordsPercent = Math.round((wordsLearnedCount / 300) * 100);
+  const libraryPercent = Math.round((libraryMasteredCount / 500) * 100);
 
   return (
     <div className="space-y-6">
@@ -81,7 +95,7 @@ export default function ProgressClient({
       )}
 
       {/* Numerical Stats Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {/* Days Complete */}
         <Card className="border border-border bg-card rounded-2xl shadow-sm">
           <CardContent className="p-5 space-y-2">
@@ -106,6 +120,20 @@ export default function ProgressClient({
             <div className="space-y-1">
               <div className="text-2xl font-black text-ink">{wordsLearnedCount} / 300</div>
               <Progress value={wordsPercent} className="h-1.5 bg-border" />
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Library Words Mastered */}
+        <Card className="border border-border bg-card rounded-2xl shadow-sm">
+          <CardContent className="p-5 space-y-2">
+            <div className="flex items-center justify-between text-ink-muted">
+              <span className="text-[10px] font-bold uppercase tracking-wider">Library Mastered</span>
+              <Layers className="w-4 h-4 text-sakura" />
+            </div>
+            <div className="space-y-1">
+              <div className="text-2xl font-black text-ink">{libraryMasteredCount} / 500</div>
+              <Progress value={libraryPercent} className="h-1.5 bg-border animate-pulse" />
             </div>
           </CardContent>
         </Card>
@@ -371,10 +399,13 @@ export default function ProgressClient({
                       : 'bg-bg/10 border-border/40 opacity-40 grayscale'
                   }`}
                 >
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl shadow-inner ${
-                    isEarned ? 'bg-sakura/10 border border-sakura/15' : 'bg-bg'
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center shadow-inner ${
+                    isEarned ? 'bg-sakura/10 border border-sakura/15 text-sakura-deep' : 'bg-bg text-ink-muted/40'
                   }`}>
-                    {isEarned ? badge.icon : '🔒'}
+                    {(() => {
+                      const Icon = BADGE_ICONS[badge.id] || Sprout;
+                      return isEarned ? <Icon size={22} /> : <Lock size={18} />;
+                    })()}
                   </div>
                   <div className="space-y-1">
                     <div className="flex items-center gap-1.5">
@@ -395,6 +426,33 @@ export default function ProgressClient({
               );
             })}
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Certificate / Graduation Card */}
+      <Card className="border-2 border-dashed border-amber-600/30 bg-card/60 hover:bg-card rounded-2xl overflow-hidden shadow-sm transition-all mt-6">
+        <CardHeader className="pb-3 border-b border-border/40">
+          <CardTitle className="font-display text-lg font-bold text-ink flex items-center gap-2">
+            <GraduationCap className="w-5 h-5 text-amber-600" />
+            Sakura Graduation Certificate
+          </CardTitle>
+          <CardDescription className="text-xs text-ink-muted">
+            Obtain your official bilingual Certificate of Completion once you reach Day 90.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="space-y-1 text-center md:text-left">
+            <p className="text-sm font-bold text-ink">Sakura English Graduation Diploma</p>
+            <p className="text-xs text-ink-muted leading-relaxed">
+              Celebrate your milestone of 90 full curriculum days, words mastered, and speaking challenge successes.
+            </p>
+          </div>
+          <Link
+            href="/certificate"
+            className="w-full md:w-auto px-6 py-2.5 bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs rounded-xl shadow-md text-center transition-colors shrink-0 cursor-pointer"
+          >
+            View Graduation Certificate
+          </Link>
         </CardContent>
       </Card>
     </div>

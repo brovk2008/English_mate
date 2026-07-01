@@ -9,8 +9,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
-  --font-heading: var(--font-serif);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-display);
+  --font-mono: var(--font-mono);
   
   /* Custom Font Families */
   --font-display: var(--font-display);
@@ -159,5 +159,35 @@
   select,
   textarea {
     font-size: 16px !important;
+  }
+}
+
+@media print {
+  /* Hide standard page UI components during print */
+  header, footer, nav, aside, .print\:hidden, button, a {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .certificate-wrapper {
+    display: block !important;
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+    background: radial-gradient(circle, #fcfbf7 0%, #f4f0e4 100%) !important;
+    border: 12px double #b45309 !important;
+    box-sizing: border-box !important;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }

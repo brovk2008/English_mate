@@ -49,6 +49,12 @@ export default async function TeacherPage() {
     .from('user_day_progress')
     .select('*, profiles(display_name, email)');
 
+  // 6. Fetch homeworks, homework_items, homework_assignments, homework_completion
+  const { data: homeworks } = await supabase
+    .from('homework')
+    .select('*, homework_items(*), homework_assignments(*), homework_completion(*)')
+    .order('created_at', { ascending: false });
+
   return (
     <TeacherDashboard
       students={students || []}
@@ -56,6 +62,7 @@ export default async function TeacherPage() {
       announcements={announcements || []}
       daysList={daysList || []}
       allProgress={allProgress || []}
+      homeworks={homeworks || []}
     />
   );
 }

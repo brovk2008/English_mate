@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, useMotionValue, useTransform, useAnimation, AnimatePresence } from 'framer-motion';
 import { Check, X, RotateCw, Sparkles, BookOpen } from 'lucide-react';
 import { useI18n } from '@/lib/i18n/context';
+import TTSButton from './TTSButton';
 
 interface Word {
   id?: number;
@@ -181,9 +182,14 @@ export default function Flashcards({ words, learnedIndices, onWordMastered, onAl
                   Front · Tap to Reveal
                 </div>
                 <div className="flex flex-col items-center justify-center flex-1">
-                  <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-ink text-center">
-                    {currentWord.word}
-                  </h2>
+                  <div className="flex items-center gap-2">
+                    <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-ink text-center">
+                      {currentWord.word}
+                    </h2>
+                    <div onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}>
+                      <TTSButton text={currentWord.word} size="icon" />
+                    </div>
+                  </div>
                   {currentWord.pronunciation && (
                     <span className="text-xs text-ink-muted font-mono mt-1">
                       /{currentWord.pronunciation}/
@@ -211,11 +217,16 @@ export default function Flashcards({ words, learnedIndices, onWordMastered, onAl
                   {t('vocab.tap_to_flip')}
                 </div>
                 <div className="flex flex-col justify-center flex-1 text-left space-y-3 mt-2 overflow-y-auto">
-                  <div>
-                    <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">{t('vocab.meaning')}</span>
-                    <p className="text-sm font-semibold text-ink leading-relaxed">
-                      {lang === 'ja' && currentWord.meaning_ja ? currentWord.meaning_ja : currentWord.meaning}
-                    </p>
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex-1">
+                      <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">{t('vocab.meaning')}</span>
+                      <p className="text-sm font-semibold text-ink leading-relaxed">
+                        {lang === 'ja' && currentWord.meaning_ja ? currentWord.meaning_ja : currentWord.meaning}
+                      </p>
+                    </div>
+                    <div onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}>
+                      <TTSButton text={currentWord.word} size="icon" />
+                    </div>
                   </div>
                   <div>
                     <span className="text-[10px] text-ink-muted font-bold block uppercase tracking-wider">{t('vocab.example')}</span>

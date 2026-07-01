@@ -49,6 +49,13 @@ export default async function ProgressPage() {
     .eq('user_id', user.id)
     .eq('learned', true);
 
+  // 3.5 Fetch count of mastered library words
+  const { count: libraryMasteredCount } = await supabase
+    .from('library_progress')
+    .select('word_id', { count: 'exact', head: true })
+    .eq('user_id', user.id)
+    .eq('status', 'mastered');
+
   // Calculate statistics
   const totalDays = progressList?.length || 0;
   
@@ -111,6 +118,7 @@ export default async function ProgressPage() {
       profile={profile}
       completedCount={completedDaysCount}
       wordsLearnedCount={learnedVocabCount || 0}
+      libraryMasteredCount={libraryMasteredCount || 0}
       songsCount={songsDoneCount}
       videosCount={videosDoneCount}
       chartData={chartData}

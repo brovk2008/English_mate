@@ -1,0 +1,5002 @@
+[
+  {
+    "word": "melancholy",
+    "pronunciation": "MEL-an-kol-ee",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A feeling of deep sadness or thoughtfulness",
+    "meaning_ja": "憂鬱、もの悲しさ",
+    "example_sentence": "The ending of that anime left me with a beautiful melancholy.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "bittersweet",
+    "pronunciation": "BIT-er-sweet",
+    "part_of_speech": "adjective",
+    "meaning": "Both happy and sad at the same time",
+    "meaning_ja": "甘くて苦い、複雑な気持ち",
+    "example_sentence": "Finishing a good anime feels bittersweet.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "wholesome",
+    "pronunciation": "HOLE-sum",
+    "part_of_speech": "adjective",
+    "meaning": "Pure, positive, and making you feel warm inside",
+    "meaning_ja": "ほっこりする、心温まる",
+    "example_sentence": "That anime is so wholesome — it makes me smile every episode.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "nostalgic",
+    "pronunciation": "nuh-STAL-jik",
+    "part_of_speech": "adjective",
+    "meaning": "A sentimental longing for the past",
+    "meaning_ja": "懐かしい、郷愁にふける",
+    "example_sentence": "Listening to that theme song makes me feel nostalgic.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "anxious",
+    "pronunciation": "ANGK-shuhs",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling worried, uneasy, or nervous",
+    "meaning_ja": "不安な、心配な",
+    "example_sentence": "I feel anxious before speaking in English, but practice helps.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "overwhelmed",
+    "pronunciation": "oh-ver-WHELMD",
+    "part_of_speech": "adjective",
+    "meaning": "Having too much to deal with",
+    "meaning_ja": "圧倒された、いっぱいいっぱいの",
+    "example_sentence": "I was overwhelmed by the grammar at first, but now it makes sense.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "content",
+    "pronunciation": "kuhn-TENT",
+    "part_of_speech": "adjective",
+    "meaning": "Happy and satisfied with what you have",
+    "meaning_ja": "満足している",
+    "example_sentence": "She felt content after a long day of studying.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "ecstatic",
+    "pronunciation": "ek-STAT-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Extremely happy or excited",
+    "meaning_ja": "有頂天の、狂喜乱舞した",
+    "example_sentence": "He was ecstatic when he got his placement test score.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "devastated",
+    "pronunciation": "DEV-uh-stay-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Extremely shocked and upset",
+    "meaning_ja": "打ちのめされた、絶望した",
+    "example_sentence": "I was devastated when my streak froze, but luckily I had a shield.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "conflicted",
+    "pronunciation": "kuhn-FLIK-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Having confused or opposing feelings",
+    "meaning_ja": "葛藤している",
+    "example_sentence": "I feel conflicted about who is the best character in the show.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "relieved",
+    "pronunciation": "ri-LEEVD",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling happy because something unpleasant has stopped",
+    "meaning_ja": "安心した",
+    "example_sentence": "I was relieved to pass the vocabulary check.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "curious",
+    "pronunciation": "KYOOR-ee-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Eager to know or learn something",
+    "meaning_ja": "好奇心旺盛な",
+    "example_sentence": "I am curious about the culture in foreign countries.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "enthusiastic",
+    "pronunciation": "en-thoo-zee-AS-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Showing intense enjoyment or interest",
+    "meaning_ja": "熱狂的な、やる気のある",
+    "example_sentence": "The teacher is very enthusiastic about our diaries.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "furious",
+    "pronunciation": "FYOOR-ee-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Extremely angry",
+    "meaning_ja": "激怒した",
+    "example_sentence": "He was furious when he lost his notebook.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "cheerful",
+    "pronunciation": "CHEER-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Noticeably happy and optimistic",
+    "meaning_ja": "朗らかな、陽気な",
+    "example_sentence": "Her cheerful voice always brightens the classroom.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "serene",
+    "pronunciation": "suh-REEN",
+    "part_of_speech": "adjective",
+    "meaning": "Calm, peaceful, and untroubled",
+    "meaning_ja": "穏やかな、澄み渡った",
+    "example_sentence": "The silent park in the morning felt very serene.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "pessimistic",
+    "pronunciation": "pes-uh-MIS-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Tending to see the worst aspect of things",
+    "meaning_ja": "悲観的な",
+    "example_sentence": "Don't be so pessimistic about your speaking abilities.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "optimistic",
+    "pronunciation": "op-tuh-MIS-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Hopeful and confident about the future",
+    "meaning_ja": "楽観的な",
+    "example_sentence": "I am optimistic about my English journey.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "lonely",
+    "pronunciation": "LOHN-lee",
+    "part_of_speech": "adjective",
+    "meaning": "Sad because one has no friends or company",
+    "meaning_ja": "寂しい、孤独な",
+    "example_sentence": "Living alone in a foreign city can be lonely.",
+    "difficulty_level": "A1",
+    "category": "emotions"
+  },
+  {
+    "word": "proud",
+    "pronunciation": "PROWD",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling deep pleasure or satisfaction as a result of achievements",
+    "meaning_ja": "誇りに思う",
+    "example_sentence": "I am proud of my 90-day streak.",
+    "difficulty_level": "A1",
+    "category": "emotions"
+  },
+  {
+    "word": "embarrassed",
+    "pronunciation": "em-BAR-uhst",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling self-conscious, confused, or ashamed",
+    "meaning_ja": "恥ずかしい",
+    "example_sentence": "I was embarrassed when I mispronounced the word.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "jealous",
+    "pronunciation": "JEL-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling resentment against someone's achievements or possessions",
+    "meaning_ja": "嫉妬深い",
+    "example_sentence": "She felt jealous of his natural English pronunciation.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "envious",
+    "pronunciation": "EN-vee-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling or showing envy",
+    "meaning_ja": "うらやましい",
+    "example_sentence": "I am envious of your translation skills.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "grateful",
+    "pronunciation": "GRAYT-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling or showing appreciation for kindness",
+    "meaning_ja": "感謝している",
+    "example_sentence": "I am grateful for the feedback from the teacher.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "sympathetic",
+    "pronunciation": "sim-puh-THET-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling or showing concern for someone",
+    "meaning_ja": "同情的な",
+    "example_sentence": "She was sympathetic to my struggles with listening.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "empathetic",
+    "pronunciation": "em-puh-THET-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Showing an ability to understand and share the feelings of others",
+    "meaning_ja": "共感できる",
+    "example_sentence": "An empathetic teacher makes learning less stressful.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "indifferent",
+    "pronunciation": "in-DIF-er-uhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Having no particular interest or sympathy; unconcerned",
+    "meaning_ja": "無関心な",
+    "example_sentence": "He was indifferent to whether we studied vocab or grammar.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "frustrated",
+    "pronunciation": "FRUHS-trey-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling annoyed or distressed as a result of being unable to achieve something",
+    "meaning_ja": "イライラした、もどかしい",
+    "example_sentence": "Don't get frustrated if you make spelling mistakes.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "disappointed",
+    "pronunciation": "dis-uh-POIN-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Sad or displeased because someone or something has failed to fulfill one's hopes",
+    "meaning_ja": "失望した",
+    "example_sentence": "I was disappointed with my score on the listening quiz.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "hopeful",
+    "pronunciation": "HOHP-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling or inspiring optimism about a future event",
+    "meaning_ja": "希望に満ちた",
+    "example_sentence": "We are hopeful that she will pass the placement test.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "suspicious",
+    "pronunciation": "suh-SPISH-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Having or showing a cautious distrust of someone or something",
+    "meaning_ja": "疑わしい",
+    "example_sentence": "The silent student looked suspicious.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "insecure",
+    "pronunciation": "in-si-KYOOR",
+    "part_of_speech": "adjective",
+    "meaning": "Not confident or assured; uncertain and anxious",
+    "meaning_ja": "自分に自信のない",
+    "example_sentence": "Studying grammar makes me feel insecure sometimes.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "confident",
+    "pronunciation": "KON-fi-duhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling or showing confidence in oneself",
+    "meaning_ja": "自信のある",
+    "example_sentence": "I feel more confident speaking English today.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "bewildered",
+    "pronunciation": "bih-WIL-dwerd",
+    "part_of_speech": "adjective",
+    "meaning": "Perplexed and confused; very puzzled",
+    "meaning_ja": "途方にくれた、困惑した",
+    "example_sentence": "The idiom bewildered me at first.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "terrified",
+    "pronunciation": "TER-uh-fahyd",
+    "part_of_speech": "adjective",
+    "meaning": "Cause to feel extreme fear",
+    "meaning_ja": "ひどく恐れた",
+    "example_sentence": "I was terrified of speaking on microphone.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "thrilled",
+    "pronunciation": "THRILD",
+    "part_of_speech": "adjective",
+    "meaning": "Cause to feel a sudden sensation of excitement and pleasure",
+    "meaning_ja": "ワクワクした",
+    "example_sentence": "I was thrilled to get a freeze shield.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "disgusted",
+    "pronunciation": "dis-GUHS-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling or showing strong disapproval or aversion",
+    "meaning_ja": "うんざりした",
+    "example_sentence": "I was disgusted by the bad behavior.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "aggressive",
+    "pronunciation": "uh-GRES-iv",
+    "part_of_speech": "adjective",
+    "meaning": "Ready or likely to attack or confront",
+    "meaning_ja": "攻撃的な",
+    "example_sentence": "His tone in the debate was a bit aggressive.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "defensive",
+    "pronunciation": "dih-FEN-siv",
+    "part_of_speech": "adjective",
+    "meaning": "Used or intended to defend or protect",
+    "meaning_ja": "防衛的な",
+    "example_sentence": "She got defensive when I corrected her grammar.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "submissive",
+    "pronunciation": "suhb-MIS-iv",
+    "part_of_speech": "adjective",
+    "meaning": "Ready to conform to the authority or will of others",
+    "meaning_ja": "従順な",
+    "example_sentence": "He took a submissive role in the conversation.",
+    "difficulty_level": "C1",
+    "category": "emotions"
+  },
+  {
+    "word": "ambitious",
+    "pronunciation": "am-BISH-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Having or showing a strong desire and determination to succeed",
+    "meaning_ja": "野心的な",
+    "example_sentence": "Yuki is ambitious about mastering 500 words.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "greedy",
+    "pronunciation": "GREE-dee",
+    "part_of_speech": "adjective",
+    "meaning": "Having or showing an intense and selfish desire for something",
+    "meaning_ja": "強欲な",
+    "example_sentence": "Don't be greedy with study points.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "arrogant",
+    "pronunciation": "AR-uh-guhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Having or showing an exaggerated opinion of one's own importance or abilities",
+    "meaning_ja": "傲慢な",
+    "example_sentence": "He spoke in an arrogant manner.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "humble",
+    "pronunciation": "HUHM-buhl",
+    "part_of_speech": "adjective",
+    "meaning": "Having or showing a modest or low estimate of one's own importance",
+    "meaning_ja": "謙虚な",
+    "example_sentence": "Despite being fluent, he remained humble.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "passionate",
+    "pronunciation": "PASH-uh-nit",
+    "part_of_speech": "adjective",
+    "meaning": "Showing or caused by strong feelings or a strong belief",
+    "meaning_ja": "情熱的な",
+    "example_sentence": "She is passionate about foreign music.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "desperate",
+    "pronunciation": "DES-per-it",
+    "part_of_speech": "adjective",
+    "meaning": "Feeling, showing, or involving a hopeless sense that a situation is so bad as to be impossible to deal with",
+    "meaning_ja": "絶望的な",
+    "example_sentence": "He made a desperate attempt to save his streak.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "dynamic",
+    "pronunciation": "dahy-NAM-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Constant change, activity, or progress",
+    "meaning_ja": "活動的な、動的な",
+    "example_sentence": "The language landscape is dynamic.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "static",
+    "pronunciation": "STAT-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Lacking in movement, action, or change",
+    "meaning_ja": "静的な、変化のない",
+    "example_sentence": "His speaking speed was static.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "aesthetic",
+    "pronunciation": "es-THET-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Concerned with beauty or the appreciation of beauty",
+    "meaning_ja": "美的な、審美的な",
+    "example_sentence": "The sakura background matches the theme's aesthetic.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "whimsical",
+    "pronunciation": "HWIM-zi-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Playfully quaint or fanciful, especially in an appealing and amusing way",
+    "meaning_ja": "気まぐれな、風変わりな",
+    "example_sentence": "She wrote a whimsical diary about talking pets.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "cynical",
+    "pronunciation": "SIN-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Believing that people are motivated by self-interest; distrustful of human sincerity",
+    "meaning_ja": "皮肉な、冷笑的な",
+    "example_sentence": "He gave a cynical laugh.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "skeptical",
+    "pronunciation": "SKEP-ti-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Not easily convinced; having doubts or reservations",
+    "meaning_ja": "懐疑的な",
+    "example_sentence": "I am skeptical about learning English in a week.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "stressed",
+    "pronunciation": "STRESD",
+    "part_of_speech": "adjective",
+    "meaning": "Subjected to pressure or worry",
+    "meaning_ja": "ストレスを感じる",
+    "example_sentence": "I was stressed about the exam.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "hyper",
+    "pronunciation": "HAHY-per",
+    "part_of_speech": "adjective",
+    "meaning": "Hyperactive or unusually energetic",
+    "meaning_ja": "興奮した",
+    "example_sentence": "The kids were hyper after watching the show.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "calm",
+    "pronunciation": "KAHM",
+    "part_of_speech": "adjective",
+    "meaning": "Not showing or feeling nervousness, anger, or other strong emotions",
+    "meaning_ja": "落ち着いた",
+    "example_sentence": "Please stay calm during the speaking test.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "peaceful",
+    "pronunciation": "PEES-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Free from disturbance; tranquil",
+    "meaning_ja": "平和な",
+    "example_sentence": "The silent garden is very peaceful.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "gentle",
+    "pronunciation": "JEN-tl",
+    "part_of_speech": "adjective",
+    "meaning": "Mild in temperament or behavior; kind or tender",
+    "meaning_ja": "優しい、穏やかな",
+    "example_sentence": "She has a gentle character.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "hostile",
+    "pronunciation": "HOS-tl",
+    "part_of_speech": "adjective",
+    "meaning": "Unfriendly; antagonistic",
+    "meaning_ja": "敵対的な",
+    "example_sentence": "His behavior towards newcomers was hostile.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "friendly",
+    "pronunciation": "FREND-lee",
+    "part_of_speech": "adjective",
+    "meaning": "Kind and pleasant",
+    "meaning_ja": "友好的な",
+    "example_sentence": "The host was very friendly.",
+    "difficulty_level": "A1",
+    "category": "emotions"
+  },
+  {
+    "word": "nervous",
+    "pronunciation": "NUR-vuhs",
+    "part_of_speech": "adjective",
+    "meaning": "Easily agitated or alarmed; apprehensive or anxious",
+    "meaning_ja": "緊張した",
+    "example_sentence": "I get nervous when speaking on the phone.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "relaxed",
+    "pronunciation": "ri-LAKST",
+    "part_of_speech": "adjective",
+    "meaning": "Free from tension and anxiety; at ease",
+    "meaning_ja": "リラックスした",
+    "example_sentence": "He was relaxed about the quiz.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "miserable",
+    "pronunciation": "MIZ-er-uh-buhl",
+    "part_of_speech": "adjective",
+    "meaning": "Wretchedly unhappy or uncomfortable",
+    "meaning_ja": "悲惨な、惨めな",
+    "example_sentence": "The rainy day made me feel miserable.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "moody",
+    "pronunciation": "MOO-dee",
+    "part_of_speech": "adjective",
+    "meaning": "Given to unpredictable changes of mood, especially sudden bouts of gloominess",
+    "meaning_ja": "気分屋の",
+    "example_sentence": "Teenagers are often moody.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "irritable",
+    "pronunciation": "IR-i-tuh-buhl",
+    "part_of_speech": "adjective",
+    "meaning": "Having or showing a tendency to be easily annoyed or made angry",
+    "meaning_ja": "怒りっぽい",
+    "example_sentence": "I get irritable when I don't sleep well.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "sensitive",
+    "pronunciation": "SEN-si-tiv",
+    "part_of_speech": "adjective",
+    "meaning": "Quick to detect or respond to slight changes, signals, or influences",
+    "meaning_ja": "敏感な、傷つきやすい",
+    "example_sentence": "She is sensitive to criticism.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "dull",
+    "pronunciation": "DUHL",
+    "part_of_speech": "adjective",
+    "meaning": "Lacking interest or excitement",
+    "meaning_ja": "退屈な、鈍い",
+    "example_sentence": "The grammar sheet was a bit dull.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "excited",
+    "pronunciation": "ik-SAHY-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Very happy and enthusiastic",
+    "meaning_ja": "興奮した、ワクワクした",
+    "example_sentence": "I am excited to start the lesson.",
+    "difficulty_level": "A1",
+    "category": "emotions"
+  },
+  {
+    "word": "boring",
+    "pronunciation": "BAWR-ing",
+    "part_of_speech": "adjective",
+    "meaning": "Not interesting; tedious",
+    "meaning_ja": "退屈な",
+    "example_sentence": "The lecture was boring.",
+    "difficulty_level": "A1",
+    "category": "emotions"
+  },
+  {
+    "word": "tired",
+    "pronunciation": "TAHY-erd",
+    "part_of_speech": "adjective",
+    "meaning": "In need of sleep or rest; weary",
+    "meaning_ja": "疲れた",
+    "example_sentence": "I was too tired to write a diary.",
+    "difficulty_level": "A1",
+    "category": "emotions"
+  },
+  {
+    "word": "exhausted",
+    "pronunciation": "ig-ZAW-stid",
+    "part_of_speech": "adjective",
+    "meaning": "Very tired",
+    "meaning_ja": "疲れ果てた",
+    "example_sentence": "We were exhausted after the drill.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "reluctant",
+    "pronunciation": "ri-LUHK-tuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Unwilling and hesitant; disinclined",
+    "meaning_ja": "気の進まない",
+    "example_sentence": "She was reluctant to read aloud.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "eager",
+    "pronunciation": "EE-ger",
+    "part_of_speech": "adjective",
+    "meaning": "Strongly wanting to do or have something",
+    "meaning_ja": "しきりに～したがる",
+    "example_sentence": "He is eager to speak English.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "prompt",
+    "pronunciation": "PROMPT",
+    "part_of_speech": "adjective",
+    "meaning": "Done without delay; immediate",
+    "meaning_ja": "迅速な",
+    "example_sentence": "I appreciate your prompt response.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "slack",
+    "pronunciation": "SLAK",
+    "part_of_speech": "adjective",
+    "meaning": "Not active or busy; lazy",
+    "meaning_ja": "怠惰な、緩い",
+    "example_sentence": "He has been slack with study reviews recently.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "gloomy",
+    "pronunciation": "GLOO-mee",
+    "part_of_speech": "adjective",
+    "meaning": "Dark or poorly lit, especially so as to appear depressing",
+    "meaning_ja": "薄暗い、憂鬱な",
+    "example_sentence": "The weather has been gloomy all week.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "elated",
+    "pronunciation": "ih-LEY-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Make ecstatically happy",
+    "meaning_ja": "大喜びの",
+    "example_sentence": "I was elated when I earned the trophy badge.",
+    "difficulty_level": "C1",
+    "category": "emotions"
+  },
+  {
+    "word": "apathetic",
+    "pronunciation": "ap-uh-THET-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Showing or feeling no interest, enthusiasm, or concern",
+    "meaning_ja": "無関心な",
+    "example_sentence": "He is apathetic about his exam marks.",
+    "difficulty_level": "C1",
+    "category": "emotions"
+  },
+  {
+    "word": "somber",
+    "pronunciation": "SOM-ber",
+    "part_of_speech": "adjective",
+    "meaning": "Dark or dull in color or tone; gloomy",
+    "meaning_ja": "厳かな、憂鬱な",
+    "example_sentence": "The background music was somber.",
+    "difficulty_level": "B2",
+    "category": "emotions"
+  },
+  {
+    "word": "cheerful",
+    "pronunciation": "CHEER-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Joyful",
+    "meaning_ja": "楽しそうな",
+    "example_sentence": "A cheerful smile goes a long way.",
+    "difficulty_level": "A2",
+    "category": "emotions"
+  },
+  {
+    "word": "passionate",
+    "pronunciation": "PASH-uh-nit",
+    "part_of_speech": "adjective",
+    "meaning": "Having strong feelings",
+    "meaning_ja": "情熱のこもった",
+    "example_sentence": "The singer gave a passionate performance.",
+    "difficulty_level": "B1",
+    "category": "emotions"
+  },
+  {
+    "word": "commute",
+    "pronunciation": "kuh-MYOOT",
+    "part_of_speech": "noun/verb",
+    "meaning": "To travel some distance between one's home and place of work on a regular basis",
+    "meaning_ja": "通勤、通学",
+    "example_sentence": "My morning commute takes about forty minutes.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "routine",
+    "pronunciation": "roo-TEEN",
+    "part_of_speech": "noun",
+    "meaning": "A sequence of actions regularly followed",
+    "meaning_ja": "日課、ルーティン",
+    "example_sentence": "Studying English has become part of my daily routine.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "chore",
+    "pronunciation": "CHAWR",
+    "part_of_speech": "noun",
+    "meaning": "A routine task, especially a household one",
+    "meaning_ja": "家事、雑用",
+    "example_sentence": "Doing the dishes is my least favorite chore.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "deadline",
+    "pronunciation": "DED-lahyn",
+    "part_of_speech": "noun",
+    "meaning": "The latest time or date by which something should be completed",
+    "meaning_ja": "締め切り",
+    "example_sentence": "I must submit my diary before the midnight deadline.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "grocery",
+    "pronunciation": "GROH-suh-ree",
+    "part_of_speech": "noun",
+    "meaning": "Items of food in a grocery store",
+    "meaning_ja": "食料品、雑貨",
+    "example_sentence": "I went to buy groceries for dinner.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "exercise",
+    "pronunciation": "EK-ser-sahyz",
+    "part_of_speech": "noun/verb",
+    "meaning": "Physical activity that is planned and structured",
+    "meaning_ja": "運動",
+    "example_sentence": "It is important to exercise every day.",
+    "difficulty_level": "A1",
+    "category": "daily_life"
+  },
+  {
+    "word": "schedule",
+    "pronunciation": "SKEJ-ool",
+    "part_of_speech": "noun/verb",
+    "meaning": "A plan for carrying out process or procedures",
+    "meaning_ja": "予定、スケジュール",
+    "example_sentence": "Let me check my schedule for tomorrow.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "appointment",
+    "pronunciation": "uh-POINT-muhnt",
+    "part_of_speech": "noun",
+    "meaning": "An arrangement to meet someone at a particular time and place",
+    "meaning_ja": "約束、予約",
+    "example_sentence": "I have a dentist appointment this afternoon.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "laundry",
+    "pronunciation": "LAWN-dree",
+    "part_of_speech": "noun",
+    "meaning": "Clothes that need to be washed or have just been washed",
+    "meaning_ja": "洗濯物",
+    "example_sentence": "I need to fold the laundry.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "recipe",
+    "pronunciation": "RES-uh-pee",
+    "part_of_speech": "noun",
+    "meaning": "A set of instructions for preparing a particular dish",
+    "meaning_ja": "レシピ、調理法",
+    "example_sentence": "This curry recipe is very easy to follow.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "budget",
+    "pronunciation": "BUHJ-it",
+    "part_of_speech": "noun/verb",
+    "meaning": "An estimate of income and expenditure for a set period",
+    "meaning_ja": "予算",
+    "example_sentence": "I am on a tight budget this month.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "habit",
+    "pronunciation": "HAB-it",
+    "part_of_speech": "noun",
+    "meaning": "A settled or regular tendency or practice",
+    "meaning_ja": "習慣",
+    "example_sentence": "Reading books before sleeping is a good habit.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "leisure",
+    "pronunciation": "LEE-zher",
+    "part_of_speech": "noun",
+    "meaning": "Free time",
+    "meaning_ja": "余暇、レジャー",
+    "example_sentence": "I like to listen to music in my leisure time.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "cleaning",
+    "pronunciation": "KLEEN-ing",
+    "part_of_speech": "noun",
+    "meaning": "The action of making something clean",
+    "meaning_ja": "掃除",
+    "example_sentence": "Spring cleaning takes all weekend.",
+    "difficulty_level": "A1",
+    "category": "daily_life"
+  },
+  {
+    "word": "errand",
+    "pronunciation": "ER-uhnd",
+    "part_of_speech": "noun",
+    "meaning": "A short journey undertaken to deliver or collect something",
+    "meaning_ja": "お使い、雑用",
+    "example_sentence": "I have some errands to run in town.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "commuter",
+    "pronunciation": "kuh-MYOO-ter",
+    "part_of_speech": "noun",
+    "meaning": "A person who travels some distance to work on a regular basis",
+    "meaning_ja": "通勤者、通学者",
+    "example_sentence": "The train was packed with commuters.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "nap",
+    "pronunciation": "NAP",
+    "part_of_speech": "noun/verb",
+    "meaning": "A short sleep, especially during the day",
+    "meaning_ja": "昼寝",
+    "example_sentence": "Taking a short nap in the afternoon boosts energy.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "relax",
+    "pronunciation": "ri-LAKS",
+    "part_of_speech": "verb",
+    "meaning": "Make or become less tense or anxious",
+    "meaning_ja": "リラックスする",
+    "example_sentence": "Watching movie helps me relax.",
+    "difficulty_level": "A1",
+    "category": "daily_life"
+  },
+  {
+    "word": "organize",
+    "pronunciation": "AWR-guh-nahyz",
+    "part_of_speech": "verb",
+    "meaning": "Arrange into a structured whole; order",
+    "meaning_ja": "整理する、組織する",
+    "example_sentence": "I need to organize my study materials.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "multitask",
+    "pronunciation": "muhl-tee-TASK",
+    "part_of_speech": "verb",
+    "meaning": "Perform more than one task at the same time",
+    "meaning_ja": "マルチタスクをする",
+    "example_sentence": "It is hard to multitask while studying.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "productivity",
+    "pronunciation": "proh-duhk-TIV-i-tee",
+    "part_of_speech": "noun",
+    "meaning": "The state or quality of being productive",
+    "meaning_ja": "生産性",
+    "example_sentence": "A tidy desk improves productivity.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "journal",
+    "pronunciation": "JUR-nl",
+    "part_of_speech": "noun/verb",
+    "meaning": "A daily record of news and events of a personal nature",
+    "meaning_ja": "日記、ジャーナル",
+    "example_sentence": "I write in my journal every night.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "clutter",
+    "pronunciation": "KLUHT-er",
+    "part_of_speech": "noun/verb",
+    "meaning": "A collection of things lying about in an untidy mass",
+    "meaning_ja": "散らかり、がらくた",
+    "example_sentence": "I need to clear the clutter from my room.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "decor",
+    "pronunciation": "dey-KAWR",
+    "part_of_speech": "noun",
+    "meaning": "The decoration of a room",
+    "meaning_ja": "室内装飾、デコレーション",
+    "example_sentence": "She prefers a simple Japanese decor.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "renovation",
+    "pronunciation": "ren-uh-VEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The action of renovating a building",
+    "meaning_ja": "リノベーション、修復",
+    "example_sentence": "Our house is under renovation.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "neighborhood",
+    "pronunciation": "NEY-ber-hood",
+    "part_of_speech": "noun",
+    "meaning": "A district, especially one forming a community",
+    "meaning_ja": "近所、地域",
+    "example_sentence": "This neighborhood is very quiet.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "tenant",
+    "pronunciation": "TEN-uhnt",
+    "part_of_speech": "noun",
+    "meaning": "A person who occupies land or property rented from a landlord",
+    "meaning_ja": "店借人、テナント",
+    "example_sentence": "The tenant in the room next door is friendly.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "landlord",
+    "pronunciation": "LAND-lawrd",
+    "part_of_speech": "noun",
+    "meaning": "A person, especially a man, who rents land, a building, or an apartment",
+    "meaning_ja": "大家さん",
+    "example_sentence": "Our landlord is very understanding.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "household",
+    "pronunciation": "HOWS-hohld",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A house and its occupants regarded as a unit",
+    "meaning_ja": "世帯、家庭の",
+    "example_sentence": "We share household bills.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "suburb",
+    "pronunciation": "SUHB-urb",
+    "part_of_speech": "noun",
+    "meaning": "An outlying district of a city, especially a residential one",
+    "meaning_ja": "郊外",
+    "example_sentence": "I live in a peaceful suburb.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "maintenance",
+    "pronunciation": "MEYN-tuh-nuhns",
+    "part_of_speech": "noun",
+    "meaning": "The process of maintaining or preserving someone or something",
+    "meaning_ja": "メンテナンス、維持",
+    "example_sentence": "Car maintenance can be expensive.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "appliance",
+    "pronunciation": "uh-PLAHY-uhns",
+    "part_of_speech": "noun",
+    "meaning": "A device or piece of equipment designed to perform a specific task",
+    "meaning_ja": "家電製品",
+    "example_sentence": "The kitchen appliances are brand new.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "utility",
+    "pronunciation": "yoo-TIL-i-tee",
+    "part_of_speech": "noun",
+    "meaning": "The state of being useful, profitable, or beneficial",
+    "meaning_ja": "公共料金、公益事業",
+    "example_sentence": "Water and electricity are basic utilities.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "rent",
+    "pronunciation": "RENT",
+    "part_of_speech": "noun/verb",
+    "meaning": "A tenant's regular payment to a landlord for the use of property",
+    "meaning_ja": "家賃、賃貸する",
+    "example_sentence": "The rent is due on the first of the month.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "lease",
+    "pronunciation": "LEES",
+    "part_of_speech": "noun/verb",
+    "meaning": "A contract by which one party conveys land, property, services, etc.",
+    "meaning_ja": "リース、賃貸契約",
+    "example_sentence": "We signed a one-year lease.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "mortgage",
+    "pronunciation": "MAWR-gij",
+    "part_of_speech": "noun/verb",
+    "meaning": "A legal agreement by which a bank lends money at interest",
+    "meaning_ja": "住宅ローン",
+    "example_sentence": "Paying off the mortgage takes thirty years.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "cozy",
+    "pronunciation": "KOH-zee",
+    "part_of_speech": "adjective",
+    "meaning": "Giving a feeling of comfort, warmth, and relaxation",
+    "meaning_ja": "居心地の良い",
+    "example_sentence": "The small cafe felt very cozy.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "spacious",
+    "pronunciation": "SPEY-shuhs",
+    "part_of_speech": "adjective",
+    "meaning": "Having ample space",
+    "meaning_ja": "広々とした",
+    "example_sentence": "Her new apartment is spacious.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "cluttered",
+    "pronunciation": "KLUHT-erd",
+    "part_of_speech": "adjective",
+    "meaning": "Untidy",
+    "meaning_ja": "散らかった",
+    "example_sentence": "His desk was cluttered with papers.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "tidy",
+    "pronunciation": "TAHY-dee",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Arranged neatly and in order",
+    "meaning_ja": "きれいな、片付ける",
+    "example_sentence": "She keeps her room tidy.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "messy",
+    "pronunciation": "MES-ee",
+    "part_of_speech": "adjective",
+    "meaning": "Untidy or dirty",
+    "meaning_ja": "散らかった、汚い",
+    "example_sentence": "The kitchen was messy after cooking.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "orderly",
+    "pronunciation": "AWR-der-lee",
+    "part_of_speech": "adjective",
+    "meaning": "Neatly and methodically arranged",
+    "meaning_ja": "整然とした",
+    "example_sentence": "Students stood in an orderly line.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "domestic",
+    "pronunciation": "duh-MES-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to the running of a home or to family relations",
+    "meaning_ja": "家庭の、国内の",
+    "example_sentence": "Domestic chores can be shared.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "convenient",
+    "pronunciation": "kuhn-VEEN-yuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Fitting in well with a person's needs, activities, and plans",
+    "meaning_ja": "便利な",
+    "example_sentence": "The convenience store is very convenient.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "tasty",
+    "pronunciation": "TEYS-tee",
+    "part_of_speech": "adjective",
+    "meaning": "Having a pleasant, distinct flavor",
+    "meaning_ja": "おいしい",
+    "example_sentence": "This soup is very tasty.",
+    "difficulty_level": "A1",
+    "category": "daily_life"
+  },
+  {
+    "word": "nutritious",
+    "pronunciation": "noo-TRISH-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Efficient as a food; nourishing",
+    "meaning_ja": "栄養のある",
+    "example_sentence": "Homemade meals are nutritious.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "refreshing",
+    "pronunciation": "ri-FRESH-ing",
+    "part_of_speech": "adjective",
+    "meaning": "Serving to refresh",
+    "meaning_ja": "爽快な、リフレッシュさせる",
+    "example_sentence": "A cold drink is refreshing in summer.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "exhausting",
+    "pronunciation": "ig-ZAWS-ting",
+    "part_of_speech": "adjective",
+    "meaning": "Making one feel very tired",
+    "meaning_ja": "疲れさせる",
+    "example_sentence": "Cleaning the whole house was exhausting.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "hectic",
+    "pronunciation": "HEK-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Full of incessant or frantic activity",
+    "meaning_ja": "大忙しの、てんてこ舞いの",
+    "example_sentence": "The schedule was hectic today.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "monotonous",
+    "pronunciation": "muh-NOT-n-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Dull, tedious, and repetitious; lacking in variety and interest",
+    "meaning_ja": "単調な",
+    "example_sentence": "The routine was monotonous.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "tiresome",
+    "pronunciation": "TAHY-er-suhm",
+    "part_of_speech": "adjective",
+    "meaning": "Causing one to feel bored or annoyed",
+    "meaning_ja": "退屈な、うんざりする",
+    "example_sentence": "Repetitive tasks are tiresome.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "pleasant",
+    "pronunciation": "PLEZ-uhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Giving a sense of happy satisfaction or enjoyment",
+    "meaning_ja": "心地よい",
+    "example_sentence": "The evening breeze was pleasant.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "unpleasant",
+    "pronunciation": "uhn-PLEZ-uhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Not pleasant",
+    "meaning_ja": "不快な",
+    "example_sentence": "The smell was unpleasant.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "daily",
+    "pronunciation": "DEY-lee",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Every day",
+    "meaning_ja": "日々の",
+    "example_sentence": "This is our daily quiz.",
+    "difficulty_level": "A1",
+    "category": "daily_life"
+  },
+  {
+    "word": "weekly",
+    "pronunciation": "WEEK-lee",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Every week",
+    "meaning_ja": "週刊の",
+    "example_sentence": "He sends a weekly report.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "monthly",
+    "pronunciation": "MUHNTH-lee",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Every month",
+    "meaning_ja": "月刊の",
+    "example_sentence": "Our rent is a monthly payment.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "annual",
+    "pronunciation": "AN-yoo-uhl",
+    "part_of_speech": "adjective",
+    "meaning": "Occurring once every year",
+    "meaning_ja": "年次の、年に一度の",
+    "example_sentence": "We have our annual review next week.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "regular",
+    "pronunciation": "REG-yuh-ler",
+    "part_of_speech": "adjective",
+    "meaning": "Done or happening frequently",
+    "meaning_ja": "規則的な、通常の",
+    "example_sentence": "I have regular lessons.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "occasional",
+    "pronunciation": "uh-KEY-zhuh-nl",
+    "part_of_speech": "adjective",
+    "meaning": "Occurring, appearing, or done infrequently and irregularly",
+    "meaning_ja": "たまの、時々の",
+    "example_sentence": "I enjoy an occasional cup of coffee.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "frequent",
+    "pronunciation": "FREE-kwuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Occurring or done on many occasions",
+    "meaning_ja": "頻繁な",
+    "example_sentence": "Frequent practice leads to fluency.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "rare",
+    "pronunciation": "RAIR",
+    "part_of_speech": "adjective",
+    "meaning": "Not occurring, found, or experienced frequently",
+    "meaning_ja": "稀な",
+    "example_sentence": "It is rare to see snow here.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "constant",
+    "pronunciation": "KON-stuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Occurring continuously over a period of time",
+    "meaning_ja": "一定の、絶え間ない",
+    "example_sentence": "Constant review helps memory.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "temporary",
+    "pronunciation": "TEM-puh-rer-ee",
+    "part_of_speech": "adjective",
+    "meaning": "Lasting for only a limited period of time",
+    "meaning_ja": "一時的な",
+    "example_sentence": "The library cards are temporary.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "permanent",
+    "pronunciation": "PUR-muh-nuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Lasting or intended to last or remain unchanged indefinitely",
+    "meaning_ja": "恒久的な",
+    "example_sentence": "The notes page is permanent.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "essential",
+    "pronunciation": "ih-SEN-shuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Absolutely necessary; extremely important",
+    "meaning_ja": "不可欠な、不可欠の",
+    "example_sentence": "A dictionary is essential.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "optional",
+    "pronunciation": "OP-shuh-nl",
+    "part_of_speech": "adjective",
+    "meaning": "Available to be chosen but not obligatory",
+    "meaning_ja": "オプションの、任意の",
+    "example_sentence": "Subtitles are optional in listening.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "urgent",
+    "pronunciation": "UR-juhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Requiring immediate action or attention",
+    "meaning_ja": "緊急の",
+    "example_sentence": "This is an urgent homework assignment.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "trivial",
+    "pronunciation": "TRIV-ee-uhl",
+    "part_of_speech": "adjective",
+    "meaning": "Of little value or importance",
+    "meaning_ja": "些細な",
+    "example_sentence": "Don't worry about trivial spelling slips.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "significant",
+    "pronunciation": "sig-NIF-i-kuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Sufficiently great or important to be worthy of attention",
+    "meaning_ja": "重要な、著しい",
+    "example_sentence": "He showed significant improvement.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "minor",
+    "pronunciation": "MAHY-ner",
+    "part_of_speech": "adjective",
+    "meaning": "Lesser in importance, seriousness, or significance",
+    "meaning_ja": "マイナーな、軽微な",
+    "example_sentence": "There was a minor mistake in pronunciation.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "major",
+    "pronunciation": "MEY-jer",
+    "part_of_speech": "adjective",
+    "meaning": "Important, serious, or significant",
+    "meaning_ja": "主要な、重大な",
+    "example_sentence": "There is a major update coming.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "standard",
+    "pronunciation": "STAN-derd",
+    "part_of_speech": "noun/adjective",
+    "meaning": "Used or accepted as normal or average",
+    "meaning_ja": "標準の",
+    "example_sentence": "Standard English is taught here.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "exceptional",
+    "pronunciation": "ik-SEP-shuh-nl",
+    "part_of_speech": "adjective",
+    "meaning": "Unusually good; outstanding",
+    "meaning_ja": "例外的な、非常に優れた",
+    "example_sentence": "Her writing progress was exceptional.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "adequate",
+    "pronunciation": "AD-i-kwit",
+    "part_of_speech": "adjective",
+    "meaning": "Satisfactory or acceptable in quality or quantity",
+    "meaning_ja": "十分な",
+    "example_sentence": "His response was adequate.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "inadequate",
+    "pronunciation": "in-AD-i-kwit",
+    "part_of_speech": "adjective",
+    "meaning": "Lacking the quality or quantity required",
+    "meaning_ja": "不十分な",
+    "example_sentence": "The study time was inadequate.",
+    "difficulty_level": "B2",
+    "category": "daily_life"
+  },
+  {
+    "word": "custom",
+    "pronunciation": "KUHS-tuhm",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Made or done to order",
+    "meaning_ja": "カスタムの、特別注文の",
+    "example_sentence": "We built a custom note widget.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "traditional",
+    "pronunciation": "truh-DISH-uh-nuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Existing in or as part of a tradition",
+    "meaning_ja": "伝統的な",
+    "example_sentence": "We study traditional vocabulary.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "modern",
+    "pronunciation": "MOD-ern",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to the present or recent times",
+    "meaning_ja": "現代の",
+    "example_sentence": "Modern slang is interesting.",
+    "difficulty_level": "A2",
+    "category": "daily_life"
+  },
+  {
+    "word": "ancient",
+    "pronunciation": "EYN-shuhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Belonging to the very distant past",
+    "meaning_ja": "古代の",
+    "example_sentence": "They studied ancient literature.",
+    "difficulty_level": "B1",
+    "category": "daily_life"
+  },
+  {
+    "word": "future",
+    "pronunciation": "FYOO-cher",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A period of time following the moment of speaking",
+    "meaning_ja": "未来の",
+    "example_sentence": "My future plans include study abroad.",
+    "difficulty_level": "A1",
+    "category": "daily_life"
+  },
+  {
+    "word": "protagonist",
+    "pronunciation": "proh-TAG-uh-nist",
+    "part_of_speech": "noun",
+    "meaning": "The leading character or one of the major characters in a drama, movie, novel, or other fictional text",
+    "meaning_ja": "主人公",
+    "example_sentence": "The protagonist in that anime is very determined.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "antagonist",
+    "pronunciation": "an-TAG-uh-nist",
+    "part_of_speech": "noun",
+    "meaning": "A person who actively opposes or is hostile to someone or something",
+    "meaning_ja": "悪役、対立者",
+    "example_sentence": "A strong antagonist makes the plot interesting.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "foreshadowing",
+    "pronunciation": "fawr-SHAD-oh-ing",
+    "part_of_speech": "noun",
+    "meaning": "A warning or indication of a future event",
+    "meaning_ja": "伏線",
+    "example_sentence": "The early scenes have subtle foreshadowing.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "cliffhanger",
+    "pronunciation": "KLIF-hang-er",
+    "part_of_speech": "noun",
+    "meaning": "An ending to an episode of a serial drama that leaves the audience in suspense",
+    "meaning_ja": "崖っぷち、クリフハンガー（次回への焦らし）",
+    "example_sentence": "Every episode ends on a cliffhanger.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "redemption",
+    "pronunciation": "ri-DEMP-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The action of saving or being saved from sin, error, or evil",
+    "meaning_ja": "救済、贖罪",
+    "example_sentence": "The villain's redemption arc was emotional.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "narrator",
+    "pronunciation": "NAR-ey-ter",
+    "part_of_speech": "noun",
+    "meaning": "A person who narrates something, especially a character who recounts the events of a novel or narrative poem",
+    "meaning_ja": "ナレーター",
+    "example_sentence": "The narrator explained the backstory.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "subtitles",
+    "pronunciation": "SUB-tahy-tlz",
+    "part_of_speech": "noun",
+    "meaning": "Captions displayed at the bottom of a cinema or television screen",
+    "meaning_ja": "字幕",
+    "example_sentence": "I watch anime with English subtitles.",
+    "difficulty_level": "A2",
+    "category": "anime"
+  },
+  {
+    "word": "animation",
+    "pronunciation": "an-uh-MEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The technique of photographing successive drawings or positions of puppets or models",
+    "meaning_ja": "アニメーション",
+    "example_sentence": "The animation quality was stunning.",
+    "difficulty_level": "A2",
+    "category": "anime"
+  },
+  {
+    "word": "manga",
+    "pronunciation": "MAHNG-guh",
+    "part_of_speech": "noun",
+    "meaning": "A style of Japanese comic books and graphic novels",
+    "meaning_ja": "漫画",
+    "example_sentence": "I read the manga before watching the show.",
+    "difficulty_level": "A1",
+    "category": "anime"
+  },
+  {
+    "word": "fandom",
+    "pronunciation": "FAN-duhm",
+    "part_of_speech": "noun",
+    "meaning": "The fans of a particular person, team, fictional series, etc. regarded collectively as a community",
+    "meaning_ja": "ファンダム、ファン界隈",
+    "example_sentence": "The anime fandom is very active on internet.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "spinoff",
+    "pronunciation": "SPIN-awf",
+    "part_of_speech": "noun",
+    "meaning": "A byproduct or incidental result of a larger project",
+    "meaning_ja": "スピンオフ、番外編",
+    "example_sentence": "The spinoff series focuses on his childhood.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "sequel",
+    "pronunciation": "SEE-kwuhl",
+    "part_of_speech": "noun",
+    "meaning": "A published, broadcast, or recorded work that continues the story of an earlier one",
+    "meaning_ja": "続編",
+    "example_sentence": "I am eagerly waiting for the sequel.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "prequel",
+    "pronunciation": "PREE-kwuhl",
+    "part_of_speech": "noun",
+    "meaning": "A story or movie containing events that precede those of an existing work",
+    "meaning_ja": "前日譚",
+    "example_sentence": "The prequel explained the origin of the powers.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "adaptation",
+    "pronunciation": "ad-uhp-TEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "A movie, television drama, or play that has been adapted from a written work",
+    "meaning_ja": "実写化、適応",
+    "example_sentence": "The live-action adaptation was disappointing.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "crossover",
+    "pronunciation": "KRAWS-oh-ver",
+    "part_of_speech": "noun",
+    "meaning": "A point or place of crossing from one side, road, or track to another",
+    "meaning_ja": "クロスオーバー、コラボ",
+    "example_sentence": "The crossover episode featured characters from two shows.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "genre",
+    "pronunciation": "ZHAHN-ruh",
+    "part_of_speech": "noun",
+    "meaning": "A category of artistic composition",
+    "meaning_ja": "ジャンル",
+    "example_sentence": "Fantasy is my favorite anime genre.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "dubbing",
+    "pronunciation": "DUHB-ing",
+    "part_of_speech": "noun",
+    "meaning": "The replacement of the original speech in a cinema or television show with speech in another language",
+    "meaning_ja": "吹き替え",
+    "example_sentence": "I prefer dubbing over subtitles sometimes.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "episode",
+    "pronunciation": "EP-uh-sohd",
+    "part_of_speech": "noun",
+    "meaning": "An event or a group of events occurring as part of a larger sequence",
+    "meaning_ja": "エピソード、第１話",
+    "example_sentence": "The latest episode was wild.",
+    "difficulty_level": "A2",
+    "category": "anime"
+  },
+  {
+    "word": "season",
+    "pronunciation": "SEE-zuhn",
+    "part_of_speech": "noun",
+    "meaning": "A set of program broadcasts",
+    "meaning_ja": "シーズン",
+    "example_sentence": "Season three starts next month.",
+    "difficulty_level": "A2",
+    "category": "anime"
+  },
+  {
+    "word": "merchandise",
+    "pronunciation": "MUR-chuhn-dahyz",
+    "part_of_speech": "noun/verb",
+    "meaning": "Goods to be bought and sold",
+    "meaning_ja": "グッズ、商品",
+    "example_sentence": "I bought some anime merchandise.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "cosplay",
+    "pronunciation": "KOZ-pley",
+    "part_of_speech": "noun/verb",
+    "meaning": "The practice of dressing up as a character from a movie, book, or video game",
+    "meaning_ja": "コスプレ",
+    "example_sentence": "She does amazing cosplay.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "voiceover",
+    "pronunciation": "VOIS-oh-ver",
+    "part_of_speech": "noun",
+    "meaning": "A piece of narration in a movie or broadcast, not accompanied by an image of the speaker",
+    "meaning_ja": "ボイスオーバー",
+    "example_sentence": "The voiceover actor has a deep voice.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "canon",
+    "pronunciation": "KAN-uhn",
+    "part_of_speech": "noun",
+    "meaning": "The works of a particular author or artist that are accepted as genuine",
+    "meaning_ja": "公式設定、原作通り",
+    "example_sentence": "That episode is not canon; it's just filler.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "filler",
+    "pronunciation": "FIL-er",
+    "part_of_speech": "noun",
+    "meaning": "An item or substance used to fill a space or container",
+    "meaning_ja": "引き延ばし回、フィラー",
+    "example_sentence": "I skipped the filler episodes.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "cliche",
+    "pronunciation": "klee-SHEY",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A phrase or opinion that is overused and betrays a lack of original thought",
+    "meaning_ja": "お決まりのパターン、使い古された表現",
+    "example_sentence": "The power of friendship is an anime cliche.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "spoiler",
+    "pronunciation": "SPOI-ler",
+    "part_of_speech": "noun",
+    "meaning": "A description of an important plot development in a television show, movie, or book which, if known beforehand, may reduce the interest",
+    "meaning_ja": "ネタバレ",
+    "example_sentence": "Please don't tell me any spoilers.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "fanfiction",
+    "pronunciation": "FAN-fik-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "Fiction written by a fan of, and featuring characters from, a particular TV series, movie, etc.",
+    "meaning_ja": "二次創作、二次小説",
+    "example_sentence": "She writes fanfiction in her free time.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "premiere",
+    "pronunciation": "pri-MEER",
+    "part_of_speech": "noun/verb",
+    "meaning": "The first performance of a musical or theatrical work or the first showing of a movie",
+    "meaning_ja": "プレミア上映、初公開",
+    "example_sentence": "The movie premiere was crowded.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "otaku",
+    "pronunciation": "oh-TAH-koo",
+    "part_of_speech": "noun",
+    "meaning": "A young person who is obsessed with computers or particular aspects of popular culture",
+    "meaning_ja": "オタク",
+    "example_sentence": "He is proud to be an otaku.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "dialogue",
+    "pronunciation": "DAHY-uh-lawg",
+    "part_of_speech": "noun",
+    "meaning": "Conversation between two or more people",
+    "meaning_ja": "対話、台詞",
+    "example_sentence": "The dialogue in that scene was moving.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "monologue",
+    "pronunciation": "MON-uh-lawg",
+    "part_of_speech": "noun",
+    "meaning": "A long speech by one actor in a play or movie",
+    "meaning_ja": "独白、モノローグ",
+    "example_sentence": "His inner monologue revealed his fear.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "backstory",
+    "pronunciation": "BAK-staw-ree",
+    "part_of_speech": "noun",
+    "meaning": "A history or background, especially one created for a fictional character in a novel or play",
+    "meaning_ja": "背景、過去の経歴",
+    "example_sentence": "The hero has a tragic backstory.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "visuals",
+    "pronunciation": "VIZH-oo-uhlz",
+    "part_of_speech": "noun",
+    "meaning": "A picture, piece of film, or display used to accompany or illustrate something",
+    "meaning_ja": "映像美、ビジュアル",
+    "example_sentence": "The visuals in this movie are breathtaking.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "universe",
+    "pronunciation": "YOO-nuh-vurs",
+    "part_of_speech": "noun",
+    "meaning": "A particular sphere of activity or experience",
+    "meaning_ja": "世界観、宇宙",
+    "example_sentence": "The characters exist in a parallel universe.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "franchise",
+    "pronunciation": "FRAN-chahyz",
+    "part_of_speech": "noun/verb",
+    "meaning": "An authorization granted by a government or company to an individual or group",
+    "meaning_ja": "シリーズ、フランチャイズ",
+    "example_sentence": "This franchise has three movies.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "tribute",
+    "pronunciation": "TRIB-yoot",
+    "part_of_speech": "noun",
+    "meaning": "An act, statement, or gift that is intended to show gratitude, respect, or admiration",
+    "meaning_ja": "オマージュ、賛辞",
+    "example_sentence": "The scene was a tribute to classic films.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "villain",
+    "pronunciation": "VIL-uhn",
+    "part_of_speech": "noun",
+    "meaning": "A character whose evil actions or motives are important to the plot",
+    "meaning_ja": "悪役",
+    "example_sentence": "The villain had a complex motive.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "hero",
+    "pronunciation": "HEE-roh",
+    "part_of_speech": "noun",
+    "meaning": "A person who is admired or idealized for their courage, outstanding achievements, or noble qualities",
+    "meaning_ja": "ヒーロー",
+    "example_sentence": "Every hero needs a challenge.",
+    "difficulty_level": "A1",
+    "category": "anime"
+  },
+  {
+    "word": "rival",
+    "pronunciation": "RAHY-vuhl",
+    "part_of_speech": "noun/verb",
+    "meaning": "A person or thing competing with another for the same objective or for superiority in the same field",
+    "meaning_ja": "ライバル",
+    "example_sentence": "The protagonist and his rival trained together.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "mentor",
+    "pronunciation": "MEN-tawr",
+    "part_of_speech": "noun/verb",
+    "meaning": "An experienced and trusted adviser",
+    "meaning_ja": "指導者、メンター",
+    "example_sentence": "The old master was his mentor.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "dynamic",
+    "pronunciation": "dahy-NAM-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Constantly changing",
+    "meaning_ja": "躍動的な、ダイナミックな",
+    "example_sentence": "The battle scenes were dynamic.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "artistic",
+    "pronunciation": "ahr-TIS-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Having or revealing natural creative skill",
+    "meaning_ja": "芸術的な",
+    "example_sentence": "The background art was very artistic.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "legendary",
+    "pronunciation": "LEJ-uhn-der-ee",
+    "part_of_speech": "adjective",
+    "meaning": "Remarkable enough to be famous; very well known",
+    "meaning_ja": "伝説の",
+    "example_sentence": "The legendary hero vanished.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "mysterious",
+    "pronunciation": "mi-STEER-ee-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Difficult or impossible to understand, explain, or identify",
+    "meaning_ja": "神秘的な、謎めいた",
+    "example_sentence": "A mysterious character appeared.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "fictional",
+    "pronunciation": "FIK-shuh-nl",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to, or occurring in fiction; invented",
+    "meaning_ja": "架空の、フィクションの",
+    "example_sentence": "The story is set in a fictional town.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "authentic",
+    "pronunciation": "aw-THEN-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Of undisputed origin; genuine",
+    "meaning_ja": "本物の、信頼できる",
+    "example_sentence": "The sword replica looks authentic.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "filler",
+    "pronunciation": "FIL-er",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Extra content",
+    "meaning_ja": "本筋に関係ない内容",
+    "example_sentence": "That was just a filler chapter.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "original",
+    "pronunciation": "uh-RIJ-uh-nl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Present or existing from the beginning",
+    "meaning_ja": "オリジナルの、独創的な",
+    "example_sentence": "The original creator approved this.",
+    "difficulty_level": "A2",
+    "category": "anime"
+  },
+  {
+    "word": "stunning",
+    "pronunciation": "STUHN-ing",
+    "part_of_speech": "adjective",
+    "meaning": "Extremely impressive or attractive",
+    "meaning_ja": "見事な、息をのむような",
+    "example_sentence": "The graphics are stunning.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "dramatic",
+    "pronunciation": "druh-MAT-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Sudden and striking",
+    "meaning_ja": "劇的な、ドラマチックな",
+    "example_sentence": "There was a dramatic plot change.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "intense",
+    "pronunciation": "in-TENS",
+    "part_of_speech": "adjective",
+    "meaning": "Of extreme force, degree, or strength",
+    "meaning_ja": "激しい、強烈な",
+    "example_sentence": "The battle was intense.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "epic",
+    "pronunciation": "EP-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Heroic or grand in scale",
+    "meaning_ja": "壮大な、叙事詩的な",
+    "example_sentence": "The final battle was epic.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "classic",
+    "pronunciation": "KLAS-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Judged over a period of time to be of the highest quality and outstanding of its kind",
+    "meaning_ja": "古典的な、名作の",
+    "example_sentence": "That is a classic anime show.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "clumsy",
+    "pronunciation": "KLUHM-zee",
+    "part_of_speech": "adjective",
+    "meaning": "Awkward in movement or in handling things",
+    "meaning_ja": "ドジな、不器用な",
+    "example_sentence": "The protagonist's sidekick is clumsy.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "quirky",
+    "pronunciation": "KWUR-kee",
+    "part_of_speech": "adjective",
+    "meaning": "Characterized by peculiar or unexpected traits",
+    "meaning_ja": "一風変わった",
+    "example_sentence": "The characters are very quirky.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "charming",
+    "pronunciation": "CHAHR-ming",
+    "part_of_speech": "adjective",
+    "meaning": "Pleasant or attractive",
+    "meaning_ja": "チャーミングな",
+    "example_sentence": "The slice-of-life scenes are charming.",
+    "difficulty_level": "B1",
+    "category": "anime"
+  },
+  {
+    "word": "iconic",
+    "pronunciation": "ahy-KON-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to or of the nature of an icon",
+    "meaning_ja": "象徴的な、アイコニックな",
+    "example_sentence": "The character's pose is iconic.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "overpowered",
+    "pronunciation": "oh-ver-POW-erd",
+    "part_of_speech": "adjective",
+    "meaning": "Defeat by greater strength",
+    "meaning_ja": "強すぎる、チート級の",
+    "example_sentence": "The protagonist is completely overpowered.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "underrated",
+    "pronunciation": "uhn-der-REY-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Underestimated in value",
+    "meaning_ja": "過小評価された",
+    "example_sentence": "This hidden gem anime is underrated.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "overrated",
+    "pronunciation": "oh-ver-REY-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Rated too highly",
+    "meaning_ja": "過大評価された",
+    "example_sentence": "Honestly, that show is overrated.",
+    "difficulty_level": "B2",
+    "category": "anime"
+  },
+  {
+    "word": "lyrics",
+    "pronunciation": "LIR-iks",
+    "part_of_speech": "noun",
+    "meaning": "The words of a song",
+    "meaning_ja": "歌詞",
+    "example_sentence": "I wrote down the lyrics of my favorite song.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "chorus",
+    "pronunciation": "KAWR-uhs",
+    "part_of_speech": "noun",
+    "meaning": "A part of a song that is repeated after each verse",
+    "meaning_ja": "コーラス、サビ",
+    "example_sentence": "The chorus is very catchy.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "melody",
+    "pronunciation": "MEL-uh-dee",
+    "part_of_speech": "noun",
+    "meaning": "A sequence of single notes that is musically satisfying",
+    "meaning_ja": "メロディー、旋律",
+    "example_sentence": "The piano melody is beautiful.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "rhythm",
+    "pronunciation": "RITH-uhm",
+    "part_of_speech": "noun",
+    "meaning": "A strong, regular, repeated pattern of movement or sound",
+    "meaning_ja": "リズム",
+    "example_sentence": "He clapped to the rhythm of the beat.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "vibrato",
+    "pronunciation": "vi-BRAH-toh",
+    "part_of_speech": "noun",
+    "meaning": "A rapid, slight variation in pitch in singing or playing some instruments",
+    "meaning_ja": "ビブラート",
+    "example_sentence": "Her voice has a natural vibrato.",
+    "difficulty_level": "C1",
+    "category": "music"
+  },
+  {
+    "word": "acoustic",
+    "pronunciation": "uh-KOO-stik",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to sound or the sense of hearing",
+    "meaning_ja": "アコースティック、生音の",
+    "example_sentence": "I prefer the acoustic version of the track.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "soulful",
+    "pronunciation": "SOHL-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Expressing or appearing to express deep and often sorrowful feeling",
+    "meaning_ja": "魂のこもった、感情豊かな",
+    "example_sentence": "His vocals were soulful and moving.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "harmony",
+    "pronunciation": "HAHR-muh-nee",
+    "part_of_speech": "noun",
+    "meaning": "The combination of simultaneously sounded musical notes to produce chords",
+    "meaning_ja": "ハーモニー、調和",
+    "example_sentence": "Their voices matched in perfect harmony.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "composer",
+    "pronunciation": "kuhn-POH-zer",
+    "part_of_speech": "noun",
+    "meaning": "A person who writes music, especially as a professional occupation",
+    "meaning_ja": "作曲家",
+    "example_sentence": "The anime soundtrack composer is famous.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "instrument",
+    "pronunciation": "IN-struh-muhnt",
+    "part_of_speech": "noun",
+    "meaning": "An object or device for producing musical sounds",
+    "meaning_ja": "楽器",
+    "example_sentence": "The violin is a difficult instrument.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "recital",
+    "pronunciation": "ri-SAHY-tl",
+    "part_of_speech": "noun",
+    "meaning": "A performance of program of music",
+    "meaning_ja": "リサイタル、発表会",
+    "example_sentence": "I attended my friend's piano recital.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "concert",
+    "pronunciation": "KON-surt",
+    "part_of_speech": "noun",
+    "meaning": "A musical performance given in public",
+    "meaning_ja": "コンサート",
+    "example_sentence": "We went to an outdoor concert.",
+    "difficulty_level": "A1",
+    "category": "music"
+  },
+  {
+    "word": "track",
+    "pronunciation": "TRAK",
+    "part_of_speech": "noun",
+    "meaning": "A recording of one song or piece of music",
+    "meaning_ja": "トラック、楽曲",
+    "example_sentence": "Skip to the next track.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "album",
+    "pronunciation": "AL-buhm",
+    "part_of_speech": "noun",
+    "meaning": "A collection of audio recordings issued as a single item",
+    "meaning_ja": "アルバム",
+    "example_sentence": "Their debut album sold out.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "playlist",
+    "pronunciation": "PLAY-list",
+    "part_of_speech": "noun",
+    "meaning": "A list of recorded songs or pieces of music",
+    "meaning_ja": "プレイリスト",
+    "example_sentence": "I added Clairo's song to my playlist.",
+    "difficulty_level": "A1",
+    "category": "music"
+  },
+  {
+    "word": "tempo",
+    "pronunciation": "TEM-poh",
+    "part_of_speech": "noun",
+    "meaning": "The speed at which a passage of music is or should be played",
+    "meaning_ja": "テンポ",
+    "example_sentence": "The song has a fast tempo.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "lyrics",
+    "pronunciation": "LIR-iks",
+    "part_of_speech": "noun/adjective",
+    "meaning": "The words of a song",
+    "meaning_ja": "歌詞の、叙情的な",
+    "example_sentence": "She enjoys writing lyrical journals.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "vocals",
+    "pronunciation": "VOH-kuhlz",
+    "part_of_speech": "noun",
+    "meaning": "The part of a piece of music that is sung",
+    "meaning_ja": "ボーカル",
+    "example_sentence": "The vocals were clear and loud.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "refrain",
+    "pronunciation": "ri-FRAYN",
+    "part_of_speech": "noun/verb",
+    "meaning": "A repeated line or number of lines in a poem or song",
+    "meaning_ja": "リフレイン、繰り返しの句",
+    "example_sentence": "The refrain echoed in my mind.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "beat",
+    "pronunciation": "BEET",
+    "part_of_speech": "noun/verb",
+    "meaning": "A main accent or rhythmic unit in music or poetry",
+    "meaning_ja": "ビート、拍子",
+    "example_sentence": "The crowd danced to the beat.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "genre",
+    "pronunciation": "ZHAHN-ruh",
+    "part_of_speech": "noun",
+    "meaning": "A category",
+    "meaning_ja": "音楽ジャンル",
+    "example_sentence": "Lofi beats is a popular genre for studying.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "duet",
+    "pronunciation": "doo-ET",
+    "part_of_speech": "noun",
+    "meaning": "A performance by two singers or instrumentalists",
+    "meaning_ja": "デュエット、二重奏",
+    "example_sentence": "They sang a romantic duet.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "solo",
+    "pronunciation": "SOH-loh",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A piece of music for one voice or instrument",
+    "meaning_ja": "ソロ、単独の",
+    "example_sentence": "The guitarist played an epic solo.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "bass",
+    "pronunciation": "BEYS",
+    "part_of_speech": "noun/adjective",
+    "meaning": "The lowest adult male singing voice",
+    "meaning_ja": "ベース、低音の",
+    "example_sentence": "Turn up the bass on the speaker.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "treble",
+    "pronunciation": "TREB-uhl",
+    "part_of_speech": "noun/adjective",
+    "meaning": "The highest voice or part in cooperative singing",
+    "meaning_ja": "高音の、トレブル",
+    "example_sentence": "The treble was a bit too high.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "amplifier",
+    "pronunciation": "AM-pluh-fahy-er",
+    "part_of_speech": "noun",
+    "meaning": "An electronic device for increasing the amplitude of electrical signals, used in sound reproduction",
+    "meaning_ja": "アンプ、増幅器",
+    "example_sentence": "Connect the guitar to the amplifier.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "chord",
+    "pronunciation": "KAWRD",
+    "part_of_speech": "noun",
+    "meaning": "A group of notes sounded together as a basis of harmony",
+    "meaning_ja": "コード、和音",
+    "example_sentence": "He learned three basic guitar chords.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "tune",
+    "pronunciation": "TOON",
+    "part_of_speech": "noun/verb",
+    "meaning": "A melody, especially a simple and easily remembered one",
+    "meaning_ja": "曲、チューニングする",
+    "example_sentence": "I hummed a familiar tune.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "synth",
+    "pronunciation": "SINTH",
+    "part_of_speech": "noun",
+    "meaning": "A synthesizer",
+    "meaning_ja": "シンセサイザー",
+    "example_sentence": "The track features a futuristic synth beat.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "reverb",
+    "pronunciation": "ri-VURB",
+    "part_of_speech": "noun",
+    "meaning": "An effect whereby the sound produced by an amplifier or an acoustic instrument is made to reverberate",
+    "meaning_ja": "リバーブ、残響",
+    "example_sentence": "The vocals had a lot of reverb.",
+    "difficulty_level": "C1",
+    "category": "music"
+  },
+  {
+    "word": "echo",
+    "pronunciation": "EK-oh",
+    "part_of_speech": "noun/verb",
+    "meaning": "A sound or series of sounds caused by the reflection of sound waves",
+    "meaning_ja": "エコー、こだま",
+    "example_sentence": "My voice echoed in the empty hall.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "resonance",
+    "pronunciation": "REZ-uh-nuhns",
+    "part_of_speech": "noun",
+    "meaning": "The quality in a sound of being deep, full, and reverberating",
+    "meaning_ja": "響き、レゾナンス",
+    "example_sentence": "Her voice had a deep resonance.",
+    "difficulty_level": "C1",
+    "category": "music"
+  },
+  {
+    "word": "pitch",
+    "pronunciation": "PICH",
+    "part_of_speech": "noun/verb",
+    "meaning": "The quality of a sound governed by the rate of vibrations producing it",
+    "meaning_ja": "音高、ピッチ",
+    "example_sentence": "His pitch was slightly off.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "key",
+    "pronunciation": "KEE",
+    "part_of_speech": "noun",
+    "meaning": "A system of notes",
+    "meaning_ja": "キー、調",
+    "example_sentence": "This song is in the key of C major.",
+    "difficulty_level": "A1",
+    "category": "music"
+  },
+  {
+    "word": "scale",
+    "pronunciation": "SKEYL",
+    "part_of_speech": "noun",
+    "meaning": "A graduated sequence of notes",
+    "meaning_ja": "音階、スケール",
+    "example_sentence": "The student practiced the major scale.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "performance",
+    "pronunciation": "per-FAWR-muhns",
+    "part_of_speech": "noun",
+    "meaning": "An act of staging or presenting a play, concert, or other form of entertainment",
+    "meaning_ja": "パフォーマンス、演奏",
+    "example_sentence": "Her live performance was outstanding.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "instrumental",
+    "pronunciation": "in-struh-MEN-tl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Serving as a means of pursuing something",
+    "meaning_ja": "インストゥルメンタル、歌詞のない",
+    "example_sentence": "I study best with instrumental music.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "live",
+    "pronunciation": "LAHYV",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Broadcast, recorded, or performed at the time of occurrence",
+    "meaning_ja": "ライブの、生演奏の",
+    "example_sentence": "They went to a live show.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "studio",
+    "pronunciation": "STOO-dee-oh",
+    "part_of_speech": "noun",
+    "meaning": "A room where an artist, photographer, sculptor, etc. works",
+    "meaning_ja": "録音スタジオ",
+    "example_sentence": "The band recorded in a professional studio.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "producer",
+    "pronunciation": "pruh-DOO-ser",
+    "part_of_speech": "noun",
+    "meaning": "A person, company, or country that makes, grows, or supplies goods or commodities for sale",
+    "meaning_ja": "プロデューサー",
+    "example_sentence": "The music producer helped mix the track.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "catchy",
+    "pronunciation": "KACH-ee",
+    "part_of_speech": "adjective",
+    "meaning": "Instantly appealing and memorable",
+    "meaning_ja": "キャッチーな、耳に残る",
+    "example_sentence": "The chorus is so catchy.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "melodic",
+    "pronunciation": "muh-LOD-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Of, having, or producing melody",
+    "meaning_ja": "旋律的な、メロディアスな",
+    "example_sentence": "The pop track was very melodic.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "rhythmic",
+    "pronunciation": "RITH-mik",
+    "part_of_speech": "adjective",
+    "meaning": "Having or relating to rhythm",
+    "meaning_ja": "リズムに乗った",
+    "example_sentence": "The rhythmic clapping filled the hall.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "tuneful",
+    "pronunciation": "TOON-fuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Having a pleasing tune",
+    "meaning_ja": "調べの美しい",
+    "example_sentence": "She wrote a tuneful melody.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "acoustic",
+    "pronunciation": "uh-KOO-stik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Unplugged",
+    "meaning_ja": "アコースティック楽器の",
+    "example_sentence": "The singer played an acoustic guitar.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "harmony",
+    "pronunciation": "HAHR-muh-nee",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Pleasing combo",
+    "meaning_ja": "調和した",
+    "example_sentence": "The backing vocals were in harmony.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "vocal",
+    "pronunciation": "VOH-kuhl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Singing",
+    "meaning_ja": "ボーカルの、声を大にする",
+    "example_sentence": "She took vocal lessons.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "soothing",
+    "pronunciation": "SOOTH-ing",
+    "part_of_speech": "adjective",
+    "meaning": "Having a gently calming effect",
+    "meaning_ja": "心地よい、なだめるような",
+    "example_sentence": "Soft jazz is very soothing.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "energetic",
+    "pronunciation": "en-er-JET-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Showing or involving great activity or vitality",
+    "meaning_ja": "活動的な、元気な",
+    "example_sentence": "The beat was energetic.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "monotonous",
+    "pronunciation": "muh-NOT-n-uhs",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Repetitive sound",
+    "meaning_ja": "一本調子の",
+    "example_sentence": "The drum beat was monotonous.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "noisy",
+    "pronunciation": "NOI-zee",
+    "part_of_speech": "adjective",
+    "meaning": "Making a lot of noise",
+    "meaning_ja": "騒がしい",
+    "example_sentence": "The club was noisy.",
+    "difficulty_level": "A1",
+    "category": "music"
+  },
+  {
+    "word": "silent",
+    "pronunciation": "SAHY-luhnt",
+    "part_of_speech": "adjective",
+    "meaning": "Not making or accompanied by any sound",
+    "meaning_ja": "静かな",
+    "example_sentence": "The room fell silent.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "loud",
+    "pronunciation": "LOWD",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Producing a lot of change",
+    "meaning_ja": "うるさい、大音量の",
+    "example_sentence": "The volume was too loud.",
+    "difficulty_level": "A1",
+    "category": "music"
+  },
+  {
+    "word": "soft",
+    "pronunciation": "SAWFT",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Quiet and gentle",
+    "meaning_ja": "静かな、柔らかな",
+    "example_sentence": "The background music was soft.",
+    "difficulty_level": "A1",
+    "category": "music"
+  },
+  {
+    "word": "dynamic",
+    "pronunciation": "dahy-NAM-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Volume variation",
+    "meaning_ja": "強弱のある",
+    "example_sentence": "The classical track has a dynamic range.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "soulful",
+    "pronunciation": "SOHL-fuhl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Deeply emotional",
+    "meaning_ja": "ソウルフルな",
+    "example_sentence": "She sang a soulful ballad.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "melancholy",
+    "pronunciation": "MEL-an-kol-ee",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Sad song style",
+    "meaning_ja": "哀愁を帯びた",
+    "example_sentence": "Lofi tracks often have a melancholy vibe.",
+    "difficulty_level": "B2",
+    "category": "music"
+  },
+  {
+    "word": "upbeat",
+    "pronunciation": "UHP-beet",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Cheerful; optimistic",
+    "meaning_ja": "テンポの速い、陽気な",
+    "example_sentence": "The song has an upbeat tempo.",
+    "difficulty_level": "B1",
+    "category": "music"
+  },
+  {
+    "word": "classic",
+    "pronunciation": "KLAS-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Old standard",
+    "meaning_ja": "クラシック音楽の",
+    "example_sentence": "He likes classical music.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "modern",
+    "pronunciation": "MOD-ern",
+    "part_of_speech": "adjective/noun",
+    "meaning": "New style",
+    "meaning_ja": "現代風の",
+    "example_sentence": "Modern pop mixes synths.",
+    "difficulty_level": "A2",
+    "category": "music"
+  },
+  {
+    "word": "blossom",
+    "pronunciation": "BLOS-uhm",
+    "part_of_speech": "noun/verb",
+    "meaning": "A flower or a mass of flowers on a tree or bush",
+    "meaning_ja": "花、開花する",
+    "example_sentence": "The cherry blossoms look beautiful in spring.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "foliage",
+    "pronunciation": "FOH-lee-ij",
+    "part_of_speech": "noun",
+    "meaning": "Plant leaves collectively",
+    "meaning_ja": "葉、紅葉",
+    "example_sentence": "Autumn foliage turns the mountains orange and gold.",
+    "difficulty_level": "C1",
+    "category": "nature"
+  },
+  {
+    "word": "scenery",
+    "pronunciation": "SEEN-uh-ree",
+    "part_of_speech": "noun",
+    "meaning": "The natural features of a landscape considered in terms of their appearance",
+    "meaning_ja": "景色、風光",
+    "example_sentence": "The train route offers beautiful mountain scenery.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "breeze",
+    "pronunciation": "BREEZ",
+    "part_of_speech": "noun",
+    "meaning": "A gentle wind",
+    "meaning_ja": "微風、そよ風",
+    "example_sentence": "A cool evening breeze blew through the window.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "tranquil",
+    "pronunciation": "TRANG-kwil",
+    "part_of_speech": "adjective",
+    "meaning": "Free from disturbance; calm",
+    "meaning_ja": "穏やかな、閑静な",
+    "example_sentence": "The lake was tranquil in the morning.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "drizzle",
+    "pronunciation": "DRIZ-uhl",
+    "part_of_speech": "noun/verb",
+    "meaning": "Light rain falling in very fine drops",
+    "meaning_ja": "霧雨、しとしと降る雨",
+    "example_sentence": "It was just a light drizzle, so we didn't open umbrellas.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "wilderness",
+    "pronunciation": "WIL-der-nis",
+    "part_of_speech": "noun",
+    "meaning": "An uncultivated, uninhabited, and inhospitable region",
+    "meaning_ja": "荒野、大自然",
+    "example_sentence": "Hiking in the wilderness requires a map.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "canopy",
+    "pronunciation": "KAN-uh-pee",
+    "part_of_speech": "noun",
+    "meaning": "An ornamental cloth-like covering",
+    "meaning_ja": "林冠、キャノピー（木々の覆い）",
+    "example_sentence": "We walked under the green forest canopy.",
+    "difficulty_level": "C1",
+    "category": "nature"
+  },
+  {
+    "word": "landscape",
+    "pronunciation": "LAND-skeyp",
+    "part_of_speech": "noun/verb",
+    "meaning": "All the visible features of an area of countryside or land",
+    "meaning_ja": "風景、ランドスケープ",
+    "example_sentence": "The landscape was covered in deep snow.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "climate",
+    "pronunciation": "KLAHY-mit",
+    "part_of_speech": "noun",
+    "meaning": "The weather conditions prevailing in an area",
+    "meaning_ja": "気候",
+    "example_sentence": "Japan has a temperate climate with four seasons.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "season",
+    "pronunciation": "SEE-zuhn",
+    "part_of_speech": "noun",
+    "meaning": "Each of the four divisions of the year",
+    "meaning_ja": "季節",
+    "example_sentence": "Spring is my favorite season.",
+    "difficulty_level": "A1",
+    "category": "nature"
+  },
+  {
+    "word": "horizon",
+    "pronunciation": "huh-RAHY-zuhn",
+    "part_of_speech": "noun",
+    "meaning": "The line at which the earth's surface and the sky appear to meet",
+    "meaning_ja": "地平線、水平線",
+    "example_sentence": "The sun sank below the horizon.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "meadow",
+    "pronunciation": "MED-oh",
+    "part_of_speech": "noun",
+    "meaning": "A piece of grassland",
+    "meaning_ja": "牧草地、草原",
+    "example_sentence": "The meadow was filled with yellow flowers.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "stream",
+    "pronunciation": "STREEM",
+    "part_of_speech": "noun/verb",
+    "meaning": "A small, narrow river",
+    "meaning_ja": "小川",
+    "example_sentence": "A clear stream flows near the cottage.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "valley",
+    "pronunciation": "VAL-ee",
+    "part_of_speech": "noun",
+    "meaning": "A low area of land between hills or mountains",
+    "meaning_ja": "谷",
+    "example_sentence": "The village is nestled in a valley.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "summit",
+    "pronunciation": "SUHM-it",
+    "part_of_speech": "noun",
+    "meaning": "The highest point of a hill or mountain",
+    "meaning_ja": "山頂、首脳会談",
+    "example_sentence": "It took five hours to reach the summit.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "glacier",
+    "pronunciation": "GLEY-sher",
+    "part_of_speech": "noun",
+    "meaning": "A slowly moving mass or river of ice",
+    "meaning_ja": "氷河",
+    "example_sentence": "The glacier is melting due to climate change.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "monsoon",
+    "pronunciation": "mon-SOON",
+    "part_of_speech": "noun",
+    "meaning": "A seasonal wind in the region of South and Southeast Asia",
+    "meaning_ja": "モンスーン、梅雨",
+    "example_sentence": "The summer monsoon brings heavy rain.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "drought",
+    "pronunciation": "DROWT",
+    "part_of_speech": "noun",
+    "meaning": "A prolonged period of abnormally low rainfall",
+    "meaning_ja": "干ばつ",
+    "example_sentence": "The lack of rain caused a severe drought.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "thunderstorm",
+    "pronunciation": "THUHN-der-stawrm",
+    "part_of_speech": "noun",
+    "meaning": "A storm with thunder and lightning and typically also heavy rain",
+    "meaning_ja": "雷雨",
+    "example_sentence": "A sudden thunderstorm cancelled our picnic.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "avalanche",
+    "pronunciation": "AV-uh-lanch",
+    "part_of_speech": "noun/verb",
+    "meaning": "A mass of snow, ice, and rocks falling rapidly down a mountainside",
+    "meaning_ja": "雪崩",
+    "example_sentence": "The road was closed due to an avalanche hazard.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "earthquake",
+    "pronunciation": "URTH-kweyk",
+    "part_of_speech": "noun",
+    "meaning": "A sudden and violent shaking of the ground",
+    "meaning_ja": "地震",
+    "example_sentence": "Japan experiences frequent minor earthquakes.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "eruption",
+    "pronunciation": "ih-RUHP-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "An act of erupting",
+    "meaning_ja": "噴火",
+    "example_sentence": "The volcanic eruption sent ash into the sky.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "biodiversity",
+    "pronunciation": "bahy-oh-dih-VUR-si-tee",
+    "part_of_speech": "noun",
+    "meaning": "The variety of life in the world or in a particular habitat or ecosystem",
+    "meaning_ja": "生物多様性",
+    "example_sentence": "Rainforests are rich in biodiversity.",
+    "difficulty_level": "C1",
+    "category": "nature"
+  },
+  {
+    "word": "eco-friendly",
+    "pronunciation": "EE-koh-frend-lee",
+    "part_of_speech": "adjective",
+    "meaning": "Not harmful to the environment",
+    "meaning_ja": "環境に優しい",
+    "example_sentence": "Using a reusable bottle is eco-friendly.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "environment",
+    "pronunciation": "en-VAHY-ruhn-muhnt",
+    "part_of_speech": "noun",
+    "meaning": "The surroundings or conditions in which a person, animal, or plant lives",
+    "meaning_ja": "環境",
+    "example_sentence": "We must protect the natural environment.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "conservation",
+    "pronunciation": "kon-ser-VEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The action of conserving something",
+    "meaning_ja": "保全、環境保護",
+    "example_sentence": "Water conservation is important in summer.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "habitat",
+    "pronunciation": "HAB-i-tat",
+    "part_of_speech": "noun",
+    "meaning": "The natural home or environment of an animal, plant, or other organism",
+    "meaning_ja": "生息地",
+    "example_sentence": "Forest destruction threatens wild animal habitats.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "ecosystem",
+    "pronunciation": "EE-koh-sis-tuhm",
+    "part_of_speech": "noun",
+    "meaning": "A biological community of interacting organisms and their physical environment",
+    "meaning_ja": "生態系",
+    "example_sentence": "Every creature plays a part in the ecosystem.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "pollution",
+    "pronunciation": "puh-LOO-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The presence in or introduction into the environment of a substance or thing that has harmful effects",
+    "meaning_ja": "汚染",
+    "example_sentence": "Air pollution is a major issue in big cities.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "lush",
+    "pronunciation": "LUHSH",
+    "part_of_speech": "adjective",
+    "meaning": "Growing luxuriantly",
+    "meaning_ja": "青々と茂った",
+    "example_sentence": "The valley was lush and green.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "barren",
+    "pronunciation": "BAR-uhn",
+    "part_of_speech": "adjective",
+    "meaning": "Too poor to produce much or any vegetation",
+    "meaning_ja": "不毛の、荒涼とした",
+    "example_sentence": "The desert was a barren landscape.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "scenic",
+    "pronunciation": "SEEN-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Providing or relating to views of impressive natural scenery",
+    "meaning_ja": "景色の良い",
+    "example_sentence": "We took the scenic route.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "rugged",
+    "pronunciation": "RUHG-id",
+    "part_of_speech": "adjective",
+    "meaning": "Having a broken, rocky, and uneven surface",
+    "meaning_ja": "険しい、ゴツゴツした",
+    "example_sentence": "The hikers climbed the rugged cliffs.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "muddy",
+    "pronunciation": "MUHD-ee",
+    "part_of_speech": "adjective",
+    "meaning": "Covered in or full of mud",
+    "meaning_ja": "泥だらけの",
+    "example_sentence": "The path was muddy after the rain.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "clear",
+    "pronunciation": "KLEER",
+    "part_of_speech": "adjective",
+    "meaning": "Easy to perceive, understand, or interpret",
+    "meaning_ja": "晴れ渡った、透明な",
+    "example_sentence": "The sky was clear and blue.",
+    "difficulty_level": "A1",
+    "category": "nature"
+  },
+  {
+    "word": "cloudy",
+    "pronunciation": "KLOW-dee",
+    "part_of_speech": "adjective",
+    "meaning": "Full of or covered with clouds",
+    "meaning_ja": "曇りの",
+    "example_sentence": "It was a cloudy afternoon.",
+    "difficulty_level": "A1",
+    "category": "nature"
+  },
+  {
+    "word": "misty",
+    "pronunciation": "MIS-tee",
+    "part_of_speech": "adjective",
+    "meaning": "Full of, covered with, or accompanied by mist",
+    "meaning_ja": "霧のかかった",
+    "example_sentence": "The valley looked misty in the morning.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "foggy",
+    "pronunciation": "FOG-ee",
+    "part_of_speech": "adjective",
+    "meaning": "Full of or characterized by fog",
+    "meaning_ja": "霧の濃い",
+    "example_sentence": "It is dangerous to drive in foggy weather.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "humid",
+    "pronunciation": "HYOO-mid",
+    "part_of_speech": "adjective",
+    "meaning": "Marked by a relatively high level of water vapor in the atmosphere",
+    "meaning_ja": "湿気のある、蒸し暑い",
+    "example_sentence": "Summer in Tokyo is very humid.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "temperate",
+    "pronunciation": "TEM-per-it",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to or denoting a region or climate characterized by mild temperatures",
+    "meaning_ja": "温帯の、穏やかな",
+    "example_sentence": "We enjoy a temperate climate.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "tropical",
+    "pronunciation": "TROP-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Resembling conditions in the tropics",
+    "meaning_ja": "熱帯の",
+    "example_sentence": "Tropical forests have many species.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "polar",
+    "pronunciation": "POH-ler",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to the North or South Pole",
+    "meaning_ja": "極地の",
+    "example_sentence": "Polar bears live in freezing conditions.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "natural",
+    "pronunciation": "NACH-er-uhl",
+    "part_of_speech": "adjective",
+    "meaning": "Existing in or caused by nature",
+    "meaning_ja": "自然の",
+    "example_sentence": "I like natural ingredients.",
+    "difficulty_level": "A1",
+    "category": "nature"
+  },
+  {
+    "word": "wild",
+    "pronunciation": "WAHYLD",
+    "part_of_speech": "adjective",
+    "meaning": "Living or growing in the natural environment",
+    "meaning_ja": "野生の、野生の",
+    "example_sentence": "There are wild deer in Nara.",
+    "difficulty_level": "A2",
+    "category": "nature"
+  },
+  {
+    "word": "domestic",
+    "pronunciation": "duh-MES-tik",
+    "part_of_speech": "adjective",
+    "meaning": "Tame",
+    "meaning_ja": "飼いならされた",
+    "example_sentence": "Cats are domestic animals.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "fertile",
+    "pronunciation": "FUR-tl",
+    "part_of_speech": "adjective",
+    "meaning": "Producing or capable of producing abundant vegetation or crops",
+    "meaning_ja": "肥沃な",
+    "example_sentence": "The river valley has fertile soil.",
+    "difficulty_level": "B2",
+    "category": "nature"
+  },
+  {
+    "word": "organic",
+    "pronunciation": "awr-GAN-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to or derived from living matter",
+    "meaning_ja": "有機的な、オーガニックの",
+    "example_sentence": "We buy organic vegetables.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "coastal",
+    "pronunciation": "KOHS-tuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Of or near a coast",
+    "meaning_ja": "沿岸の",
+    "example_sentence": "They took a walk along the coastal path.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "mountainous",
+    "pronunciation": "MOUN-tuh-nuhs",
+    "part_of_speech": "adjective",
+    "meaning": "Having many mountains",
+    "meaning_ja": "山がちな",
+    "example_sentence": "Japan is a mountainous country.",
+    "difficulty_level": "B1",
+    "category": "nature"
+  },
+  {
+    "word": "savory",
+    "pronunciation": "SEY-vuh-ree",
+    "part_of_speech": "adjective",
+    "meaning": "Belonging to the category that is salty or spicy rather than sweet",
+    "meaning_ja": "塩気のある、ピリッとした（甘くない）",
+    "example_sentence": "I prefer a savory breakfast over a sweet one.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "ferment",
+    "pronunciation": "fer-MENT",
+    "part_of_speech": "verb/noun",
+    "meaning": "To undergo a chemical change in food production",
+    "meaning_ja": "発酵する",
+    "example_sentence": "Soybeans ferment to make natto and soy sauce.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "cuisine",
+    "pronunciation": "kwi-ZEEN",
+    "part_of_speech": "noun",
+    "meaning": "A style or method of cooking, especially as characteristic of a particular country, region, or establishment",
+    "meaning_ja": "料理、クイジーン",
+    "example_sentence": "Japanese cuisine is famous for sushi and ramen.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "ingredient",
+    "pronunciation": "in-GREE-dee-uhnt",
+    "part_of_speech": "noun",
+    "meaning": "Any of the foods or substances that are combined to make a particular dish",
+    "meaning_ja": "食材、成分",
+    "example_sentence": "Fresh ginger is an important ingredient in this soup.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "appetizer",
+    "pronunciation": "AP-i-tahy-zer",
+    "part_of_speech": "noun",
+    "meaning": "A small dish of food or a drink taken before a meal to stimulate the appetite",
+    "meaning_ja": "前菜",
+    "example_sentence": "We ordered spring rolls as an appetizer.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "dessert",
+    "pronunciation": "dih-ZURT",
+    "part_of_speech": "noun",
+    "meaning": "The sweet course eaten at the end of a meal",
+    "meaning_ja": "デザート",
+    "example_sentence": "We had matcha ice cream for dessert.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "beverage",
+    "pronunciation": "BEV-er-ij",
+    "part_of_speech": "noun",
+    "meaning": "A drink other than water",
+    "meaning_ja": "飲み物、飲料",
+    "example_sentence": "Tea is a popular beverage in Asia.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "snack",
+    "pronunciation": "SNAK",
+    "part_of_speech": "noun/verb",
+    "meaning": "A small amount of food eaten between meals",
+    "meaning_ja": "おやつ、軽食",
+    "example_sentence": "He grabbed a quick snack between lessons.",
+    "difficulty_level": "A1",
+    "category": "food"
+  },
+  {
+    "word": "seasoning",
+    "pronunciation": "SEE-zuh-ning",
+    "part_of_speech": "noun",
+    "meaning": "Salt, herbs, or spices added to food to enhance the flavor",
+    "meaning_ja": "調味料",
+    "example_sentence": "This soup needs some more seasoning.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "flavor",
+    "pronunciation": "FLEY-ver",
+    "part_of_speech": "noun/verb",
+    "meaning": "The distinctive taste of a food or drink",
+    "meaning_ja": "味、風味",
+    "example_sentence": "Vanilla is a popular flavor for cakes.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "buffet",
+    "pronunciation": "buh-FEY",
+    "part_of_speech": "noun",
+    "meaning": "A meal consisting of several dishes from which guests serve themselves",
+    "meaning_ja": "ビュッフェ、バイキング",
+    "example_sentence": "The hotel offered a breakfast buffet.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "menu",
+    "pronunciation": "MEN-yoo",
+    "part_of_speech": "noun",
+    "meaning": "A list of dishes available in a restaurant",
+    "meaning_ja": "メニュー",
+    "example_sentence": "Let's ask the waiter for the menu.",
+    "difficulty_level": "A1",
+    "category": "food"
+  },
+  {
+    "word": "chef",
+    "pronunciation": "SHEF",
+    "part_of_speech": "noun",
+    "meaning": "A professional cook",
+    "meaning_ja": "シェフ、料理長",
+    "example_sentence": "The head chef prepared the special sushi.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "nutrition",
+    "pronunciation": "noo-TRISH-uhs",
+    "part_of_speech": "noun",
+    "meaning": "The process of providing or obtaining the food necessary for health and growth",
+    "meaning_ja": "栄養",
+    "example_sentence": "A balanced diet provides good nutrition.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "diet",
+    "pronunciation": "DAHY-it",
+    "part_of_speech": "noun/verb",
+    "meaning": "The kinds of food that a person, animal, or community habitually eats",
+    "meaning_ja": "食生活、ダイエット",
+    "example_sentence": "A healthy diet is key to long life.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "allergy",
+    "pronunciation": "AL-er-jee",
+    "part_of_speech": "noun",
+    "meaning": "A damaging immune response by the body to a substance",
+    "meaning_ja": "アレルギー",
+    "example_sentence": "He has a peanut allergy.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "recipe",
+    "pronunciation": "RES-uh-pee",
+    "part_of_speech": "noun",
+    "meaning": "Instructions",
+    "meaning_ja": "レシピ",
+    "example_sentence": "My grandmother gave me this recipe.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "leftover",
+    "pronunciation": "LEF-toh-ver",
+    "part_of_speech": "noun/adjective",
+    "meaning": "Something, especially food, remaining after the rest has been used",
+    "meaning_ja": "残り物",
+    "example_sentence": "We ate leftover pizza for lunch.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "feast",
+    "pronunciation": "FEEST",
+    "part_of_speech": "noun/verb",
+    "meaning": "A large meal, typically one in celebration of something",
+    "meaning_ja": "ごちそう、祝宴",
+    "example_sentence": "The New Year feast lasted all day.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "banquet",
+    "pronunciation": "BANG-kwit",
+    "part_of_speech": "noun",
+    "meaning": "An elaborate and formal evening meal for many people",
+    "meaning_ja": "晩餐会、宴会",
+    "example_sentence": "They held a grand banquet at the palace.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "sweet",
+    "pronunciation": "SWEET",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Having the pleasant taste characteristic of sugar or honey",
+    "meaning_ja": "甘い",
+    "example_sentence": "I like sweet chocolate.",
+    "difficulty_level": "A1",
+    "category": "food"
+  },
+  {
+    "word": "sour",
+    "pronunciation": "SOW-er",
+    "part_of_speech": "adjective",
+    "meaning": "Having an acid taste like lemon or vinegar",
+    "meaning_ja": "酸っぱい",
+    "example_sentence": "Lemons are sour.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "bitter",
+    "pronunciation": "BIT-er",
+    "part_of_speech": "adjective",
+    "meaning": "Having a sharp, pungent taste or smell",
+    "meaning_ja": "苦い",
+    "example_sentence": "Black coffee is bitter.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "salty",
+    "pronunciation": "SAWL-tee",
+    "part_of_speech": "adjective",
+    "meaning": "Tasting of, containing, or preserved with salt",
+    "meaning_ja": "塩辛い",
+    "example_sentence": "Potato chips are salty.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "spicy",
+    "pronunciation": "SPAHY-see",
+    "part_of_speech": "adjective",
+    "meaning": "Flavored with or fragrant with spice",
+    "meaning_ja": "辛い、スパイシーな",
+    "example_sentence": "I like spicy curry.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "bland",
+    "pronunciation": "BLAND",
+    "part_of_speech": "adjective",
+    "meaning": "Lacking strong features or characteristics and therefore uninteresting",
+    "meaning_ja": "薄味の、味気ない",
+    "example_sentence": "Hospital food can be bland.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "crispy",
+    "pronunciation": "KRIS-pee",
+    "part_of_speech": "adjective",
+    "meaning": "Pleasantly thin, dry, and easily broken",
+    "meaning_ja": "サクサクした、パリパリした",
+    "example_sentence": "The fried chicken was hot and crispy.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "crunchy",
+    "pronunciation": "KRUHN-chee",
+    "part_of_speech": "adjective",
+    "meaning": "Making a sharp noise when bitten or crushed",
+    "meaning_ja": "バリバリした、カリカリした",
+    "example_sentence": "Fresh carrots are crunchy.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "tender",
+    "pronunciation": "TEN-der",
+    "part_of_speech": "adjective",
+    "meaning": "Easy to cut or chew; not tough",
+    "meaning_ja": "柔らかい",
+    "example_sentence": "The beef was cooked until tender.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "tough",
+    "pronunciation": "TUHF",
+    "part_of_speech": "adjective",
+    "meaning": "Difficult to cut or chew",
+    "meaning_ja": "固い",
+    "example_sentence": "The meat was tough and overcooked.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "fresh",
+    "pronunciation": "FRESH",
+    "part_of_speech": "adjective",
+    "meaning": "Recently made or obtained; not canned or frozen",
+    "meaning_ja": "新鮮な",
+    "example_sentence": "We buy fresh fruit every morning.",
+    "difficulty_level": "A1",
+    "category": "food"
+  },
+  {
+    "word": "stale",
+    "pronunciation": "STEYL",
+    "part_of_speech": "adjective",
+    "meaning": "No longer fresh and pleasant to eat; hard, musty, or dry",
+    "meaning_ja": "古くなった、ぱさぱさした",
+    "example_sentence": "Don't eat that stale bread.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "raw",
+    "pronunciation": "RAW",
+    "part_of_speech": "adjective",
+    "meaning": "Not cooked",
+    "meaning_ja": "生の",
+    "example_sentence": "Sashimi is raw fish.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "cooked",
+    "pronunciation": "KOOKT",
+    "part_of_speech": "adjective",
+    "meaning": "Prepared by heating",
+    "meaning_ja": "調理された",
+    "example_sentence": "Cooked vegetables are easy to digest.",
+    "difficulty_level": "A1",
+    "category": "food"
+  },
+  {
+    "word": "baked",
+    "pronunciation": "BEYKT",
+    "part_of_speech": "adjective",
+    "meaning": "Cooked by dry heat without direct exposure to a flame, typically in an oven",
+    "meaning_ja": "オーブンで焼いた",
+    "example_sentence": "I love baked apples.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "fried",
+    "pronunciation": "FRAHYD",
+    "part_of_speech": "adjective",
+    "meaning": "Cooked in hot fat or oil",
+    "meaning_ja": "揚げた、炒めた",
+    "example_sentence": "Fried rice is a quick meal.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "steamed",
+    "pronunciation": "STEEMD",
+    "part_of_speech": "adjective",
+    "meaning": "Cooked by steam",
+    "meaning_ja": "蒸した",
+    "example_sentence": "Steamed buns are popular in winter.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "grilled",
+    "pronunciation": "GRILD",
+    "part_of_speech": "adjective",
+    "meaning": "Cooked on a grill",
+    "meaning_ja": "網焼きにした",
+    "example_sentence": "We had grilled salmon.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "roasted",
+    "pronunciation": "ROHST-tid",
+    "part_of_speech": "adjective",
+    "meaning": "Cooked by roasting",
+    "meaning_ja": "ローストした、焙煎した",
+    "example_sentence": "He likes roasted coffee beans.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "boiled",
+    "pronunciation": "BOILD",
+    "part_of_speech": "adjective",
+    "meaning": "Cooked in boiling water",
+    "meaning_ja": "茹でた",
+    "example_sentence": "Boiled eggs are easy to make.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "ripe",
+    "pronunciation": "RAHP",
+    "part_of_speech": "adjective",
+    "meaning": "Developed to the point of readiness for harvesting and eating",
+    "meaning_ja": "熟した",
+    "example_sentence": "The bananas are ripe.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "rotten",
+    "pronunciation": "ROT-n",
+    "part_of_speech": "adjective",
+    "meaning": "Decaying or decayed and fallen into ruin",
+    "meaning_ja": "腐った",
+    "example_sentence": "Throw away the rotten tomatoes.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "delicious",
+    "pronunciation": "dih-LISH-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Highly pleasant to the taste",
+    "meaning_ja": "おいしい",
+    "example_sentence": "That was a delicious lunch.",
+    "difficulty_level": "A1",
+    "category": "food"
+  },
+  {
+    "word": "exotic",
+    "pronunciation": "ig-ZOT-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Originating in or characteristic of a distant foreign country",
+    "meaning_ja": "異国情緒のある、珍しい",
+    "example_sentence": "We tried some exotic fruits on vacation.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "traditional",
+    "pronunciation": "truh-DISH-uh-nuhl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Local style",
+    "meaning_ja": "伝統的な料理",
+    "example_sentence": "They serve traditional washoku.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "imported",
+    "pronunciation": "im-PAWR-tid",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Brought in from another country",
+    "meaning_ja": "輸入された",
+    "example_sentence": "Imported cheese can be expensive.",
+    "difficulty_level": "B1",
+    "category": "food"
+  },
+  {
+    "word": "local",
+    "pronunciation": "LOH-kuhl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Nearby",
+    "meaning_ja": "地元の",
+    "example_sentence": "We bought local strawberries.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "homemade",
+    "pronunciation": "HOHM-MEYD",
+    "part_of_speech": "adjective",
+    "meaning": "Made at home",
+    "meaning_ja": "自家製の、手作りの",
+    "example_sentence": "I love homemade apple pie.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "processed",
+    "pronunciation": "PROS-esd",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Preserved food",
+    "meaning_ja": "加工された",
+    "example_sentence": "Processed food has too much salt.",
+    "difficulty_level": "B2",
+    "category": "food"
+  },
+  {
+    "word": "healthy",
+    "pronunciation": "HEL-thee",
+    "part_of_speech": "adjective",
+    "meaning": "Good for health",
+    "meaning_ja": "健康的な",
+    "example_sentence": "Eating salad is healthy.",
+    "difficulty_level": "A2",
+    "category": "food"
+  },
+  {
+    "word": "literally",
+    "pronunciation": "LIT-er-uh-lee",
+    "part_of_speech": "adverb",
+    "meaning": "In a literal manner or sense; exactly",
+    "meaning_ja": "文字通り、本当に",
+    "example_sentence": "I was literally the only student in class.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "wild",
+    "pronunciation": "WAHYLD",
+    "part_of_speech": "adjective",
+    "meaning": "Uncontrolled; crazy or exciting",
+    "meaning_ja": "ヤバい、めちゃくちゃな",
+    "example_sentence": "His reaction to the food was wild.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "vibe",
+    "pronunciation": "VAHYB",
+    "part_of_speech": "noun/verb",
+    "meaning": "A person's emotional state or the atmosphere of a place",
+    "meaning_ja": "雰囲気、バイブス",
+    "example_sentence": "This cafe has a really chill lofi vibe.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "lowkey",
+    "pronunciation": "LOH-kee",
+    "part_of_speech": "adverb",
+    "meaning": "To some extent; secretly or subtly",
+    "meaning_ja": "実は、控えめに言えば",
+    "example_sentence": "I lowkey want to stay home and watch anime.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "highkey",
+    "pronunciation": "HAHY-kee",
+    "part_of_speech": "adverb",
+    "meaning": "Clearly, obviously, or intensely",
+    "meaning_ja": "本当に、明らかに",
+    "example_sentence": "I highkey love this theme song.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "based",
+    "pronunciation": "BEYST",
+    "part_of_speech": "adjective",
+    "meaning": "True to oneself; not caring what others think",
+    "meaning_ja": "ブレない、イケてる",
+    "example_sentence": "That was a based opinion.",
+    "difficulty_level": "C1",
+    "category": "internet"
+  },
+  {
+    "word": "deadass",
+    "pronunciation": "DED-as",
+    "part_of_speech": "adverb",
+    "meaning": "Seriously; truthfully",
+    "meaning_ja": "ガチで、大真面目で",
+    "example_sentence": "I am deadass not joking about the homework.",
+    "difficulty_level": "C1",
+    "category": "internet"
+  },
+  {
+    "word": "slay",
+    "pronunciation": "SLEY",
+    "part_of_speech": "verb",
+    "meaning": "To do something exceptionally well",
+    "meaning_ja": "イケてる、大成功する",
+    "example_sentence": "You absolutely slayed that presentation.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "ratio",
+    "pronunciation": "REY-shee-oh",
+    "part_of_speech": "noun/verb",
+    "meaning": "When a reply gets more likes than the original post",
+    "meaning_ja": "（ネット用語の）比率、やり返すこと",
+    "example_sentence": "He got ratioed on Twitter.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "bussin",
+    "pronunciation": "BUHS-in",
+    "part_of_speech": "adjective",
+    "meaning": "Extremely delicious",
+    "meaning_ja": "めちゃくちゃうまい",
+    "example_sentence": "This ramen is deadass bussin.",
+    "difficulty_level": "C1",
+    "category": "internet"
+  },
+  {
+    "word": "sheesh",
+    "pronunciation": "SHEESH",
+    "part_of_speech": "interjection",
+    "meaning": "Expression of disbelief or shock",
+    "meaning_ja": "うわー、すげえ",
+    "example_sentence": "Sheesh, look at that giant slice of cake.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "no cap",
+    "pronunciation": "noh KAP",
+    "part_of_speech": "phrase",
+    "meaning": "No lie; seriously",
+    "meaning_ja": "ガチで、嘘偽りなし",
+    "example_sentence": "He can eat five burgers, no cap.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "slang",
+    "pronunciation": "SLANG",
+    "part_of_speech": "noun",
+    "meaning": "A type of language that consists of words and phrases that are regarded as very informal",
+    "meaning_ja": "俗語、スラング",
+    "example_sentence": "Internet slang changes so fast.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "meme",
+    "pronunciation": "MEEM",
+    "part_of_speech": "noun",
+    "meaning": "A humorous image, video, piece of text, etc., that is copied and spread rapidly by internet users",
+    "meaning_ja": "ミーム",
+    "example_sentence": "That CaseOh meme was so funny.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "viral",
+    "pronunciation": "VAHY-ruhl",
+    "part_of_speech": "adjective",
+    "meaning": "Spreading widely and rapidly on the internet",
+    "meaning_ja": "バイラル、拡散された",
+    "example_sentence": "His reaction video went viral.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "trending",
+    "pronunciation": "TREND-ing",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Currently popular on social media",
+    "meaning_ja": "トレンド入りしている",
+    "example_sentence": "Lofi music is trending right now.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "algorithm",
+    "pronunciation": "AL-guh-rith-uhm",
+    "part_of_speech": "noun",
+    "meaning": "A process or set of rules to be followed in calculations",
+    "meaning_ja": "アルゴリズム",
+    "example_sentence": "The YouTube algorithm recommended a cooking clip.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "profile",
+    "pronunciation": "PROH-fahyl",
+    "part_of_speech": "noun",
+    "meaning": "An outline of something, especially a person's face, as seen from one side",
+    "meaning_ja": "プロフィール",
+    "example_sentence": "Update your profile avatar.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "avatar",
+    "pronunciation": "AV-uh-tahr",
+    "part_of_speech": "noun",
+    "meaning": "An icon or figure representing a particular person in a computer game, Internet forum, etc.",
+    "meaning_ja": "アバター、アイコン",
+    "example_sentence": "She chose a sakura leaf for her avatar.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "subscriber",
+    "pronunciation": "suhb-SKRAHY-ber",
+    "part_of_speech": "noun",
+    "meaning": "A person who subscribes to a publication, channel, or service",
+    "meaning_ja": "登録者、チャンネル購読者",
+    "example_sentence": "The streamer reached one million subscribers.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "follower",
+    "pronunciation": "FOL-oh-er",
+    "part_of_speech": "noun",
+    "meaning": "An adherent or devotee of a particular person, cause, or activity",
+    "meaning_ja": "フォロワー",
+    "example_sentence": "He gained ten thousand followers overnight.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "influencer",
+    "pronunciation": "IN-floo-uhn-ser",
+    "part_of_speech": "noun",
+    "meaning": "A person with the ability to influence potential buyers of a product or service by recommending it on social media",
+    "meaning_ja": "インフルエンサー",
+    "example_sentence": "She is a popular beauty influencer.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "streamer",
+    "pronunciation": "STREEM-er",
+    "part_of_speech": "noun",
+    "meaning": "A person who broadcasts material live over the internet",
+    "meaning_ja": "配信者、ストリーマー",
+    "example_sentence": "CaseOh is a famous gaming streamer.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "broadcast",
+    "pronunciation": "BRAWD-kast",
+    "part_of_speech": "noun/verb",
+    "meaning": "Transmit by radio or television",
+    "meaning_ja": "放送、ライブ配信",
+    "example_sentence": "He starts his live broadcast at eight.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "podcast",
+    "pronunciation": "POD-kast",
+    "part_of_speech": "noun/verb",
+    "meaning": "A digital audio file made available on the internet for downloading",
+    "meaning_ja": "ポッドキャスト",
+    "example_sentence": "I listen to an English podcast.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "comment",
+    "pronunciation": "KOM-ent",
+    "part_of_speech": "noun/verb",
+    "meaning": "A verbal or written remark expressing an opinion or reaction",
+    "meaning_ja": "コメント",
+    "example_sentence": "I left a comment on the video.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "feedback",
+    "pronunciation": "FEED-bak",
+    "part_of_speech": "noun",
+    "meaning": "Information about reactions to a product, a person's performance of a task, etc.",
+    "meaning_ja": "フィードバック",
+    "example_sentence": "The teacher gives constructive feedback.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "notifications",
+    "pronunciation": "noh-tuh-fi-KEY-shuhnz",
+    "part_of_speech": "noun",
+    "meaning": "A message that is sent to a phone or computer to inform the user about something",
+    "meaning_ja": "通知",
+    "example_sentence": "Turn on notifications for homework due.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "app",
+    "pronunciation": "AP",
+    "part_of_speech": "noun",
+    "meaning": "An application, especially as downloaded by a user to a mobile device",
+    "meaning_ja": "アプリ",
+    "example_sentence": "We study English on a mobile app.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "website",
+    "pronunciation": "WEB-sahyt",
+    "part_of_speech": "noun",
+    "meaning": "A set of related web pages located under a single domain name",
+    "meaning_ja": "ウェブサイト",
+    "example_sentence": "The website has a responsive layout.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "link",
+    "pronunciation": "LINGK",
+    "part_of_speech": "noun/verb",
+    "meaning": "A relationship between two things",
+    "meaning_ja": "リンク、URL",
+    "example_sentence": "Click the link to open the page.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "username",
+    "pronunciation": "YOOS-er-neym",
+    "part_of_speech": "noun",
+    "meaning": "An identification used by a person with access to a computer, network, or online service",
+    "meaning_ja": "ユーザー名",
+    "example_sentence": "Choose a unique username.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "password",
+    "pronunciation": "PAS-wurd",
+    "part_of_speech": "noun",
+    "meaning": "A secret word or phrase that must be used to gain admission to something",
+    "meaning_ja": "パスワード",
+    "example_sentence": "Keep your password safe.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "security",
+    "pronunciation": "si-KYOOR-i-tee",
+    "part_of_speech": "noun",
+    "meaning": "The state of being free from danger or threat",
+    "meaning_ja": "セキュリティ",
+    "example_sentence": "Database security is crucial.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "privacy",
+    "pronunciation": "PRAHY-vuh-see",
+    "part_of_speech": "noun",
+    "meaning": "The state or condition of being free from public attention",
+    "meaning_ja": "プライバシー",
+    "example_sentence": "We protect user privacy.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "database",
+    "pronunciation": "DEY-tuh-beys",
+    "part_of_speech": "noun",
+    "meaning": "A structured set of data held in a computer, especially one that is accessible in various ways",
+    "meaning_ja": "データベース",
+    "example_sentence": "The word library is saved in a database.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "chat",
+    "pronunciation": "CHAT",
+    "part_of_speech": "noun/verb",
+    "meaning": "Talk in a friendly and informal way",
+    "meaning_ja": "チャット",
+    "example_sentence": "Streamer often talks to chat.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "online",
+    "pronunciation": "ON-lahyn",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Controlled by or connected to another computer",
+    "meaning_ja": "オンラインの",
+    "example_sentence": "I did the placement test online.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "offline",
+    "pronunciation": "AWF-lahyn",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Not connected to a computer",
+    "meaning_ja": "オフラインの",
+    "example_sentence": "The speech API works offline.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "wifi",
+    "pronunciation": "WAHY-fahy",
+    "part_of_speech": "noun",
+    "meaning": "A facility allowing computers, smartphones, or other devices to connect to the internet",
+    "meaning_ja": "ワイファイ",
+    "example_sentence": "The hotel had free wifi.",
+    "difficulty_level": "A1",
+    "category": "internet"
+  },
+  {
+    "word": "signal",
+    "pronunciation": "SIG-nl",
+    "part_of_speech": "noun/verb",
+    "meaning": "An electrical impulse or radio wave transmitted or received",
+    "meaning_ja": "電波、シグナル",
+    "example_sentence": "The mobile signal was weak in valley.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "browser",
+    "pronunciation": "BROW-zer",
+    "part_of_speech": "noun",
+    "meaning": "A program with a graphical user interface for displaying HTML files",
+    "meaning_ja": "ブラウザ",
+    "example_sentence": "Open the link in a mobile browser.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "download",
+    "pronunciation": "DOWN-lohd",
+    "part_of_speech": "verb/noun",
+    "meaning": "Copy data from one computer system to another, typically over the internet",
+    "meaning_ja": "ダウンロードする",
+    "example_sentence": "You can download the notes as text.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "upload",
+    "pronunciation": "UHP-lohd",
+    "part_of_speech": "verb/noun",
+    "meaning": "Transfer data from one computer to another, typically to a larger central server",
+    "meaning_ja": "アップロードする",
+    "example_sentence": "I uploaded my voice file for check.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "interactive",
+    "pronunciation": "in-ter-AK-tiv",
+    "part_of_speech": "adjective",
+    "meaning": "Allowing two-way flow of information between a computer and a user",
+    "meaning_ja": "インタラクティブな",
+    "example_sentence": "The quiz is interactive.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "digital",
+    "pronunciation": "DIJ-i-tl",
+    "part_of_speech": "adjective",
+    "meaning": "Expressed as series of the digits 0 and 1",
+    "meaning_ja": "デジタルな",
+    "example_sentence": "A digital dictionary is convenient.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "virtual",
+    "pronunciation": "VUR-choo-uhl",
+    "part_of_speech": "adjective",
+    "meaning": "Almost or nearly as described, but not completely or according to strict definition",
+    "meaning_ja": "仮想の、バーチャルな",
+    "example_sentence": "We met in a virtual room.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "responsive",
+    "pronunciation": "ri-SPON-siv",
+    "part_of_speech": "adjective",
+    "meaning": "Responding readily and warmly",
+    "meaning_ja": "レスポンシブな、反応が良い",
+    "example_sentence": "The layout is responsive on mobile.",
+    "difficulty_level": "B2",
+    "category": "internet"
+  },
+  {
+    "word": "global",
+    "pronunciation": "GLOH-buhl",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to the whole world; worldwide",
+    "meaning_ja": "グローバルな、全体の",
+    "example_sentence": "The notes widget is mounted globally.",
+    "difficulty_level": "B1",
+    "category": "internet"
+  },
+  {
+    "word": "local",
+    "pronunciation": "LOH-kuhl",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Nearby",
+    "meaning_ja": "ローカルな、ローカルの",
+    "example_sentence": "The files are saved in local storage.",
+    "difficulty_level": "A2",
+    "category": "internet"
+  },
+  {
+    "word": "itinerary",
+    "pronunciation": "ahy-TIN-uh-rer-ee",
+    "part_of_speech": "noun",
+    "meaning": "A planned route or journey",
+    "meaning_ja": "旅程、旅行計画",
+    "example_sentence": "She wrote a detailed itinerary for Tokyo.",
+    "difficulty_level": "C1",
+    "category": "travel"
+  },
+  {
+    "word": "luggage",
+    "pronunciation": "LUHG-ij",
+    "part_of_speech": "noun",
+    "meaning": "Suitcases and bags containing a traveler's belongings",
+    "meaning_ja": "手荷物、ラゲッジ",
+    "example_sentence": "We left our luggage at the hotel lobby.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "boarding",
+    "pronunciation": "BAWR-ding",
+    "part_of_speech": "noun/adjective",
+    "meaning": "The action of getting on a ship, train, or plane",
+    "meaning_ja": "搭乗、搭乗の",
+    "example_sentence": "Boarding starts thirty minutes before departure.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "departure",
+    "pronunciation": "dih-PAHR-cher",
+    "part_of_speech": "noun",
+    "meaning": "The action of leaving, especially to start a journey",
+    "meaning_ja": "出発",
+    "example_sentence": "The flight departure was delayed.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "destination",
+    "pronunciation": "des-tuh-NEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The place to which someone or something is going or being sent",
+    "meaning_ja": "目的地、行先",
+    "example_sentence": "Nara is a popular tourist destination.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "arrival",
+    "pronunciation": "uh-RAHY-vuhl",
+    "part_of_speech": "noun",
+    "meaning": "The action of arriving",
+    "meaning_ja": "到着",
+    "example_sentence": "Her arrival time was set for morning.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "sightseeing",
+    "pronunciation": "SAHYT-see-ing",
+    "part_of_speech": "noun",
+    "meaning": "The activity of visiting places of interest in a particular location",
+    "meaning_ja": "観光",
+    "example_sentence": "We did some sightseeing in Kyoto.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "accommodation",
+    "pronunciation": "uh-kom-uh-DEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "A room, group of rooms, or building in which someone may live or stay",
+    "meaning_ja": "宿泊施設",
+    "example_sentence": "Hotel accommodation can be expensive in spring.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "reservation",
+    "pronunciation": "rez-er-VEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "An arrangement to have something kept for a particular person",
+    "meaning_ja": "予約",
+    "example_sentence": "I made a dinner reservation.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "souvenir",
+    "pronunciation": "soo-vuh-NEER",
+    "part_of_speech": "noun",
+    "meaning": "A thing that is kept as a reminder of a person, place, or event",
+    "meaning_ja": "お土産",
+    "example_sentence": "I bought a cherry blossom fan as a souvenir.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "passport",
+    "pronunciation": "PAS-pawrt",
+    "part_of_speech": "noun",
+    "meaning": "An official document issued by a government, certifying the holder's identity and citizenship",
+    "meaning_ja": "パスポート",
+    "example_sentence": "Don't forget your passport.",
+    "difficulty_level": "A1",
+    "category": "travel"
+  },
+  {
+    "word": "visa",
+    "pronunciation": "VEE-zuh",
+    "part_of_speech": "noun",
+    "meaning": "An endorsement on a passport indicating that the holder is allowed to enter, leave, or stay for a specified period",
+    "meaning_ja": "ビザ、査証",
+    "example_sentence": "I applied for a student visa.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "transit",
+    "pronunciation": "TRAN-sit",
+    "part_of_speech": "noun/verb",
+    "meaning": "The carrying of people, goods, or materials from one place to another",
+    "meaning_ja": "乗り換え、トランジット",
+    "example_sentence": "We were in transit at the airport.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "customs",
+    "pronunciation": "KUHS-tuhmz",
+    "part_of_speech": "noun",
+    "meaning": "The place at a port, airport, or frontier where officials check incoming goods, travelers, or luggage",
+    "meaning_ja": "税関",
+    "example_sentence": "Going through customs took an hour.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "delayed",
+    "pronunciation": "dih-LEYD",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Late",
+    "meaning_ja": "遅れた",
+    "example_sentence": "My flight was delayed.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "cancelled",
+    "pronunciation": "KAN-suhld",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Called off",
+    "meaning_ja": "欠航した、キャンセルされた",
+    "example_sentence": "The train was cancelled due to snow.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "baggage",
+    "pronunciation": "BAG-ij",
+    "part_of_speech": "noun",
+    "meaning": "Luggage",
+    "meaning_ja": "手荷物",
+    "example_sentence": "We collected our baggage.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "terminal",
+    "pronunciation": "TUR-muh-nl",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A departure and arrival building",
+    "meaning_ja": "ターミナル",
+    "example_sentence": "Go to terminal two for domestic flights.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "ticket",
+    "pronunciation": "TIK-it",
+    "part_of_speech": "noun",
+    "meaning": "A piece of paper or card that gives the holder a certain right",
+    "meaning_ja": "切符、チケット",
+    "example_sentence": "I bought a train ticket.",
+    "difficulty_level": "A1",
+    "category": "travel"
+  },
+  {
+    "word": "journey",
+    "pronunciation": "JUR-nee",
+    "part_of_speech": "noun/verb",
+    "meaning": "An act of traveling from one place to another",
+    "meaning_ja": "旅、道のり",
+    "example_sentence": "English study is a long journey.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "voyage",
+    "pronunciation": "VOI-ij",
+    "part_of_speech": "noun/verb",
+    "meaning": "A long journey involving travel by sea or in space",
+    "meaning_ja": "船旅、長い旅",
+    "example_sentence": "The sea voyage was calm.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "flight",
+    "pronunciation": "FLAHT",
+    "part_of_speech": "noun",
+    "meaning": "An act or instance of passing through the air by use of wings",
+    "meaning_ja": "飛行機、フライト",
+    "example_sentence": "The flight takes twelve hours.",
+    "difficulty_level": "A1",
+    "category": "travel"
+  },
+  {
+    "word": "cruise",
+    "pronunciation": "KROOZ",
+    "part_of_speech": "noun/verb",
+    "meaning": "A voyage on a ship or boat taken for pleasure",
+    "meaning_ja": "クルーズ",
+    "example_sentence": "They went on a river cruise.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "expedition",
+    "pronunciation": "ek-spih-DISH-uhn",
+    "part_of_speech": "noun",
+    "meaning": "A journey or voyage undertaken by a group of people with a particular purpose",
+    "meaning_ja": "遠征、探検旅行",
+    "example_sentence": "The scientific expedition went to the polar region.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "tourist",
+    "pronunciation": "TOOR-ist",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A person who is traveling or visiting a place for pleasure",
+    "meaning_ja": "観光客",
+    "example_sentence": "The temple was full of tourists.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "traveler",
+    "pronunciation": "TRAV-uh-ler",
+    "part_of_speech": "noun",
+    "meaning": "A person who is traveling or who often travels",
+    "meaning_ja": "旅行者",
+    "example_sentence": "He is an experienced traveler.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "guidebook",
+    "pronunciation": "GAHD-book",
+    "part_of_speech": "noun",
+    "meaning": "A book of information about a place, designed for the use of visitors or tourists",
+    "meaning_ja": "ガイドブック",
+    "example_sentence": "I bought a guidebook for my trip.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "monument",
+    "pronunciation": "MON-yuh-muhnt",
+    "part_of_speech": "noun",
+    "meaning": "A statue, building, or other structure erected to commemorate a famous person or event",
+    "meaning_ja": "記念碑、モニュメント",
+    "example_sentence": "We visited the historic monument.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "landmark",
+    "pronunciation": "LAND-mahrk",
+    "part_of_speech": "noun",
+    "meaning": "An object or feature of a landscape or town that is easily seen and recognized from a distance",
+    "meaning_ja": "目印、ランドマーク",
+    "example_sentence": "Tokyo Tower is an iconic landmark.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "scenery",
+    "pronunciation": "SEEN-uh-ree",
+    "part_of_speech": "noun",
+    "meaning": "Landscape",
+    "meaning_ja": "風景",
+    "example_sentence": "The train route offers scenic view.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "scenic",
+    "pronunciation": "SEEN-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Scenic views",
+    "meaning_ja": "景観が良い",
+    "example_sentence": "We took a scenic tour.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "historic",
+    "pronunciation": "his-TAWR-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Famous or important in history",
+    "meaning_ja": "歴史的な",
+    "example_sentence": "We visited a historic temple.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "exotic",
+    "pronunciation": "ig-ZOT-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Different place",
+    "meaning_ja": "異国の",
+    "example_sentence": "I like to visit exotic locations.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "cozy",
+    "pronunciation": "KOH-zee",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Warm hotel style",
+    "meaning_ja": "居心地が良い",
+    "example_sentence": "Our guesthouse was cozy.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "luxurious",
+    "pronunciation": "luhg-ZHOOR-ee-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Extremely comfortable, elegant, or enjoyable, especially in a way that involves great expense",
+    "meaning_ja": "豪華な、贅沢な",
+    "example_sentence": "The hotel lobby was luxurious.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "affordable",
+    "pronunciation": "uh-FAWR-duh-buhl",
+    "part_of_speech": "adjective",
+    "meaning": "Inexpensive; reasonably priced",
+    "meaning_ja": "手頃な価格の",
+    "example_sentence": "The hostel was clean and affordable.",
+    "difficulty_level": "B1",
+    "category": "travel"
+  },
+  {
+    "word": "cheap",
+    "pronunciation": "CHEEP",
+    "part_of_speech": "adjective/adverb",
+    "meaning": "Low in price",
+    "meaning_ja": "安い",
+    "example_sentence": "Street food is cheap and tasty.",
+    "difficulty_level": "A1",
+    "category": "travel"
+  },
+  {
+    "word": "expensive",
+    "pronunciation": "ik-SPEN-siv",
+    "part_of_speech": "adjective",
+    "meaning": "Costing a lot of money",
+    "meaning_ja": "高価な",
+    "example_sentence": "Flights can be expensive during holidays.",
+    "difficulty_level": "A1",
+    "category": "travel"
+  },
+  {
+    "word": "comfortable",
+    "pronunciation": "KUHMF-ter-buhl",
+    "part_of_speech": "adjective",
+    "meaning": "Providing physical ease and relaxation",
+    "meaning_ja": "快適な",
+    "example_sentence": "The train seats were comfortable.",
+    "difficulty_level": "A2",
+    "category": "travel"
+  },
+  {
+    "word": "adventurous",
+    "pronunciation": "ad-VEN-cher-uhs",
+    "part_of_speech": "adjective",
+    "meaning": "Willing to take risks or to try out new methods, ideas, or experiences",
+    "meaning_ja": "冒険好きな",
+    "example_sentence": "She is an adventurous traveler.",
+    "difficulty_level": "B2",
+    "category": "travel"
+  },
+  {
+    "word": "thesis",
+    "pronunciation": "THEE-sis",
+    "part_of_speech": "noun",
+    "meaning": "A statement or theory that is put forward as a premise to be maintained or proved",
+    "meaning_ja": "論文、テーゼ",
+    "example_sentence": "She is writing her graduation thesis.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "hypothesis",
+    "pronunciation": "hahy-POTH-uh-sis",
+    "part_of_speech": "noun",
+    "meaning": "A proposed explanation made on the basis of limited evidence",
+    "meaning_ja": "仮説",
+    "example_sentence": "We conducted an experiment to test the hypothesis.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "curriculum",
+    "pronunciation": "kuh-RIK-yuh-luhm",
+    "part_of_speech": "noun",
+    "meaning": "The subjects comprising a course of study in a school or college",
+    "meaning_ja": "カリキュラム",
+    "example_sentence": "The 90-day curriculum is structured logically.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "syllabus",
+    "pronunciation": "SIL-uh-buhs",
+    "part_of_speech": "noun",
+    "meaning": "An outline of the subjects in a course of study",
+    "meaning_ja": "シラバス、講義計画",
+    "example_sentence": "The teacher handed out the syllabus.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "pedagogy",
+    "pronunciation": "PED-uh-goh-jee",
+    "part_of_speech": "noun",
+    "meaning": "The method and practice of teaching, especially as an academic subject or theoretical concept",
+    "meaning_ja": "教育学、指導法",
+    "example_sentence": "The app uses an active pedagogy model.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "evaluation",
+    "pronunciation": "ih-val-yoo-EY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The making of a judgment about the amount, number, or value of something",
+    "meaning_ja": "評価",
+    "example_sentence": "Your placement level evaluation is automatic.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "criteria",
+    "pronunciation": "krahy-TEER-ee-uh",
+    "part_of_speech": "noun",
+    "meaning": "A principle or standard by which something may be judged or decided",
+    "meaning_ja": "基準、評価尺度",
+    "example_sentence": "Word count is one of the criteria for diary review.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "assessment",
+    "pronunciation": "uh-SES-muhnt",
+    "part_of_speech": "noun",
+    "meaning": "The evaluation or estimation of the nature, quality, or ability of someone or something",
+    "meaning_ja": "アセスメント、査定",
+    "example_sentence": "A weekly assessment tracks progress.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "cognition",
+    "pronunciation": "kog-NISH-uhn",
+    "part_of_speech": "noun",
+    "meaning": "The mental action or process of acquiring knowledge and understanding through thought, experience, and the senses",
+    "meaning_ja": "認知、認識",
+    "example_sentence": "Spaced repetition optimizes memory cognition.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "comprehension",
+    "pronunciation": "kom-pri-HEN-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The action or capability of understanding something",
+    "meaning_ja": "理解、読解",
+    "example_sentence": "The video comprehension score was eighty percent.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "fluency",
+    "pronunciation": "FLOO-uhn-see",
+    "part_of_speech": "noun",
+    "meaning": "The ability to speak or write a foreign language easily and accurately",
+    "meaning_ja": "流暢さ",
+    "example_sentence": "Constant speaking practice improves fluency.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "accuracy",
+    "pronunciation": "AK-yer-uh-see",
+    "part_of_speech": "noun",
+    "meaning": "The quality or state of being correct or precise",
+    "meaning_ja": "正確さ",
+    "example_sentence": "The teacher checks our diary for grammatical accuracy.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "feedback",
+    "pronunciation": "FEED-bak",
+    "part_of_speech": "noun/adjective",
+    "meaning": "Correction notes",
+    "meaning_ja": "フィードバック",
+    "example_sentence": "I appreciate academic feedback.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "memorization",
+    "pronunciation": "mem-er-uh-ZEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The process of committing something to memory",
+    "meaning_ja": "暗記",
+    "example_sentence": "Rote memorization can be monotonous.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "discipline",
+    "pronunciation": "DIS-uh-plin",
+    "part_of_speech": "noun/verb",
+    "meaning": "The practice of training people to obey rules",
+    "meaning_ja": "規律、自制",
+    "example_sentence": "Studying daily takes discipline.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "motivation",
+    "pronunciation": "moh-tuh-VEY-shuhn",
+    "part_of_speech": "noun",
+    "meaning": "The reason or reasons one has for acting or behaving in a particular way",
+    "meaning_ja": "モチベーション、動機",
+    "example_sentence": "Streak scores keep motivation high.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "achievement",
+    "pronunciation": "uh-CHEEV-muhnt",
+    "part_of_speech": "noun",
+    "meaning": "A thing done successfully, typically by effort, courage, or skill",
+    "meaning_ja": "実績、達成",
+    "example_sentence": "Mastering 300 words is a major achievement.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "objective",
+    "pronunciation": "uhb-JEK-tiv",
+    "part_of_speech": "noun/adjective",
+    "meaning": "A goal",
+    "meaning_ja": "目的、客観的な",
+    "example_sentence": "The study objective is clear.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "subjective",
+    "pronunciation": "suhb-JEK-tiv",
+    "part_of_speech": "adjective",
+    "meaning": "Based on or influenced by personal feelings, tastes, or opinions",
+    "meaning_ja": "主観的な",
+    "example_sentence": "Comprehension rating is subjective.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "cognitive",
+    "pronunciation": "KOG-ni-tiv",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to cognition",
+    "meaning_ja": "認知の",
+    "example_sentence": "Learning English involves cognitive effort.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "pedagogical",
+    "pronunciation": "ped-uh-GOJ-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to teaching",
+    "meaning_ja": "教育上の",
+    "example_sentence": "The lesson cards use pedagogical patterns.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "academic",
+    "pronunciation": "ak-uh-DEM-ik",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Relating to education and scholarship",
+    "meaning_ja": "学術的な",
+    "example_sentence": "This is an academic study tool.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "scholarly",
+    "pronunciation": "SKOL-er-lee",
+    "part_of_speech": "adjective",
+    "meaning": "Involving or relating to serious academic study",
+    "meaning_ja": "学術的な、博学な",
+    "example_sentence": "The guidebook referenced scholarly articles.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "theoretical",
+    "pronunciation": "thee-uh-RET-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Concerned with or involving the theory of a subject or area of study rather than its practical application",
+    "meaning_ja": "理論的な",
+    "example_sentence": "Grammar rules provide a theoretical framework.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "empirical",
+    "pronunciation": "em-PIR-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Based on, concerned with, or verifiable by observation or experience rather than theory or pure logic",
+    "meaning_ja": "実証的な",
+    "example_sentence": "Our study tips are based on empirical research.",
+    "difficulty_level": "C1",
+    "category": "academic"
+  },
+  {
+    "word": "logical",
+    "pronunciation": "LOJ-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Of or according to the rules of logic",
+    "meaning_ja": "論理的な",
+    "example_sentence": "The grammar pattern card is very logical.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "analytical",
+    "pronunciation": "an-uh-LIT-i-kuhl",
+    "part_of_speech": "adjective",
+    "meaning": "Relating to or using analysis or logical reasoning",
+    "meaning_ja": "分析的な",
+    "example_sentence": "The progress page offers analytical charts.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "systematic",
+    "pronunciation": "sis-tuh-MAT-ik",
+    "part_of_speech": "adjective",
+    "meaning": "Done or acting according to a fixed plan or system; methodical",
+    "meaning_ja": "体系的な",
+    "example_sentence": "We follow a systematic curriculum.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  },
+  {
+    "word": "structured",
+    "pronunciation": "STRUHK-cherd",
+    "part_of_speech": "adjective/verb",
+    "meaning": "Organized",
+    "meaning_ja": "構造化された",
+    "example_sentence": "Lessons have a highly structured design.",
+    "difficulty_level": "B1",
+    "category": "academic"
+  },
+  {
+    "word": "comprehensive",
+    "pronunciation": "kom-pri-HEN-siv",
+    "part_of_speech": "adjective/noun",
+    "meaning": "Complete; including all or nearly all elements or aspects of something",
+    "meaning_ja": "包括的な",
+    "example_sentence": "The library has a comprehensive list.",
+    "difficulty_level": "B2",
+    "category": "academic"
+  }
+]

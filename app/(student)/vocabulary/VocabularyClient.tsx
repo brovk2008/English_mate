@@ -11,6 +11,7 @@ import { BookOpen, Search, Check, Filter, Sparkles, Brain, History } from 'lucid
 import Flashcards from '@/components/Flashcards';
 import ConfettiBurst from '@/components/ConfettiBurst';
 import dictionary from '@/data/dictionary.json';
+import TTSButton from '@/components/TTSButton';
 
 interface VocabWord {
   word_index: number;
@@ -456,6 +457,7 @@ export default function VocabularyClient({
                             {word.pronunciation && (
                               <span className="text-xs text-ink-muted font-mono">/{word.pronunciation}/</span>
                             )}
+                            <TTSButton text={word.word} size="sm" className="ml-0.5" />
                             <Badge variant="outline" className="text-[9px] border-border text-ink-muted font-bold select-none">
                               No. {word.word_index}
                             </Badge>

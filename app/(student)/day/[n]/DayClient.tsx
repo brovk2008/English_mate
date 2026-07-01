@@ -22,6 +22,7 @@ import { queueSave, drainQueue } from '@/lib/offline-queue';
 import DailyTimeEstimate from '@/components/DailyTimeEstimate';
 import LyricsModal from '@/components/LyricsModal';
 import GrammarVisual from '@/components/GrammarVisual';
+import PronunciationPractice from '@/components/PronunciationPractice';
 
 interface VocabWord {
   word_index: number;
@@ -1135,8 +1136,14 @@ export default function DayClient({
                   </p>
                 </div>
                 <p className="text-xs text-ink-muted leading-relaxed">
-                  Record yourself reading your diary aloud or speaking about the prompt on your phone's voice memos. Once practiced, check off the task above!
+                  Record yourself reading your diary aloud or speaking about the prompt below. Once you achieve an 80%+ score, the task will automatically check off!
                 </p>
+                <div className="pt-2">
+                  <PronunciationPractice
+                    targetText={dayContent.speaking_prompt}
+                    onSuccess={() => handleToggleCheck('speaking_done', true)}
+                  />
+                </div>
               </CardContent>
             </motion.div>
           )}

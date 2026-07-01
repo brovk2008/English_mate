@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { awardXP } from '@/lib/award-xp';
 
 export async function POST(request: Request) {
   try {
@@ -36,7 +37,17 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true });
+    // Award XP
+    let diaryXP = 25; // base diary_written
+    const wordsOver = Math.max(0, words - 80);
+    const wordsBonus = Math.min(20, Math.floor(wordsOver / 10)); // 1 per 10 words, max 20
+
+    await awardXP(userId, 'diary_written', diaryXP, Number(dayNumber));
+    if (wordsBonus > 0) {
+      await awardXP(userId, 'diary_bonus_words', wordsBonus, Number(dayNumber));
+    }
+
+    return NextResponse.json({ success: true, words, xpEarned: diaryXP + wordsBonus });
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });
   }

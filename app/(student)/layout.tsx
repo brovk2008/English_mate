@@ -10,6 +10,7 @@ import ProfileMenu from '@/components/ProfileMenu';
 import OnboardingModal from '@/components/OnboardingModal';
 import WordLookupProvider from '@/components/WordLookupProvider';
 import FloatingNotesWidget from '@/components/FloatingNotesWidget';
+import { Flame, Shield } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
@@ -103,6 +104,50 @@ export default async function StudentLayout({
     freezes = 1;
   }
 
+  // Fetch pending homework
+  let pendingHomework = 0;
+  try {
+    const { data: assignments } = await supabase
+      .from('homework_assignments')
+      .select('homework_id')
+      .eq('user_id', user.id);
+      
+    if (assignments && assignments.length > 0) {
+      const hwIds = assignments.map(a => a.homework_id);
+      
+      const { data: items } = await supabase
+        .from('homework_items')
+        .select('id, homework_id')
+        .in('homework_id', hwIds);
+        
+      const { data: completions } = await supabase
+        .from('homework_completion')
+        .select('item_id')
+        .eq('user_id', user.id)
+        .eq('completed', true);
+        
+      const completedItemIds = new Set(completions?.map(c => c.item_id) || []);
+      
+      if (items) {
+        const itemsByHw: Record<string, string[]> = {};
+        items.forEach(it => {
+          if (!itemsByHw[it.homework_id]) itemsByHw[it.homework_id] = [];
+          itemsByHw[it.homework_id].push(it.id);
+        });
+        
+        Object.keys(itemsByHw).forEach(hwId => {
+          const hwItemIds = itemsByHw[hwId];
+          const hasIncomplete = hwItemIds.some(itemId => !completedItemIds.has(itemId));
+          if (hasIncomplete) {
+            pendingHomework++;
+          }
+        });
+      }
+    }
+  } catch (err) {
+    console.error("Homework count fetch failed:", err);
+  }
+
   return (
     <WordLookupProvider>
       <div className="flex flex-col min-h-screen bg-bg text-ink">
@@ -115,24 +160,35 @@ export default async function StudentLayout({
               </span>
 
               {/* Desktop Navigation Links */}
-              <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-ink-muted">
-                <Link href="/home" className="hover:text-sakura transition-colors">
+              <nav className="hidden md:flex items-center gap-5 text-sm font-medium text-ink-muted">
+                <Link href="/home" prefetch={true} className="hover:text-sakura transition-colors">
                   Home
                 </Link>
-                <Link href={`/day/${currentDay}`} className="hover:text-sakura transition-colors">
+                <Link href={`/day/${currentDay}`} prefetch={true} className="hover:text-sakura transition-colors">
                   Today
                 </Link>
-                <Link href="/vocabulary" className="hover:text-sakura transition-colors">
+                <Link href="/library" prefetch={true} className="hover:text-sakura transition-colors">
+                  Library
+                </Link>
+                <Link href="/vocabulary" prefetch={true} className="hover:text-sakura transition-colors">
                   Vocab
                 </Link>
-                <Link href="/grammar" className="hover:text-sakura transition-colors">
+                <Link href="/grammar" prefetch={true} className="hover:text-sakura transition-colors">
                   Grammar
                 </Link>
-                <Link href="/progress" className="hover:text-sakura transition-colors">
+                <Link href="/progress" prefetch={true} className="hover:text-sakura transition-colors">
                   Stats
                 </Link>
-                <Link href="/mistakes" className="hover:text-sakura transition-colors text-amber-700/80 dark:text-amber-500/80">
+                <Link href="/mistakes" prefetch={true} className="hover:text-sakura transition-colors text-amber-700/80 dark:text-amber-500/80">
                   Mistakes
+                </Link>
+                <Link href="/homework" prefetch={true} className="hover:text-sakura transition-colors flex items-center gap-1.5">
+                  Homework
+                  {pendingHomework > 0 && (
+                    <span className="bg-sakura text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none flex items-center justify-center min-w-[16px] h-4">
+                      {pendingHomework}
+                    </span>
+                  )}
                 </Link>
               </nav>
             </div>
@@ -140,13 +196,13 @@ export default async function StudentLayout({
             <div className="flex items-center gap-4">
               {/* Streak flame indicator */}
               <div className="flex items-center gap-1.5 bg-sakura/10 text-sakura-deep px-3 py-1 rounded-full text-xs font-semibold select-none">
-                <span className="text-sm">🔥</span>
+                <Flame className="w-3.5 h-3.5 text-sakura-deep animate-pulse" />
                 <span>{streak} Days</span>
               </div>
 
               {/* Streak freeze indicator */}
               <div className="flex items-center gap-1.5 bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold select-none" title="Streak Freezes protect your streak if you miss a day">
-                <span className="text-sm">🛡️</span>
+                <Shield className="w-3.5 h-3.5 text-gold" />
                 <span>{freezes} Freezes</span>
               </div>
 

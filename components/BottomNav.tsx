@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Calendar, BarChart2, BookOpen, Settings } from 'lucide-react';
+import { Home, CalendarDays, Library, TrendingUp, Settings2 } from 'lucide-react';
 
 interface BottomNavProps {
   currentDay: number;
@@ -13,10 +13,10 @@ export default function BottomNav({ currentDay }: BottomNavProps) {
 
   const links = [
     { href: '/home', label: 'Home', icon: Home },
-    { href: `/day/${currentDay}`, label: 'Today', icon: Calendar },
-    { href: '/progress', label: 'Progress', icon: BarChart2 },
-    { href: '/vocabulary', label: 'Vocab', icon: BookOpen },
-    { href: '/settings', label: 'Settings', icon: Settings },
+    { href: `/day/${currentDay}`, label: 'Today', icon: CalendarDays },
+    { href: '/library', label: 'Library', icon: Library },
+    { href: '/progress', label: 'Progress', icon: TrendingUp },
+    { href: '/settings', label: 'Settings', icon: Settings2 },
   ];
 
   return (
@@ -29,6 +29,7 @@ export default function BottomNav({ currentDay }: BottomNavProps) {
             <Link
               key={href}
               href={href}
+              prefetch={true}
               className={`flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-xl transition-colors select-none cursor-pointer
                 ${active ? 'text-sakura font-medium' : 'text-ink-muted hover:text-ink'}`}
             >
