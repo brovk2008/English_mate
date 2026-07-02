@@ -1,57 +1,6 @@
 # 🌸 Sakura English Journey (Sakura-Ez)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-sakuraezenglish.vercel.app-pink?style=for-the-badge)](https://sakuraezenglish.vercel.app/)
-
 Sakura English Journey is a personalized, premium 90-day English learning web application designed for students to master English through a structured curriculum, interactive media, and engaging gamification. The platform features a dedicated Student Portal alongside a secure Teacher Dashboard for progress tracking, real-time diary reviews, and personalized assignments.
-
----
-
-## 📷 UI Showcase
-
-Here is a look at the Sakura English Journey platform interface and features:
-
-<table width="100%">
-  <tr>
-    <td width="50%">
-      <p align="center"><b>Student Dashboard / Home</b></p>
-      <img src="./public/screenshots/screenshot_01.png" alt="Student Dashboard" width="100%"/>
-    </td>
-    <td width="50%">
-      <p align="center"><b>XP Progression & Mascot</b></p>
-      <img src="./public/screenshots/screenshot_02.png" alt="Mascot Expressions" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <p align="center"><b>Mini-Games Hub</b></p>
-      <img src="./public/screenshots/screenshot_03.png" alt="Mini Games" width="100%"/>
-    </td>
-    <td width="50%">
-      <p align="center"><b>Card Memory Match Game</b></p>
-      <img src="./public/screenshots/screenshot_04.png" alt="Card Match" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <p align="center"><b>Daily Curriculum & Tasks</b></p>
-      <img src="./public/screenshots/screenshot_05.png" alt="Curriculum Interface" width="100%"/>
-    </td>
-    <td width="50%">
-      <p align="center"><b>Interactive Quizzes</b></p>
-      <img src="./public/screenshots/screenshot_06.png" alt="Quiz Module" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <p align="center"><b>Printable Hanko Completion Certificate</b></p>
-      <img src="./public/screenshots/screenshot_08.png" alt="Certificate" width="100%"/>
-    </td>
-    <td width="50%">
-      <p align="center"><b>Spotify Milestone Exporter</b></p>
-      <img src="./public/screenshots/screenshot_09.png" alt="Spotify Wrapped" width="100%"/>
-    </td>
-  </tr>
-</table>
 
 ---
 
