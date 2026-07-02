@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { createClient } from '@/lib/supabase/server';
+import { createClient, createStaticClient } from '@/lib/supabase/server';
 import DayClient from './DayClient';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -11,7 +11,7 @@ export const dynamic = 'force-dynamic';
 
 const getCurriculumDay = unstable_cache(
   async (dayNum: number) => {
-    const supabase = await createClient();
+    const supabase = createStaticClient();
     const { data } = await supabase
       .from('days')
       .select('*')
@@ -25,7 +25,7 @@ const getCurriculumDay = unstable_cache(
 
 const getVocabWords = unstable_cache(
   async (start: number, end: number) => {
-    const supabase = await createClient();
+    const supabase = createStaticClient();
     const { data } = await supabase
       .from('vocab_words')
       .select('*')

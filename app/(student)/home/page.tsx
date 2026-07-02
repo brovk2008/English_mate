@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { createClient } from '@/lib/supabase/server';
+import { createClient, createStaticClient } from '@/lib/supabase/server';
 import DashboardClient from './DashboardClient';
 import quotes from '@/data/quotes.json';
 import { Suspense } from 'react';
@@ -10,7 +10,7 @@ export const dynamic = 'force-dynamic';
 
 const getCurriculumDay = unstable_cache(
   async (dayNum: number) => {
-    const supabase = await createClient();
+    const supabase = createStaticClient();
     const { data } = await supabase
       .from('days')
       .select('*')
