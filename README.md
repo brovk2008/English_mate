@@ -1,5 +1,7 @@
 # 🌸 Sakura English Journey (Sakura-Ez)
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-sakuraezenglish.vercel.app-pink?style=for-the-badge)](https://sakuraezenglish.vercel.app/)
+
 Sakura English Journey is a personalized, premium 90-day English learning web application designed for students to master English through a structured curriculum, interactive media, and engaging gamification. The platform features a dedicated Student Portal alongside a secure Teacher Dashboard for progress tracking, real-time diary reviews, and personalized assignments.
 
 ---
